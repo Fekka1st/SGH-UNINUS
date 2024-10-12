@@ -12,42 +12,78 @@
             font-family: Arial, sans-serif;
         }
         .navbar {
-            background-color: #007bff;
+            background: linear-gradient(to right, #28a745, #007bff); /* Gradient green to blue */
         }
         .navbar a {
             color: white;
         }
+        .navbar .dropdown-menu {
+            background-color: #28a745;
+        }
         .hero-section {
-            background-color: #007bff;
+            background-image: url('https://images.unsplash.com/photo-1506784983877-766d2c3a2b3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdyZWVuJTIwZ3JlZW5ob3VzZXxlbnwwfHx8fDE2OTc4MjQ1ODU&ixlib=rb-4.0.3&q=80&w=1080');
+            background-size: cover;
             color: white;
-            padding: 60px 0;
+            padding: 100px 0;
             text-align: center;
         }
-        .hero-section img {
-            max-width: 80%;
-            height: auto;
+        .hero-section .overlay {
+            background-color: rgba(0, 105, 217, 0.6); /* Overlay biru gelap */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .hero-text h1 {
             font-size: 3rem;
+            z-index: 2;
+            position: relative;
         }
         .hero-text p {
             font-size: 1.2rem;
+            z-index: 2;
+            position: relative;
         }
         .btn-custom {
             background-color: white;
-            color: #007bff;
+            color: #28a745;
             border-radius: 50px;
             padding: 10px 20px;
             font-weight: bold;
+            transition: background-color 0.3s;
         }
-        section {
+        .btn-custom:hover {
+            background-color: #28a745;
+            color: white;
+        }
+        .features-section {
+            background: linear-gradient(to right, #e9ecef, #cce5ff); /* Light gray to light blue */
             padding: 60px 0;
         }
+        .features-section h2 {
+            margin-bottom: 40px;
+        }
+        .testimonials-section {
+            background: linear-gradient(to right, #f8f9fa, #e2e3e5); /* Light gray */
+            padding: 60px 0;
+        }
+        .testimonials-section h2 {
+            margin-bottom: 40px;
+        }
         footer {
-            background-color: #007bff;
+            background-color: #0069d9; /* Dark blue */
             color: white;
             padding: 20px 0;
             text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #28a745; /* Change color on hover */
         }
     </style>
 </head>
@@ -62,127 +98,94 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Greenhouse</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-custom" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#hydroponic">Hydroponic Systems</a></li>
+                            <li><a class="dropdown-item" href="#aeroponic">Aeroponic Systems</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#monitoring">Monitoring Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#monitoring">Monitoring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-custom" href="#login">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="home" class="hero-section position-relative">
+        <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 hero-text">
                     <h1>Efficient and Automated Greenhouse Control</h1>
                     <p>Manage your hydroponic and aeroponic systems easily with our smart solution. Monitor, control, and optimize plant growth with real-time data.</p>
-                    <a href="#" class="btn btn-custom">Learn More</a>
-                    <a href="#" class="btn btn-light">Watch Video</a>
+                    <a href="#features" class="btn btn-custom">Learn More</a>
+                    <a href="https://www.youtube.com/watch?v=eQSNKrigiOM" class="btn btn-light">Watch Video</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('images/dashboard-example.png') }}" alt="Greenhouse Dashboard">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIwfHxlbnwwfHx8fDE2OTc4MjQ1OTQ&ixlib=rb-4.0.3&q=80&w=1080" alt="Greenhouse Dashboard" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="text-center">
-        <div class="container">
-            <h2>Key Features</h2>
+    <section id="features" class="features-section">
+        <div class="container text-center">
+            <h2>Features of Our System</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="{{ asset('images/feature-1.png') }}" alt="Feature 1" class="img-fluid mb-3">
-                    <h4>Real-time Monitoring</h4>
-                    <p>Track your greenhouse environment in real-time with detailed metrics and analytics.</p>
+                    <h3>Hydroponic Systems</h3>
+                    <p>Discover the benefits of growing plants in a soil-less environment.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('images/feature-2.png') }}" alt="Feature 2" class="img-fluid mb-3">
-                    <h4>Automated Control</h4>
-                    <p>Automate the management of temperature, humidity, and watering schedules effortlessly.</p>
+                    <h3>Aeroponic Systems</h3>
+                    <p>Learn about our innovative aeroponic technology for enhanced growth.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('images/feature-3.png') }}" alt="Feature 3" class="img-fluid mb-3">
-                    <h4>Remote Access</h4>
-                    <p>Access and control your greenhouse systems from anywhere with a simple app.</p>
+                    <h3>Data Monitoring</h3>
+                    <p>Real-time monitoring to ensure optimal conditions for your plants.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="bg-light text-center">
+    <!-- Video Section -->
+    <section id="video" class="text-center">
         <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <blockquote class="blockquote">
-                        <p>"The Smart Greenhouse system has revolutionized the way we manage our crops. It's efficient and easy to use."</p>
-                        <footer class="blockquote-footer">John Doe, Farmer</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-6">
-                    <blockquote class="blockquote">
-                        <p>"Our greenhouse operations have never been smoother thanks to the automation and real-time data this system provides."</p>
-                        <footer class="blockquote-footer">Jane Smith, Greenhouse Owner</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="text-center">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How does the Smart Greenhouse system work?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            The Smart Greenhouse system uses sensors to collect data about your greenhouse environment and automates essential functions like watering and climate control based on that data.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Can I control the system remotely?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes, you can access and control your greenhouse systems remotely using our mobile app.
-                        </div>
-                    </div>
-                </div>
+            <h2>Watch Our Overview</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQSNKrigiOM" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-light text-center">
+    <section id="contact" class="text-center">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or would like to learn more about our products, feel free to reach out!</p>
-            <form>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control mb-3" placeholder="Your Name">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="email" class="form-control mb-3" placeholder="Your Email">
-                    </div>
+            <form action="your-server-side-script.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
-                <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
                 <button type="submit" class="btn btn-custom">Send Message</button>
             </form>
         </div>
@@ -192,6 +195,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Smart Greenhouse. All rights reserved.</p>
+            <p><a href="#home">Back to Top</a></p>
         </div>
     </footer>
 
