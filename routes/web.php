@@ -20,15 +20,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Routes for additional pages
-Route::get('/laman/about', 'AboutController@index');
-Route::get('/arsip/pak', 'ArsipController@pak');
-Route::get('/arsip/serdik', 'ArsipController@serdik');
-Route::get('/arsip/inpassing', 'ArsipController@inpassing');
-Route::get('/arsip/jafung', 'ArsipController@jafung');
-Route::get('/laman/tim', 'TimController@index');
-Route::get('/laman/wilayah-kerja', 'WilayahKerjaController@index');
-Route::get('/kontak', 'KontakController@index');
-
 // Authentication routes
 require __DIR__.'/auth.php';
