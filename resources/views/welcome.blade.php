@@ -144,17 +144,17 @@
                                 membantu meningkatkan kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami
                                 berfokus pada pengembangan sistem yang ramah lingkungan dan berkelanjutan.</p>
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
                                         <span>100%</span> Ramah Lingkungan
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
                                         <span>90%</span> Berkelanjutan
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
                                         <span>95%</span> Efisiensi Energi
                                     </div>
