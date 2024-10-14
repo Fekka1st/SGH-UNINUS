@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                        <img src="https://i.pinimg.com/enabled/564x/77/ec/cc/77eccc66d971dc643fd6c43e0ee306cb.jpg" alt="#">
+                        <img src="https://img.freepik.com/free-photo/portrait-asian-young-gardener-couple-wearing-apron-use-garden-equipment-help-take-care-houseplant-shop_1150-50185.jpg?t=st=1728876221~exp=1728879821~hmac=6eede13fee27fe19433686ea34c43e69767ba41873b7258d20ebf362ecc62bf2&w=740" alt="#">
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="info-image wow fadeInRight" data-wow-delay=".5s">
-                            <img class="ss1" src="assets/greenhouse.jpg" alt="#">
+                            <img class="ss1" src="https://img.freepik.com/free-photo/young-man-apron-working-with-plants-greenery_171337-5944.jpg?t=st=1728876626~exp=1728880226~hmac=eade031fd75f2899cd182fbb74ffafb7432f17e9b46981129c83f159459b39f1&w=740" alt="#">
                         </div>
                     </div>
                 </div>
@@ -151,47 +151,41 @@
 
     <!-- Start Achievement Area -->
     <section class="our-achievement section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                    <div class="title">
-                        <h2>Pencapaian Kami</h2>
-                        <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                <div class="title">
+                    <h2>Pencapaian Kami</h2>
+                    <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">100</span>+</h3>
-                                <p>Rumah Hijau yang Berhasil Dibangun</p>
-                            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12 text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
+                        <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                            <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">300</span>+</h3>
+                            <p>Ekosistem Yang Bermuatan Serta Berkelanjutan</p>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="500">500</span>+</h3>
-                                <p>Tanaman yang Ditanam</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
+                        <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                            <h3 class="counter"><span id="secondo2" class="countup" cup-end="500">300</span>+</h3>
+                            <p>Tanaman Yang Ditanam</p>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="1000">1000</span>+</h3>
-                                <p>Warga yang Terlibat</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="50">50</span>+</h3>
-                                <p>Partnership yang Terjalin</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
+                        <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                            <h3 class="counter"><span id="secondo3" class="countup" cup-end="1000">100</span>+</h3>
+                            <p>Mahasiswa Yang Terlibat Untuk Membuat Smart Green House</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- End Achievement Area -->
 
     <!-- Start Pricing Table Area -->
@@ -277,8 +271,8 @@
 
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
-  <h2>Portfolio</h2>
-  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  <h2>Gallery</h2>
+  <p>Berikut adalah gallery dari foto yang telah di tampilkan</p>
 </div><!-- End Section Title -->
 
 <div class="container">
