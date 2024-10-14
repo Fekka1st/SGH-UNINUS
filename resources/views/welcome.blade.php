@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="{{asset('asset/css/main.css')}}" />
 
     <title>Smart Green House</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
 </head>
 
 <body>
@@ -33,50 +34,70 @@
             <span></span>
         </div>
     </div>
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="nav-inner">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">
-                                <img src="{{asset('asset/img/1.png  ')}}" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+    <header class="header navbar-area bg-primary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="nav-inner">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- Brand Logo -->
+                        <a class="navbar-brand" href="#">
+                            <img src="{{asset('asset/img/logo.png')}}" alt="Logo">
+                        </a>
+                        <!-- Mobile Menu Toggler -->
+                        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
-    <li class="nav-item">
-        <a class="nav-link" href="/earsip" aria-label="Toggle navigation">Beranda</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/earsip/views/home/tentangkami">Tentang Kami</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/earsip/views/laman/timkinerja">Tim Kinerja</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/earsip/dosen">Dosen</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/earsip/admin?halaman=grafik_pak">Grafik</a>
-    </li>
-</ul>
-                                <div class="button add-list-button">
-                                    <a href="/earsip/login" type="button" class="btn">Login</a>
-                                </div>
+                                <!-- Beranda -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Beranda</a>
+                                </li>
+                                <!-- Tentang Kami -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tentangkami">Tentang Kami</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="timkinerja">Tim Kinerja</a>
+                                </li>
+                                <!-- Monitoring -->
+                                <li class="nav-item">
+                                    <a class="dd-menu" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">Monitoring</a>
+                                    <ul class="sub-menu collapse show" id="submenu-1-4" style>
+                                        <li class="nav-item"><a href="earsip/laman/tim">Smart Green House</a></li>
+                                        <li class="nav-item"><a href="earsip/laman/wilayah-kerja"></a>Smart Hidroponik</li>
+                                        <li class="nav-item"><a href="earsip/laman/wilayah-kerja"></a>Smart Aeroponik</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <!-- Authenticated User - Dashboard Link -->
+                            @auth
+                            <div class="button add-list-button">
+                                <a href="{{ url('/dashboard') }}" class="btn">Dashboard</a>
                             </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+                            @endauth
+
+                            <!-- Guest User - Login Button -->
+                            @guest
+                            <div class="button add-list-button">
+                                <a href="{{ route('login') }}" class="btn">Login</a>
+                            </div>
+                            @endguest
+                        </div> <!-- /.navbar-collapse -->
+                    </nav> <!-- /.navbar -->
+                </div> <!-- /.nav-inner -->
+            </div> <!-- /.col-lg-12 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</header>
 
     <!-- Start Hero Area -->
     <section id="home" class="hero-area">
@@ -86,19 +107,22 @@
                     <div class="hero-content">
                         <h1 class="wow fadeInLeft" data-wow-delay=".4s">Aplikasi Smart Green House </h1>
                         <h1 class="wow fadeInLeft" data-wow-delay=".6s">Universitas Islam Nusantara </h1>
-                        <h2 class="wow fadeInLeft" style="color: antiquewhite;font-size: 23px;line-height: 1.5em;margin-top: 20px;"
-                            data-wow-delay=".8s">Mengintegrasikan Teknologi dan Alam untuk Meningkatkan Kualitas Hidup</h2>
+                        <h2 class="wow fadeInLeft"
+                            style="color: antiquewhite;font-size: 23px;line-height: 1.5em;margin-top: 20px;"
+                            data-wow-delay=".8s">Mengintegrasikan Teknologi dan Alam untuk Meningkatkan Kualitas Hidup
+                        </h2>
                         <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                            <a href="#about_us" class="btn">About</a>
+                            <a href="#about_us" class="btn">Tentang</a>
                             <a href="https://www.youtube.com/watch?v=917dBBxONh0" target="_blank"
-                                class="glightbox video-button"><span class="video"><i class="lni lni-play"></i></span><span
-                                    class="text">Video Green House</span></a>
+                                class="glightbox video-button"><span class="video"><i
+                                        class="lni lni-play"></i></span><span class="text">Video Green House</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                        <img src="https://img.freepik.com/free-photo/portrait-asian-young-gardener-couple-wearing-apron-use-garden-equipment-help-take-care-houseplant-shop_1150-50185.jpg?t=st=1728876221~exp=1728879821~hmac=6eede13fee27fe19433686ea34c43e69767ba41873b7258d20ebf362ecc62bf2&w=740" alt="#">
+                        <img src="https://img.freepik.com/free-photo/farm-workers-collegues-overseeing-organic-sustainable-eco-friendly-bio-green-lettuce-plantation-sunny-weather-local-entrepreneurial-chemical-free-horticultural-greenhouse_482257-64596.jpg?uid=R151835259&ga=GA1.1.365448952.1727150183&semt=ais_hybrid"
+                            alt="#">
                     </div>
                 </div>
             </div>
@@ -207,7 +231,7 @@
                             <h4 class="title">Desain Rumah Hijau</h4>
                             <p>Kami menawarkan jasa desain rumah hijau yang sesuai dengan kebutuhan Anda</p>
                             <div class="button" style="margin-top:50px">
-                                <a href ="javascript:void(0)" class="btn">Desain Rumah Hijau</a>
+                                <a href="javascript:void(0)" class="btn">Desain Rumah Hijau</a>
                             </div>
                         </div>
                     </div>
@@ -267,214 +291,245 @@
             </div>
         </div>
     </section>
-    <   <section id="portfolio" class="portfolio section">
+    < <section id="portfolio" class="portfolio section">
 
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
   <h2>Gallery</h2>
-  <p>Berikut adalah gallery dari foto yang telah di tampilkan</p>
 </div><!-- End Section Title -->
 
-<div class="container">
+        <div class="container">
 
-  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-      <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-app">App</li>
-      <li data-filter=".filter-product">Card</li>
-      <li data-filter=".filter-branding">Web</li>
-    </ul><!-- End Portfolio Filters -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                        <img src="https://i.pinimg.com/564x/63/4a/e1/634ae1c8635965a5392d1eaa6bdbac79.jpg"
+                            class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
+                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
 
-    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                        <img src="https://i.pinimg.com/564x/ad/e9/41/ade941b02e1d5c429a1ff265b7e72ce1.jpg"
+                            class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Product 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
 
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-        <img src="https://i.pinimg.com/564x/63/4a/e1/634ae1c8635965a5392d1eaa6bdbac79.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>App 1</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                        <img src="https://i.pinimg.com/564x/47/fe/0b/47fe0b9eb59f46a8be4964e537f45928.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Branding 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                        <img src="https://i.pinimg.com/564x/4d/87/84/4d8784fd44f2022c7394b5ed05d0d971.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 2</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
+                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                        <img src="https://i.pinimg.com/736x/f0/85/7c/f0857c01960a595814a74e94337e885f.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Product 2</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
+                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                        <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Branding 2</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                        <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 3</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
+                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                        <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Product 3</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
+                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                        <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Branding 3</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                            <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                                    class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                    class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                </div><!-- End Portfolio Container -->
+
+            </div>
+
         </div>
-      </div><!-- End Portfolio Item -->
 
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-        <img src="https://i.pinimg.com/564x/ad/e9/41/ade941b02e1d5c429a1ff265b7e72ce1.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Product 1</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+        </section><!-- /Portfolio Section -->
+
         </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Branding 1</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>App 2</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Product 2</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Branding 2</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>App 3</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Product 3</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-        <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-        <div class="portfolio-info">
-          <h4>Branding 3</h4>
-          <p>Lorem ipsum, dolor sit</p>
-          <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-    </div><!-- End Portfolio Container -->
-
-  </div>
-
-</div>
-
-</section><!-- /Portfolio Section -->
-
-    </div>
-    <!-- Start Footer Area -->
+        <!-- Start Footer Area -->
+        <footer class="footer">
+    <!-- Start Footer Top -->
     <footer class="footer">
-        <!-- Start Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="single-footer f-about">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="/earsip/assets/images/logo/white-logo.webp" alt="#">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="single-footer f-about">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="{{asset('asset/img/logo.png')}}" alt="Logo">
+                            </a>
+                        </div>
+                        <p>Smart Green House adalah sebuah aplikasi yang membantu meningkatkan kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan sistem yang ramah lingkungan dan berkelanjutan.</p>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.instagram.com/uninusbandung/" target="_blank">
+                                    <i class="lni lni-instagram"></i>
                                 </a>
-                            </div>
-                            <p>Smart Green House adalah sebuah aplikasi yang membantu meningkatkan kualitas hidup dengan
-                                mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan sistem yang ramah
-                                lingkungan dan berkelanjutan.
-                                <ul class="social">
-                                    <li><a href="https://www.instagram.com/uninusbandung/" target="_blank"><i
-                                                class="lni lni-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@uninusbandung" target="_blank"><i
-                                                class="lni lni-youtube"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="single-footer f-link">
-                                    <h3>Kontak</h3>
-                                    <p>Jl. Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung, Jawa Barat</p>
-                                    <p><i class="lni lni-phone"></i> (022) 21000229 </br>
-                                        <i class="lni lni-envelope"></i> https://uninus.ac.id/</p>
-                                </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@uninusbandung" target="_blank">
+                                    <i class="lni lni-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--/ End Footer Top -->
-        <div class="footer-bot">
+
+                <!-- Contact Section -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="single-footer f-link">
+                        <h3>Kontak</h3>
+                        <p>Jl. Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung, Jawa Barat</p>
+                        <p>
+                            <i class="lni lni-phone"></i> (022) 21000229 <br>
+                            <i class="lni lni-envelope"></i> <a href="https://uninus.ac.id/" target="_blank">https://uninus.ac.id/</a>
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.footer-top -->
+</footer>
+    <!-- End Footer Top -->
+
+    <!-- Start Footer Bottom -->
+    <div class="footer-bot">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="inner-content ">
-                        <p>Copyright © 2022 <a href="/earsip/">Diktendik</a> All Right Reserved</p>
+                    <div class="inner-content text-center">
+                        <p>Copyright © 2024 <a href="#">Smart Green House</a>, Universitas Islam Nusantara</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div>
+    <!-- End Footer Bottom -->
+</footer>
 
-    <!--/ End Footer Area -->
 
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top">
-        <i class="lni lni-chevron-up"></i>
-    </a>
+        <!--/ End Footer Area -->
 
-    <!-- ========================= JS here ========================= -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
-        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- ========================= scroll-top ========================= -->
+        <a href="#" class="scroll-top">
+            <i class="lni lni-chevron-up"></i>
+        </a>
 
-    <script src="/earsip/assets/js/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
-        integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
-        integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- ========================= JS here ========================= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+            integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="/earsip/assets/js/count-up.min.js"></script>
-    <script src="/earsip/assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript">
-        //====== counter up
-        var cu = new counterUp({
-            start: 0,
-            duration: 2000,
-            intvalues: true,
-            interval: 100,
-            append: " ",
-        });
-        cu.start();
 
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+            integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+            integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            //====== counter up
+            var cu = new counterUp({
+                start: 0,
+                duration: 2000,
+                intvalues: true,
+                interval: 100,
+                append: " ",
+            });
+            cu.start();
+
+        </script>
 </body>
 
 </html>
