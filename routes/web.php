@@ -12,7 +12,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/tentangkami', function () {
+    return view('tentangkami');
+});
+Route::get('/timkinerja', function () {
+    return view('timkinerja');
+});
 // Dashboard route with authentication middleware
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -28,5 +33,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-
-
