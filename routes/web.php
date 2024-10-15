@@ -5,7 +5,7 @@ use App\Http\Controllers\greenhousecontroller;
 use App\Http\Controllers\hydroponikcontroller;
 use App\Http\Controllers\manajemenuser;
 use App\Http\Controllers\profile;
-use App\Http\Controllers\ProfileController;
+// use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 // Homepage route
