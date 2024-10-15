@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
     Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
-    Route::get('/manajemen_user', [manajemenuser::class, 'index']);
+    Route::resource('/manajemen_user', manajemenuser::class);
     Route::get('/profile_akun', [profile::class, 'index']);
 });
 
