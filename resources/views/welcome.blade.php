@@ -101,33 +101,46 @@
 
     <!-- Start Hero Area -->
     <section id="home" class="hero-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="hero-content">
-                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Aplikasi Smart Green House </h1>
-                        <h1 class="wow fadeInLeft" data-wow-delay=".6s">Universitas Islam Nusantara </h1>
-                        <h2 class="wow fadeInLeft"
-                            style="color: antiquewhite;font-size: 23px;line-height: 1.5em;margin-top: 20px;"
-                            data-wow-delay=".8s">Mengintegrasikan Teknologi dan Alam untuk Meningkatkan Kualitas Hidup
-                        </h2>
-                        <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                            <a href="#about_us" class="btn">Tentang</a>
-                            <a href="https://www.youtube.com/watch?v=917dBBxONh0" target="_blank"
-                                class="glightbox video-button"><span class="video"><i
-                                        class="lni lni-play"></i></span><span class="text">Video Green House</span></a>
-                        </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12 col-12 mb-4"> <!-- Margin bawah -->
+                <div class="hero-content">
+                    <h1 class="wow fadeInLeft" data-wow-delay=".4s">Aplikasi Smart Green House</h1>
+                    <h1 class="wow fadeInLeft" data-wow-delay=".6s">Universitas Islam Nusantara</h1>
+                    <h2 class="wow fadeInLeft" style="color: antiquewhite; font-size: 23px; line-height: 1.5em; margin-top: 20px;" data-wow-delay=".8s">
+                        Mengintegrasikan Teknologi dan Alam untuk Meningkatkan Kualitas Hidup
+                    </h2>
+                    <div class="button wow fadeInLeft" data-wow-delay=".8s">
+                        <a href="#about_us" class="btn">Tentang</a>
+                        <a href="https://www.youtube.com/watch?v=917dBBxONh0" target="_blank" class="glightbox video-button">
+                            <span class="video"><i class="lni lni-play"></i></span>
+                            <span class="text">Video Green House</span>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-12 col-12">
-                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                        <img src="https://img.freepik.com/free-photo/farm-workers-collegues-overseeing-organic-sustainable-eco-friendly-bio-green-lettuce-plantation-sunny-weather-local-entrepreneurial-chemical-free-horticultural-greenhouse_482257-64596.jpg?uid=R151835259&ga=GA1.1.365448952.1727150183&semt=ais_hybrid"
-                            alt="#">
+            </div>
+            <div class="col-lg-7 col-md-12 col-12 mb-4"> <!-- Margin bawah -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.freepik.com/free-photo/young-man-apron-working-with-plants-greenery_171337-5944.jpg?t=st=1728876626~exp=1728880226~hmac=eade031fd75f2899cd182fbb74ffafb7432f17e9b46981129c83f159459b39f1&w=740" class="d-block w-100" alt="Gambar 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/free-photo/female-gardener-standing-near-fatsia-japonica-plants-growing-greenhouse_23-2147918549.jpg?t=st=1728984765~exp=1728988365~hmac=509d464c51ab353f337be6071405b57386ed47550ae7b4db4e2886db2609c472&w=826" class="d-block w-100" alt="Gambar 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/free-photo/long-shot-woman-inside-greenhouse_23-2148224053.jpg?t=st=1728984839~exp=1728988439~hmac=984c2526f3299e8f2e87c42add95ca7b40a20c07bdd4584fb5f04a3bdf20a619&w=826" class="d-block w-100" alt="Gambar 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/free-photo/full-shot-people-holding-plants_23-2149098297.jpg?t=st=1728984887~exp=1728988487~hmac=8ac8ae38499cfe6183d17ee3d574afc2701bdb212278366e7796561f81b4f832&w=826" class="d-block w-100" alt="Gambar 4">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- End Hero Area -->
 
     <div id="about_us"></div>
@@ -140,9 +153,10 @@
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
                             <h2>Smart Green House</h2>
-                            <p style="margin: 20px 0;line-height: 2em;">Smart Green House adalah sebuah aplikasi yang
-                                membantu meningkatkan kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami
-                                berfokus pada pengembangan sistem yang ramah lingkungan dan berkelanjutan.</p>
+                            <p style="margin: 20px 0; line-height: 2em; text-align: justify;">
+                                 Smart Green House adalah sebuah aplikasi yang membantu meningkatkan kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan sistem yang ramah lingkungan dan berkelanjutan.
+                            </p>
+
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
@@ -151,7 +165,7 @@
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
-                                        <span>90%</span> Berkelanjutan
+                                        <span>80%</span> Tanpa Campur Tangan Manusia
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
@@ -162,11 +176,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="info-image wow fadeInRight" data-wow-delay=".5s">
-                            <img class="ss1" src="https://img.freepik.com/free-photo/young-man-apron-working-with-plants-greenery_171337-5944.jpg?t=st=1728876626~exp=1728880226~hmac=eade031fd75f2899cd182fbb74ffafb7432f17e9b46981129c83f159459b39f1&w=740" alt="#">
+                     <!-- Kolom kiri untuk karosel -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/736x/ce/bd/26/cebd26401693c6daeb87897136d24578.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/564x/77/83/38/778338b052c5eddd6b07204daaa7553d.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/564x/ed/c6/1a/edc61ad6dd0cf8125880a21c98e245f3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
                 </div>
             </div>
         </div>
@@ -178,31 +216,37 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                <div class="title">
-                    <h2>Pencapaian Kami</h2>
+                <div class="title text-center" >
+                    <h2>Jenis - Jenis Tanaman</h2>
                     <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-12 col-12 text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12 col-12 text-center">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
-                        <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                            <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">300</span>+</h3>
-                            <p>Ekosistem Yang Bermuatan Serta Berkelanjutan</p>
+                    <div class="col-md-4 mb-4"> <!-- Menambah margin bawah -->
+                        <div class="h-100"> <!-- Memastikan card mengisi ketinggian maksimal -->
+                            <div class="card-body text-center" style="color: white;">
+                                <h1 class="card-title" style="color: white;" data-target="300">0</h1>
+                                <p class="card-text">Ekosistem Yang Bermuatan Serta Berkelanjutan</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
-                        <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-                            <h3 class="counter"><span id="secondo2" class="countup" cup-end="500">300</span>+</h3>
-                            <p>Tanaman Yang Ditanam</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="h-100">
+                            <div class="card-body text-center" style="color: white;">
+                                <h1 class="card-title" style="color: white;" data-target="300">0</h1>
+                                <p class="card-text">Tanaman Yang Ditanam</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
-                        <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                            <h3 class="counter"><span id="secondo3" class="countup" cup-end="1000">100</span>+</h3>
-                            <p>Mahasiswa Yang Terlibat Untuk Membuat Smart Green House</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="h-100">
+                            <div class="card-body text-center" style="color: white;">
+                                <h1 class="card-title" style="color: white;" data-target="100">0</h1>
+                                <p class="card-text">Mahasiswa Yang Terlibat Untuk Membuat Smart Green House</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,223 +254,102 @@
         </div>
     </div>
 </section>
+
+
     <!-- End Achievement Area -->
 
     <!-- Start Pricing Table Area -->
     <section id="pricing" class="pricing-table section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Layanan Kami</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Berikut adalah beberapa layanan yang kami
-                            tawarkan</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center">
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Media Yang Digunakan</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s">Berikut adalah beberapa media yang kami gunakan untuk metode penanaman</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- Membuat grid lebih responsif -->
+            <div class="col-lg-4 col-md-6 col-12 mb-4"> <!-- Menambah jarak bawah untuk mobile -->
+                <div class="single-table wow fadeInUp" style="height:100%" data-wow-delay=".2s">
+                    <div class="table-head text-center">
+                        <h4 class="title">Smart Green House</h4>
+                        <p style="text-align: justify;">Smart Green House adalah sistem otomatis yang memantau dan mengelola kondisi lingkungan rumah kaca menggunakan teknologi seperti sensor dan IoT. Ini membantu meningkatkan efisiensi energi, air, dan hasil panen dengan pemantauan real-time serta pengaturan otomatis untuk pertumbuhan tanaman yang optimal.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-table wow fadeInUp" style="height:250px" data-wow-delay=".2s">
-                        <div class="table-head">
-                            <h4 class="title">Desain Rumah Hijau</h4>
-                            <p>Kami menawarkan jasa desain rumah hijau yang sesuai dengan kebutuhan Anda</p>
-                            <div class="button" style="margin-top:50px">
-                                <a href="javascript:void(0)" class="btn">Desain Rumah Hijau</a>
-                            </div>
-                        </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="single-table wow fadeInUp" style="height:100%" data-wow-delay=".4s">
+                    <div class="table-head text-center">
+                        <h4 class="title">Smart Hidroponik</h4>
+                        <p style="text-align: justify;">Smart Hidroponik adalah sistem pertanian tanpa tanah yang menggunakan teknologi untuk mengontrol dan memantau kondisi pertumbuhan tanaman secara otomatis, seperti pH, suhu, dan nutrisi, guna meningkatkan efisiensi dan hasil panen.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-table wow fadeInUp" style="height:250px" data-wow-delay=".4s">
-                        <div class="table-head">
-                            <h2 class="title">Pembangunan Rumah Hijau</h2>
-                            <p>Kami menawarkan jasa pembangunan rumah hijau yang berkualitas dan berkelanjutan</p>
-                            <div class="button" style="margin-top:50px">
-                                <a href="javascript:void(0)" class="btn">Pembangunan Rumah Hijau</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-table wow fadeInUp" style="height:250px" data-wow-delay=".6s">
-                        <div class="table-head">
-                            <h4 class="title">Pengelolaan Rumah Hijau</h4>
-                            <p>Kami menawarkan jasa pengelolaan rumah hijau yang efektif dan efisien</p>
-                            <div class="button" style="margin-top:50px">
-                                <a href="javascript:void(0)" class="btn">Pengelolaan Rumah Hijau</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-table wow fadeInUp" style="height:250px" data-wow-delay=".8s">
-                        <div class="table-head">
-                            <h4 class="title">Konsultasi Rumah Hijau</h4>
-                            <p>Kami menawarkan jasa konsultasi rumah hijau yang profesional dan berpengalaman</p>
-                            <div class="button" style="margin-top:50px">
-                                <a href="javascript:void(0)" class="btn">Konsultasi Rumah Hijau</a>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="single-table wow fadeInUp" style="height:100%" data-wow-delay=".6s">
+                    <div class="table-head text-center">
+                        <h4 class="title">Smart Aeroponik</h4>
+                        <p style="text-align: justify;">Smart Aeroponik adalah sistem pertanian tanpa tanah yang menyemprotkan kabut nutrisi langsung ke akar tanaman. Dengan teknologi otomatis, sistem ini memantau dan mengontrol kelembapan, suhu, dan nutrisi untuk efisiensi pertumbuhan tanaman yang optimal.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--/ End Pricing Table Area -->
+    </div>
+</section>
 
-    <!-- Start Call To Action Area -->
-    <section class="section call-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="cta-content">
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Gabung dengan Kami</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Bergabunglah dengan kami untuk meningkatkan
-                            kualitas hidup Anda dengan mengintegrasikan teknologi dan alam</p>
-                        <h3 style="color:#fff;font-size: 24px;" class="title">
-                            Universitas Islam Nusantara
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    < <section id="portfolio" class="portfolio section">
+
+    <!--/ End Pricing Table Area -->
 
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
   <h2>Gallery</h2>
 </div><!-- End Section Title -->
+  <!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="{{asset('asset/img/sg1.jpg')}}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
 
-        <div class="container">
+    <img
+      src="{{asset('asset/img/sg2.jpg')}}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
 
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="{{asset('asset/img/sg3.jpg')}}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="https://i.pinimg.com/564x/63/4a/e1/634ae1c8635965a5392d1eaa6bdbac79.jpg"
-                            class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
+    <img
+      src="{{asset('asset/img/sg4.jpg')}}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="https://i.pinimg.com/564x/ad/e9/41/ade941b02e1d5c429a1ff265b7e72ce1.jpg"
-                            class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="{{asset('asset/img/sg5.jpg')}}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="https://i.pinimg.com/564x/47/fe/0b/47fe0b9eb59f46a8be4964e537f45928.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="https://i.pinimg.com/564x/4d/87/84/4d8784fd44f2022c7394b5ed05d0d971.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="https://i.pinimg.com/736x/f0/85/7c/f0857c01960a595814a74e94337e885f.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                </div><!-- End Portfolio Container -->
-
-            </div>
-
-        </div>
+    <img
+      src="{{asset('asset/img/sg6.jpg')}}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+<!-- Gallery -->
 
         </section><!-- /Portfolio Section -->
 
@@ -471,6 +394,7 @@
         </div> <!-- /.container -->
     </div>
     <!-- End Footer Bottom -->
+     
 </footer>
 
 
@@ -509,6 +433,26 @@
             cu.start();
 
         </script>
+
+<script>
+        // Get all elements with class 'card-title'
+        const countElements = document.querySelectorAll('.card-title');
+
+        // Function to animate the count for each element
+        countElements.forEach((element) => {
+            let count = 0;
+            const targetCount = parseInt(element.getAttribute('data-target')); // Get the target count from data-target attribute
+            const interval = setInterval(() => {
+                count++;
+                element.textContent = count.toString();
+
+                // Stop the interval when the count reaches the target count
+                if (count >= targetCount) {
+                    clearInterval(interval); // Stop the interval for this element
+                }
+            }, targetCount === 100 ? 30 : 10); // Faster for 300, slower for 100
+        });
+    </script>
 </body>
 
 </html>
