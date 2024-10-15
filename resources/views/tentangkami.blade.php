@@ -165,7 +165,7 @@
             <div class="col-lg-10 offset-lg-1">
                 <h3 class="mb-3">Hubungi Kami</h3>
                 <p>
-                    Untuk informasi lebih lanjut, silakan hubungi kami melalui email di <a href="mailto:info@smartgreenhouse.com">info@smartgreenhouse.com</a> 
+                    Untuk informasi lebih lanjut, silakan hubungi kami melalui email di <a href="mailto:info@smartgreenhouse.com">info@smartgreenhouse.com</a>
                     atau kunjungi situs web kami di <a href="https://www.smartgreenhouse.com">www.smartgreenhouse.com</a>.
                 </p>
             </div>

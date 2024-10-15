@@ -28,13 +28,8 @@
 </head>
 
 <body>
-    <div class="preloader-inner">
-        <div class="preloader-icon">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <header class="header navbar-area bg-primary" >
+
+    <header class="header navbar-area bg-primary">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-12">
@@ -98,6 +93,50 @@
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </header>
+
+<div>
+    <br></br>
+</div>
+
+</div>
+    <!-- Start Features Area -->
+    <section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px">
+        <div class="container">
+            <div class="info-one">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
+                            <h2>Team Support</h2>
+                            <p style="margin: 20px 0;line-height: 2em;">Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau, mengevaluasi, dan meningkatkan kinerja organisasi atau bagian tertentu dari perusahaan. Fungsi utama tim ini adalah memastikan bahwa tujuan strategis dan operasional dapat tercapai dengan optimal. Berikut adalah beberapa komponen dan fungsi utama dalam isi dari tim kinerja.</p>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="alert alert-primary" role="alert">
+                                        </span> Pertanian
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="alert alert-primary" role="alert">
+                                        </span> Elektro
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="alert alert-primary" role="alert">
+                                        </span> Informatika
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInRight" data-wow-delay=".5s">
+                            <img class="ss1" src="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
 
         <!-- Start Footer Area -->
         <footer class="footer">

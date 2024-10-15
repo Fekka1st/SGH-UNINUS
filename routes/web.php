@@ -21,7 +21,7 @@ Route::get('/timkinerja', function () {
 // Dashboard route with authentication middleware
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+});
 
 
 Route::middleware('auth')->group(function () {
