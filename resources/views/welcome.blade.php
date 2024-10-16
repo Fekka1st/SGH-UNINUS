@@ -66,18 +66,18 @@
                                     </li>
                                     <!-- Monitoring -->
                                     <li class="nav-item">
-                                        <a class="dd-menu" href="javascript:void(0)" data-bs-toggle="collapse"
+                                        <a class="dd-menu" data-bs-toggle="collapse"
                                             data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent"
                                             aria-expanded="true" aria-label="Toggle navigation">Monitoring</a>
                                         <ul class="sub-menu collapse" id="submenu-1-3" style>
                                             <li class="nav-item m-2">
-                                                <a href="earsip/laman/tim">Smart Green House</a>
+                                                <a href="/Monitoring_greenhouse">Smart Greenhouse</a>
                                             </li>
                                             <li class="nav-item m-2">
-                                                <a href="earsip/laman/wilayah-kerja">Smart Hidroponik</a>
+                                                <a href="Monitoring_hydroponik">Smart Hydroponic</a>
                                             </li>
                                             <li class="nav-item m-2">
-                                                <a href="earsip/laman/wilayah-kerja">Smart Aeroponik</a>
+                                                <a href="Monitoring_aeroponik">Smart Aeroponic</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -112,7 +112,7 @@
                 <div class="col-sm-3 col-md-4" style="text-align: justify">
                     <img src="{{asset('asset/img/logo.png')}}" alt="Logo" class="img img-fluid"
                         style="margin-bottom: 9px">
-                    <p class="text-justify">Smart Green House <i>Adalah</i> Sebuah aplikasi yang membantu meningkatkan
+                    <p class="text-justify">Smart Green House Adalah Sebuah aplikasi yang membantu meningkatkan
                         kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan
                         sistem yang ramah lingkungan dan berkelanjutan </p>
                 </div>
