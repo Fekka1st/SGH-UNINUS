@@ -1,26 +1,18 @@
 @extends('welcome')
 
 @section('content')
-<section class="hero-area " style="background-color: #1C532A">
+<section class="hero-area d-flex align-items-center justify-content-center" 
+    style="background-image: url('https://i.pinimg.com/564x/cc/ac/fa/ccacfa4b58e8c1a30fc2662cb3c6c226.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="brand_color">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div style="text-align: center;">
-                                <h2 style="color: white;">
-                                    <b>TENTANG KAMI</b>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="text-white animate-slide-up">
+            <b>TENTANG KAMI</b>
+          </h2>
         </div>
+      </div>
     </div>
 </section>
-
 <section>
     <div class="container">
         <div class="col-12">
@@ -38,8 +30,8 @@
         <div class="col-md-6">
             <div class="card" style="background-color: #228B22;">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: white;">Penjelasan</h5>
-                    <p class="card-title mt-3" style="color: white; text-align: justify">
+                    <h5 class="card-title" style="color: black;">Penjelasan</h5>
+                    <p class="card-title mt-3" style="color: black; text-align: justify">
                         Smart Green House adalah sebuah aplikasi inovatif yang bertujuan untuk mengintegrasikan
                         teknologi
                         dengan pertanian berkelanjutan. Kami berkomitmen untuk menyediakan solusi yang ramah lingkungan
@@ -48,7 +40,7 @@
                         membantu
                         meningkatkan kualitas hidup serta produktivitas tanaman secara lebih berkelanjutan.
                     </p>
-                    <p style="color: white; text-align: justify">
+                    <p style="color: black; text-align: justify">
                         Tim kami terdiri dari para ahli di bidang pertanian, teknologi informasi, dan lingkungan yang
                         bekerja
                         sama untuk menciptakan sistem yang intuitif dan mudah digunakan. Kami percaya bahwa dengan
@@ -66,56 +58,20 @@
 <div class="container mt-5">
     <h1 class="text-center mb-4">Visi dan Misi</h1>
     <div class="row m-3">
-        <div class="card" style="background-color: #228B22;">
+        <div style="color: white;">
             <div class="containe my-5">
                 <div class="row">
-                    <div class="col-md-6" style="color: white;">
+                    <div class="col-md-6 text-center" style="color: white;">
                         <h2>Visi</h2>
-                        <p>Menjadi perguruan tinggi Islam Ahlussunnah walJama'ah An-Nahdliyah yang unggul di tingkat
-                            nasional dan internasional tahun 2030.</p>
+                        <p></p>
                     </div>
-                    <div class="col-md-6" style="color: white;">
+                    <div class="col-md-6 text-center" style="color: white;">
                         <h2>Misi</h2>
-                        <p>Menyelenggarakan pendidikan, penelitian, dan pengabdian pada masyarakat yang unggul
-                            Mengintegrasikan dan mensyiarkan nilai-nilai Islam Ahlussunnah wal Jama'ah AnNahdliyah dalam
-                            kegiatan pendidika...</p>
+                        <p></p>
                     </div>
 
                 </div>
-
-                <div class="row mt-4">
-                    <div class="col-lg-10 offset-lg-1">
-                        <h3 class="mb-3">Tim Kami</h3>
-                        <p>
-                            Tim Smart Green House terdiri dari individu yang berpengalaman di bidang pertanian,
-                            teknologi, dan bisnis.
-                            Kami memiliki:
-                        </p>
-                        <ul>
-                            <li><strong>Ahli Pertanian:</strong> Mengembangkan dan menyempurnakan algoritma untuk
-                                meningkatkan hasil pertanian.</li>
-                            <li><strong>Pengembang Perangkat Lunak:</strong> Membangun dan memelihara aplikasi yang
-                                ramah pengguna.</li>
-                            <li><strong>Desainer UI/UX:</strong> Menciptakan antarmuka yang intuitif untuk pengalaman
-                                pengguna yang optimal.</li>
-                            <li><strong>Staf Pemasaran:</strong> Mengedukasi pasar tentang manfaat dari penggunaan
-                                teknologi dalam pertanian.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-lg-10 offset-lg-1">
-                        <h3 class="mb-3">Hubungi Kami</h3>
-                        <p>
-                            Untuk informasi lebih lanjut, silakan hubungi kami melalui email di <a
-                                href="mailto:info@smartgreenhouse.com">info@smartgreenhouse.com</a>
-                            atau kunjungi situs web kami di <a
-                                href="https://www.smartgreenhouse.com">www.smartgreenhouse.com</a>.
-                        </p>
-
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

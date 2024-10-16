@@ -267,5 +267,19 @@
 @endsection
 
 @section('script')
+<script>
+        const countElements = document.querySelectorAll('.card-title');
+        countElements.forEach((element) => {
+            let count = 0;
+            const targetCount = parseInt(element.getAttribute('data-target'));
+            const interval = setInterval(() => {
+                count++;
+                element.textContent = count.toString();
+                if (count >= targetCount) {
+                    clearInterval(interval);
+                }
+            }, targetCount === 100 ? 30 : 10);
+        });
 
+    </script>
 @endsection
