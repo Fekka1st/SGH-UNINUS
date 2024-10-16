@@ -105,27 +105,143 @@
             <div class="info-one">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-12">
+                        <div class="row">
                         <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
                             <h2>Team Support</h2>
                             <p style="margin: 20px 0;line-height: 2em;">Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau, mengevaluasi, dan meningkatkan kinerja organisasi atau bagian tertentu dari perusahaan. Fungsi utama tim ini adalah memastikan bahwa tujuan strategis dan operasional dapat tercapai dengan optimal. Berikut adalah beberapa komponen dan fungsi utama dalam isi dari tim kinerja.</p>
                             <div class="row">
-                                <div class="col-12 col-md-4">
-                                    <div class="alert alert-primary" role="alert">
-                                        </span> Pertanian
+                                <div class="row">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Kotak Deskripsi Responsif</title>
+
+                                        <!-- Bootstrap CSS -->
+                                        <link
+                                          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                                          rel="stylesheet">
+
+                                        <style>
+                                          /* Styling body */
+                                          body {
+                                            background-color: #f8f9fa;
+                                            font-family: 'Arial', sans-serif;
+                                          }
+
+                                          /* Alert box dengan hover effect */
+                                          .alert {
+                                            text-align: center;
+                                            padding: 20px;
+                                            cursor: pointer;
+                                            transition: transform 0.2s;
+                                          }
+
+                                          .alert:hover {
+                                            transform: scale(1.05);
+                                          }
+
+                                          /* Styling deskripsi agar rapi dan responsif */
+                                          .description {
+                                            display: none; /* Default tersembunyi */
+                                            background-color: #e9ecef;
+                                            border-radius: 5px;
+                                            padding: 20px;
+                                            margin-top: 15px;
+                                            font-size: 15px;
+                                            color: #333;
+                                            text-align: justify;
+                                          }
+
+                                          /* Responsif untuk teks */
+                                          @media (min-width: 768px) {
+                                            .description {
+                                              font-size: 16px;
+                                              line-height: 1.6;
+                                            }
+                                          }
+
+                                          .container {
+                                            max-width: 900px; /* Membatasi lebar agar rapi di layar besar */
+                                            margin: auto;
+                                          }
+                                        </style>
+                                      </head>
+                                      <body>
+
+                                        <div class="container mt-5">
+                                          <div class="row text-center">
+
+                                            <!-- Kotak Pertanian -->
+                                            <div class="col-12 col-md-4 mb-4">
+                                              <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-pertanian')">
+                                                <strong>Pertanian</strong>
+                                              </div>
+                                              <div id="desc-pertanian" class="description">
+                                                <p>
+                                                  Program studi Pertanian fokus pada pengembangan teknologi dan inovasi dalam bidang pertanian, termasuk teknik irigasi, pengembangan varietas unggul, dan pengelolaan lahan secara berkelanjutan.
+                                                </p>
+                                              </div>
+                                            </div>
+
+                                            <!-- Kotak Elektro -->
+                                            <div class="col-12 col-md-4 mb-4">
+                                              <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-elektro')">
+                                                <strong>Elektro</strong>
+                                              </div>
+                                              <div id="desc-elektro" class="description">
+                                                <p>
+                                                  Elektro mempelajari dasar-dasar kelistrikan, elektronika, dan energi, termasuk teknologi kontrol dan telekomunikasi. Bidang ini berperan penting dalam penerapan energi terbarukan dan pengembangan sistem listrik modern.
+                                                </p>
+                                              </div>
+                                            </div>
+
+                                            <!-- Kotak Informatika -->
+                                            <div class="col-12 col-md-4 mb-4">
+                                              <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-informatika')">
+                                                <strong>Informatika</strong>
+                                              </div>
+                                              <div id="desc-informatika" class="description">
+                                                <p>
+                                                  Informatika fokus pada pengembangan software, analisis data, dan kecerdasan buatan. Bidang ini berperan dalam menciptakan solusi inovatif di era digital dengan mengembangkan aplikasi dan sistem informasi yang memudahkan kehidupan masyarakat.
+                                                </p>
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                        <!-- Bootstrap JS -->
+                                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                                        <script>
+                                          // Fungsi untuk menampilkan/menyembunyikan deskripsi
+                                          function toggleDescription(id) {
+                                            const desc = document.getElementById(id);
+                                            if (desc.style.display === "none" || desc.style.display === "") {
+                                              desc.style.display = "block";
+                                            } else {
+                                              desc.style.display = "none";
+                                            }
+                                          }
+                                        </script>
+
+                                      </body>
+                                        </div>
+                                      </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="alert alert-primary" role="alert">
-                                        </span> Elektro
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="alert alert-primary" role="alert">
-                                        </span> Informatika
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <script>
+                                        // Fungsi untuk menampilkan/menyembunyikan deskripsi
+                                        function toggleDescription(id) {
+                                          const desc = document.getElementById(id);
+                                          if (desc.style.display === "none" || desc.style.display === "") {
+                                            desc.style.display = "block";
+                                          } else {
+                                            desc.style.display = "none";
+                                          }
+                                        }
+                                      </script>
+
+                                      </body>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="info-image wow fadeInRight" data-wow-delay=".5s">
