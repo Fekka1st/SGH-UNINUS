@@ -34,57 +34,70 @@
             <span></span>
         </div>
     </div>
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="nav-inner">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">
-                                <img src="{{asset('asset/img/1.png')}}" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" aria-label="Toggle navigation">Beranda</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Tentang Kami</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Tim Kinerja</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Monitoring</a>
-                                    </li>
-                                </ul>
+    <header class="header navbar-area bg-primary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="nav-inner">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- Brand Logo -->
+                        <a class="navbar-brand" href="#">
+                            <img src="{{asset('asset/img/logo.png')}}" alt="Logo">
+                        </a>
+                        <!-- Mobile Menu Toggler -->
+                        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
 
-                                @auth
-                                <div class="button add-list-button">
-                                    <a href="{{ url('/dashboard') }}" type="button" class="btn">Dashboard</a>
-                                </div>
-                                @endauth
-                                @guest
-                                <div class="button add-list-button">
-                                    <a href="{{ route('login') }}" type="button" class="btn">Login</a>
-                                </div>
-                            @endguest
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ml-auto">
+                                <!-- Beranda -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Beranda</a>
+                                </li>
+                                <!-- Tentang Kami -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tentangkami">Tentang Kami</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="timkinerja">Tim Kinerja</a>
+                                </li>
+                                <!-- Monitoring -->
+                                <li class="nav-item">
+                                    <a class="dd-menu" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">Monitoring</a>
+                                    <ul class="sub-menu collapse show" id="submenu-1-4" style>
+                                        <li class="nav-item"><a href="earsip/laman/tim">Smart Green House</a></li>
+                                        <li class="nav-item"><a href="earsip/laman/wilayah-kerja"></a>Smart Hidroponik</li>
+                                        <li class="nav-item"><a href="earsip/laman/wilayah-kerja"></a>Smart Aeroponik</li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-
+                            <!-- Authenticated User - Dashboard Link -->
+                            @auth
+                            <div class="button add-list-button">
+                                <a href="{{ url('/dashboard') }}" class="btn">Dashboard</a>
                             </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+                            @endauth
+
+                            <!-- Guest User - Login Button -->
+                            @guest
+                            <div class="button add-list-button">
+                                <a href="{{ route('login') }}" class="btn">Login</a>
+                            </div>
+                            @endguest
+                        </div> <!-- /.navbar-collapse -->
+                    </nav> <!-- /.navbar -->
+                </div> <!-- /.nav-inner -->
+            </div> <!-- /.col-lg-12 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</header>
 
     <!-- Start Hero Area -->
     <section id="home" class="hero-area">
@@ -108,7 +121,7 @@
                 </div>
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                        <img src="https://i.pinimg.com/enabled/564x/77/ec/cc/77eccc66d971dc643fd6c43e0ee306cb.jpg"
+                        <img src="https://img.freepik.com/free-photo/farm-workers-collegues-overseeing-organic-sustainable-eco-friendly-bio-green-lettuce-plantation-sunny-weather-local-entrepreneurial-chemical-free-horticultural-greenhouse_482257-64596.jpg?uid=R151835259&ga=GA1.1.365448952.1727150183&semt=ais_hybrid"
                             alt="#">
                     </div>
                 </div>
@@ -131,17 +144,17 @@
                                 membantu meningkatkan kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami
                                 berfokus pada pengembangan sistem yang ramah lingkungan dan berkelanjutan.</p>
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
                                         <span>100%</span> Ramah Lingkungan
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
                                         <span>90%</span> Berkelanjutan
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <div class="alert alert-primary" role="alert">
                                         <span>95%</span> Efisiensi Energi
                                     </div>
@@ -151,7 +164,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="info-image wow fadeInRight" data-wow-delay=".5s">
-                            <img class="ss1" src="assets/greenhouse.jpg" alt="#">
+                            <img class="ss1" src="https://img.freepik.com/free-photo/young-man-apron-working-with-plants-greenery_171337-5944.jpg?t=st=1728876626~exp=1728880226~hmac=eade031fd75f2899cd182fbb74ffafb7432f17e9b46981129c83f159459b39f1&w=740" alt="#">
                         </div>
                     </div>
                 </div>
@@ -162,47 +175,41 @@
 
     <!-- Start Achievement Area -->
     <section class="our-achievement section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                    <div class="title">
-                        <h2>Pencapaian Kami</h2>
-                        <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                <div class="title">
+                    <h2>Pencapaian Kami</h2>
+                    <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">100</span>+</h3>
-                                <p>Rumah Hijau yang Berhasil Dibangun</p>
-                            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12 text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
+                        <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                            <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">300</span>+</h3>
+                            <p>Ekosistem Yang Bermuatan Serta Berkelanjutan</p>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="500">500</span>+</h3>
-                                <p>Tanaman yang Ditanam</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
+                        <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                            <h3 class="counter"><span id="secondo2" class="countup" cup-end="500">300</span>+</h3>
+                            <p>Tanaman Yang Ditanam</p>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="1000">1000</span>+</h3>
-                                <p>Warga yang Terlibat</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="50">50</span>+</h3>
-                                <p>Partnership yang Terjalin</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-10 mx-auto">
+                        <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                            <h3 class="counter"><span id="secondo3" class="countup" cup-end="1000">100</span>+</h3>
+                            <p>Mahasiswa Yang Terlibat Untuk Membuat Smart Green House</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- End Achievement Area -->
 
     <!-- Start Pricing Table Area -->
@@ -286,11 +293,10 @@
     </section>
     < <section id="portfolio" class="portfolio section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Gallery</h2>
+</div><!-- End Section Title -->
 
         <div class="container">
 
@@ -326,7 +332,7 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                        <img src="https://i.pinimg.com/564x/47/fe/0b/47fe0b9eb59f46a8be4964e537f45928.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Branding 1</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -339,7 +345,7 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                        <img src="https://i.pinimg.com/564x/4d/87/84/4d8784fd44f2022c7394b5ed05d0d971.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>App 2</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -352,7 +358,7 @@
                     </div><!-- End Portfolio Item -->
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                        <img src="https://i.pinimg.com/736x/f0/85/7c/f0857c01960a595814a74e94337e885f.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Product 2</h4>
                             <p>Lorem ipsum, dolor sit</p>
@@ -430,54 +436,43 @@
             <!-- Start Footer Top -->
             <div class="footer-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-footer f-about">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="/earsip/assets/images/logo/white-logo.webp" alt="#">
-                                    </a>
-                                </div>
-                                <p>Smart Green House adalah sebuah aplikasi yang membantu meningkatkan kualitas hidup
-                                    dengan
-                                    mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan sistem yang
-                                    ramah
-                                    lingkungan dan berkelanjutan.
-                                    <ul class="social">
-                                        <li><a href="https://www.instagram.com/uninusbandung/" target="_blank"><i
-                                                    class="lni lni-instagram"></i></a></li>
-                                        <li><a href="https://www.youtube.com/@uninusbandung" target="_blank"><i
-                                                    class="lni lni-youtube"></i></a></li>
-                                    </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-12">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <div class="single-footer f-link">
-                                        <h3>Kontak</h3>
-                                        <p>Jl. Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung, Jawa Barat
-                                        </p>
-                                        <p><i class="lni lni-phone"></i> (022) 21000229 </br>
-                                            <i class="lni lni-envelope"></i> https://uninus.ac.id/</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row align-items-start">
+
                     </div>
                 </div>
-            </div>
-            <!--/ End Footer Top -->
-            <div class="footer-bot">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="inner-content ">
-                            <p>Copyright © 2024 <a href="#">Smart Farming</a> All Right Reserved</p>
-                        </div>
+
+                <!-- Contact Section -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="single-footer f-link">
+                        <h3>Kontak</h3>
+                        <p>Jl. Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung, Jawa Barat</p>
+                        <p>
+                            <i class="lni lni-phone"></i> (022) 21000229 <br>
+                            <i class="lni lni-envelope"></i> <a href="https://uninus.ac.id/" target="_blank">https://uninus.ac.id/</a>
+                        </p>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.footer-top -->
+</footer>
+    <!-- End Footer Top -->
+
+    <!-- Start Footer Bottom -->
+    <div class="footer-bot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content text-center">
+                        <p>Copyright © 2024 <a href="#">Smart Green House</a>, Universitas Islam Nusantara</p>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div>
+    <!-- End Footer Bottom -->
+</footer>
+
 
         <!--/ End Footer Area -->
 
