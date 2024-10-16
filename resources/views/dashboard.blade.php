@@ -17,7 +17,7 @@
     <div class="row">
 
         <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
+        <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
+        <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
+        <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -88,12 +88,12 @@
 
     <!-- Chart Row -->
     <div class="row">
-        <div class="col-xl-8 col-lg-7">
+        <div class="col-xl-12 col-lg-7">
             <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Daily Summary</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">AVG Suhu</h6>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
@@ -108,44 +108,6 @@
     <!-- Row for Last Logged Section -->
     <div class="row">
 
-        <!-- Last Logged Card -->
-        <div class="col-xl-4 col-lg-5">
-            <div class="card shadow mb-4">
-                <!-- Card Header -->
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Last Logged</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <div class="list-group">
-                        <!-- User 1 -->
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Harold</h5>
-                                <small>6 hours ago</small>
-                            </div>
-                            <p class="mb-1">September 7, 2019</p>
-                        </a>
-                        <!-- User 2 -->
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Hanzo Miguel</h5>
-                                <small>7 hours ago</small>
-                            </div>
-                            <p class="mb-1">September 7, 2019</p>
-                        </a>
-                        <!-- User 3 -->
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Hendrik Michael</h5>
-                                <small>12 hours ago</small>
-                            </div>
-                            <p class="mb-1">September 7, 2019</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 
