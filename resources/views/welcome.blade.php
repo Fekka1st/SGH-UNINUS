@@ -338,32 +338,11 @@
         </div>
         <!-- Start Footer Area -->
         <footer class="footer">
-    <!-- Start Footer Top -->
-    <footer class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="single-footer f-about">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="{{asset('asset/img/logo.png')}}" alt="Logo">
-                            </a>
-                        </div>
-                        <p>Smart Green House adalah sebuah aplikasi yang membantu meningkatkan kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan sistem yang ramah lingkungan dan berkelanjutan.</p>
-                        <ul class="social">
-                            <li>
-                                <a href="https://www.instagram.com/uninusbandung/" target="_blank">
-                                    <i class="lni lni-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/@uninusbandung" target="_blank">
-                                    <i class="lni lni-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
+            <!-- Start Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row align-items-start">
+
                     </div>
                 </div>
 
