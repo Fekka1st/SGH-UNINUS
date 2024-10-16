@@ -274,25 +274,7 @@
     </section>
     <!--/ End Pricing Table Area -->
 
-    <!-- Start Call To Action Area -->
-    <section class="section call-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="cta-content">
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Gabung dengan Kami</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Bergabunglah dengan kami untuk meningkatkan
-                            kualitas hidup Anda dengan mengintegrasikan teknologi dan alam</p>
-                        <h3 style="color:#fff;font-size: 24px;" class="title">
-                            Universitas Islam Nusantara
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     < <section id="portfolio" class="portfolio section">
-
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
   <h2>Gallery</h2>
@@ -301,128 +283,51 @@
         <div class="container">
 
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="https://i.pinimg.com/564x/63/4a/e1/634ae1c8635965a5392d1eaa6bdbac79.jpg"
-                            class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="https://i.pinimg.com/564x/ad/e9/41/ade941b02e1d5c429a1ff265b7e72ce1.jpg"
-                            class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="https://i.pinimg.com/564x/47/fe/0b/47fe0b9eb59f46a8be4964e537f45928.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 1</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="https://i.pinimg.com/564x/4d/87/84/4d8784fd44f2022c7394b5ed05d0d971.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
 
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="https://i.pinimg.com/736x/f0/85/7c/f0857c01960a595814a74e94337e885f.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 2</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                        <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 3</h4>
-                            <p>Lorem ipsum, dolor sit</p>
-                            <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                </div><!-- End Portfolio Container -->
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+<!-- Gallery -->
 
             </div>
 
