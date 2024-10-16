@@ -153,9 +153,33 @@
                 <h2>Misi</h2>
                 <p>Menyelenggarakan pendidikan, penelitian, dan pengabdian pada masyarakat yang unggul Mengintegrasikan dan mensyiarkan nilai-nilai Islam Ahlussunnah wal Jama'ah AnNahdliyah dalam kegiatan pendidika...</p>
             </div>
-                    </div>
-                </div>
-                
+
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-10 offset-lg-1">
+                <h3 class="mb-3">Tim Kami</h3>
+                <p>
+                    Tim Smart Green House terdiri dari individu yang berpengalaman di bidang pertanian, teknologi, dan bisnis.
+                    Kami memiliki:
+                </p>
+                <ul>
+                    <li><strong>Ahli Pertanian:</strong> Mengembangkan dan menyempurnakan algoritma untuk meningkatkan hasil pertanian.</li>
+                    <li><strong>Pengembang Perangkat Lunak:</strong> Membangun dan memelihara aplikasi yang ramah pengguna.</li>
+                    <li><strong>Desainer UI/UX:</strong> Menciptakan antarmuka yang intuitif untuk pengalaman pengguna yang optimal.</li>
+                    <li><strong>Staf Pemasaran:</strong> Mengedukasi pasar tentang manfaat dari penggunaan teknologi dalam pertanian.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-10 offset-lg-1">
+                <h3 class="mb-3">Hubungi Kami</h3>
+                <p>
+                    Untuk informasi lebih lanjut, silakan hubungi kami melalui email di <a href="mailto:info@smartgreenhouse.com">info@smartgreenhouse.com</a>
+                    atau kunjungi situs web kami di <a href="https://www.smartgreenhouse.com">www.smartgreenhouse.com</a>.
+                </p>
+
             </div>
         </div>
     </div>
@@ -211,39 +235,55 @@
       <!-- Start Footer Bottom -->
       <div class="footer-bot">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="inner-content text-center">
-                <p>Copyright © 2024 <a href="#">Smart Green House</a>, Universitas Islam Nusantara </p>
-              </div>
-            </div>
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- End Footer Bottom -->
-    </footer>
-    <!--/ End Footer Area -->
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top">
-      <i class="lni lni-chevron-up"></i>
-    </a>
-    <!-- ========================= JS here ========================= -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js" integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript">
-      //====== counter up
-      var cu = new counterUp({
-        start: 0,
-        duration: 2000,
-        intvalues: true,
-        interval: 100,
-        append: " ",
-      });
-      cu.start();
-    </script>
-  </body>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content text-center">
+                        <p>Copyright © 2024 <a href="#">Smart Green House</a>, Universitas Islam Nusantara</p>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div>
+    <!-- End Footer Bottom -->
+</footer>
+
+
+        <!--/ End Footer Area -->
+
+        <!-- ========================= scroll-top ========================= -->
+        <a href="#" class="scroll-top">
+            <i class="lni lni-chevron-up"></i>
+        </a>
+
+        <!-- ========================= JS here ========================= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+            integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+            integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+            integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            //====== counter up
+            var cu = new counterUp({
+                start: 0,
+                duration: 2000,
+                intvalues: true,
+                interval: 100,
+                append: " ",
+            });
+            cu.start();
+
+        </script>
+</body>
+
 </html>
