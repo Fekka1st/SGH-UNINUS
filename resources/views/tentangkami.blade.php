@@ -13,6 +13,24 @@
     <link rel="stylesheet" href="{{asset('asset/css/main.css')}}" />
     <title>Smart Green House</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
+    <style>
+     @keyframes slideUp {
+          from {
+                opacity: 0;
+                transform: translateY(50px);
+                }
+           to {
+                opacity: 1;
+                transform: translateY(0);
+               }
+          }
+
+          .animate-slide-up {
+                     animation: slideUp 1.5s ease-in-out;
+                }
+
+    </style>
+
   </head>
   <body>
     <header class="header navbar-area bg-primary">
@@ -80,24 +98,16 @@
       </div>
       <!-- /.container -->
     </header>
-    <section class="hero-area bg-primary">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="brand_color">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-12">
-                  <div style="text-align: center;">
-                    <h2 style="color: white;">
-                      <b>TENTANG KAMI</b>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="hero-area d-flex align-items-center justify-content-center" style="background-image: url('https://img.freepik.com/free-photo/medium-shot-smiley-people-greenhouse_23-2149098324.jpg?t=st=1728985054~exp=1728988654~hmac=fa5ad69cec329563af5412fcd288616024efd630000dbf62a88cd2418cf2ab78&w=826'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="text-white animate-slide-up">
+            <b>TENTANG KAMI</b>
+          </h2>
         </div>
       </div>
+    </div>
     </section>
     
     <section>
@@ -209,20 +219,18 @@
       </footer>
       <!-- End Footer Top -->
       <!-- Start Footer Bottom -->
-      <div class="footer-bot">
+    <div class="footer-bot">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="inner-content text-center">
-                <p>Copyright © 2024 <a href="#">Smart Green House</a>, Universitas Islam Nusantara </p>
-              </div>
-            </div>
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- End Footer Bottom -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content text-center">
+                        <p>Copyright © 2024 <a href="#">Smart Green House</a>, Universitas Islam Nusantara</p>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div>
+    <!-- End Footer Bottom -->
     </footer>
     <!--/ End Footer Area -->
     <!-- ========================= scroll-top ========================= -->
