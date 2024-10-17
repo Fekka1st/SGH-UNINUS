@@ -188,21 +188,7 @@
         cu.start();
 
     </script>
-    <script>
-        const countElements = document.querySelectorAll('.card-title');
-        countElements.forEach((element) => {
-            let count = 0;
-            const targetCount = parseInt(element.getAttribute('data-target'));
-            const interval = setInterval(() => {
-                count++;
-                element.textContent = count.toString();
-                if (count >= targetCount) {
-                    clearInterval(interval);
-                }
-            }, targetCount === 100 ? 30 : 10);
-        });
-
-    </script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
