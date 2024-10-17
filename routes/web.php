@@ -19,6 +19,15 @@ Route::get('/tentangkami', function () {
 Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
+Route::get('/Monitoring_greenhouse', function () {
+    return view('homepage.smartgreenhouse');
+});
+Route::get('/Monitoring_hydroponik', function () {
+    return view('homepage.smarthydroponik');
+});
+Route::get('/Monitoring_aeroponik', function () {
+    return view('homepage.smartaeroponik');
+});
 // Dashboard route with authentication middleware
 
 
