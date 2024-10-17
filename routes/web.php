@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\aerophonicontroller;
+use App\Http\Controllers\dashboardcontroller;
 use App\Http\Controllers\greenhousecontroller;
 use App\Http\Controllers\hydroponikcontroller;
 use App\Http\Controllers\manajemenuser;
@@ -19,12 +20,11 @@ Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
 // Dashboard route with authentication middleware
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+
 
 
 Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [dashboardcontroller::class, 'index']);
     Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
     Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
