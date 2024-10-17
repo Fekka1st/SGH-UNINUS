@@ -33,7 +33,7 @@ Route::get('/Monitoring_aeroponik', function () {
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', [dashboardcontroller::class, 'index']);
+    Route::get('/dashboard', [dashboardcontroller::class, 'index'])->name('dashboard');
     Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
     Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
