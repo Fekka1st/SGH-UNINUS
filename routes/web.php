@@ -28,7 +28,7 @@ Route::get('/Monitoring_hydroponik', function () {
 Route::get('/Monitoring_aeroponik', function () {
     return view('homepage.smartaeroponik');
 });
-// Dashboard route with authentication middleware
+
 
 
 
@@ -38,7 +38,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
     Route::get('/profile_akun', [profile::class, 'index']);
+
+    //manajement user
     Route::resource('/manajemen_user', manajemenuser::class);
+
+    //hydroponik
+    //aerophonik
+    //greenhouse
+    //report
 });
 
 require __DIR__.'/auth.php';
