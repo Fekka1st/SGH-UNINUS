@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\aerophonicontroller;
+use App\Http\Controllers\dashboardcontroller;
 use App\Http\Controllers\greenhousecontroller;
 use App\Http\Controllers\hydroponikcontroller;
 use App\Http\Controllers\manajemenuser;
@@ -18,15 +19,37 @@ Route::get('/tentangkami', function () {
 Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
+<<<<<<< HEAD
+
+=======
+Route::get('/Monitoring_greenhouse', function () {
+    return view('homepage.smartgreenhouse');
+});
+Route::get('/Monitoring_hydroponik', function () {
+    return view('homepage.smarthydroponik');
+});
+Route::get('/Monitoring_aeroponik', function () {
+    return view('homepage.smartaeroponik');
+});
+>>>>>>> 78fb1d4038f458ceda2aff35d5c8e8a709282e95
+
 
 
 
 Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [dashboardcontroller::class, 'index'])->name('dashboard');
     Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
     Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
     Route::get('/profile_akun', [profile::class, 'index']);
+
+    //manajement user
     Route::resource('/manajemen_user', manajemenuser::class);
+
+    //hydroponik
+    //aerophonik
+    //greenhouse
+    //report
 });
 
 require __DIR__.'/auth.php';
