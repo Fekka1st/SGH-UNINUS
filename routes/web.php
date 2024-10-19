@@ -18,10 +18,7 @@ Route::get('/tentangkami', function () {
 Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
-// Dashboard route with authentication middleware
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+
 
 
 Route::middleware('auth')->group(function () {
