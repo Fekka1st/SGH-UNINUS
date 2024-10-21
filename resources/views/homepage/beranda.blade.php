@@ -1,8 +1,10 @@
 @extends('welcome')
-
+<!-- link fon -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<!-- end link fon -->
 @section('content')
 <section id="home" class="hero-area">
-    <div class="container">
+    <div class="container" style="font-family: 'Times New Roman', Times, serif;">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-12 col-12 mb-4">
                 <!-- Margin bawah -->
@@ -10,7 +12,7 @@
                     <h1 class="wow fadeInLeft" data-wow-delay=".4s">Aplikasi Smart Green House</h1>
                     <h1 class="wow fadeInLeft" data-wow-delay=".6s">Universitas Islam Nusantara</h1>
                     <h2 class="wow fadeInLeft"
-                        style="color: antiquewhite; font-size: 23px; line-height: 1.5em; margin-top: 20px;"
+                        style="color: white; font-size: 23px; line-height: 1.5em; margin-top: 20px;"
                         data-wow-delay=".8s"> Mengintegrasikan Teknologi dan Alam untuk Meningkatkan Kualitas Hidup
                     </h2>
                     <div class="button wow fadeInLeft" data-wow-delay=".8s">
@@ -54,30 +56,30 @@
 <!-- End Hero Area -->
 <div id="about_us"></div>
 <!-- Start Features Area -->
-<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px">
+<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px; font-family: 'Book Antiqua', serif;">
     <div class="container">
         <div class="info-one">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="info-text wow fadeInLeft" data-aos="zoom-out-right">
                         <h2>Smart Green House</h2>
-                        <p style="margin: 20px 0; line-height: 2em; text-align: justify;"> Smart Green House adalah
+                        <p style="margin: 20px 0; line-height: 2em; text-align: justify; color: black;"> Smart Green House adalah
                             sebuah aplikasi yang membantu meningkatkan kualitas hidup dengan mengintegrasikan
                             teknologi dan alam. Kami berfokus pada pengembangan sistem yang ramah lingkungan dan
                             berkelanjutan. </p>
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <div class="alert alert-primary" style="background-color: #d6ffcf" role="alert">
+                                <div class="alert alert-primary" style="background-color: #d6ffcf; color: black;" role="alert">
                                     <span>100%</span> Ramah Lingkungan
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="alert alert-primary" style="background-color: #d6ffcf" role="alert">
-                                    <span>80%</span> Tanpa Campur Tangan Manusia
+                                <div class="alert alert-primary" style="background-color: #d6ffcf; color: black;" role="alert">
+                                    <span>75%</span> Menggunakan Teknologi
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="alert alert-primary" style="background-color: #d6ffcf" role="alert">
+                                <div class="alert alert-primary" style="background-color: #d6ffcf; color: black;" role="alert">
                                     <span>95%</span> Efisiensi Energi
                                 </div>
                             </div>
@@ -127,7 +129,7 @@
 </section>
 <!-- End Features Area -->
 <!-- Start Achievement Area -->
-<section class="our-achievement section" style="background-color: #1C532A">
+<section class="our-achievement section" style="background-color: #1C532A; font-family: 'Book Antiqua', serif;">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
@@ -162,7 +164,7 @@
                         <div class="h-100">
                             <div class="card-body text-center" style="color: white;">
                                 <h1 class="card-title" style="color: white;" data-target="100">0</h1>
-                                <p class="card-text">Mahasiswa Yang Terlibat Untuk Membuat Smart Green House</p>
+                                <p class="card-text">Mahasiswa Berkontribusi Menanam Beragam Jenis Tanaman dalam Smart Green House</p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +179,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title text-center">
+                <div class="section-title text-center" style="font-family: 'Book Antiqua', serif;">
                     <h2 data-aos="zoom-out-up" data-wow-delay=".4s">Media Yang Digunakan</h2>
                     <p data-aos="zoom-out-up" data-wow-delay=".6s">Berikut adalah beberapa media yang kami gunakan
                         untuk metode penanaman</p>
@@ -188,10 +190,10 @@
             <!-- Membuat grid lebih responsif -->
             <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <!-- Menambah jarak bawah untuk mobile -->
-                <div class="single-table" style="height:100%" data-wow-delay=".2s">
-                    <div class="table-head text-center">
-                        <h4 class="title">Smart Green House</h4>
-                        <p style="text-align: justify;">Smart Green House adalah sistem otomatis yang memantau dan
+                <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif; " data-wow-delay=".2s">
+                    <div class="text-center">
+                        <h4 class="title" style=" margin-top: 50px; color: white;">Smart Green House</h4>
+                        <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Smart Green House adalah sistem otomatis yang memantau dan
                             mengelola kondisi lingkungan rumah kaca menggunakan teknologi seperti sensor dan IoT.
                             Ini membantu meningkatkan efisiensi energi, air, dan hasil panen dengan pemantauan
                             real-time serta pengaturan otomatis untuk pertumbuhan tanaman yang optimal.</p>
@@ -199,10 +201,10 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="zoom-in-down">
-                <div class="single-table" style="height:100%" data-wow-delay=".4s">
-                    <div class="table-head text-center">
-                        <h4 class="title">Smart Hidroponik</h4>
-                        <p style="text-align: justify;">Smart Hidroponik adalah sistem pertanian tanpa tanah yang
+                <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".4s">
+                    <div class="text-center">
+                        <h4 class="title" style=" margin-top: 50px; color: white;">Smart Hidroponik</h4>
+                        <p style="text-align: justify;margin-right: 35px; margin-bottom: 35px; margin-left: 35px;color: white;">Smart Hidroponik adalah sistem pertanian tanpa tanah yang
                             menggunakan teknologi untuk mengontrol dan memantau kondisi pertumbuhan tanaman secara
                             otomatis, seperti pH, suhu, dan nutrisi, guna meningkatkan efisiensi dan hasil panen.
                         </p>
@@ -210,10 +212,10 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="zoom-in-down">
-                <div class="single-table" style="height:100%" data-wow-delay=".6s">
-                    <div class="table-head text-center">
-                        <h4 class="title">Smart Aeroponik</h4>
-                        <p style="text-align: justify;">Smart Aeroponik adalah sistem pertanian tanpa tanah yang
+                <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".6s">
+                    <div class="text-center">
+                        <h4 class="title" style=" margin-top: 50px; color: white;">Smart Aeroponik</h4>
+                        <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Smart Aeroponik adalah sistem pertanian tanpa tanah yang
                             menyemprotkan kabut nutrisi langsung ke akar tanaman. Dengan teknologi otomatis, sistem
                             ini memantau dan mengontrol kelembapan, suhu, dan nutrisi untuk efisiensi pertumbuhan
                             tanaman yang optimal.</p>
@@ -223,42 +225,35 @@
         </div>
     </div>
 </section>
-<section class="our-achievement section" style="background-color: #1C532A">
+
+<!-- Galeri -->
+<section class="our-achievement section" style="background-color: #1C532A; padding: 20px; font-family: 'Times New Roman', Times, serif;">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                <div class="title text-center">
-                    <h2>Galery</h2>
-                    <p>Berikut adalah beberapa foto smart green house</p>
-                </div>
+        <div class="row text-center mb-4">
+            <div class="col-lg-12" data-aos="fade-down">
+                <h2 class="text-white">Galeri</h2>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-12 col-md-12 col-12 text-center">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img src="{{asset('asset/img/sg1.jpg')}}" data-aos="flip-left"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                        <img src="{{asset('asset/img/sg2.jpg')}}" data-aos="flip-right"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="{{asset('asset/img/sg3.jpg')}}" data-aos="flip-up"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-                        <img src="{{asset('asset/img/sg4.jpg')}}" data-aos="flip-down"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="{{asset('asset/img/sg5.jpg')}}" data-aos="fade-up-right"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-                        <img src="{{asset('asset/img/sg6.jpg')}}" data-aos="fade-up-left"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-                    </div>
-                </div>
+        <div class="row">
+            <!-- Kolom 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
+                <img src="{{asset('asset/img/sg1.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-right">
+                <img src="{{asset('asset/img/sg2.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 2" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-right">
+            </div>
+            <!-- Kolom 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
+                <img src="{{asset('asset/img/sg3.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 3" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-right">
+                <img src="{{asset('asset/img/sg4.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 4" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-left">
+            </div>
+            <!-- Kolom 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
+                <img src="{{asset('asset/img/sg5.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 5" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-left">
+                <img src="{{asset('asset/img/sg6.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 6" style="width: 500px; height: 200px; object-fit: cover;"  data-aos="fade-left">
             </div>
         </div>
     </div>
 </section>
+<!-- END Galeri -->
 </div>
 @endsection
 
