@@ -1,8 +1,7 @@
 @extends('welcome')
 
 @section('content')
-<section class="hero-area d-flex align-items-center justify-content-center" 
-    style="background-image: url('https://i.pinimg.com/564x/cc/ac/fa/ccacfa4b58e8c1a30fc2662cb3c6c226.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
+<section class="hero-area d-flex align-items-center justify-content-center" >
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -30,48 +29,14 @@
         <div class="col-md-6">
             <div class="card" style="background-color: #228B22;">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: black;">Penjelasan</h5>
-                    <p class="card-title mt-3" style="color: black; text-align: justify">
-                        Smart Green House adalah sebuah aplikasi inovatif yang bertujuan untuk mengintegrasikan
-                        teknologi
-                        dengan pertanian berkelanjutan. Kami berkomitmen untuk menyediakan solusi yang ramah lingkungan
-                        dan
-                        efisien bagi para petani dan penghobi tanaman. Melalui penggunaan teknologi canggih, kami
-                        membantu
-                        meningkatkan kualitas hidup serta produktivitas tanaman secara lebih berkelanjutan.
+                    <h5 class="card-title" style="color: white;">Penjelasan</h5>
+                    <p class="card-title mt-3" style="color: white; text-align: justify">
+                    Greenhouse kami dibentuk pada tahun 2024 oleh Universitas Islam Nusantara dengan tujuan menyediakan solusi pertanian yang ramah lingkungan dan efisien. Dengan fokus pada teknologi hidroponik dan aeroponik, kami berupaya mendukung pertumbuhan tanaman berkualitas tinggi sepanjang tahun. Proyek ini tidak hanya bertujuan untuk meningkatkan produktivitas pertanian, tetapi juga untuk mengedukasi masyarakat dan mahasiswa tentang pentingnya pertanian modern yang berkelanjutan.
                     </p>
-                    <p style="color: black; text-align: justify">
-                        Tim kami terdiri dari para ahli di bidang pertanian, teknologi informasi, dan lingkungan yang
-                        bekerja
-                        sama untuk menciptakan sistem yang intuitif dan mudah digunakan. Kami percaya bahwa dengan
-                        memberikan akses
-                        kepada pengguna untuk memantau dan mengelola kondisi tanaman mereka secara real-time, kami dapat
-                        membantu mereka
-                        mencapai hasil yang lebih baik dan konsisten.
+                    <p style="color: white; text-align: justify">
+                    Melalui penelitian dan inovasi, kami mengembangkan metode pertanian yang hemat sumber daya dan efektif dalam berbagai kondisi iklim. Greenhouse ini juga berfungsi sebagai laboratorium hidup, di mana mahasiswa dan peneliti dapat mempelajari serta mengimplementasikan teknologi terbaru dalam pertanian presisi. Kami berkolaborasi dengan berbagai pihak untuk memastikan bahwa setiap aspek operasional kami memberikan manfaat positif, baik bagi lingkungan maupun masyarakat sekitar.
                     </p>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container mt-5">
-    <h1 class="text-center mb-4">Visi dan Misi</h1>
-    <div class="row m-3">
-        <div style="color: white;">
-            <div class="containe my-5">
-                <div class="row">
-                    <div class="col-md-6 text-center" style="color: white;">
-                        <h2>Visi</h2>
-                        <p></p>
-                    </div>
-                    <div class="col-md-6 text-center" style="color: white;">
-                        <h2>Misi</h2>
-                        <p></p>
-                    </div>
-
-                </div>
-                
             </div>
         </div>
     </div>

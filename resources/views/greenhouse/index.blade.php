@@ -12,19 +12,14 @@
     <h1 class="h3 mb-2 text-gray-800">Greenhouse</h1>
 
     <div class="row">
-
-        <!-- Earnings (Monthly) Card Example -->
+        <!-- Suhu Card -->
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Suhu
-                            </div>
-                                <div>
-                                    30°C
-                                </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Suhu</div>
+                            <div>30°C</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-thermometer-full"></i>
@@ -33,17 +28,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- Kelembapan Card -->
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Kelembapan
-                            </div>
-                                <div>
-                                    50%
-                                </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelembapan</div>
+                            <div>50%</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-wind"></i>
@@ -52,36 +45,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- CO2 Card -->
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                CO2
-                            </div>
-                                <div>
-                                    2000PPM
-                                </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">CO2</div>
+                            <div>2000PPM</div>
                         </div>
                         <div class="col-auto">
-                        <i class="fas fa-spa"></i>
+                            <i class="fas fa-spa"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Intensitas Cahaya Card -->
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Intensitas Cahaya
-                            </div>
-                                <div>
-                                    2000 lx
-                                </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Intensitas Cahaya</div>
+                            <div>2000 lx</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-lightbulb"></i>
@@ -90,17 +79,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- Pemakaian Air Card -->
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Pemakaian Air
-                            </div>
-                                <div>
-                                    1000 Liter
-                                </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Pemakaian Air</div>
+                            <div>1000 Liter</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-water"></i>
@@ -109,22 +96,17 @@
                 </div>
             </div>
         </div>
-
-
-    <!-- Content Row -->
-    <div class="row">
-
+    </div>
         
-    
-    
-        <div class="col-xl-8 col-lg-7">
+        
+        
+    <div class="row">
+        <!-- Grafik Suhu -->
+        <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">AVG Suhu</h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
                         <canvas id="suhu"></canvas>
@@ -132,28 +114,68 @@
                 </div>
             </div>
         </div>
-        <!-- Kontroling Chart -->
-        <div class="col-xl-4 col-lg-5">
+
+        <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 ">
+                <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
-                    
                 </div>
-                <div class="card-body">
-                <h1>Kontrol Suhu</h1>
-                    <form id="temperatureForm">
-                        <label for="temperature">Masukkan Suhu (°C):</label>
-                        <input type="number" id="temperature" name="temperature" required />
-                        <button type="submit">Submit</button>
-                    </form>
-                <div class="result" id="result"></div>
+                    <div class="card-body">
+                    <div style="text-align: center;"><br>
+                        <button id="fanButton" class="btn" onclick="toggleFan()" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+                            Kipas Menyala
+                        </button>
+                    </div><br>
+                    <div style="text-align: center">
+                        <label>Auto</label><br>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#greenhouseadjusttable">
+                        Settings
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div>
+                                    <label for="minTemp">Minimal Suhu: </label>
+                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="maxTemp">Maksimal Suhu: </label>
+                                    <input type="number" id="maxTemp" value="100" style="width: 100px; border: none; padding: 5px;" />
+                                </div>
+                            </div>
+
+                            <div class="result" id="result"></div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set Suhu</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="result" id="result"></div>
+                    </div><br>
                 </div>
             </div>
-        </div>
-
-        <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
+       
+        
+        
+            <div class="col-xl-6 col-md-6 mb-4">
+            <div class="card shadow mb-4">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
@@ -192,69 +214,37 @@
                     </div>
                 </div>
             </div>
-        </div>
-</div>
-<div class='row'>
-        <div class="col-xl-8 col-lg-7">
+        </div><div class="col-xl-6 col-md-6 mb-4">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">AVG Kelembapan</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <div class="chart-area">
-                        <canvas id="kelembapan"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Kontroling Chart -->
-        <div class="col-xl-4 col-lg-5">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
-                </div>
-                <!-- Card Body -->
-
-                
-            </div>
-        </div>
-
-        <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text- text-uppercase mb-1">
                                 <h5>Kelembapan : 1</h5>
-                                <h6>500%</h6>
+                                <h6>29°C</h6>
                                 <div>
-                                <h5>Kelembapan : 2</h5>
-                                <h6>500%</h2>
+                                <h5>Kelembapan : 1</h5>
+                                <h6>28°C</h2>
                                 </div>
                                 <div>
-                                <h5>Kelembapan : 3</h5>
-                                <h6>500%</h2>
+                                <h5>Kelembapan : 1</h5>
+                                <h6>29°C</h2>
                                 </div>
                                 <div>
-                                <h5>Kelembapan : 4</h5>
-                                <h6>500%</h2>
+                                <h5>Kelembapan : 1</h5>
+                                <h6>28°C</h2>
                                 </div>
                                 <div>
-                                <h5>Kelembapan : 5</h5>
-                                <h6>500%</h2>
+                                <h5>Kelembapan : 1</h5>
+                                <h6>28°C</h2>
                                 </div>
                                 <div>
-                                <h5>Kelembapan : 6</h5>
-                                <h6>500%</h2>
+                                <h5>Kelembapan : 1</h5>
+                                <h6>29°C</h2>
                                 </div>
                                 <div>
-                                <h5>Kelembapan : 7</h5>
-                                <h6>500%</h2>
+                                <h5>Kelembapan : 1</h5>
+                                <h6>28°C</h2>
                                 </div>
                             </div>
                         </div>
@@ -264,17 +254,28 @@
                     </div>
                 </div>
             </div>
-    </div>
-</div>
-    <div class='row'>
-        <div class="col-xl-8 col-lg-7">
+        </div>
+
+        <!-- Grafik Kelembapan -->
+        <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">AVG Kelembapan</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="kelembapan"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grafik CO2 -->
+        <div class="col-xl-6 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">CO2</h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
                         <canvas id="co2"></canvas>
@@ -283,30 +284,12 @@
             </div>
         </div>
 
-        <!-- Kontroling Chart -->
-        <div class="col-xl-4 col-lg-5">
+        <!-- Grafik Intensitas Cahaya -->
+        <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <div class="chart-pie pt-4">
-                        <canvas id=""></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-8 col-lg-7">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 class="m-0 font-weight-bold text-primary">Intensitas Cahaya</h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
                         <canvas id="cahaya"></canvas>
@@ -315,30 +298,12 @@
             </div>
         </div>
 
-        <!-- Kontroling Chart -->
-        <div class="col-xl-4 col-lg-5">
+        <!-- Grafik Konsumsi Air -->
+        <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <div class="chart-pie pt-4">
-                        <canvas id=""></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-8 col-lg-7">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 class="m-0 font-weight-bold text-primary">Konsumsi Air</h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
                         <canvas id="air"></canvas>
@@ -346,28 +311,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 col-lg-5">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <div class="chart-pie pt-4">
-                        <canvas id=""></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-    
-
 </div>
-<!-- /.container-fluid -->
-
 </div>
+
 @endsection
 
 
@@ -842,5 +789,6 @@ Chart.defaults.global.defaultFontFamily = 'Nunito',
           resultDiv.textContent =
             "Suhu diatur ke : " + temperature + "°C";
         });
+        
 </script>
 @endsection
