@@ -12,16 +12,16 @@
 
     <div class="container text-center position-relative" style="z-index: 2;">
         <div class="row align-items-center">
-            <div class="col-3 col-md-2 text-left">
-                <img src="https://i.pinimg.com/564x/74/ea/e9/74eae96448daecd195e98d0faa02606c.jpg"
-                     alt="Logo Kiri" class="img-fluid" style="max-width: 100px;">
-            </div>
-            <div class="col-6 col-md-8">
-                <h2 class="text-white fw-bold mb-0" style="font-size: 3rem;">Tim Kinerja</h2>
-            </div>
             <div class="col-3 col-md-2 text-right">
-                <img src="https://i.pinimg.com/236x/20/0c/31/200c3102f139b46bd89ab7e02f1d08e2.jpg"
-                     alt="Logo Kanan" class="img-fluid" style="max-width: 100px;">
+                <img src="{{ asset('asset/img/ftannew.png') }}" alt="Logo Kiri" class="img-fluid logo-small">
+            </div>
+
+            <div class="col-6 col-md-8">
+                <h2 class="title-large mb-0">Tim Kinerja</h2>
+            </div>
+
+            <div class="col-3 col-md-2 text-right">
+                <img src="{{ asset('asset/img/ftek.png') }}" alt="Logo Kanan" class="img-fluid logo-small">
             </div>
         </div>
     </div>
