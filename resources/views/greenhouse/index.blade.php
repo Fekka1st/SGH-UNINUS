@@ -3,6 +3,7 @@
 
 @section('css')
 
+
 @endsection
 
 @section('content')
@@ -79,6 +80,7 @@
                 </div>
             </div>
         </div>
+        
 
         <!-- Pemakaian Air Card -->
         <div class="col-xl-4 col-md-6 mb-4">
@@ -284,6 +286,21 @@
             </div>
         </div>
 
+        <div class="container-fluid">
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Suhu dan Kelembapan</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- Grafik Intensitas Cahaya -->
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
@@ -297,6 +314,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <!-- Grafik Konsumsi Air -->
         <div class="col-xl-6 col-lg-7">
@@ -789,6 +808,11 @@ Chart.defaults.global.defaultFontFamily = 'Nunito',
           resultDiv.textContent =
             "Suhu diatur ke : " + temperature + "°C";
         });
+    
+        
+
+        
+    
         
 </script>
 @endsection
