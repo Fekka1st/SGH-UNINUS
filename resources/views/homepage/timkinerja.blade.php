@@ -146,6 +146,11 @@
                                 <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
                                 <p>M. Sya'dan M</p>
                             </div>
+                            </div>
+                                <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>M Alviansyah</p>
+                            </div>
                             <!-- Add more Mahasiswa as needed -->
                         </div>
                     </div>
@@ -162,12 +167,17 @@
                             <div class="col-6 mb-3">
                                 <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
                                      alt="Hamdi Sholahudin" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Hamdi Sholahudin</p>
+                                <p>Hamdi Sholahudin S.T</p>
                             </div>
                             <div class="col-6 mb-3">
                                 <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
                                      alt="Ferry Aditya Herman" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Ferry Aditya Herman</p>
+                                <p>Ferry Aditya Herman S.T</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
+                                     alt="Pak Dadang" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Pak Dadang</p>
                             </div>
                             <!-- Add more vendors as needed -->
                         </div>
