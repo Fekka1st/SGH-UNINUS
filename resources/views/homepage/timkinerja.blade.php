@@ -16,8 +16,8 @@
                 <img src="{{ asset('asset/img/ftannew.png') }}" alt="Logo Kiri" class="img-fluid logo-small">
             </div>
 
-            <div class="col-6 col-md-8">
-                <h2 class="title-large mb-0">Tim Kinerja</h2>
+            <div class="col-6 col-md-8 text-center">
+                <h2 class="title-large mb-0 tim-kinerja-text">Tim Kinerja</h2>
             </div>
 
             <div class="col-3 col-md-2 text-right">
@@ -28,158 +28,67 @@
 </section>
 
 <!-- Team Support Section -->
-<section id="overview" class="app-info section py-5">
+<section id="overview" class="app-info section" style="padding-top:70px; padding-bottom:70px;">
     <div class="container">
-        <h2 class="text-center mb-5">Team Support</h2>
-        <p class=" mb-5" style="line-height: 1.8;text-align: justify">
-            <strong style="color: black;">
-                Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau,
-                mengevaluasi, dan meningkatkan kinerja organisasi. Berikut adalah beberapa komponen dan fungsi utama
-                dalam isi dari tim kinerja.
-            </strong>
-        </p>
-
-        <!-- Team Categories -->
-        <div class="row text-center mt-5">
-            <!-- Dosen Section -->
-            <div class="col-12 col-md-4 mb-4">
-                <div class="box p-4 border bg-light" onclick="toggleVisibility('dosenNames')">
-                    <h5 class="fw-bold">Dosen</h5>
-                    <hr>
-                    <div id="dosenNames" class="d-none">
-                        <div class="row">
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Ir. Lilis Irmawatie" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Ir. Lilis Irmawatie, M.M.Pd.</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Ganis Sanhaji" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Ganis Sanhaji, S.Si, M.Sc.</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Galih" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Galih, S.T., M.Kom.</p>
-                            </div>
-                            <!-- Add more Dosen as needed -->
-                        </div>
+        <div class="info-one">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="info-text wow fadeInLeft text-center" data-wow-delay=".3s">
+                        <h2>Team Support</h2>
+                        <p style="margin: 20px 0; line-height: 2em;">
+                            Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau, mengevaluasi, dan meningkatkan kinerja organisasi atau bagian tertentu dari perusahaan. Fungsi utama tim ini adalah memastikan bahwa tujuan strategis dan operasional dapat tercapai dengan optimal. Berikut adalah beberapa komponen dan fungsi utama dalam isi dari tim kinerja.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Mahasiswa Section -->
-            <div class="col-12 col-md-4 mb-4">
-                <div class="box p-4 border bg-light" onclick="toggleVisibility('mahasiswaNames')">
-                    <h5 class="fw-bold">Mahasiswa</h5>
-                    <hr>
-                    <div id="mahasiswaNames" class="d-none">
-                        <div class="row">
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Imam Ramadhan" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Imam Ramadhan</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Herlan Syah</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Decky Putra K</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Imam Ramadhan" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Julian</p>
-                            </div>
-                                <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>M. Iqbal Rizaldi</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Marvin</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Defany Kuswandi</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Imam Ramadhan" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Azis Maulana</p>
-                            </div>
-                                <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Indra Saputra</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Boyke Adam</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Aby Herdiansyah</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Imam Ramadhan" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Anif Alifianto</p>
-                            </div>
-                                <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Zen Ahlil Baeri</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Rizki Hendriawan</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Ipin Ahmad S</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Imam Ramadhan" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Adam Panji S</p>
-                            </div>
-                                <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>M. Sya'dan M</p>
-                            </div>
-                            </div>
-                                <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>M Alviansyah</p>
-                            </div>
-                            <!-- Add more Mahasiswa as needed -->
+            <!-- Team Categories -->
+            <div class="row text-center mt-5">
+                <!-- Dosen Section -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-dosen')">
+                        <strong>Dosen</strong>
+                    </div>
+                    <div id="desc-dosen" class="description">
+                        <div class="user-item">
+                            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dosen">
+                            <span>Ir. Lilis Irmawatie, M.M.Pd.</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Vendor Technology Section -->
-            <div class="col-12 col-md-4 mb-4">
-                <div class="box p-4 border bg-light" onclick="toggleVisibility('vendorNames')">
-                    <h5 class="fw-bold">Vendor Technology</h5>
-                    <hr>
-                    <div id="vendorNames" class="d-none">
-                        <div class="row">
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Hamdi Sholahudin" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Hamdi Sholahudin S.T</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Ferry Aditya Herman" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Ferry Aditya Herman S.T</p>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg"
-                                     alt="Pak Dadang" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
-                                <p>Pak Dadang</p>
-                            </div>
-                            <!-- Add more vendors as needed -->
+                <!-- Mahasiswa Section -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-mahasiswa')">
+                        <strong>Mahasiswa</strong>
+                    </div>
+                    <div id="desc-mahasiswa" class="description">
+                        <div class="user-item">
+                            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Mahasiswa">
+                            <span>Imam Ramadhan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vendor Technology Section -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-vendor')">
+                        <strong>Vendor</strong>
+                    </div>
+                    <div id="desc-vendor" class="description">
+                        <strong>Vendor System</strong>
+                        <div class="user-item">
+                            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Vendor">
+                            <span>Hamdi Sholahudin</span>
+                        </div>
+                        <div class="user-item">
+                            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Vendor">
+                            <span>Ferry Aditya Herman</span>
+                        </div>
+                        <strong>Vendor Green House</strong>
+                        <div class="user-item">
+                            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Vendor">
+                            <span>Pak Dadang</span>
                         </div>
                     </div>
                 </div>
@@ -188,12 +97,127 @@
     </div>
 </section>
 
+
+@Section ('css')
+<!-- Bootstrap CSS -->
+{{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .alert {
+        text-align: center;
+        padding: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+    }
+
+    .alert:hover {
+        transform: scale(1.05);
+    }
+
+    /* Kotak deskripsi */
+    .description {
+        display: none;
+        background-color: #e9ecef;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 15px;
+        color: #333;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease, opacity 0.6s ease;
+        opacity: 0;
+    }
+
+    .description.show {
+        display: block;
+        max-height: 600px;
+        opacity: 1;
+    }
+
+    .user-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    .user-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        object-fit: cover;
+    }
+
+    /* Responsif: Tampilan layar lebih besar */
+    @media (min-width: 768px) {
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .user-item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    /* Atur ukuran logo kiri dan kanan agar seragam */
+.logo-small {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Responsif pada teks "Tim Kinerja" */
+.tim-kinerja-text {
+    color: white; /* Ubah warna teks menjadi putih */
+    font-size: 24px; /* Ukuran font default */
+    font-weight: bold; /* Buat teks lebih tebal */
+}
+
+@media (min-width: 768px) {
+    .tim-kinerja-text {
+        font-size: 32px; /* Ukuran font untuk layar menengah ke atas */
+    }
+}
+
+@media (min-width: 992px) {
+    .tim-kinerja-text {
+        font-size: 40px; /* Ukuran font lebih besar untuk layar desktop */
+    }
+}
+
+</style>
+
 @section ('script')
-<!-- JavaScript to Toggle Visibility -->
+<!-- Bootstrap JS -->
+{{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> --}}
+
 <script>
-    function toggleVisibility(id) {
-        const element = document.getElementById(id);
-        element.classList.toggle('d-none');
+    function toggleDescription(id) {
+        const selectedDesc = document.getElementById(id);
+        const isCurrentlyShown = selectedDesc.classList.contains('show');
+
+        // Tutup semua deskripsi yang terbuka
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach(desc => desc.classList.remove('show'));
+
+        // Buka deskripsi yang dipilih jika belum terbuka
+        if (!isCurrentlyShown) {
+            selectedDesc.classList.add('show');
+        }
     }
 </script>
+
 @endsection
