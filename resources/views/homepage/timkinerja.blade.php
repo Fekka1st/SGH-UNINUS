@@ -50,10 +50,12 @@
                         <strong>Dosen</strong>
                     </div>
                     <div id="desc-dosen" class="description">
+                        <strong>Fakultas Pertanian</strong>
                         <div class="user-item">
                             <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dosen">
                             <span>Ir. Lilis Irmawatie, M.M.Pd.</span>
                         </div>
+                        <a href="https://www.linkedin.com/in/linkedinusername" class="btn btn-primary mt-2" target="_blank">LinkedIn Profile</a>
                     </div>
                 </div>
 
@@ -63,10 +65,12 @@
                         <strong>Mahasiswa</strong>
                     </div>
                     <div id="desc-mahasiswa" class="description">
+                        <strong>Fakultas Pertanian</strong>
                         <div class="user-item">
                             <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Mahasiswa">
                             <span>Imam Ramadhan</span>
                         </div>
+                        <a href="https://www.linkedin.com/in/linkedinusername" class="btn btn-primary mt-2" target="_blank">LinkedIn Profile</a>
                     </div>
                 </div>
 
