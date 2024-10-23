@@ -54,33 +54,30 @@
 </section>
 <!-- End Hero Area -->
 <div id="about_us"></div>
-<!-- Start Features Area -->
-<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px; font-family: 'Book Antiqua', serif;">
+<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px">
     <div class="container">
         <div class="info-one">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="info-text wow fadeInLeft" data-aos="zoom-out-right">
                         <h2>Smart Green House</h2>
-
-                        <p style="margin: 20px 0; line-height: 2em; text-align: justify;"> Greenhouse kami dibentuk pada tahun 2024 oleh Universitas Islam Nusantara dengan tujuan menyediakan solusi pertanian yang ramah lingkungan dan efisien.
-                        <a href="tentangkami" style="color: blue; text-decoration: none;">Baca Selengkapnya</a>
-                        </p>
-
+                        <p style="margin: 20px 0; line-height: 2em; text-align: justify;"> Smart Green House adalah
+                            sebuah aplikasi yang membantu meningkatkan kualitas hidup dengan mengintegrasikan
+                            teknologi dan alam. Kami berfokus pada pengembangan sistem yang ramah lingkungan dan
+                            berkelanjutan. </p>
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <div class="alert alert-primary" style="background-color: #d6ffcf; color: black;" role="alert">
+                                <div class="alert alert-primary" style="background-color: #d6ffcf" role="alert">
                                     <span>100%</span> Ramah Lingkungan
-                                </div>
-
-                            <div class="col-12 col-md-4">
-                                <div class="alert alert-primary" style="background-color: #d6ffcf; color: black;" role="alert">
-                                    <span>75%</span> Menggunakan Teknologi
-
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="alert alert-primary" style="background-color: #d6ffcf; color: black;" role="alert">
+                                <div class="alert alert-primary" style="background-color: #d6ffcf" role="alert">
+                                    <span>80%</span> Tanpa Campur Tangan Manusia
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="alert alert-primary" style="background-color: #d6ffcf" role="alert">
                                     <span>95%</span> Efisiensi Energi
                                 </div>
                             </div>
@@ -101,15 +98,15 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="https://i.pinimg.com/736x/ce/bd/26/cebd26401693c6daeb87897136d24578.jpg"
-                                    class="d-block w-100" alt="..." style="border-radius: 10px">
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="https://i.pinimg.com/564x/77/83/38/778338b052c5eddd6b07204daaa7553d.jpg"
-                                    class="d-block w-100" alt="..." style="border-radius: 10px">
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="https://i.pinimg.com/564x/ed/c6/1a/edc61ad6dd0cf8125880a21c98e245f3.jpg"
-                                    class="d-block w-100" alt="..." style="border-radius: 10px">
+                                    class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button"
