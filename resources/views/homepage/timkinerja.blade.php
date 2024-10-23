@@ -1,6 +1,7 @@
 @extends('welcome')
 
 @section('content')
+
 <!-- Hero Section -->
 <section class="hero-area" style="
     background-image: url('https://assets.pikiran-rakyat.com/crop/40x35:1155x715/1200x675/photo/2024/05/19/3265301182.jpg');
@@ -24,6 +25,7 @@
                 <img src="{{ asset('asset/img/ftek.png') }}" alt="Logo Kanan" class="img-fluid logo-small">
             </div>
         </div>
+      </div>
     </div>
 </section>
 
