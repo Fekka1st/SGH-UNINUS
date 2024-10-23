@@ -1,10 +1,9 @@
 @extends('welcome')
-<!-- link fon -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-<!-- end link fon -->
+
+
 @section('content')
 <section id="home" class="hero-area">
-    <div class="container" style="font-family: 'Times New Roman', Times, serif;">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-12 col-12 mb-4">
                 <!-- Margin bawah -->
@@ -12,7 +11,7 @@
                     <h1 class="wow fadeInLeft" data-wow-delay=".4s">Aplikasi Smart Green House</h1>
                     <h1 class="wow fadeInLeft" data-wow-delay=".6s">Universitas Islam Nusantara</h1>
                     <h2 class="wow fadeInLeft"
-                        style="color: white; font-size: 23px; line-height: 1.5em; margin-top: 20px;"
+                        style="color: antiquewhite; font-size: 23px; line-height: 1.5em; margin-top: 20px;"
                         data-wow-delay=".8s"> Mengintegrasikan Teknologi dan Alam untuk Meningkatkan Kualitas Hidup
                     </h2>
                     <div class="button wow fadeInLeft" data-wow-delay=".8s">

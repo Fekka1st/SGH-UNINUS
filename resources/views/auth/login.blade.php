@@ -59,7 +59,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         body {
-            background-image: url("{{asset('asset/img/bgc.png')}}");
+            /* background-image: url("{{asset('asset/img/bgc.png')}}"); */
+            background-image: url('https://cdn.britannica.com/69/123269-050-4F69A7A7/Greenhouse-Braunschweig-Germany.jpg');
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -146,8 +147,8 @@
 
 <body>
     <div class="login-container">
-        <img src="{{asset('asset/img/Logo.png')}}" alt="Logo" />
-        <h2>Login</h2>
+        <img src="{{asset('asset/img/log.png')}}" alt="Logo" />
+        <h2 ><b>Login</b></h2>
         <x-input-error :messages="$errors->get('email')" class="mt-2" />
         <form method="POST" action="{{ route('login') }}">
             @csrf
