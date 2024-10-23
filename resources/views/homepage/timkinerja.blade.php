@@ -1,24 +1,15 @@
 @extends('welcome')
 
-
 @section('content')
-<section class="hero-area " style="background-color: #1C532A">
+<section class="hero-area d-flex align-items-center justify-content-center" >
     <div class="container">
-        <div class="row align-items-center">
-            <div class="brand_color">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div style="text-align: center;">
-                                <h2 style="color: white;">
-                                    <b>Tim Kinerja</b>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="text-white animate-slide-up">
+            <b>TIM KINERJA</b>
+          </h2>
         </div>
+      </div>
     </div>
 </section>
 <section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px">

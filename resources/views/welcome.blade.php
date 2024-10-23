@@ -25,6 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('asset/css/main.css')}}" />
     <title>Smart Green House</title>
+    
     <link rel="shortcut icon" type="image/x-icon"
         href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
 
