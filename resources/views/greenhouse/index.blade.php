@@ -12,8 +12,10 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Greenhouse</h1>
 
-    <div class="row">
-        <!-- Suhu Card -->
+
+    <div class="row"> 
+
+        <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
@@ -53,8 +55,14 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">CO2</div>
-                            <div>2000PPM</div>
+
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                CO2
+                            </div>
+                                <div>
+                                    2000 PPM
+                                </div>
+
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-spa"></i>
@@ -98,13 +106,9 @@
                 </div>
             </div>
         </div>
-    </div>
-        
-        
-        
+    <!-- Content Row -->
     <div class="row">
-        <!-- Grafik Suhu -->
-        <div class="col-xl-6 col-lg-7">
+        <div class="col-xl-8 col-lg-7">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">AVG Suhu</h6>
@@ -119,8 +123,10 @@
 
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
+
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 ">
+                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>      
                 </div>
                     <div class="card-body">
                     <div style="text-align: center;"><br>
@@ -808,11 +814,5 @@ Chart.defaults.global.defaultFontFamily = 'Nunito',
           resultDiv.textContent =
             "Suhu diatur ke : " + temperature + "°C";
         });
-    
-        
-
-        
-    
-        
 </script>
 @endsection
