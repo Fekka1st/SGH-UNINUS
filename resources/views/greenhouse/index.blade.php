@@ -211,7 +211,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <!-- Pemakaian Air Card -->
         <div class="col-xl-4 col-md-6 mb-4">
@@ -230,9 +230,9 @@
             </div>
         </div>
     </div>
-        
-        
-        
+
+
+
     <div class="row">
 
             <div class="col-xl-6 col-lg-7">
@@ -255,13 +255,13 @@
             </div>
 
 
-        
+
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">Controling</h6>
                 </div>
-                    <div class="card-body">
+                <div class="card-body">
                     <div style="text-align: center;"><br>
                         <button id="fanButton" class="btn" onclick="toggleFan()" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
                             Fan On
@@ -270,8 +270,9 @@
                     <div style="text-align: center">
                         <label>Auto</label><br>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#greenhouseadjusttable">
-                        Settings
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#greenhouseadjusttable">
+                            Settings
                         </button>
 
                         <!-- Modal -->
@@ -297,7 +298,7 @@
                                 </div>
                             </div>
 
-                            <div class="result" id="result"></div>
+                                        <div class="result" id="result"></div>
 
                             </div>
                             <div class="modal-footer">
@@ -329,11 +330,11 @@
         </div>
 
 
-        
-       
-        
-        
-            
+
+
+
+
+
 
 
         <!-- Grafik CO2 -->
@@ -350,7 +351,7 @@
             </div>
         </div>
 
-    
+
         <!-- Grafik Intensitas Cahaya -->
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
@@ -358,8 +359,8 @@
                     <h6 class="m-0 font-weight-bold text-primary">Light Intensity</h6>
                 </div>
                 <div class="card-body">
-                    <div class="chart-area">
-                        <canvas id="cahaya"></canvas>
+                    <div class="chart-area ">
+                        <canvas id="myChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -415,7 +416,7 @@
             }
         });
 
-        
+
 
     Chart.defaults.global.defaultFontFamily = 'Nunito',
         '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
@@ -692,28 +693,55 @@
         }
     });
 
-    
+
 
 
 
     document
         .getElementById("temperatureForm")
         .addEventListener("submit", function (event) {
-          event.preventDefault(); // Mencegah reload halaman
+            event.preventDefault(); // Mencegah reload halaman
 
-          // Mendapatkan nilai suhu yang diinput oleh pengguna
-          const temperature = document.getElementById("temperature").value;
+            // Mendapatkan nilai suhu yang diinput oleh pengguna
+            const temperature = document.getElementById("temperature").value;
 
-          // Menampilkan hasil
-          const resultDiv = document.getElementById("result");
-          resultDiv.textContent =
-            "Suhu diatur ke : " + temperature + "°C";
+            // Menampilkan hasil
+            const resultDiv = document.getElementById("result");
+            resultDiv.textContent =
+                "Suhu diatur ke : " + temperature + "°C";
         });
-    
-        
 
-        
-    
-        
+</script>
+
+<script>
+    const xValues = [100, 200, 300, 400, 500, 600, 700];
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                label: 'Suhu',
+                data: [860, 1140, 1060, 1060, 1070, 1110],
+                borderColor: "red",
+                fill: true
+            }, {
+                label: 'Kelembapan',
+                data: [1600, 1700, 1700, 1900, 2000, 2700],
+                borderColor: "green",
+                fill: false
+            }, {
+                label: 'Data asal',
+                data: [300, 700, 2000, 5000, 6000, 5500],
+                borderColor: "blue",
+                fill: false
+            }]
+        },
+        options: {
+            legend: {
+                display: true
+            }
+        }
+    });
+
 </script>
 @endsection
