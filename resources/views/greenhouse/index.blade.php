@@ -184,8 +184,14 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">CO2</div>
-                            <div>2000PPM</div>
+
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                CO2
+                            </div>
+                                <div>
+                                    2000 PPM
+                                </div>
+
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-spa"></i>
