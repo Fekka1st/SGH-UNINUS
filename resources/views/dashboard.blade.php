@@ -27,7 +27,7 @@
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><a
                                     class="small text-white stretched-link"
-                                    href="greenhouse.html"></a>Lihat Detail</div>
+                                    href="/smartgreenhouse"></a>Lihat Detail</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-laptop-house"></i>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><a
                                     class="small text-white stretched-link"
-                                    href="hydroponik.html"></a>Lihat Detail</div>
+                                    href="/smarthydroponik"></a>Lihat Detail</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-laptop-house"></i>
@@ -71,7 +71,7 @@
                                 <div class="col-auto">
                                     <div class="h5 mb-0 font-weight-bold text-gray-800"><a
                                             class="small text-white stretched-link"
-                                            href="aeroponik.html"></a>Lihat Detail</div>
+                                            href="/smartaerophonik"></a>Lihat Detail</div>
                                 </div>
                                 <div class="col">
                                 </div>
@@ -92,10 +92,10 @@
         <div class="col-xl-12 col-lg-7">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Suhu dan Kelembapan</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Data Per Minggu</h6>
                 </div>
                 <div class="card-body">
-                    <canvas id="suhukelembapan"></canvas>
+                    <canvas id="Jadwal"></canvas>
                 </div>
             </div>
         </div>
@@ -134,27 +134,33 @@
 
 @section('script')
 <script>
-    const xValues = ["00:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00"];
-        new Chart("suhukelembapan", {
+    const xValues = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+        new Chart("Jadwal", {
             type: "line",
             data: {
                 labels: xValues,
                 datasets: [{
-                    label: 'Suhu',
+                    label: 'SmartHydroponik',
                     data: [30, 32, 33, 31, 34, 30, 32, 30],
-                    borderColor: "orange",
+                    borderColor: "blue",
                     fill: true
                 }, {
-                    label: 'Kelembapan',
+                    label: 'Smart Aerophonic',
                     data: [50, 40, 40, 45, 55, 50, 45, 40],
-                    borderColor: "blue",
+                    borderColor: "red",
+                    fill: true
+                },
+                {
+                    label: 'Smart GreenHouse',
+                    data: [20, 30, 30,75, 55, 20, 45, 50],
+                    borderColor: "Green",
                     fill: true
                 }]
             },
             options: {
                 legend: {
                     display: true
-                    
+
                 }
             }
         });

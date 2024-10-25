@@ -42,10 +42,6 @@ Route::middleware('auth')->group(function () {
     //manajement user
     Route::resource('/manajemen_user', manajemenuser::class);
 
-    //hydroponik
-    //aerophonik
-    //greenhouse
-    //report
 });
 
 require __DIR__.'/auth.php';
