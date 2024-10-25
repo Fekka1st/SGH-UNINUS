@@ -11,7 +11,7 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Greenhouse</h1>
 
-    <div class="row">
+    <div class="row"> 
 
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-4 col-md-6 mb-4">
@@ -61,7 +61,7 @@
                                 CO2
                             </div>
                                 <div>
-                                    2000PPM
+                                    2000 PPM
                                 </div>
                         </div>
                         <div class="col-auto">
@@ -114,9 +114,6 @@
     <!-- Content Row -->
     <div class="row">
 
-        
-    
-    
         <div class="col-xl-8 col-lg-7">
             <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
@@ -137,8 +134,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 ">
-                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>
-                    
+                    <h6 class="m-0 font-weight-bold text-primary">Kontroling</h6>      
                 </div>
                 <div class="card-body">
                 <h1>Kontrol Suhu</h1>
