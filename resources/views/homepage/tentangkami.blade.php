@@ -5,8 +5,7 @@
 <!-- end link fon -->
 
 @section('content')
-<section class="hero-area d-flex align-items-center justify-content-center" 
-    style="background-image: url('https://i.pinimg.com/564x/cc/ac/fa/ccacfa4b58e8c1a30fc2662cb3c6c226.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
+<section class="hero-area d-flex align-items-center justify-content-center" >
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -31,6 +30,7 @@
                 alt="Gambar Smart Green House" class="img-fluid rounded" 
                 style="width: 100%; height: auto; object-fit: cover; min-height: 300px;"> <!-- Menetapkan min-height agar gambar cukup tinggi -->
         </div>
+
         <div class="col-md-6 d-flex" data-aos="fade-down"> <!-- d-flex untuk mengatur tinggi fleksibel -->
             <div class="card flex-grow-1" style="background-color: #228B22;"> <!-- flex-grow-1 untuk memperluas card -->
                 <div class="card-body d-flex flex-column justify-content-between" style="height: 100%; font-family: 'Times New Roman', Times, serif;">
@@ -52,6 +52,7 @@
                         kepada pengguna untuk memantau dan mengelola kondisi tanaman mereka secara real-time, kami dapat
                         membantu mereka
                         mencapai hasil yang lebih baik dan konsisten.
+
                     </p>
                 </div>
             </div>
@@ -60,7 +61,7 @@
 </div>
 
 
-
+//ini test
 <div class="container mt-5">
     <h1 class="text-center mb-4"data-aos="fade-up" style="font-family: 'Book Antiqua', serif;">Visi dan Misi</h1>
     <div class="row m-3">
@@ -82,6 +83,7 @@
         </div>
     </div>
 </div>
+
 @endsection
 
 
