@@ -2,7 +2,7 @@
 
 
 @section('content')
-<section class="hero-area " style="background-color: #1C532A">
+<section class="hero-area">
     <div class="container">
         <div class="row align-items-center">
             <div class="brand_color">
