@@ -35,23 +35,48 @@
                     <div class="card card-primary card-outline">
                         <div class="card-body box-profile">
                             <div class="text-center">
-                                <img class="profile-user-img img-fluid img-circle"
-                                    src="https://www.shutterstock.com/image-vector/cute-panda-dabbing-pose-cartoon-260nw-2471990065.jpg" alt="User profile picture">
+                                <img id="profileImage" class="img-preview"
+                                    src="{{Auth()->user()->foto_profile}}"
+                                    alt="User profile picture">
                             </div>
-                            <h3 class="profile-username text-center">Nama .......</h3>
-                            <p class="text-muted text-center">Email ......</p>
-                            <ul class="list-group list-group-unbordered mb-3">
-                                <li class="list-group-item">
-                                    <b>Nama</b> <a class="float-right">1,322</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>Email</b> <a class="float-right">543</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>Password</b> <a class="float-right">13,287</a>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block"><b>Save</b></a>
+
+                            <h3 class="profile-username text-center">Edit Profile</h3>
+
+                            <form action="{{route('profile.update')}}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="photo">Upload Foto</label>
+                                    <input type="file" name="foto" class="form-control-file" id="photoInput"
+                                        accept="image/*" onchange="previewImage(event)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Nama</label>
+                                    <input type="text" name="name" class="form-control"
+                                        value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control"
+                                        value="" required>
+                                </div>
+
+                                <!-- Input Password dengan Toggle Visibility -->
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" name="password" class="form-control"
+                                            placeholder="Masukkan Password Baru" id="passwordInput" required>
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-secondary"
+                                                id="togglePassword" tabindex="-1">
+                                                <i class="fas fa-eye" id="toggleIcon"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block"><b>Save</b></button>
+                            </form>
                         </div>
                     </div>
 
