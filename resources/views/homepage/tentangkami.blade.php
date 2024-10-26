@@ -69,7 +69,6 @@
                         <h2>Misi</h2>
                         <p></p>
                     </div>
-
                 </div>
                 
             </div>

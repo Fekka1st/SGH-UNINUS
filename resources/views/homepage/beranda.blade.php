@@ -127,7 +127,7 @@
 </section>
 <!-- End Features Area -->
 <!-- Start Achievement Area -->
-<section class="our-achievement section" style="background-color: #1C532A">
+<section class="our-achievement section" style="background-color: #365E32">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">

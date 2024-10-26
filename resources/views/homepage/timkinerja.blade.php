@@ -1,19 +1,106 @@
 @extends('welcome')
 
-
 @section('content')
-<section class="hero-area " style="background-color: #1C532A">
+<!-- Hero Section -->
+<section class="hero-area" style="background-image: url('https://i.pinimg.com/control/564x/61/8b/e4/618be4145724460b73d410a1b7a58523.jpg'); background-size: cover; background-position: center; padding: 30px 0; position: relative;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(28, 83, 42, 0.7);"></div>
+    <div class="container text-center" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-2 text-left">
+                <img src="https://i.pinimg.com/564x/74/ea/e9/74eae96448daecd195e98d0faa02606c.jpg" alt="Logo Kiri" style="max-width: 100px;">
+            </div>
+            <div class="col-8">
+                <h2 class="text-white font-weight-bold" style="font-size: 3rem; margin: 0;">Tim Kinerja</h2>
+            </div>
+            <div class="col-2 text-right">
+                <img src="https://i.pinimg.com/236x/20/0c/31/200c3102f139b46bd89ab7e02f1d08e2.jpg" alt="Logo Kanan" style="max-width: 100px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Support Section with Photos -->
+<section id="overview" class="app-info section py-5">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="brand_color">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div style="text-align: center;">
-                                <h2 style="color: white;">
-                                    <b>Tim Kinerja</b>
-                                </h2>
+        <h2 class="text-center mb-5">Team Support</h2>
+        <p class="text-center mb-5" style="line-height: 1.8; font-size: 1rem;">
+            Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau, mengevaluasi,
+            dan meningkatkan kinerja organisasi. Berikut adalah beberapa komponen dan fungsi utama dalam isi dari tim
+            kinerja.
+        </p>
+
+        <!-- Photo grid -->
+        <div class="row text-center mt-5">
+            <!-- Dosen Photos -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="box p-4 border" style="background-color: #f8f9fa;" onclick="toggleVisibility('dosenNames')">
+                    <h5 class="font-weight-bold">Dosen</h5>
+                    <hr>
+                    <div id="dosenNames" class="d-none">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Galih, S.T., M.Kom." class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Ir. Lilis Irmawatie, M.M.Pd.</p>
                             </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Ganis Sanhaji, S.Si, M.Sc." class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Ganis Sanhaji, S.Si, M.Sc.</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Ir. Lilis Irmawatie, M.M.Pd." class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Galih, S.T., M.Kom.</p>
+                            </div>
+                            <!-- Add more Dosen as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mahasiswa Photos -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="box p-4 border" style="background-color: #f8f9fa;" onclick="toggleVisibility('mahasiswaNames')">
+                    <h5 class="font-weight-bold">Mahasiswa</h5>
+                    <hr>
+                    <div id="mahasiswaNames" class="d-none">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Imam Ramadhan" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Imam Ramadhan</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Herlan Syah" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Herlan Syah</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Decky Putra K" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Decky Putra K</p>
+                            </div>
+                            <!-- Add more Mahasiswa as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vendor Technology Photos -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="box p-4 border" style="background-color: #f8f9fa;" onclick="toggleVisibility('vendorNames')">
+                    <h5 class="font-weight-bold">Vendor Technology</h5>
+                    <hr>
+                    <div id="vendorNames" class="d-none">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Hamdi Sholahudin" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Hamdi Sholahudin S.T</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Ferry Aditya Herman" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Ferry Aditya Herman S.T</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <img src="https://i.pinimg.com/236x/f8/19/e4/f819e4d4f5b6a266a71f8a5248003e39.jpg" alt="Pak Dadang" class="img-fluid rounded-circle mb-2" style="max-width: 100px;">
+                                <p>Pak Dadang</p>
+                            </div>
+                            <!-- Add more vendors as needed -->
                         </div>
                     </div>
                 </div>
@@ -21,204 +108,11 @@
         </div>
     </div>
 </section>
-<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px">
-    <div class="container">
-      <div class="info-one">
-        <div class="row align-items-center">
-          <div class="col-lg-12 col-md-12 col-12">
-            <div class="row">
-              <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
-                <h2>Team Support</h2>
-                <p style="margin: 20px 0;line-height: 2em;">Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau, mengevaluasi, dan meningkatkan kinerja organisasi atau bagian tertentu dari perusahaan. Fungsi utama tim ini adalah memastikan bahwa tujuan strategis dan operasional dapat tercapai dengan optimal. Berikut adalah beberapa komponen dan fungsi utama dalam isi dari tim kinerja.</p>
-                <div class="row">
 
-                    <div class="container mt-5">
-                      <div class="row text-center">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Kotak Deskripsi Tim</title>
-
-                            <!-- Bootstrap CSS -->
-                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-                            <style>
-                                body {
-                                    background-color: #f8f9fa;
-                                    font-family: 'Arial', sans-serif;
-                                }
-
-                                .alert {
-                                    text-align: center;
-                                    padding: 20px;
-                                    cursor: pointer;
-                                    transition: transform 0.3s ease-in-out;
-                                    width: 100%;
-                                }
-
-                                .alert:hover {
-                                    transform: scale(1.05);
-                                }
-
-                                /* Kotak deskripsi */
-                                .description {
-                                    display: none;
-                                    background-color: #e9ecef;
-                                    border-radius: 10px;
-                                    padding: 20px;
-                                    font-size: 15px;
-                                    color: #333;
-                                    text-align: left;
-                                    max-height: 0;
-                                    overflow: hidden;
-                                    transition: max-height 0.6s ease, opacity 0.6s ease;
-                                    opacity: 0;
-                                }
-
-                                .description.show {
-                                    display: block;
-                                    max-height: 600px;
-                                    opacity: 1;
-                                }
-
-                                .user-item {
-                                    display: flex;
-                                    align-items: center;
-                                    margin-bottom: 15px;
-                                    transition: opacity 0.4s ease-in-out;
-                                }
-
-                                .user-item img {
-                                    width: 50px;
-                                    height: 50px;
-                                    border-radius: 50%;
-                                    margin-right: 15px;
-                                    object-fit: cover;
-                                }
-
-                                /* Responsif: Tampilan layar lebih besar */
-                                @media (min-width: 768px) {
-                                    .description {
-                                        font-size: 16px;
-                                        line-height: 1.6;
-                                    }
-
-                                    .user-item {
-                                        margin-bottom: 20px;
-                                    }
-                                }
-
-                                .container {
-                                    max-width: 900px;
-                                    margin: auto;
-                                }
-                            </style>
-                        </head>
-
-                        <body>
-                            <div class="container mt-5">
-                                <div class="row text-center">
-
-                                    <!-- Dosen -->
-                                    <div class="col-12 col-md-4 mb-4">
-                                        <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-dosen')">
-                                            <strong>Dosen</strong>
-                                        </div>
-                                        <div id="desc-dosen" class="description">
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dr. Siti Aminah">
-                                                <span>Ir. Lilis Irmawatie, M.M.Pd.</span>
-                                            </div>
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Prof. Budi Santoso">
-                                                <span>GANIS SANHAJI, S.Si, M..Sc.</span>
-                                            </div>
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Ir. Ardiansyah, M.T.">
-                                                <span>GALIH, S.T., M.KOM.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Mahasiswa -->
-                                    <div class="col-12 col-md-4 mb-4">
-                                        <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-mahasiswa')">
-                                            <strong>Mahasiswa</strong>
-                                        </div>
-                                        <div id="desc-mahasiswa" class="description">
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Prof. Joko Prasetyo">
-                                                <span>Imam Ramadhan</span>
-                                            </div>
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dr. Rina Kusuma">
-                                                <span>Herlan</span>
-                                            </div>
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Miko Nugraha, S.T., M.Eng.">
-                                                <span>Boyke Adam</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Vendor Technology -->
-                                    <div class="col-12 col-md-4 mb-4">
-                                        <div class="alert alert-primary" role="alert" onclick="toggleDescription('desc-vendor')">
-                                            <strong>Vendor Technology</strong>
-                                        </div>
-                                        <div id="desc-vendor" class="description">
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Andi Kurniawan, M.Kom.">
-                                                <span>Hamdi Sholahudin</span>
-                                            </div>
-                                            <div class="user-item">
-                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dr. Lala Sari, M.T.I.">
-                                                <span>Ferry Aditya Herman</span>
-                                            </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-@endsection
-
-@section('css')
-
-@endsection
-
-@section('script')
- <!-- Bootstrap JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        function toggleDescription(id) {
-            const selectedDesc = document.getElementById(id);
-            const isCurrentlyShown = selectedDesc.classList.contains('show');
-
-            // Tutup semua deskripsi yang terbuka
-            const descriptions = document.querySelectorAll('.description');
-            descriptions.forEach(desc => desc.classList.remove('show'));
-
-            // Buka deskripsi yang dipilih jika belum terbuka
-            if (!isCurrentlyShown) {
-                selectedDesc.classList.add('show');
-            }
-        }
-    </script>
+<script>
+    function toggleVisibility(elementId) {
+        const namesDiv = document.getElementById(elementId);
+        namesDiv.classList.toggle('d-none');
+    }
+</script>
 @endsection
