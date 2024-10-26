@@ -7911,6 +7911,10 @@
     "platform": {
         "php": "^8.2"
     },
+<<<<<<< HEAD
     "platform-dev": {},
+=======
+    "platform-dev": [],
+>>>>>>> 77d92ba0c1740c3e153192171ec08ff70053acae
     "plugin-api-version": "2.6.0"
 }
