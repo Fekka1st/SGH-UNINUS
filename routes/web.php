@@ -6,6 +6,7 @@ use App\Http\Controllers\greenhousecontroller;
 use App\Http\Controllers\hydroponikcontroller;
 use App\Http\Controllers\manajemenuser;
 use App\Http\Controllers\profile;
+use App\Http\Controllers\reportcontroller;
 // use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,15 +38,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
     Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
+    Route::get('/report', [reportcontroller::class, 'index']);
+    Route::post('/generate-report', [reportcontroller::class, 'generateReport'])->name('generateReport');
     Route::get('/profile_akun', [profile::class, 'index']);
 
     //manajement user
     Route::resource('/manajemen_user', manajemenuser::class);
 
-    //hydroponik
-    //aerophonik
-    //greenhouse
-    //report
 });
 
 require __DIR__.'/auth.php';
