@@ -1,13 +1,27 @@
 @extends('layout.master')
-@section('title','Profile')
+
+@section('title', 'Profile')
 
 @section('css')
-
+<!-- Tambahkan CSS khusus jika diperlukan -->
+<style>
+    .full-height {
+        height: calc(100vh - 100px); /* Agar konten berada di tengah layar */
+    }
+    .img-preview {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+</style>
 @endsection
 
 @section('content')
 <div class="content-wrapper" style="min-height: 1416px;">
 
+    <!-- Content Header -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -24,46 +38,104 @@
         </div>
     </section>
 
+    <!-- Main Content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
+            <div class="d-flex justify-content-center align-items-center full-height">
+                <div class="col-md-6 col-lg-4">
 
+                    <!-- Profile Card -->
                     <div class="card card-primary card-outline">
                         <div class="card-body box-profile">
                             <div class="text-center">
-                                <img class="profile-user-img img-fluid img-circle"
-                                    src="https://www.shutterstock.com/image-vector/cute-panda-dabbing-pose-cartoon-260nw-2471990065.jpg" alt="User profile picture">
+                                <img id="profileImage" class="img-preview"
+                                    src="https://www.shutterstock.com/image-vector/cute-panda-dabbing-pose-cartoon-260nw-2471990065.jpg"
+                                    alt="User profile picture">
                             </div>
-                            <h3 class="profile-username text-center">Nama .......</h3>
-                            <p class="text-muted text-center">Email ......</p>
-                            <ul class="list-group list-group-unbordered mb-3">
-                                <li class="list-group-item">
-                                    <b>Nama</b> <a class="float-right">1,322</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>Email</b> <a class="float-right">543</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>Password</b> <a class="float-right">13,287</a>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block"><b>Save</b></a>
+
+                            <h3 class="profile-username text-center">Edit Profile</h3>
+
+                            <!-- Form untuk Input Profile -->
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                @csrf
+
+                                <!-- Input Foto -->
+                                <div class="form-group">
+                                    <label for="photo">Upload Foto</label>
+                                    <input type="file" name="photo" class="form-control-file" id="photoInput"
+                                        accept="image/*" onchange="previewImage(event)">
+                                </div>
+
+                                <!-- Input Nama -->
+                                <div class="form-group">
+                                    <label for="name">Nama</label>
+                                    <input type="text" name="name" class="form-control"
+                                        value="" required>
+                                </div>
+
+                                <!-- Input Email -->
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control"
+                                        value="" required>
+                                </div>
+
+                                <!-- Input Password dengan Toggle Visibility -->
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" name="password" class="form-control"
+                                            placeholder="Masukkan Password Baru" id="passwordInput" required>
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-secondary"
+                                                id="togglePassword" tabindex="-1">
+                                                <i class="fas fa-eye" id="toggleIcon"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block"><b>Save</b></button>
+                            </form>
                         </div>
-
                     </div>
-
-
+                    <!-- End Profile Card -->
 
                 </div>
             </div>
-
         </div>
-
+    </section>
 </div>
+@endsection
 
-</div>
-</section>
+@section('script')
+<!-- Script untuk Toggle Password Visibility -->
+<script>
+    // Pastikan elemen sudah tersedia sebelum event listener ditambahkan
+    document.addEventListener('DOMContentLoaded', function () {
+        const passwordInput = document.getElementById('passwordInput');
+        const togglePassword = document.getElementById('togglePassword');
+        const toggleIcon = document.getElementById('toggleIcon');
 
-</div>
+        // Event Listener untuk toggle visibility password
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            // Ganti ikon sesuai dengan tipe input
+            toggleIcon.classList.toggle('fa-eye-slash');
+            toggleIcon.classList.toggle('fa-eye');
+        });
+    });
+
+    // Preview Foto yang Diupload
+    function previewImage(event) {
+        const reader = new FileReader();
+        reader.onload = function () {
+            const output = document.getElementById('profileImage');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
 @endsection
