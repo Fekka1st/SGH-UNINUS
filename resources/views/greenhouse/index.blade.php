@@ -334,15 +334,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
         <!-- Grafik CO2 -->
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
@@ -366,14 +357,11 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-area ">
-                        <canvas id="myChart"></canvas>
+                        <canvas id="cahaya"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
         <!-- Grafik Konsumsi Air -->
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
@@ -395,7 +383,6 @@
 
 @section('script')
 <script>
-
         const xValues = ["00:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00"];
         new Chart("suhukelembapan", {
             type: "line",
@@ -698,56 +685,5 @@
             }
         }
     });
-
-
-
-
-
-    document
-        .getElementById("temperatureForm")
-        .addEventListener("submit", function (event) {
-            event.preventDefault(); // Mencegah reload halaman
-
-            // Mendapatkan nilai suhu yang diinput oleh pengguna
-            const temperature = document.getElementById("temperature").value;
-
-            // Menampilkan hasil
-            const resultDiv = document.getElementById("result");
-            resultDiv.textContent =
-                "Suhu diatur ke : " + temperature + "°C";
-        });
-
-</script>
-
-<script>
-    const xValues = [100, 200, 300, 400, 500, 600, 700];
-    new Chart("myChart", {
-        type: "line",
-        data: {
-            labels: xValues,
-            datasets: [{
-                label: 'Suhu',
-                data: [860, 1140, 1060, 1060, 1070, 1110],
-                borderColor: "red",
-                fill: true
-            }, {
-                label: 'Kelembapan',
-                data: [1600, 1700, 1700, 1900, 2000, 2700],
-                borderColor: "green",
-                fill: false
-            }, {
-                label: 'Data asal',
-                data: [300, 700, 2000, 5000, 6000, 5500],
-                borderColor: "blue",
-                fill: false
-            }]
-        },
-        options: {
-            legend: {
-                display: true
-            }
-        }
-    });
-
 </script>
 @endsection
