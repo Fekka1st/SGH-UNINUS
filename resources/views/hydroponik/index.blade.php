@@ -9,7 +9,6 @@
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Hydroponic</h1>
-
         <div class="row">
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-4 col-md-6 mb-4">
@@ -109,6 +108,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
@@ -208,123 +208,120 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    <div class="result" id="result"></div>
+                        <div class="result" id="result"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-<div class="row">
-        <div class="col-xl-12 col-lg-8">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">
-                        Chart Monitoring</h6>
-                </div>
-                <div class="row">
-                    <div class="container text-center mb-4"><br>
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-md-2 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(1)" display: flex;>Real-Time</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(2)" display: flex;>1 Hour</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(3)" display: flex;>6 Hour</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(4)" display: flex;>1 Day</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(5)" display: flex;>1 Week</button>
-                            </div>
-                            <div class="col-6 col-md-2 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(6)" display: flex;>1 Month</button>
-                            </div>
-                            <div class="col-6 col-md-2 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(7)" display: flex;>6 Month</button>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-8">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">
+                            Chart Monitoring</h6>
                     </div>
-                </div>
-        
-
-
-                <!-- Content Row -->
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water Temperature</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="suhu"></canvas>
+                    <div class="row">
+                        <div class="container text-center mb-4"><br>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-md-2 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(1)" display: flex;>Real-Time</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(2)" display: flex;>1 Hour</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(3)" display: flex;>6 Hour</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(4)" display: flex;>1 Day</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(5)" display: flex;>1 Week</button>
+                                </div>
+                                <div class="col-6 col-md-2 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(6)" display: flex;>1 Month</button>
+                                </div>
+                                <div class="col-6 col-md-2 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(7)" display: flex;>6 Month</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water Flow</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="laju"></canvas>
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water Temperature</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="suhu"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water pH</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="Co²"></canvas>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water Flow</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="laju"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Nutrition</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="ppm"></canvas>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water pH</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="Co²"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-12 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water Level</h6>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Nutrition</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="ppm"></canvas>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="tangki"></canvas>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water Level</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="tangki"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +330,6 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
 
 
