@@ -1611,7 +1611,11 @@ ol {
 
 .header .button .btn:hover {
     background-color:#16ce44;
+
     color: #fff;
+
+    color: #3865f2;
+
 }
 
 .header .navbar-brand img {
