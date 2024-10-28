@@ -13,13 +13,13 @@
                         data-wow-delay=".8s"> Selamat datang di <i>Smart Greenhouse</i> Fakultas Pertanian Universitas Islam Nusantara (Uninus). Kami berkomitmen untuk menerapkan teknologi terbaru dalam bidang pertanian untuk meningkatkan efisiensi dan produktivitas tanaman. Smart Greenhouse dilengkapi dengan sistem <i>Internet of Things</i> (IoT) yang dikembangkan oleh Fakultas Teknik Uninus. Dengan smart greenhouse kami berkomitmen untuk menciptakan masa depan pertanian yang lebih baik, berkelanjutan, dan ramah lingkungan. 
                     </p>
                     <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                        <a href="#about_us" class="btn">Tentang</a>
+                        <a href="#about_us" class="btn text-white bg-success">Tentang</a>
                         <a href="https://www.youtube.com/watch?v=917dBBxONh0" target="_blank"
                             class="glightbox video-button">
-                            <span class="video">
-                                <i class="lni lni-play"></i>
+                            <span class="video bg-success">
+                            <i class="lni lni-play text-white"></i>
                             </span>
-                            <span class="text">Video Green House</span>
+                            <span class="text-white m-3"><B>Video Green House</B></span>
                         </a>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="info-text wow fadeInLeft" data-aos="zoom-out-right">
-                        <h3>Keunggulan <i>Smart Greenhouse</i></h3>
+                        <h2><b>Keunggulan</b> <i><b>Smart Greenhouse</b></i></h2>
                         <p style="margin: 20px 0; line-height: 2em; text-align: justify; color: black; font-size: 14px"> 
                         <i>Smart Greenhouse</i> kami dirancang untuk menanggapi kebutuhan pertanian modern dengan fokus pada keberlanjutan dan efisiensi. Dengan sistem berbasis <i>IoT</i>, kami mampu mengurangi pemakaian berbasis sumber daya seperti air dan energi, serta meningkatkan produktivitas tanaman. Sistem hidroponik dan aeroponik yang kami terapkan di dalam <i>smart greenhouse</i> memungkinkan penanaman tanpa menggunakan tanah, sehingga lebih ramah lingkungan dan efektif dalam ruang terbatas. Ini menjadikan model pertanian kami sangat cocok untuk diterapkan di daerah perkotaan atau wilayah dengan lahan yang terbatas. Selain itu, proyek ini berfungsi sebagai pusat penelitian dan pengembangan bagi mahasiswa dan peneliti yang tertarik pada bidang pertanian modern. Data yang dikumpulkan dari sensor <i>IoT</i> juga digunakan dalam penelitian untuk terus memperbaiki sistem budidaya dan memahami lebih baik faktor-faktor yang mempengaruhi pertumbuhan tanaman.
                         </p>
@@ -115,7 +115,7 @@
     <div class="row">
             <div class="col-12">
                 <div class="text-center" style="color: white;">
-                    <h2 style="color: white; font-family: 'Open Sans', sans-serif;">Fasilitas Greenhouse</h2>
+                    <h2 style="color: white; font-family: 'Open Sans', sans-serif;"><b>Smart Greenhouse</b></h2>
                     <p>Berikut adalah beberapa Fasilitas Greenhouse yang kami gunakan untuk metode penanaman</p>
                 </div>
             </div>
@@ -213,7 +213,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center" style="font-family: 'Book Antiqua', serif;">
-                    <h2 data-aos="zoom-out-up" data-wow-delay=".4s">Program dan Kegiatan</h2>
+                    <h2 data-aos="zoom-out-up" data-wow-delay=".4s"><b>Program dan Kegiatan</b></h2>
                     <p data-aos="zoom-out-up" data-wow-delay=".6s">Berikut adalah beberapa Program dan Kegiatan yang kami gunakan
                         untuk metode penanaman</p>
                 </div>
@@ -258,7 +258,7 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
                 <div class="title text-center">
-                    <h2>Jenis - Jenis Tanaman</h2>
+                    <h2><b>Jenis - Jenis Tanaman</b></h2>
                     <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
                 </div>
             </div>
@@ -304,7 +304,7 @@
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col-lg-12" data-aos="fade-down">
-                <h2 class="text-black">Galeri</h2>
+                <h2 class="text-black"><B>Galeri</B></h2>
             </div>
         </div>
         <div class="row">
