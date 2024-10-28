@@ -1603,15 +1603,15 @@ ol {
 }
 
 .header .button .btn {
-    background-color: #3865f2;
-    border: 2px solid #fff;
+    background-color: #1C532A;;
+    border: 2px solid #16ce44;
     color: #fff;
     padding: 12px 30px;
 }
 
 .header .button .btn:hover {
-    background-color: #fff;
-    color: #3865f2;
+    background-color:#16ce44;
+    color: #fff;
 }
 
 .header .navbar-brand img {
@@ -1960,12 +1960,15 @@ ol {
 .add-list-button {
     display: inline-block;
     margin-left: 10px;
+    
 }
 
 .add-list-button .btn i {
     font-size: 14px;
     display: inline-block;
     margin-right: 5px;
+    background-color: green;
+    color: white;
 }
 
 /*======================================

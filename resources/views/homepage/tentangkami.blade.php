@@ -88,7 +88,9 @@
 
 
 @section('css')
-
+<!-- link fon -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<!-- end link fon -->
 @endsection
 
 @section('script')
