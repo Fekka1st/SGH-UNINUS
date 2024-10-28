@@ -1611,7 +1611,7 @@ ol {
 
 .header .button .btn:hover {
     background-color:#16ce44;
-    color: #3865f2;
+    color: #fff;
 }
 
 .header .navbar-brand img {
@@ -1960,12 +1960,15 @@ ol {
 .add-list-button {
     display: inline-block;
     margin-left: 10px;
+    
 }
 
 .add-list-button .btn i {
     font-size: 14px;
     display: inline-block;
     margin-right: 5px;
+    background-color: green;
+    color: white;
 }
 
 /*======================================
