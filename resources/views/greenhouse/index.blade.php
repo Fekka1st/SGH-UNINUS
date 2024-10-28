@@ -78,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <div class="card bg-success">
+                                    <div class="card bg-primary">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-white">Average Temp.</h5>
                                             <h6 class="card-subtitle mb-2 text-white">28°C</h6>
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <div class="card bg-success">
+                                    <div class="card bg-primary">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-white">Average RH</h5>
                                             <h6 class="card-subtitle mb-2 text-white">50%</h6>
@@ -237,38 +237,14 @@
         </div>
     </div>
 
-
-
     <div class="row">
-
-            <div class="col-xl-6 col-lg-7">
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary text-center">Chart</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-center flex-wrap">
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(1)">Real-Time</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(2)">1 hours</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(3)">6 Hours</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(4)">1 Days</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(5)">1 Weeks</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(6)">1 Months</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(7)">6 Months</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        <div class="col-xl-6 col-lg-7">
+        <div class="col-xl-12 col-lg-7">
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Controling</h6>
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">Controlling Smart Room</h6>
                 </div>
                 <div class="card-body">
-                    <div style="text-align: center;"><br>
+                    <div style="text-align: center;">
                         <button id="fanButton" class="btn" onclick="toggleFan()" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
                             Fan On
                         </button>
@@ -276,101 +252,134 @@
                     <div style="text-align: center">
                         <label>Auto</label><br>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#greenhouseadjusttable">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#greenhouseadjusttable">
                             Settings
                         </button>
-
+                        <br>
+                        <br>
+                        <br>
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 5%; width: 100%">Chart Monitoring</h6>
                         <!-- Modal -->
                         <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                <div>
-                                    <label for="minTemp">Temperature Minimum: </label>
-                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="maxTemp">Temperature Maximal: </label>
-                                    <input type="number" id="maxTemp" value="100" style="width: 100px; border: none; padding: 5px;" />
-                                </div>
-                            </div>
-
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                            <div>
+                                                <label for="minTemp">Temperature Minimum: </label>
+                                                <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
+                                            </div>
+                                            <div>
+                                                <label for="maxTemp">Temperature Maximal: </label>
+                                                <input type="number" id="maxTemp" value="100" style="width: 100px; border: none; padding: 5px;" />
+                                            </div>
+                                        </div>
                                         <div class="result" id="result"></div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set</button>
-                            </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="result" id="result"></div>
+                </div>
+                <div class="row">
+                    <div class="container text-center mb-4"><br>
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-2 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(1)">Real-Time</button>
+                            </div>
+                            <div class="col-6 col-md-1 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(2)">1 Hour</button>
+                            </div>
+                            <div class="col-6 col-md-1 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(3)">6 Hour</button>
+                            </div>
+                            <div class="col-6 col-md-1 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(4)">1 Day</button>
+                            </div>
+                            <div class="col-6 col-md-1 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(5)">1 Week</button>
+                            </div>
+                            <div class="col-6 col-md-2 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(6)">1 Month</button>
+                            </div>
+                            <div class="col-6 col-md-2 mb-2">
+                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;"
+                                    onclick="updateCharts(7)">6 Month</button>
+                            </div>
                         </div>
                     </div>
-                        <div class="result" id="result"></div>
-                    </div><br>
                 </div>
-            </div>
-
-
-        <!-- Grafik Suhu dan Kelembapan -->
-        <div class="col-xl-6 col-lg-7">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Temperature and Humidity</h6>
-                </div>
-                <div class="card-body">
-                    <div class="chart-area">
-                        <canvas id="suhukelembapan"></canvas>
+                <!-- Grafik Suhu dan Kelembapan -->
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Temperature and Humidity</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="suhukelembapan"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grafik CO2 -->
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">CO2</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="co2"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Grafik CO2 -->
-        <div class="col-xl-6 col-lg-7">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">CO2</h6>
-                </div>
-                <div class="card-body">
-                    <div class="chart-area">
-                        <canvas id="co2"></canvas>
+                <!-- Grafik Intensitas Cahaya -->
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Light Intensity</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area ">
+                                    <canvas id="cahaya"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Grafik Intensitas Cahaya -->
-        <div class="col-xl-6 col-lg-7">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Light Intensity</h6>
-                </div>
-                <div class="card-body">
-                    <div class="chart-area ">
-                        <canvas id="cahaya"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Grafik Konsumsi Air -->
-        <div class="col-xl-6 col-lg-7">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Water Usage</h6>
-                </div>
-                <div class="card-body">
-                    <div class="chart-area">
-                        <canvas id="air"></canvas>
+                    <!-- Grafik Konsumsi Air -->
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Water Usage</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="air"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

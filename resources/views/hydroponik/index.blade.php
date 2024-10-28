@@ -38,7 +38,7 @@
                                     Nutrition
                                 </div>
                                 <div>
-                                    2000 PPM
+                                    1000 PPM
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-6 mb-4">
+            <div class="col-xl-6 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-6 mb-4">
+            <div class="col-xl-6 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -114,36 +114,34 @@
                 <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">Hydroponic Controlling</h6>
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
                     </div>
                     <div class="container">
                         <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                             <!-- Tombol PH Air -->
                             <div class="m-3">
                                 <button class="btn btn-primary" type="submit"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
-                                    <h3 style="color: white;">Water pH</h3>
+                                    style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                                    <h3 style="color: white;">Water PH</h3>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
                                     </div>
                                 </button>
                             </div>
-
                             <!-- Tombol AB Mix -->
                             <div class="m-3">
                                 <button class="btn btn-primary" type="submit"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                                    style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h3 style="color: white;">AB Mix</h3>
                                     <div class="col-auto">
                                         <i class="fab fa-nutritionix"></i>
                                     </div>
                                 </button>
                             </div>
-
                             <!-- Tombol Air Tangki -->
                             <div class="m-3">
                                 <button class="btn btn-primary" type="submit"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                                    style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h3 style="color: white;">Water Level</h3>
                                     <div class="col-auto">
                                         <i class="fas fa-water"></i>
@@ -152,74 +150,70 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                        <div class="row">
+
+                    <div class="row">
                         <div class="center" style="text-align: center; margin: 1%; width: 50.5%">
                             <button class="btn btn-primary mb-2" type="submit">Manual</button>
-                            </div>
+                        </div>
                             <div class="center" style="text-align: center; margin: 1%; width: 40%">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                        Setting
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#greenhouseadjusttable">
+                                    Settings
                                 </button>
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Setting Limit</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                            </div>
+                        <!-- Modal -->
+                            <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                                <div>
+                                                    <label for="minTemp">Water PH Up: </label>
+                                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PH </label> 
+                                                </div>
+                                                <div>
+                                                    <label for="maxTemp">Water PH Down: </label>
+                                                    <input type="number" id="maxTemp" value="100" style="width: 80px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PH </label> 
+                                                </div><br>
+                                                <div>
+                                                    <label for="minTemp">Nutrition Up: </label>
+                                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PPM </label> 
+                                                </div>
+                                                <div>
+                                                    <label for="maxTemp">Nutrition Down: </label>
+                                                    <input type="number" id="maxTemp" value="100" style="width: 80px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PPM </label> 
+                                                </div><br>
+                                                <div>
+                                                    <label for="maxTemp">Water Level: </label>
+                                                    <input type="number" id="maxTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">Cm </label>    
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">pH Min :</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label>Ph</label>
-                                                        
-                                                </form>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">pH Max:</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label>Ph</label>
-                                                </form>
-                                                <br>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">Nutrition Min :</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label> PPM</label>
-                                                </form>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">Nutrition Max:</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label> PPM</label>
-                                                </form>
-                                                <br>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">Water Level :</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label>Cm</label>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                            </div>
+                                            <div class="result" id="result"></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    <div class="result" id="result"></div>
                     </div>
+                </div>
+            </div>
         </div>
-    </div>
 
 <div class="row">
         <div class="col-xl-12 col-lg-8">
