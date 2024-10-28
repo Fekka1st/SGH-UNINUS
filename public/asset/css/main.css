@@ -1603,14 +1603,14 @@ ol {
 }
 
 .header .button .btn {
-    background-color: #3865f2;
-    border: 2px solid #fff;
+    background-color: #1C532A;;
+    border: 2px solid #16ce44;
     color: #fff;
     padding: 12px 30px;
 }
 
 .header .button .btn:hover {
-    background-color: #fff;
+    background-color:#16ce44;
     color: #3865f2;
 }
 
