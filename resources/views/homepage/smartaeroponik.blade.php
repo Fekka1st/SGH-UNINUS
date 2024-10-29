@@ -2,7 +2,7 @@
 
 
 @section('content')
-<section class="hero-area " style="background-color: #1C532A">
+<section class="hero-area">
     <div class="container">
         <div class="row align-items-center">
             <div class="brand_color">
@@ -22,34 +22,33 @@
 
 <!-- Earnings (Monthly) Card Example -->
 <div class="col-xl-4 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
+    <div class="card border-left-info shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        CO2
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                        PH Air
                     </div>
                         <div>
-                            2000PPM
+                            
                         </div>
                 </div>
                 <div class="col-auto">
-                <i class="fab fa-cloudversify"></i>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="col-xl-4 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
+    <div class="card border-left-info shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Intensitas Cahaya
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                        TDS
                     </div>
                         <div>
-                            2000 lx
+                            200 PPM
                         </div>
                 </div>
                 <div class="col-auto">
@@ -60,15 +59,15 @@
     </div>
 </div>
 <div class="col-xl-4 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
+    <div class="card border-left-info shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Pemakaian Air
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                        Suhu Air
                     </div>
                         <div>
-                            1000 Liter
+                            20°C
                         </div>
                 </div>
                 <div class="col-auto">
@@ -79,15 +78,15 @@
     </div>
 </div>
 <div class="col-xl-6 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
+    <div class="card border-left-info shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Rata-Rata Suhu
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                        Volume Air
                     </div>
                         <div>
-                            30°C
+                            50 cm
                         </div>
                 </div>
                 <div class="col-auto">
@@ -98,12 +97,12 @@
     </div>
 </div>
 <div class="col-xl-6 col-md-6 mb-4">
-    <div class="card border-left-primary shadow h-100 py-2">
+    <div class="card border-left-info shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Rata-Rata Kelembapan
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                        Kelembapan Kelembapan
                     </div>
                         <div>
                             50%
@@ -116,81 +115,6 @@
         </div>
     </div>
 </div>
-    <div class="col-xl-6 col-md-6 mb-6">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2 text-center"> <!-- Tambahkan class text-center -->
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Sensor Suhu
-                        </div>
-                        <div>
-                            <div>
-                                <h5>Suhu 1 : 29°C</h5>
-                            </div>
-                            <div>
-                                <h5>Suhu 2 : 28°C</h5>
-                            </div>
-                            <div>
-                                <h5>Suhu 3 : 29°C</h5>
-                            </div>
-                            <div>
-                                <h5>Suhu 4 : 28°C</h5>
-                            </div>
-                            <div>
-                                <h5>Suhu 5 : 28°C</h5>
-                            </div>
-                            <div>
-                                <h5>Suhu 6 : 29°C</h5>
-                            </div>
-                            <div>
-                                <h5>Suhu 7 : 28°C</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-thermometer-full"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-6 col-md-6 mb-6">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2 text-center"> <!-- Tambahkan class text-center -->
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Sensor Kelembaban
-                        </div>
-                        <div>
-                            <h5>Kelembapan 1 : 50%</h5>
-                            <div>
-                                <h5>Kelembapan 2 : 50%</h5>
-                            </div>
-                            <div>
-                                <h5>Kelembapan 3 : 50%</h5>
-                            </div>
-                            <div>
-                                <h5>Kelembapan 4 : 50%</h5>
-                            </div>
-                            <div>
-                                <h5>Kelembapan 5 : 50%</h5>
-                            </div>
-                            <div>
-                                <h5>Kelembapan 6 : 50%</h5>
-                            </div>
-                            <div>
-                                <h5>Kelembapan 7 : 50%</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                    <i class="fas fa-tint"></i>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 

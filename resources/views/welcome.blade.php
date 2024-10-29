@@ -25,10 +25,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('asset/css/main.css')}}" />
     <title>Smart Green House</title>
+    
     <link rel="shortcut icon" type="image/x-icon"
         href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
 
-        @yield('css')
+    @yield('css')
 </head>
 
 <body>
@@ -66,9 +67,9 @@
                                     </li>
                                     <!-- Monitoring -->
                                     <li class="nav-item">
-                                        <a class="dd-menu" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent"
-                                            aria-expanded="true" aria-label="Toggle navigation">Monitoring</a>
+                                        <a class="dd-menu" data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
+                                            aria-controls="navbarSupportedContent" aria-expanded="true"
+                                            aria-label="Toggle navigation">Monitoring</a>
                                         <ul class="sub-menu collapse" id="submenu-1-3" style>
                                             <li class="nav-item m-2">
                                                 <a href="/Monitoring_greenhouse">Smart Greenhouse</a>
@@ -124,7 +125,7 @@
                         <i class="fa-solid fa-phone"></i> (022) 21000229
                     </p>
                     <p>
-                        <i class="fa-solid fa-link"></i> Web: <a href="https://uninus.ac.id/">UNIVERSITAS ISLAM
+                        <i class="fa-solid fa-link"></i> <a href="https://uninus.ac.id/">UNIVERSITAS ISLAM
                             NUSANTARA</a>
                     </p>
                 </div>
@@ -188,7 +189,7 @@
         cu.start();
 
     </script>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

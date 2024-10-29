@@ -1,5 +1,9 @@
 @extends('welcome')
 
+<!-- link fon -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<!-- end link fon -->
+
 @section('content')
 <section class="hero-area d-flex align-items-center justify-content-center" 
     style="background-image: url('https://i.pinimg.com/564x/cc/ac/fa/ccacfa4b58e8c1a30fc2662cb3c6c226.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">

@@ -17,6 +17,7 @@
     @yield('css')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+
 </head>
 
 <body id="page-top">
@@ -62,10 +63,13 @@
     <script src="{{asset('utama/asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('utama/asset/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
     <script src="{{asset('utama/asset/js/sb-admin-2.min.js')}}"></script>
-    <script src="{{asset('utama/asset/vendor/chart.js/Chart.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
+    {{-- <script src="{{asset('utama/asset/vendor/chart.js/Chart.min.js')}}"></script> --}}
     {{-- <script src="{{asset('utama/asset/js/demo/chart-area-demo.js')}}"></script>
     <script src="{{asset('utama/asset/js/demo/chart-pie-demo.js')}}"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
     @yield('script')
 </body>
 
