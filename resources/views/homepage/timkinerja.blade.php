@@ -28,6 +28,7 @@
           <div class="col-lg-12 col-md-12 col-12">
             <div class="row">
               <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
+                <div style="text-align: center;">
                 <h2>Team Support</h2>
                 <p style="margin: 20px 0;line-height: 2em;">Tim Kinerja adalah sekelompok individu yang dibentuk dalam suatu organisasi untuk memantau, mengevaluasi, dan meningkatkan kinerja organisasi atau bagian tertentu dari perusahaan. Fungsi utama tim ini adalah memastikan bahwa tujuan strategis dan operasional dapat tercapai dengan optimal. Berikut adalah beberapa komponen dan fungsi utama dalam isi dari tim kinerja.</p>
                 <div class="row">
@@ -131,11 +132,11 @@
                                             </div>
                                             <div class="user-item">
                                                 <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Prof. Budi Santoso">
-                                                <span>GANIS SANHAJI, S.Si, M..Sc.</span>
+                                                <span>Ganis Sanhaji, S.Si, M..Sc.</span>
                                             </div>
                                             <div class="user-item">
                                                 <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Ir. Ardiansyah, M.T.">
-                                                <span>GALIH, S.T., M.KOM.</span>
+                                                <span>Galih, S.T., M.KOM.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -174,6 +175,10 @@
                                             <div class="user-item">
                                                 <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dr. Lala Sari, M.T.I.">
                                                 <span>Ferry Aditya Herman</span>
+                                            </div>
+                                            <div class="user-item">
+                                                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Dr. Lala Sari, M.T.I.">
+                                                <span>Pak Dadang</span>
                                             </div>
                                     </div>
 

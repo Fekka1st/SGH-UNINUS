@@ -19,9 +19,7 @@ Route::get('/tentangkami', function () {
 Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
-<<<<<<< HEAD
 
-=======
 Route::get('/Monitoring_greenhouse', function () {
     return view('homepage.smartgreenhouse');
 });
@@ -31,7 +29,6 @@ Route::get('/Monitoring_hydroponik', function () {
 Route::get('/Monitoring_aeroponik', function () {
     return view('homepage.smartaeroponik');
 });
->>>>>>> 78fb1d4038f458ceda2aff35d5c8e8a709282e95
 
 
 
