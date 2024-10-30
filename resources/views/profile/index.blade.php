@@ -49,31 +49,24 @@
                         <div class="card-body box-profile">
                             <div class="text-center">
                                 <img id="profileImage" class="img-preview"
-                                    src="https://www.shutterstock.com/image-vector/cute-panda-dabbing-pose-cartoon-260nw-2471990065.jpg"
+                                    src="{{Auth()->user()->foto_profile}}"
                                     alt="User profile picture">
                             </div>
 
                             <h3 class="profile-username text-center">Edit Profile</h3>
 
-                            <!-- Form untuk Input Profile -->
-                            <form action="" method="POST" enctype="multipart/form-data">
+                            <form action="{{route('profile.update')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
-
-                                <!-- Input Foto -->
                                 <div class="form-group">
                                     <label for="photo">Upload Foto</label>
-                                    <input type="file" name="photo" class="form-control-file" id="photoInput"
+                                    <input type="file" name="foto" class="form-control-file" id="photoInput"
                                         accept="image/*" onchange="previewImage(event)">
                                 </div>
-
-                                <!-- Input Nama -->
                                 <div class="form-group">
                                     <label for="name">Nama</label>
                                     <input type="text" name="name" class="form-control"
                                         value="" required>
                                 </div>
-
-                                <!-- Input Email -->
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" name="email" class="form-control"

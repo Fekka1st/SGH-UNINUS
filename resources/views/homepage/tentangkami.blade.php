@@ -92,6 +92,7 @@
         scrollToTopBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
     };
 
+
     // Hover effects for scroll to top button
     scrollToTopBtn.addEventListener('mouseenter', () => {
         scrollToTopBtn.style.backgroundColor = '#1e7a1e';
@@ -110,6 +111,7 @@
         text-align: center;
         color: #fff;
     }
+
 
     .hero-area h2 {
         font-size: 3rem;
