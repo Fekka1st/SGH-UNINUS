@@ -20,6 +20,7 @@ Route::get('/tentangkami', function () {
 Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
+
 Route::get('/Monitoring_greenhouse', function () {
     return view('homepage.smartgreenhouse');
 });
