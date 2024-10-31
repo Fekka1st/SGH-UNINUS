@@ -78,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <div class="card bg-success">
+                                    <div class="card bg-primary">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-white">Average Temp.</h5>
                                             <h6 class="card-subtitle mb-2 text-white">28°C</h6>
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <div class="card bg-success">
+                                    <div class="card bg-primary">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-white">Average RH</h5>
                                             <h6 class="card-subtitle mb-2 text-white">50%</h6>
@@ -240,28 +240,6 @@
 
 
     <div class="row">
-
-            <div class="col-xl-6 col-lg-7">
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary text-center">Chart</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-center flex-wrap">
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(1)">Real-Time</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(2)">1 hours</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(3)">6 Hours</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(4)">1 Days</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(5)">1 Weeks</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(6)">1 Months</button>
-                            <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(7)">6 Months</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
@@ -316,10 +294,27 @@
                         </div>
                     </div>
                         <div class="result" id="result"></div>
-                    </div><br>
+                    </div>
                 </div>
             </div>
-
+                <div class="col-xl-6 col-lg-7">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary text-center">Chart</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(1)">Real-Time</button>
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(2)">1 hours</button>
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(3)">6 Hours</button>
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(4)">1 Days</button>
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(5)">1 Weeks</button>
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(6)">1 Months</button>
+                                <button class="btn btn-primary btn-sm m-2" onclick="updateCharts(7)">6 Months</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
         <!-- Grafik Suhu dan Kelembapan -->
         <div class="col-xl-6 col-lg-7">
@@ -366,7 +361,7 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-area ">
-                        <canvas id="myChart"></canvas>
+                        <canvas id="cahaya"></canvas>
                     </div>
                 </div>
             </div>
