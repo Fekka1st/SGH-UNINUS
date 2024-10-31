@@ -79,6 +79,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <div class="card bg-primary">
+                                    <div class="card bg-primary">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-white">Average Temp.</h5>
                                             <h6 class="card-subtitle mb-2 text-white">28°C</h6>
@@ -162,6 +163,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <div class="card bg-primary">
+                                    <div class="card bg-primary">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-white">Average RH</h5>
                                             <h6 class="card-subtitle mb-2 text-white">50%</h6>
@@ -237,16 +239,14 @@
         </div>
     </div>
 
-
-
     <div class="row">
         <div class="col-xl-6 col-lg-7">
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Controling</h6>
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">Controlling Smart Room</h6>
                 </div>
                 <div class="card-body">
-                    <div style="text-align: center;"><br>
+                    <div style="text-align: center;">
                         <button id="fanButton" class="btn" onclick="toggleFan()" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
                             Fan On
                         </button>
@@ -254,43 +254,42 @@
                     <div style="text-align: center">
                         <label>Auto</label><br>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#greenhouseadjusttable">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#greenhouseadjusttable">
                             Settings
                         </button>
-
+                        <br>
+                        <br>
+                        <br>
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 5%; width: 100%">Chart Monitoring</h6>
                         <!-- Modal -->
                         <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                <div>
-                                    <label for="minTemp">Temperature Minimum: </label>
-                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="maxTemp">Temperature Maximal: </label>
-                                    <input type="number" id="maxTemp" value="100" style="width: 100px; border: none; padding: 5px;" />
-                                </div>
-                            </div>
-
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                            <div>
+                                                <label for="minTemp">Temperature Minimum: </label>
+                                                <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
+                                            </div>
+                                            <div>
+                                                <label for="maxTemp">Temperature Maximal: </label>
+                                                <input type="number" id="maxTemp" value="100" style="width: 100px; border: none; padding: 5px;" />
+                                            </div>
+                                        </div>
                                         <div class="result" id="result"></div>
-
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set</button>
-                            </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                         <div class="result" id="result"></div>
@@ -390,7 +389,6 @@
 
 @section('script')
 <script>
-
         const xValues = ["00:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00"];
         new Chart("suhukelembapan", {
             type: "line",
@@ -693,56 +691,5 @@
             }
         }
     });
-
-
-
-
-
-    document
-        .getElementById("temperatureForm")
-        .addEventListener("submit", function (event) {
-            event.preventDefault(); // Mencegah reload halaman
-
-            // Mendapatkan nilai suhu yang diinput oleh pengguna
-            const temperature = document.getElementById("temperature").value;
-
-            // Menampilkan hasil
-            const resultDiv = document.getElementById("result");
-            resultDiv.textContent =
-                "Suhu diatur ke : " + temperature + "°C";
-        });
-
-</script>
-
-<script>
-    const xValues = [100, 200, 300, 400, 500, 600, 700];
-    new Chart("myChart", {
-        type: "line",
-        data: {
-            labels: xValues,
-            datasets: [{
-                label: 'Suhu',
-                data: [860, 1140, 1060, 1060, 1070, 1110],
-                borderColor: "red",
-                fill: true
-            }, {
-                label: 'Kelembapan',
-                data: [1600, 1700, 1700, 1900, 2000, 2700],
-                borderColor: "green",
-                fill: false
-            }, {
-                label: 'Data asal',
-                data: [300, 700, 2000, 5000, 6000, 5500],
-                borderColor: "blue",
-                fill: false
-            }]
-        },
-        options: {
-            legend: {
-                display: true
-            }
-        }
-    });
-
 </script>
 @endsection

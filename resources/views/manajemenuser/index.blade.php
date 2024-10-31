@@ -19,37 +19,40 @@
         </div>
         <div class="card-body" id="body">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-              Tambah Data
-              </button>
+                Tambah Data
+            </button>
+            <div class="col-12" style="overflow-x:auto;">
+                <table id="myTable" class="display">
+                    <thead>
+                        <tr>
+                            <th width=3%>No</th>
+                            <th width=15%>Foto</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($user as $data => $users)
+                        <tr id="index_{{ $users->id }}">
+                            <td>{{$data + 1}}</td>
+                            <td><img src="{{$users->foto_profile}}" class="img-thumbnail rounded" alt=""></td>
+                            <td>{{$users->name}}</td>
+                            <td>{{$users->email}}</td>
+                            <td class="text-center">
+                                <a href="javascript:void(0)" id="btn-edit-post" data-id="{{ $users->id }}"
+                                    class="btn btn-primary ">EDIT</a>
+                                @method('DELETE')
+                                <a href="{{ route('manajemen_user.destroy', $users->id) }}" class="btn btn-danger"
+                                    data-confirm-delete="true">Delete</a>
+                            </td>
+                        </tr>
+                        @endforeach
 
-            <table id="myTable" class="display">
-                <thead>
-                    <tr>
-                        <th width=3%>No</th>
-                        <th width=15%>Foto</th>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($user as $data => $users)
-                    <tr id="index_{{ $users->id }}">
-                        <td>{{$data + 1}}</td>
-                        <td><img  src="{{$users->foto_profile}}" class="img-thumbnail rounded" alt=""></td>
-                        <td>{{$users->name}}</td>
-                        <td>{{$users->email}}</td>
-                        <td class="text-center">
-                            <a href="javascript:void(0)" id="btn-edit-post" data-id="{{ $users->id }}" class="btn btn-primary ">EDIT</a>
-                            @method('DELETE')
-                            <a href="{{ route('manajemen_user.destroy', $users->id) }}"
-                                class="btn btn-danger" data-confirm-delete="true">Delete</a>
-                        </td>
-                    </tr>
-                    @endforeach
+                    </tbody>
+                </table>
+            </div>
 
-                </tbody>
-            </table>
         </div>
     </div>
 
@@ -61,22 +64,21 @@
 
 @section('script')
 <script>
- $(document).ready( function () {
-    $('#myTable').DataTable();
-} );
-
-$(document).on('click', '#btn-edit-post', function() {
-    var id = $(this).data('id');
-    $.get('manajemen_user/' + id + '/edit', function(data) {
-        $('#user_id').val(data.id);
-        $('#name_up').val(data.name);
-        $('#email_up').val(data.email);
-        $('#password_up').val(data.password);
-        $('#updateForm').attr('action', '/manajemen_user/' + data.id)
-        $('#editModal').modal('show');
+    $(document).ready(function () {
+        $('#myTable').DataTable();
     });
-});
 
+    $(document).on('click', '#btn-edit-post', function () {
+        var id = $(this).data('id');
+        $.get('manajemen_user/' + id + '/edit', function (data) {
+            $('#user_id').val(data.id);
+            $('#name_up').val(data.name);
+            $('#email_up').val(data.email);
+            $('#password_up').val(data.password);
+            $('#updateForm').attr('action', '/manajemen_user/' + data.id)
+            $('#editModal').modal('show');
+        });
+    });
 
 </script>
 
@@ -84,5 +86,3 @@ $(document).on('click', '#btn-edit-post', function() {
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @endsection
-
-
