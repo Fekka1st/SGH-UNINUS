@@ -3,7 +3,8 @@
 
 @section('content')
 
-<section class="hero-area d-flex align-items-center justify-content-center position-relative" style="background-image: url('asset/img/uninusdrown.jpg'); background-size: cover; background-position: center; position: relative; overflow: hidden;">
+<!-- Start Hero Area -->
+<section class="hero-area d-flex align-items-center justify-content-center position-relative" style="background-image: url('asset/img/uninusdrown.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
   <div class="container position-relative" style="z-index: 2;">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -14,8 +15,6 @@
     </div>
   </div>
 </section>
-
-
 <!-- End Hero Area -->
 
 <!-- Start PENJELASAN  -->
@@ -34,7 +33,7 @@
                       <!-- Kolom PENJELASAN -->
                   <div class="col-md-6 d-flex" data-aos="fade-left">
                      <div class="card flex-grow-1 border-0 p-4 bg-white">
-                        <div class="card-body d-flex flex-column justify-content-between" style="background-color: green; border-radius: 15px;">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background-color: #1C532A; border-radius: 15px;">
                               <div>
                                  <h5 class="card-title mb-4" style="color:aliceblue;"><i class="fas fa-leaf me-2"></i> TEAM SUPPORT</h5>
                                  <div class="mt-2">
@@ -86,9 +85,10 @@
                               </h5>
                            </div>
                         <div class="swiper-wrapper">
+                           <!-- 1 -->
                            <article class="card__article swiper-slide">
                               <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img">
+                                 <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
                
@@ -108,10 +108,10 @@
                                  </div>
                               </div>
                            </article>
-               
+                           <!-- 2 -->
                            <article class="card__article swiper-slide">
                            <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi-removebg-preview(2).png')}}" alt="image" class="card__img">
+                                 <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
                
@@ -133,10 +133,10 @@
                            </div>
                            
                            </article>
-               
+                           <!-- 3 -->
                            <article class="card__article swiper-slide">
                            <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi-removebg-preview(2).png')}}" alt="image" class="card__img">
+                                 <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
                
@@ -157,10 +157,10 @@
                                  </div>
                               </div>
                            </article>
-               
+                           <!-- 4 -->
                            <article class="card__article swiper-slide">
                            <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                              <img src="{{asset('asset/img/hamdi-removebg-preview(2).png')}}" alt="image" class="card__img">
+                              <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
                
@@ -181,10 +181,10 @@
                                  </div>
                               </div>
                            </article>
-
+                           <!-- 5 -->
                            <article class="card__article swiper-slide">
                            <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                              <img src="{{asset('asset/img/hamdi-removebg-preview(2).png')}}" alt="image" class="card__img">
+                              <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
                
@@ -227,504 +227,500 @@
 
 <!-- Start MAHASISWA -->
 <section>
-   <div class="card__container swiper">
-      <div class="card__content">
-                     <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px;">
-                        <h5 class="card-title" style="color: #008000; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid green; padding-bottom: 10px;">
-                           TIM MAHASISWA
-                        </h5>
-                     </div>
-                        <div class="swiper-wrapper">
+      <div class="card__container swiper">
+            <div class="card__content">
+                           <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px;">
+                              <h4 class="card-title" style="color: #1C532A; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #1C532A; padding-bottom: 10px;">
+                                 TIM MAHASISWA
+                              </h4>
+                           </div>
+                              <div class="swiper-wrapper">
 
-                           <!-- tim inti mahasiswa -->
+                                 <!-- tim inti mahasiswa -->
 
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/mahasiswa/imam.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/imam.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
 
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">imam</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                 Passionate about development and design, 
-                                 I carry out projects at the request of users.
-                                 </p>
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 1 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/mahasiswa/indra.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Indra Saputra</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Teknik Elektro
-                                 </p>
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 2 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/boy-removebg-preview(1).png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Boyke Adam</h3>
-                                 <p class="card__description" style="color:aliceblue;">
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">imam</h3>
+                                       <p class="card__description" style="color:aliceblue;">
                                        Passionate about development and design, 
                                        I carry out projects at the request of users.
-                                 </p>
-                              
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
+                                       </p>
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- END inti mahasiswa -->
+
+                                 <!-- tim Elektro mahasiswa -->
+                                  <!-- 1 -->
+                                 <!-- Decky Putra Kurnia -->
+                                 <article class="card__article swiper-slide">
+
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/decky.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Decky Putra Kurnia</h3>
+                                          <p class="card__description" style="color:aliceblue;">Firmware Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : Silmi Nur Azmi Silmi
+                                             <p style="margin-top:-10px"><br></p>
+                                          </p>
+
+                                          <div class="card__box">
+                                                <a href="https://www.linkedin.com/in/decky-putra-kurnia-387389260" target="_blank" style="margin-right:20px">
+                                                <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                                </a>
+                                                <a href="https://www.instagram.com/deqkii_" target="_blank">
+                                                <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                                </a>
+                                          </div>
+                                    </div>
+                                 </article>
+                                 <!-- 2 -->
+                                 <!-- Marvin -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/marvin.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Marvin</h3>
+                                       <p class="card__description" style="color:aliceblue;">Network Division/div></p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : (2 orang)
+                                             <p style="margin-top:-10px"><br></p>
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/marvin-mmpin?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"style="margin-right:20px">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href=" https://www.instagram.com/mrvinnr" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- 3 -->
+                                 <!-- Julian -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/julian.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Julian</h3>
+                                       <p class="card__description" style="color:aliceblue;">Design 3D Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : Anisa Febrianti, Anita Ayudya Riski
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/julian260802/" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com/Julian26080" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/iam_juliannn/profilecard/?igsh=eXBzZWl6YjNmcDNt" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- 4 -->
+                                 <!-- Muhammad Iqbal R -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/iqbal.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Muhammad Iqbal R</h3>
+                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : Muhamad Ihsan, Raihan Wahyu Pratama
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/muhammadiqbalrizaldi/" target="_blank" style="margin-right:20px">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/iieqbaalrz/" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- 5 -->
+                                 <!-- Aziz Maulana -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/aziz.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Aziz Maulana</h3>
+                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : Deri Bahtiar, 
+                                             <br>Kusnayadi
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/azis-maulana-217a5627b" target="_blank"style="margin-right:20px">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/azismaulana0909?igsh=MWI1Z3U5Y2pzN2RkYQ==" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- 6-->
+                                 <!-- Indra Saputra -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/indra.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Indra Saputra</h3>
+                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : Muhamad Gias Muharom, Vito Dwi Nur Hidayat
+                                          </p>
+                                       <div class="card__box">
+                                             <a href="https://id.linkedin.com/in/indra-saputra-720242287" target="_blank" style="margin-right:20px">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/sptr_ndra?igsh=aWUyaWV5dzVmZWsy" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- 7 -->
+                                 <!-- Defany Kuswandi -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/defan.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Defany Kuswandi</h3>
+                                       <p class="card__description" style="color:aliceblue;">Electrical Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support : Ahmad Kurnia, Wildan Permana
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/defanykuswandi" target="_blank" style="margin-right:20px">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/defanykuswandi/profilecard/?igsh=M2VjNTN4bnFyYW53" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- 8 -->
+                                 <!-- Herlan Syah -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/helan.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Herlan Syah</h3>
+                                       <p class="card__description" style="color:aliceblue;">Electrical Division</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             Team Support :Hidayat
+                                             <p style="margin-top:-10px"><br></p>
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/herlan-syah-ba04042a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="margin-right:20px">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/lan_syah_/profilecard/?igsh=ZXQxNTNvazJiOGhl" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- END Elektro mahasiswa -->
+                                  
+                                 <!--  tim informatika mahasiswa -->
+                                 <!-- star UI/UX -->
+                                 <!-- Rizki Hendriawan -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/riski-removebg-preview(1).png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Rizki Hendriawan</h3>
+                                       <p class="card__description" style="color:aliceblue;">UI/UX</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             <i>User Interface</i> (UI),<br>
+                                             <i>User Experience</i> (UX)
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+
+                                 <!-- Zen Ahlil Baeri -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/zen.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                          <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Zen Ahlil Baeri</h3>
+                                       <p class="card__description" style="color:aliceblue;">UI/UX</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                             <i>User Interface</i> (UI),<br>
+                                             <i>User Experience</i> (UX)
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/zen-ahlil-6000b5335/</a>" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com/Zen-hyppps" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/zeennnn.be/</a>" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- END UI/UX -->
+
+                                 <!-- Star Frontend -->
+                                 <!-- Boyke Adam -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/boyke.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Boyke Adam</h3>
+                                       <p class="card__description" style="color:aliceblue;">Frontend</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                          Desain antarmuka pengguna untuk pengalaman yang optimal
+                                          </p>
+                                    
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/boyke-adam-9a589a336/</a>" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com/Bokoboy12" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/boyou_are/" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+
+                                 <!-- Ipin Ahmad Syarifudin -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/ipin.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Ipin Ahmad Syarifudin</h3>
+                                       <p class="card__description" style="color:aliceblue;">Frontend</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                                Desain antarmuka pengguna untuk pengalaman yang optimal
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/ipin-ahmad-syarifudin-7008b5310/</a>" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com/ipinasm" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/ipinsya_" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+
+                                 <!-- Adam Panji -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/adam.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Adam Panji</h3>
+                                       <p class="card__description" style="color:aliceblue;">Frontend</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                                Desain antarmuka pengguna untuk pengalaman yang optimal
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/adampanji21/</a>" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- END Frontend -->
+
+                                 <!-- Backend -->
+                                 <!-- Aby Herdiansyah -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/aby.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                          <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Aby Herdiansyah</h3>
+                                       <p class="card__description" style="color:aliceblue;">Backend</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                                Pemrograman server untuk pengolahan data aplikasi
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/aby-herdiansyah/</a>" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com/Abyhrdians" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/abyhrdians/" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- Anif Alfianto -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/anif.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Anif Alfianto</h3>
+                                       <p class="card__description" style="color:aliceblue;">Backend</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                                Pemrograman server untuk pengolahan data aplikasi
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com/in/anif-alfianto-b32b0819b/</a>" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com/anippppppppppp" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/anif.alfi" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- Muhamad Sya'dan M -->
+                                 <article class="card__article swiper-slide">
+                                    <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                                       <img src="{{asset('asset/img/mahasiswa/Syadan.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <div class="card__shadow"></div>
+                                    </div>
+
+                                    <div class="card__data" style="background-color: #1C532A;">
+                                       <h3 class="card__name" style="color:aliceblue;">Muhamad Sya'dan M</h3>
+                                       <p class="card__description" style="color:aliceblue;">Backend</p> 
+                                          <p class="card__description" style="color:aliceblue; margin-top:-26px;">
+                                                Pemrograman server untuk pengolahan data aplikasi
+                                          </p>
+
+                                       <div class="card__box">
+                                             <a href="https://www.linkedin.com" target="_blank">
+                                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
+                                             <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                             <a href="https://www.instagram.com/dan_syadan/" target="_blank">
+                                             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                                             </a>
+                                       </div>
+                                    </div>
+                                 </article>
+                                 <!-- END Backend -->
+                                 <!--  END informatika mahasiswa -->
                               </div>
-                           </article>
+            </div>
 
-                           <!-- 3 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/mahasiswa/riski-removebg-preview(1).png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
+               <!-- Navigation buttons -->
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+               </div>
+               
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+               </div>
 
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Rizki Hendriawan</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 4 -->
-                           <article class="card__article swiper-slide">
-                           <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                              <img src="{{asset('asset/img/mahasiswa/aby.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Aby Herdiansyah</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 5 -->
-                           <article class="card__article swiper-slide">
-                           <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                              <img src="{{asset('asset/img/mahasiswa/zen.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Zen Ahlil Baeri</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 6 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/mahasiswa/Syadan.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Muhamad Sya'dan M</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 7 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/mahasiswa/ipin.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Ipin Ahmad Syarifudin</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 8 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/mahasiswa/anif-removebg-preview.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Anif Alfianto</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 9 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 10 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 11 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 12 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 13 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 14 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 15 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                           <!-- 16 -->
-                           <article class="card__article swiper-slide">
-                              <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                 <img src="{{asset('asset/img/hamdi.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
-                                 <div class="card__shadow"></div>
-                              </div>
-
-                              <div class="card__data" style="background-color: green;">
-                                 <h3 class="card__name" style="color:aliceblue;">Kell Dawx</h3>
-                                 <p class="card__description" style="color:aliceblue;">
-                                    Passionate about development and design, 
-                                    I carry out projects at the request of users.
-                                 </p>
-
-                                 <div class="card__box">
-                                       <a href="https://www.linkedin.com" target="_blank">
-                                       <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://github.com" target="_blank" style="margin-left: 20px; margin-right:20px">
-                                       <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                       <a href="https://www.instagram.com" target="_blank">
-                                       <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
-                                       </a>
-                                 </div>
-                              </div>
-                           </article>
-
-                        </div>
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
       </div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next">
-               <i class="ri-arrow-right-s-line"></i>
-            </div>
-            
-            <div class="swiper-button-prev">
-               <i class="ri-arrow-left-s-line"></i>
-            </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-   </div>
 </section>
 <!-- End MAHASISWA -->
 
@@ -741,7 +737,7 @@
             <!-- 1 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                  <img src="{{asset('asset/img/hamditrb.png')}}" alt="image" class="card__img">
+                  <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
 
@@ -749,6 +745,7 @@
                   <h3 class="card__name">Hamdi Sholahudin, S.T</h3>
                   <p class="card__description">
                      IoT Engineer | Embedded System IoT | Elektrical Engineer
+                     <p style="margin-top:-10px"><br></p>
                   </p>
 
                   <div class="card__box">
@@ -768,14 +765,16 @@
             <!-- 2 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                  <img src="{{asset('asset/img/hamdi-removebg-preview(2).png')}}" alt="image" class="card__img">
+                  <img src="{{asset('asset/img/vendor/ferry.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
 
                <div class="card__data" style="background-color: white;">
                   <h3 class="card__name">Ferry Aditya H, S.T</h3>
                   <p class="card__description">
-                  Web Developer | IoT Engineer | IT Support
+                  Web Developer | IoT Engineer 
+                  <br>| IT Support
+                  <p style="margin-top:-10px"><br></p>
                   </p>
 
                   <div class="card__box">
@@ -785,7 +784,7 @@
                      <a href="https://github.com/Fekka1st" target="_blank"style="margin-left: 20px; margin-right:20px">
                         <i class="fa-brands fa-square-github fa-2xl" style="color: #000;"></i>
                      </a>
-                     <a href="https://www.instagram.com" target="_blank">
+                     <a href="https://www.instagram.com/fekka_1st/" target="_blank">
                         <i class="fa-brands fa-square-instagram fa-2xl" style="color: #000;"></i>
                      </a>
                   </div>
@@ -795,7 +794,7 @@
             <!-- 3 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                  <img src="{{asset('asset/img/hamdi-removebg-preview(2).png')}}" alt="image" class="card__img">
+                  <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
 

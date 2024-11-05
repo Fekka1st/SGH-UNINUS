@@ -24,10 +24,10 @@
                     <div class="col-md-6 d-flex align-items-center">
                         <div class="card-body">
                             <h5 class="card-title">Sejarah Smart Greenhouse</h5>
-                            <p class="card-text text-justify">
+                            <p class="text-justify" style="color: #000000;">
                                 Smart Greenhouse berbasis IoT Fakultas Pertanian Uninus dimulai dari visi untuk memodernisasi praktik pertanian di Indonesia melalui teknologi canggih. Proyek ini didirikan pada tahun 2024 sebagai tanggapan terhadap tantangan global di bidang pertanian, seperti perubahan iklim, ketidakstabilan cuaca, dan kebutuhan akan efisiensi sumber daya.
                             </p>
-                            <p class="card-text text-justify">
+                            <p class="text-justify" style="color: #000000;">
                                 Kolaborasi antara agronomi dan teknik menghasilkan sistem yang memungkinkan pemantauan dan pengendalian lingkungan greenhouse secara otomatis dan real-time. Teknologi ini membantu memastikan pertumbuhan optimal tanaman sepanjang musim.
                             </p>
                         </div>

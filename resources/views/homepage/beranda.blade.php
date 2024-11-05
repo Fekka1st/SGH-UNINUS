@@ -1,6 +1,8 @@
 @extends('welcome')
 
 @section('content')
+
+<!-- star Smart Greenhouse Berbasis IoT di Fakultas Pertanian Uninus -->
 <section id="home" class="hero-area">
     <div class="container" style="font-family: 'Times New Roman', Times, serif;">
         <div class="row align-items-center">
@@ -50,10 +52,10 @@
         </div>
     </div>
 </section>
-<!-- End Hero Area -->
+<!-- End Smart Greenhouse Berbasis IoT di Fakultas Pertanian Uninus -->
 
 <div id="about_us"></div>
-<!-- Start Features Area -->
+<!-- Start Keunggulan Smart Greenhouse -->
 <section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px; font-family: 'Book Antiqua', serif;">
     <div class="container">
         <div class="info-one">
@@ -108,9 +110,9 @@
         </div>
     </div>
 </section>
-<!-- End Features Area -->
+<!-- End Start Keunggulan Smart Greenhouse -->
 
-<!-- Start Achievement Area -->
+<!-- Start Achievement Area Smart Greenhouse -->
 <section id="pricing" class="pricing-table section" style="background-color: #1C532A;">
     <div class="container">
     <div class="row">
@@ -208,9 +210,9 @@
         </div>
     </div>
 </section>
-<!-- End Achievement Area -->
+<!-- End Achievement Area Smart Greenhouse-->
 
-<!-- Start Pricing Table Area -->
+<!-- Start Program dan Kegiatan -->
 <section id="pricing" class="pricing-table section">
     <div class="container">
         <div class="row">
@@ -225,38 +227,39 @@
         </div>
         <div class="row justify-content-center">
             <!-- Membuat grid lebih responsif -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <!-- Menambah jarak bawah untuk mobile -->
-                <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif; " data-wow-delay=".2s">
-                    <div class="text-center">
-                        <h4 class="title" style=" margin-top: 50px; color: white;">Pelatihan dan Workshop</h4>
-                        <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Menyelenggarakan pelatihan bagi mahasiswa dan petani mengenai penggunaan teknologi IoT dalam pertanian.</p>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <!-- Menambah jarak bawah untuk mobile -->
+                    <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif; " data-wow-delay=".2s">
+                        <div class="text-center">
+                            <h4 class="title" style=" margin-top: 50px; color: white;">Pelatihan dan Workshop</h4>
+                            <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Menyelenggarakan pelatihan bagi mahasiswa dan petani mengenai penggunaan teknologi IoT dalam pertanian.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".4s">
-                    <div class="text-center">
-                        <h4 class="title" style=" margin-top: 50px; color: white;">Penelitian dan Pengembangan</h4>
-                        <p style="text-align: justify;margin-right: 35px; margin-bottom: 35px; margin-left: 35px;color: white;">Melakukan penelitian untuk mengembangkan calon varietas/kultivar unggul baru dan mengembangkan metode pertanian yang lebih inovatif.
-                        </p>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".4s">
+                        <div class="text-center">
+                            <h4 class="title" style=" margin-top: 50px; color: white;">Penelitian dan Pengembangan</h4>
+                            <p style="text-align: justify;margin-right: 35px; margin-bottom: 35px; margin-left: 35px;color: white;">Melakukan penelitian untuk mengembangkan calon varietas/kultivar unggul baru dan mengembangkan metode pertanian yang lebih inovatif.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".6s">
-                    <div class="text-center">
-                        <h4 class="title" style=" margin-top: 50px; color: white;">Kerjasama dengan Industri</h4>
-                        <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Bekerja sama dengan perusahaan teknologi dan lembaga penelitian untuk mengembangkan solusi inovatif dalam pertanian.</p>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".6s">
+                        <div class="text-center">
+                            <h4 class="title" style=" margin-top: 50px; color: white;">Kerjasama dengan Industri</h4>
+                            <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Bekerja sama dengan perusahaan teknologi dan lembaga penelitian untuk mengembangkan solusi inovatif dalam pertanian.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Pricing Table Area -->
+<!-- End Program dan Kegiatan -->
 
-<!-- Start Achievement Area -->
+<!-- Start Jenis - Jenis Tanaman -->
 <section class="our-achievement section" style="background-color: #1C532A; font-family: 'Book Antiqua', serif;">
     <div class="container">
         <div class="row">
@@ -303,7 +306,7 @@
         </div>
     </div>
 </section>
-<!-- End Achievement Area -->
+<!-- End Jenis - Jenis Tanaman -->
  
 <!-- Galeri -->
 <section class="our-achievement section" style="background-color:white; padding: 20px; font-family: 'Times New Roman', Times, serif;">
@@ -335,12 +338,12 @@
     </div>
 </section>
 <!-- END Galeri -->
-</div>
+ 
 @endsection
 
 @section('css')
 <!-- link fon -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 <!-- end link fon -->
 @endsection
