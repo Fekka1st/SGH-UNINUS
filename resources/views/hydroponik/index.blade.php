@@ -190,38 +190,41 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                                <div>
-                                                    <label for="minTemp">Water PH Up: </label>
-                                                    <input type="number" id="minTemp" value={{$setting['Limit_ph_min']}} style="width: 100px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PH </label>
+                                            <form action="{{ route('Hydro.settings.update') }}" method="POST">
+                                                @csrf
+                                                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                                    <div>
+                                                        <label for="minTemp">Water PH Up: </label>
+                                                        <input type="number" name="Limit_ph_min"  step="0.01" value="{{ $setting['Limit_ph_min'] }}" style="width: 100px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PH </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="maxTemp">Water PH Down: </label>
+                                                        <input type="number" name="Limit_ph_max" step="0.01" value="{{ $setting['Limit_ph_max'] }}" style="width: 80px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PH </label>
+                                                    </div><br>
+                                                    <div>
+                                                        <label for="minTemp">Nutrition Up: </label>
+                                                        <input type="number" name="Limit_nutrisi_min" value="{{ $setting['Limit_nutrisi_min'] }}" style="width: 100px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PPM </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="maxTemp">Nutrition Down: </label>
+                                                        <input type="number" name="Limit_nutrisi_max" value="{{ $setting['Limit_nutrisi_max'] }}" style="width: 80px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PPM </label>
+                                                    </div><br>
+                                                    <div>
+                                                        <label for="maxTemp">Water Level: </label>
+                                                        <input type="number" name="tangki_air" value="{{ $setting['tangki_air'] }}" style="width: 100px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">Cm </label>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <label for="maxTemp">Water PH Down: </label>
-                                                    <input type="number" id="maxTemp" value={{$setting['Limit_ph_max']}} style="width: 80px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PH </label>
-                                                </div><br>
-                                                <div>
-                                                    <label for="minTemp">Nutrition Up: </label>
-                                                    <input type="number" id="minTemp" value={{$setting['Limit_nutrisi_min']}} style="width: 100px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PPM </label>
+                                                <div class="result" id="result"></div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button class="btn btn-primary mb-2" type="submit">Set</button>
                                                 </div>
-                                                <div>
-                                                    <label for="maxTemp">Nutrition Down: </label>
-                                                    <input type="number" id="maxTemp" value={{$setting['Limit_nutrisi_max']}} style="width: 80px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PPM </label>
-                                                </div><br>
-                                                <div>
-                                                    <label for="maxTemp">Water Level: </label>
-                                                    <input type="number" id="maxTemp" value={{$setting['tangki_air']}} style="width: 100px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">Cm </label>
-                                                </div>
-                                            </div>
-                                            <div class="result" id="result"></div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button class="btn btn-primary mb-2" type="button" onclick="setTemperature()">Set</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
