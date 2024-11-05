@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('device_settings', function (Blueprint $table) {
             $table->id();
             $table->string('setting_name', 100);
-            $table->integer('setting_value');
+            $table->float('setting_value');
             $table->integer('device_id');
             $table->timestamps();
         });

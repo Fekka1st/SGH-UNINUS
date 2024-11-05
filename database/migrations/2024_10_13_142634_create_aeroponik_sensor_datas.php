@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('aeroponik_sensor_datas', function (Blueprint $table) {
             $table->id();
-            $table->integer('ph_air');
+            $table->float('ph_air');
             $table->integer('tds');
             $table->integer('volume_air');
-            $table->integer('suhu_air');
+            $table->float('suhu_air');
             $table->integer('kelembaban_udara');
             $table->integer('device_id');
             $table->timestamps();

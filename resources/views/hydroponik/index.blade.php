@@ -19,6 +19,9 @@
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Water pH
                                 </div>
+                                <div>
+                                    {{$data->ph_air}}
+                                </div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-tint"></i>
@@ -37,7 +40,7 @@
                                     Nutrition
                                 </div>
                                 <div>
-                                    1000 PPM
+                                    {{$data->tds}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -57,7 +60,7 @@
                                   Water Temperature
                                 </div>
                                 <div>
-                                    30 °C
+                                 {{$data->suhu_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -77,7 +80,7 @@
                                     Water Level
                                 </div>
                                 <div>
-                                    100 cm
+                                    {{$data->volume_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -97,7 +100,7 @@
                                     Water Flow
                                 </div>
                                 <div>
-                                    10 m/s
+                                    {{$data->laju_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -116,17 +119,24 @@
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                         <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
                     </div>
+
+                    @if ($device->mode == 1)
+                    <div>Mode: Auto </div>
+                    @else
                     <div class="container">
                         <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                             <!-- Tombol PH Air -->
                             <div class="m-3">
+
                                 <button class="btn btn-primary" type="submit"
                                     style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
-                                    <h3 style="color: white;">Water PH</h3>
+                                    <h3 style="color: white;">Pompa Water PH UP</h3>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
+                                        <h4 class="text-danger"><b>OFF</b></h4>
                                     </div>
                                 </button>
+
                             </div>
                             <!-- Tombol AB Mix -->
                             <div class="m-3">
@@ -151,10 +161,18 @@
                         </div>
                     </div>
 
+                    @endif
+
                     <div class="row">
-                        <div class="center" style="text-align: center; margin: 1%; width: 50.5%">
-                            <button class="btn btn-primary mb-2" type="submit">Manual</button>
-                        </div>
+                        <form action="{{ route('changeMode', $device->id) }}" method="POST" style="text-align: center; margin: 1%; width: 50.5%">
+                            @csrf
+                            @if ($device->mode == 1)
+                                <button class="btn btn-primary mb-2" type="submit">Mode: Auto</button>
+                            @else
+                                <button class="btn btn-primary mb-2" type="submit">Mode: Manual</button>
+                            @endif
+                        </form>
+
                             <div class="center" style="text-align: center; margin: 1%; width: 40%">
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
                                     data-target="#greenhouseadjusttable">
@@ -175,28 +193,28 @@
                                             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                                 <div>
                                                     <label for="minTemp">Water PH Up: </label>
-                                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PH </label> 
+                                                    <input type="number" id="minTemp" value={{$setting['Limit_ph_min']}} style="width: 100px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PH </label>
                                                 </div>
                                                 <div>
                                                     <label for="maxTemp">Water PH Down: </label>
-                                                    <input type="number" id="maxTemp" value="100" style="width: 80px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PH </label> 
+                                                    <input type="number" id="maxTemp" value={{$setting['Limit_ph_max']}} style="width: 80px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PH </label>
                                                 </div><br>
                                                 <div>
                                                     <label for="minTemp">Nutrition Up: </label>
-                                                    <input type="number" id="minTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PPM </label> 
+                                                    <input type="number" id="minTemp" value={{$setting['Limit_nutrisi_min']}} style="width: 100px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PPM </label>
                                                 </div>
                                                 <div>
                                                     <label for="maxTemp">Nutrition Down: </label>
-                                                    <input type="number" id="maxTemp" value="100" style="width: 80px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PPM </label> 
+                                                    <input type="number" id="maxTemp" value={{$setting['Limit_nutrisi_max']}} style="width: 80px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">PPM </label>
                                                 </div><br>
                                                 <div>
                                                     <label for="maxTemp">Water Level: </label>
-                                                    <input type="number" id="maxTemp" value="0" style="width: 100px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">Cm </label>    
+                                                    <input type="number" id="maxTemp" value={{$setting['tangki_air']}} style="width: 100px; border: none; padding: 5px;" />
+                                                    <label for="maxTemp">Cm </label>
                                                 </div>
                                             </div>
                                             <div class="result" id="result"></div>
