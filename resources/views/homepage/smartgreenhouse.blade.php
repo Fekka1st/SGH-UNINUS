@@ -2,14 +2,24 @@
 
 
 @section('content')
-<section id="overview" class="app-info section">
-<div style="height: 200px; padding: 50px 0;">
-<h1>Smart Room GreenHouse</h1>
-</div>
+<section class="hero-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="brand_color">
+                <div">
+                    <h2 style="color: white;">
+                        <b>Smart Room GreenHouse</b>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="overview" class="app-info section" style="padding-top:50px;padding-bottom:50px">
 <div class="container-fluid">
 <div class="row">
 
-<!-- Earnings (Monthly) Card Example -->
 <div class="col-xl-4 col-md-6 mb-4">
     <div class="card border-left-primary shadow h-100 py-2">
         <div class="card-body">
@@ -17,8 +27,13 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                         CO2
-                        <div id='co2Chart'></div>
                     </div>
+                        <div>
+                            1000 PPM
+                        </div>
+                </div>
+                <div class="col-auto">
+
                 </div>
             </div>
         </div>
@@ -31,8 +46,13 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                         Light Intensity
-                        <div id='cahayaChart'></div>
                     </div>
+                        <div>
+                            1000 LX
+                        </div>
+                </div>
+                <div class="col-auto">
+
                 </div>
             </div>
         </div>
@@ -45,8 +65,13 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                         Water Volume
-                        <div id='airChart'></div>
                     </div>
+                        <div>
+                            30M/3
+                        </div>
+                </div>
+                <div class="col-auto">
+
                 </div>
             </div>
         </div>
@@ -59,8 +84,13 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                         Temp Average
-                        <div id='myChart'></div>
                     </div>
+                        <div>
+                            20°C
+                        </div>
+                </div>
+                <div class="col-auto">
+                
                 </div>
             </div>
         </div>
@@ -73,8 +103,13 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                         Room Panel Temp
-                        <div id='panelChart'></div>
                     </div>
+                        <div>
+                            20°C
+                        </div>
+                </div>
+                <div class="col-auto">
+
                 </div>
             </div>
         </div>
@@ -86,14 +121,100 @@
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Rh Average
-                        <div id='kelembabanChart'></div>
+                        Average RH
                     </div>
+                        <div>
+                            40%
+                        </div>
+                </div>
+                <div class="col-auto">
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Earnings (Monthly) Card Example -->
+<div class="col-xl-4">
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">CO2</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="col-12"></div>
+                <div id='co2Chart'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-4">
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Light Intensity</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="col-12"></div>
+                <div id='cahayaChart'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-4">
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Water Volume</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="col-12"></div>
+                <div id='airChart'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-4">
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Temp Average</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="col-12"></div>
+                <div id='myChart'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-4">
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Room Panel Temp</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="col-12"></div>
+                <div id='panelChart'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-4">
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">RH Average</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-area">
+                    <div class="col-12"></div>
+                <div id='kelembabanChart'></div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="col-xl-6 col-md-6 mb-6">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
@@ -204,7 +325,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v', //default
+          text: '%v °C', //default
           fontSize: 24,
           
           
@@ -231,7 +352,7 @@
             offsetX: 15
           }]
         },
-        labels: ['0', '50', '100'],
+        labels: ['0', '25', '50'],
         ring: {
           size: 50,
           rules: [{
@@ -271,7 +392,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v', //default
+          text: '%v %', //default
           fontSize: 24,
           
           
@@ -338,7 +459,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v', //default
+          text: '%v PPM', //default
           fontSize: 24,
           
           
@@ -365,7 +486,7 @@
             offsetX: 15
           }]
         },
-        labels: ['0', '50', '100'],
+        labels: ['0', '500', '1000'],
         ring: {
           size: 50,
           rules: [{
@@ -405,7 +526,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v', //default
+          text: '%v M/3', //default
           fontSize: 24,
           
           
@@ -432,7 +553,7 @@
             offsetX: 15
           }]
         },
-        labels: ['0', '50', '100'],
+        labels: ['0', '750', '1500'],
         ring: {
           size: 50,
           rules: [{
@@ -472,7 +593,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v', //default
+          text: '%v LX', //default
           fontSize: 24,
           
           
@@ -499,7 +620,7 @@
             offsetX: 15
           }]
         },
-        labels: ['0', '50', '100'],
+        labels: ['0', '2000', '4000'],
         ring: {
           size: 50,
           rules: [{
@@ -539,7 +660,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v', //default
+          text: '%v °C', //default
           fontSize: 24,
           
           
@@ -566,7 +687,7 @@
             offsetX: 15
           }]
         },
-        labels: ['0', '50', '100'],
+        labels: ['0', '25', '50'],
         ring: {
           size: 50,
           rules: [{
