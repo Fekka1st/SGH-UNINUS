@@ -9,7 +9,6 @@
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Hydroponic</h1>
-
         <div class="row">
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-4 col-md-6 mb-4">
@@ -19,6 +18,9 @@
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Water pH
+                                </div>
+                                <div>
+                                    {{$data->ph_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -38,7 +40,7 @@
                                     Nutrition
                                 </div>
                                 <div>
-                                    2000 PPM
+                                    {{$data->tds}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -58,7 +60,7 @@
                                   Water Temperature
                                 </div>
                                 <div>
-                                    30 °C
+                                 {{$data->suhu_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -69,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-6 mb-4">
+            <div class="col-xl-6 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -78,7 +80,7 @@
                                     Water Level
                                 </div>
                                 <div>
-                                    100 cm
+                                    {{$data->volume_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -89,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-6 mb-4">
+            <div class="col-xl-6 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -98,7 +100,7 @@
                                     Water Flow
                                 </div>
                                 <div>
-                                    10 m/s
+                                    {{$data->laju_air}}
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -109,41 +111,47 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">Hydroponic Controlling</h6>
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
                     </div>
+
+                    @if ($device->mode == 1)
+                    <div>Mode: Auto </div>
+                    @else
                     <div class="container">
                         <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                             <!-- Tombol PH Air -->
                             <div class="m-3">
+
                                 <button class="btn btn-primary" type="submit"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
-                                    <h3 style="color: white;">Water pH</h3>
+                                    style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                                    <h3 style="color: white;">Pompa Water PH UP</h3>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
+                                        <h4 class="text-danger"><b>OFF</b></h4>
                                     </div>
                                 </button>
-                            </div>
 
+                            </div>
                             <!-- Tombol AB Mix -->
                             <div class="m-3">
                                 <button class="btn btn-primary" type="submit"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                                    style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h3 style="color: white;">AB Mix</h3>
                                     <div class="col-auto">
                                         <i class="fab fa-nutritionix"></i>
                                     </div>
                                 </button>
                             </div>
-
                             <!-- Tombol Air Tangki -->
                             <div class="m-3">
                                 <button class="btn btn-primary" type="submit"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                                    style="border: 1px solid #4e73df; padding: 20px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h3 style="color: white;">Water Level</h3>
                                     <div class="col-auto">
                                         <i class="fas fa-water"></i>
@@ -152,185 +160,189 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                        <div class="row">
-                        <div class="center" style="text-align: center; margin: 1%; width: 50.5%">
-                            <button class="btn btn-primary mb-2" type="submit">Manual</button>
-                            </div>
+
+                    @endif
+
+                    <div class="row">
+                        <form action="{{ route('changeMode', $device->id) }}" method="POST" style="text-align: center; margin: 1%; width: 50.5%">
+                            @csrf
+                            @if ($device->mode == 1)
+                                <button class="btn btn-primary mb-2" type="submit">Mode: Auto</button>
+                            @else
+                                <button class="btn btn-primary mb-2" type="submit">Mode: Manual</button>
+                            @endif
+                        </form>
+
                             <div class="center" style="text-align: center; margin: 1%; width: 40%">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                        Setting
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#greenhouseadjusttable">
+                                    Settings
                                 </button>
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Setting Limit</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">pH Min :</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label>Ph</label>
-                                                        
-                                                </form>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">pH Max:</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label>Ph</label>
-                                                </form>
-                                                <br>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">Nutrition Min :</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label> PPM</label>
-                                                </form>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">Nutrition Max:</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label> PPM</label>
-                                                </form>
-                                                <br>
-                                                <form id="temperatureForm">
-                                                    <label for="temperature">Water Level :</label>
-                                                    <input type="number" id="temperature" name="temperature"
-                                                        required />
-                                                    <label>Cm</label>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                            </div>
+                            </div>
+                        <!-- Modal -->
+                            <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="{{ route('Hydro.settings.update') }}" method="POST">
+                                                @csrf
+                                                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                                    <div>
+                                                        <label for="minTemp">Water PH Up: </label>
+                                                        <input type="number" name="Limit_ph_min"  step="0.01" value="{{ $setting['Limit_ph_min'] }}" style="width: 100px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PH </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="maxTemp">Water PH Down: </label>
+                                                        <input type="number" name="Limit_ph_max" step="0.01" value="{{ $setting['Limit_ph_max'] }}" style="width: 80px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PH </label>
+                                                    </div><br>
+                                                    <div>
+                                                        <label for="minTemp">Nutrition Up: </label>
+                                                        <input type="number" name="Limit_nutrisi_min" value="{{ $setting['Limit_nutrisi_min'] }}" style="width: 100px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PPM </label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="maxTemp">Nutrition Down: </label>
+                                                        <input type="number" name="Limit_nutrisi_max" value="{{ $setting['Limit_nutrisi_max'] }}" style="width: 80px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">PPM </label>
+                                                    </div><br>
+                                                    <div>
+                                                        <label for="maxTemp">Water Level: </label>
+                                                        <input type="number" name="tangki_air" value="{{ $setting['tangki_air'] }}" style="width: 100px; border: none; padding: 5px;" />
+                                                        <label for="maxTemp">Cm </label>
+                                                    </div>
+                                                </div>
+                                                <div class="result" id="result"></div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button class="btn btn-primary mb-2" type="submit">Set</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <div class="result" id="result"></div>
                     </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-<div class="row">
-        <div class="col-xl-12 col-lg-8">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">
-                        Chart Monitoring</h6>
-                </div>
-                <div class="row">
-                    <div class="container text-center mb-4"><br>
-                        <div class="row justify-content-center">
-                            <div class="col-6 col-md-2 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(1)" display: flex;>Real-Time</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(2)" display: flex;>1 Hour</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(3)" display: flex;>6 Hour</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(4)" display: flex;>1 Day</button>
-                            </div>
-                            <div class="col-6 col-md-1 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(5)" display: flex;>1 Week</button>
-                            </div>
-                            <div class="col-6 col-md-2 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(6)" display: flex;>1 Month</button>
-                            </div>
-                            <div class="col-6 col-md-2 mb-2">
-                                <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(7)" display: flex;>6 Month</button>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-8">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">
+                            Chart Monitoring</h6>
                     </div>
-                </div>
-        
-
-
-                <!-- Content Row -->
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water Temperature</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="suhu"></canvas>
+                    <div class="row">
+                        <div class="container text-center mb-4"><br>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-md-2 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(1)" display: flex;>Real-Time</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(2)" display: flex;>1 Hour</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(3)" display: flex;>6 Hour</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(4)" display: flex;>1 Day</button>
+                                </div>
+                                <div class="col-6 col-md-1 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(5)" display: flex;>1 Week</button>
+                                </div>
+                                <div class="col-6 col-md-2 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(6)" display: flex;>1 Month</button>
+                                </div>
+                                <div class="col-6 col-md-2 mb-2">
+                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(7)" display: flex;>6 Month</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water Flow</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="laju"></canvas>
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water Temperature</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="suhu"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water pH</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="Co²"></canvas>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water Flow</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="laju"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Nutrition</h6>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="ppm"></canvas>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water pH</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="Co²"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-12 col-lg-7">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Water Level</h6>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Nutrition</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="ppm"></canvas>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="tangki"></canvas>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Water Level</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="tangki"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +351,6 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
 
 

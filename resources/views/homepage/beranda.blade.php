@@ -217,13 +217,13 @@
             <div class="col-12">
                 <div class="section-title text-center" style="font-family: 'Book Antiqua', serif;">
 
-                    <h2 data-aos="zoom-out-up" data-wow-delay=".4s"><b>Program dan Kegiatan</b></h2>
-                    <p data-aos="zoom-out-up" data-wow-delay=".6s">Berikut adalah beberapa Program dan Kegiatan yang kami gunakan
+                    <h2 data-wow-delay=".4s"><b>Program dan Kegiatan</b></h2>
+                    <p data-wow-delay=".6s">Berikut adalah beberapa Program dan Kegiatan yang kami gunakan
                         untuk metode penanaman</p>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center" data-aos="zoom-in-down">
+        <div class="row justify-content-center">
             <!-- Membuat grid lebih responsif -->
             <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <!-- Menambah jarak bawah untuk mobile -->
@@ -234,7 +234,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="zoom-in-down">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".4s">
                     <div class="text-center">
                         <h4 class="title" style=" margin-top: 50px; color: white;">Penelitian dan Pengembangan</h4>
@@ -243,7 +243,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="zoom-in-down">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".6s">
                     <div class="text-center">
                         <h4 class="title" style=" margin-top: 50px; color: white;">Kerjasama dengan Industri</h4>
@@ -318,18 +318,18 @@
         <div class="row">
             <!-- Kolom 1 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf2.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-right">
-                <img src="{{asset('asset/img/sgf1.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 2" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-right">
+                <img src="{{asset('asset/img/sgf2.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;">
+                <img src="{{asset('asset/img/sgf1.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 2" style="width: 500px; height: 200px; object-fit: cover;">
             </div>
             <!-- Kolom 2 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf6.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 3" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-right">
-                <img src="{{asset('asset/img/sgf4.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 4" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-left">
+                <img src="{{asset('asset/img/sgf6.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 3" style="width: 500px; height: 200px; object-fit: cover;">
+                <img src="{{asset('asset/img/sgf4.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 4" style="width: 500px; height: 200px; object-fit: cover;">
             </div>
             <!-- Kolom 3 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf9.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 5" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-left">
-                <img src="{{asset('asset/img/sgf14.jpeg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 6" style="width: 500px; height: 200px; object-fit: cover;" data-aos="fade-left">
+                <img src="{{asset('asset/img/sgf9.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 5" style="width: 500px; height: 200px; object-fit: cover;">
+                <img src="{{asset('asset/img/sgf14.jpeg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 6" style="width: 500px; height: 200px; object-fit: cover;">
             </div>
         </div>
     </div>

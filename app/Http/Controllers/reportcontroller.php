@@ -15,9 +15,10 @@ class reportcontroller extends Controller
     }
 
     public function generateReport(Request $request) {
-        $deviceType = $request->input('device_type');
-        $timeRange = $request->input('time_range');
-        
+        $deviceType = $request->device_type;
+        $timeRange = $request->time_range;
+
+        // Mengatur interval waktu berdasarkan pilihan pengguna
         switch($timeRange) {
             case '1 Hari':
                 $interval = '1 DAY';
@@ -41,47 +42,51 @@ class reportcontroller extends Controller
         $tableName = '';
         $selectColumns = '';
 
-
+        // Menentukan tabel dan kolom yang dipilih berdasarkan tipe perangkat
         if ($deviceType == 'hydroponik') {
-            $tableName = 'SensorData_SMART_HYDROPONIK';
+            $tableName = 'hydroponik_sensor_datas';
             $selectColumns = '
-                AVG(suhu) as avg_suhu,
-                AVG(ph) as avg_ph,
+                AVG(ph_air) as avg_ph,
                 AVG(tds) as avg_tds,
+                AVG(laju_air) as avg_laju,
                 AVG(volume_air) as avg_volume_air,
                 AVG(suhu_air) as avg_suhu_air';
         } elseif ($deviceType == 'aeroponik') {
-            $tableName = 'SensorData_SMART_AEROPONIK';
+            $tableName = 'aeroponik_sensor_datas';
             $selectColumns = '
-                AVG(suhu) as avg_suhu,
-                AVG(ph) as avg_ph,
+                ROUND(AVG(suhu_air),2) as avg_suhu,
+                AVG(ph_air) as avg_ph,
                 AVG(tds) as avg_tds,
-                AVG(humidity) as avg_humidity,
+                AVG(kelembaban_udara) as avg_kelembaban,
                 AVG(volume_air) as avg_volume_air';
         } elseif ($deviceType == 'greenhouse') {
-            $tableName = 'SensorData_SMART_GREENHOUSE';
+            $tableName = 'greenhouse_sensor_datas';
             $selectColumns = '
-                AVG(temperature) as avg_temperature,
-                AVG(humidity) as avg_humidity,
+                AVG(suhu) as avg_temperature,
+                AVG(kelembaban) as avg_humidity,
                 AVG(co2) as avg_co2,
-                AVG(light_intensity) as avg_light_intensity,
-                AVG(water_consumption) as avg_water_consumption';
+                AVG(intensitas) as avg_light_intensity,
+                AVG(konsumsi_air) as avg_water_consumption';
         }
 
-        if (empty($tableName) || empty($columns)) {
+        if (empty($tableName) || empty($selectColumns)) {
             return response()->json(['message' => 'Device type tidak valid atau tabel tidak ditemukan'], 400);
         }
 
+        // Query data dari tabel yang dipilih dengan agregasi dan pemformatan waktu
         $data = DB::table($tableName)
-            ->select(DB::raw("$selectColumns, DATE_FORMAT(timestamp, '%Y-%m-%d %H:00:00') as hour_block"))
-            ->whereRaw("timestamp >= NOW() - INTERVAL $interval")
+            ->select(DB::raw("$selectColumns, DATE_FORMAT(created_at, '%Y-%m-%d %H:00:00') as hour_block"))
+            ->whereRaw("created_at >= NOW() - INTERVAL $interval")
             ->groupBy('hour_block')
             ->orderBy('hour_block', 'ASC')
             ->get();
 
-        if($data->isEmpty()) {
+        if ($data->isEmpty()) {
             return response()->json(['message' => 'Data tidak ditemukan'], 404);
         }
-        return response()->json($data);
+
+        // Mengirimkan data ke view jika diperlukan
+        return view('report.table', compact('data','deviceType'));
     }
+
 }
