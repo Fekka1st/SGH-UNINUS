@@ -2,26 +2,38 @@
 
 @section('content')
 
+<section class="HERO-AREA d-flex align-items-center justify-content-center position-relative" style="background-image: url('asset/img/tambakdepanununis.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 90vh;">
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="text-white animate-slide-up" data-aos="fade-down" style="z-index: 3; color: white; font-family: 'Poppins', sans-serif;">
+          <b>SELAMAT DATANG</b>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- star Smart Greenhouse Berbasis IoT di Fakultas Pertanian Uninus -->
-<section id="home" class="hero-area">
-    <div class="container" style="font-family: 'Times New Roman', Times, serif;">
+<section id="home" class="hero-area" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);">
+    <div class="container" style="font-family: 'Poppins', sans-serif;">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-12 col-12 mb-4">
                 <!-- Margin bawah -->
                 <div class="hero-content" data-aos="fade-right">
-                    <h1 class="wow fadeInLeft" data-wow-delay=".4s"><i>Smart Greenhouse</i> Berbasis <i>IoT</i> di Fakultas Pertanian Uninus</h1>
+                    <h1 class="wow fadeInLeft" data-wow-delay=".4s" style="font-size: 33px;"><i>Smart Greenhouse</i> Berbasis <i>IoT</i> di Fakultas Pertanian Uninus</h1>
                     <p class="wow fadeInLeft"
-                        style="color: white; line-height: 1.5em; margin-top: 15px; font-size: 14px;  text-align: justify;"
-                        data-wow-delay=".8s"> Selamat datang di <i>Smart Greenhouse</i> Fakultas Pertanian Universitas Islam Nusantara (Uninus). Kami berkomitmen untuk menerapkan teknologi terbaru dalam bidang pertanian untuk meningkatkan efisiensi dan produktivitas tanaman. Smart Greenhouse dilengkapi dengan sistem <i>Internet of Things</i> (IoT) yang dikembangkan oleh Fakultas Teknik Uninus. Dengan smart greenhouse kami berkomitmen untuk menciptakan masa depan pertanian yang lebih baik, berkelanjutan, dan ramah lingkungan. 
+                        style="color: white; line-height: 1.5em; margin-top: 15px; font-size: 17px;  text-align: justify; font-family: 'Poppins', sans-serif;"
+                        data-wow-delay=".8s"> Selamat datang di <i>Smart Greenhouse</i> Fakultas Pertanian Uninus. Kami menerapkan teknologi terkini untuk efisiensi dan produktivitas tanaman. Dilengkapi sistem IoT hasil pengembangan Fakultas Teknik, kami berkomitmen menciptakan pertanian berkelanjutan dan ramah lingkungan.
                     </p>
                     <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                        <a href="#about_us" class="btn text-white bg-success">Tentang</a>
+                        <a href="#about_us" class="btn text-white bg-success" style="font-size: 17px;">Tentang</a>
                         <a href="https://www.youtube.com/watch?v=917dBBxONh0" target="_blank"
                             class="glightbox video-button">
                             <span class="video bg-success">
                             <i class="lni lni-play text-white"></i>
                             </span>
-                            <span class="text-white m-3"><B>Video Green House</B></span>
+                            <span class="text-white m-3" style="font-family: 'Poppins', sans-serif; font-size: 17px;"><B>Video Green House</B></span>
                         </a>
                     </div>
                 </div>
@@ -56,16 +68,16 @@
 
 <div id="about_us"></div>
 <!-- Start Keunggulan Smart Greenhouse -->
-<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px; font-family: 'Book Antiqua', serif;">
+<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px; font-family: 'Poppins', sans-serif; background: linear-gradient(to left, #A8D5E3, #fff);">
     <div class="container">
         <div class="info-one">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="info-text wow fadeInLeft" data-aos="zoom-out-right">
 
-                        <h2><b>Keunggulan</b> <i><b>Smart Greenhouse</b></i></h2>
-                        <p style="margin: 20px 0; line-height: 2em; text-align: justify; color: black; font-size: 14px"> 
-                        <i>Smart Greenhouse</i> kami dirancang untuk menanggapi kebutuhan pertanian modern dengan fokus pada keberlanjutan dan efisiensi. Dengan sistem berbasis <i>IoT</i>, kami mampu mengurangi pemakaian berbasis sumber daya seperti air dan energi, serta meningkatkan produktivitas tanaman. Sistem hidroponik dan aeroponik yang kami terapkan di dalam <i>smart greenhouse</i> memungkinkan penanaman tanpa menggunakan tanah, sehingga lebih ramah lingkungan dan efektif dalam ruang terbatas. Ini menjadikan model pertanian kami sangat cocok untuk diterapkan di daerah perkotaan atau wilayah dengan lahan yang terbatas. Selain itu, proyek ini berfungsi sebagai pusat penelitian dan pengembangan bagi mahasiswa dan peneliti yang tertarik pada bidang pertanian modern. Data yang dikumpulkan dari sensor <i>IoT</i> juga digunakan dalam penelitian untuk terus memperbaiki sistem budidaya dan memahami lebih baik faktor-faktor yang mempengaruhi pertumbuhan tanaman.
+                        <h3><b>Keunggulan</b> <i><b>Smart Greenhouse</b></i></h3>
+                        <p style="margin: 20px 0; line-height: 2em; text-align: justify; color: black; font-size: 17px;"> 
+                        <i>Smart Greenhouse</i> kami dirancang untuk memenuhi kebutuhan pertanian modern dengan keberlanjutan dan efisiensi. Berbasis <i>IoT</i>, kami menghemat air dan energi, serta meningkatkan produktivitas tanaman. Sistem hidroponik dan aeroponik tanpa tanah memungkinkan penanaman ramah lingkungan di ruang terbatas, ideal untuk perkotaan. Proyek ini menjadi pusat riset mahasiswa dan peneliti, memanfaatkan data sensor <i>IoT</i> untuk memahami dan meningkatkan pertumbuhan tanaman.
                         </p>
                     </div>
                 </div>
@@ -113,15 +125,15 @@
 <!-- End Start Keunggulan Smart Greenhouse -->
 
 <!-- Start Achievement Area Smart Greenhouse -->
-<section id="pricing" class="pricing-table section" style="background-color: #1C532A;">
+<section id="pricing" class="pricing-table section" style="background: linear-gradient(to left, #000000, #1C532A, #005000); font-family: 'Poppins', sans-serif;">
     <div class="container">
     <div class="row">
             <div class="col-12">
                 <div class="text-center" style="color: white;">
 
-                    <h2 style="color: white; font-family: 'Open Sans', sans-serif;"><b>Smart Greenhouse</b></h2>
+                    <h2 style="color: white;"><b>Smart Greenhouse</b></h2>
 
-                    <p>Berikut adalah beberapa Fasilitas Greenhouse yang kami gunakan untuk metode penanaman</p>
+                    <p style="font-size: 17px;  font-family: 'Poppins', sans-serif;">Berikut adalah beberapa Fasilitas Greenhouse yang kami gunakan untuk metode penanaman</p>
                 </div>
             </div>
         </div>
@@ -131,10 +143,10 @@
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6 col-12 mb-4">
-                            <div class="single-table" style="height: 100%; background-color: #F0F0F0;">
-                                <div class="text-center">
-                                    <h4 class="title" style="margin-top: 50px; color: #228B22;;">Sistem Pemantauan Lingkungan</h4>
-                                    <p style="text-align: justify; margin: 0 35px 35px; color: black;">
+                            <div class="single-table" style="height: 100%; background: linear-gradient(to left, #fff, #A8D5E3);">
+                                <div class="text-center" style="color: white;  font-family: 'Poppins', sans-serif;">
+                                    <h4 class="title" style="margin-top: 50px; color: #228B22">Sistem Pemantauan Lingkungan</h4>
+                                    <p style="text-align: justify; margin: 0 35px 35px; color: black; font-size: 17px;">
                                         Memanfaatkan sensor canggih untuk mengukur dan mengendalikan suhu, kelembapan, dan pencahayaan secara otomatis.
                                     </p>
                                 </div>
@@ -145,10 +157,10 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6 col-12 mb-4">
-                            <div class="single-table" style="height: 100%; background-color: #F0F0F0;">
-                                <div class="text-center">
+                            <div class="single-table" style="height: 100%; background: linear-gradient(to left, #fff, #A8D5E3);">
+                                <div class="text-center" style="color: white;  font-family: 'Poppins', sans-serif;">
                                     <h4 class="title" style="margin-top: 50px; color: #228B22;">Automasi Irigasi</h4>
-                                    <p style="text-align: justify; margin: 0 35px 35px; color: black;">
+                                    <p style="text-align: justify; margin: 0 35px 35px; color: black; font-size: 17px;">
                                         Sistem irigasi yang terintegrasi dengan sensor kelembapan tanah, memungkinkan penyiraman yang tepat waktu dan sesuai kebutuhan tanaman.
                                     </p>
                                 </div>
@@ -159,10 +171,10 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6 col-12 mb-4">
-                            <div class="single-table" style="height: 100%; background-color: #F0F0F0;">
-                                <div class="text-center">
+                            <div class="single-table" style="height: 100%; background: linear-gradient(to left, #fff, #A8D5E3);">
+                                <div class="text-center" style="color: white;  font-family: 'Poppins', sans-serif;">
                                     <h4 class="title" style="margin-top: 50px; color: #228B22;">Data Analitik</h4>
-                                    <p style="text-align: justify; margin: 0 35px 35px; color: black;">
+                                    <p style="text-align: justify; margin: 0 35px 35px; color: black; font-size: 17px;">
                                         Pengolahan data untuk menganalisis pertumbuhan tanaman dan mengoptimalkan kondisi lingkungan.
                                     </p>
                                 </div>
@@ -173,10 +185,10 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6 col-12 mb-4">
-                            <div class="single-table" style="height: 100%; background-color: #F0F0F0;">
-                                <div class="text-center">
+                            <div class="single-table" style="height: 100%; background: linear-gradient(to left, #fff, #A8D5E3);">
+                                <div class="text-center" style="color: white;  font-family: 'Poppins', sans-serif;">
                                     <h4 class="title" style="margin-top: 50px; color: #228B22;">Sistem Hidroponik</h4>
-                                    <p style="text-align: justify; margin: 0 35px 35px; color: black;">
+                                    <p style="text-align: justify; margin: 0 35px 35px; color: black; font-size: 17px;">
                                         Dipantau dan dikendalikan secara otomatis, memastikan tanaman mendapatkan nutrisi yang tepat dalam jumlah yang sesuai.
                                     </p>
                                 </div>
@@ -187,10 +199,10 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6 col-12 mb-4">
-                            <div class="single-table" style="height: 100%; background-color: #F0F0F0;">
-                                <div class="text-center">
+                            <div class="single-table" style="height: 100%; background: linear-gradient(to left, #fff, #A8D5E3);">
+                                <div class="text-center" style="color: white;  font-family: 'Poppins', sans-serif;">
                                     <h4 class="title" style="margin-top: 50px; color: #228B22;">Sistem Aeroponik</h4>
-                                    <p style="text-align: justify; margin: 0 35px 35px; color: black;">
+                                    <p style="text-align: justify; margin: 0 35px 35px; color: black;font-size: 17px;">
                                         Dilengkapi dengan sensor dan aktuator IoT untuk mengatur frekuensi dan durasi penyiraman.
                                     </p>
                                 </div>
@@ -213,14 +225,14 @@
 <!-- End Achievement Area Smart Greenhouse-->
 
 <!-- Start Program dan Kegiatan -->
-<section id="pricing" class="pricing-table section">
+<section id="pricing" class="pricing-table section" style="background: linear-gradient(to left, #A8D5E3, #fff);">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title text-center" style="font-family: 'Book Antiqua', serif;">
+                <div class="section-title text-center" style="font-family: 'Poppins', sans-serif;">
 
                     <h2 data-wow-delay=".4s"><b>Program dan Kegiatan</b></h2>
-                    <p data-wow-delay=".6s">Berikut adalah beberapa Program dan Kegiatan yang kami gunakan
+                    <p data-wow-delay=".6s" style="font-size: 17px; color: black;">Berikut adalah beberapa Program dan Kegiatan yang kami gunakan
                         untuk metode penanaman</p>
                 </div>
             </div>
@@ -229,27 +241,27 @@
             <!-- Membuat grid lebih responsif -->
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
                     <!-- Menambah jarak bawah untuk mobile -->
-                    <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif; " data-wow-delay=".2s">
+                    <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif; " data-wow-delay=".2s">
                         <div class="text-center">
                             <h4 class="title" style=" margin-top: 50px; color: white;">Pelatihan dan Workshop</h4>
-                            <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Menyelenggarakan pelatihan bagi mahasiswa dan petani mengenai penggunaan teknologi IoT dalam pertanian.</p>
+                            <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white; font-size: 17px;">Menyelenggarakan pelatihan bagi mahasiswa dan petani mengenai penggunaan teknologi IoT dalam pertanian.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".4s">
+                    <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".4s">
                         <div class="text-center">
                             <h4 class="title" style=" margin-top: 50px; color: white;">Penelitian dan Pengembangan</h4>
-                            <p style="text-align: justify;margin-right: 35px; margin-bottom: 35px; margin-left: 35px;color: white;">Melakukan penelitian untuk mengembangkan calon varietas/kultivar unggul baru dan mengembangkan metode pertanian yang lebih inovatif.
+                            <p style="text-align: justify;margin-right: 35px; margin-bottom: 35px; margin-left: 35px;color: white; font-size: 17px;">Melakukan penelitian untuk mengembangkan calon varietas/kultivar unggul baru dan mengembangkan metode pertanian yang lebih inovatif.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <div class="single-table" style="height:100%; background-color: #1C532A;font-family: 'Times New Roman', Times, serif;" data-wow-delay=".6s">
+                    <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".6s">
                         <div class="text-center">
                             <h4 class="title" style=" margin-top: 50px; color: white;">Kerjasama dengan Industri</h4>
-                            <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white;">Bekerja sama dengan perusahaan teknologi dan lembaga penelitian untuk mengembangkan solusi inovatif dalam pertanian.</p>
+                            <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white; font-size: 17px;">Bekerja sama dengan perusahaan teknologi dan lembaga penelitian untuk mengembangkan solusi inovatif dalam pertanian.</p>
                         </div>
                     </div>
                 </div>
@@ -260,7 +272,7 @@
 <!-- End Program dan Kegiatan -->
 
 <!-- Start Jenis - Jenis Tanaman -->
-<section class="our-achievement section" style="background-color: #1C532A; font-family: 'Book Antiqua', serif;">
+<section class="our-achievement section" style="background: linear-gradient(to left, #1C532A, #147814, #000000); font-family: 'Poppins', sans-serif;">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
@@ -268,7 +280,7 @@
 
                     <h2><b>Jenis - Jenis Tanaman</b></h2>
 
-                    <p>Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
+                    <p style="font-size: 17px">Berikut adalah beberapa pencapaian kami dalam mengembangkan Smart Green House</p>
                 </div>
             </div>
         </div>
@@ -281,7 +293,7 @@
                             <!-- Memastikan card mengisi ketinggian maksimal -->
                             <div class="card-body text-center" style="color: white;">
                                 <h1 class="card-title" style="color: white;" data-target="300">0</h1>
-                                <p class="card-text">Ekosistem Yang Bermuatan Serta Berkelanjutan</p>
+                                <p class="card-text" style="font-size: 17px">Ekosistem Yang Bermuatan Serta Berkelanjutan</p>
                             </div>
                         </div>
                     </div>
@@ -289,7 +301,7 @@
                         <div class="h-100">
                             <div class="card-body text-center" style="color: white;">
                                 <h1 class="card-title" style="color: white;" data-target="300">0</h1>
-                                <p class="card-text">Tanaman Yang Ditanam</p>
+                                <p class="card-text" style="font-size: 17px">Tanaman Yang Ditanam</p>
                             </div>
                         </div>
                     </div>
@@ -297,7 +309,7 @@
                         <div class="h-100">
                             <div class="card-body text-center" style="color: white;">
                                 <h1 class="card-title" style="color: white;" data-target="100">0</h1>
-                                <p class="card-text">Mahasiswa Berkontribusi Menanam Beragam Jenis Tanaman dalam Smart Green House</p>
+                                <p class="card-text" style="font-size: 17px">Mahasiswa Berkontribusi Menanam Beragam Jenis Tanaman dalam Smart Green House</p>
                             </div>
                         </div>
                     </div>
@@ -309,7 +321,7 @@
 <!-- End Jenis - Jenis Tanaman -->
  
 <!-- Galeri -->
-<section class="our-achievement section" style="background-color:white; padding: 20px; font-family: 'Times New Roman', Times, serif;">
+<section class="our-achievement section" style="background-color:white; padding: 20px;  font-family: 'Poppins', sans-serif; background: linear-gradient(to left, #A8D5E3, #fff);">
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col-lg-12" data-aos="fade-down">
@@ -321,12 +333,12 @@
         <div class="row">
             <!-- Kolom 1 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf2.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;">
-                <img src="{{asset('asset/img/sgf1.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 2" style="width: 500px; height: 200px; object-fit: cover;">
+                <img src="{{asset('asset/img/fotoberanda/ubi.JPG')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;">
+                <img src="{{asset('asset/img/fotoberanda/daunubi.jpeg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 2" style="width: 500px; height: 200px; object-fit: cover;">
             </div>
             <!-- Kolom 2 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf6.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 3" style="width: 500px; height: 200px; object-fit: cover;">
+                <img src="{{asset('asset/img/fotoberanda/budeby1.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4" alt="Image 3" style="width: 500px; height: 200px; object-fit: cover;">
                 <img src="{{asset('asset/img/sgf4.jpg')}}" class="img-fluid shadow-1-strong rounded" alt="Image 4" style="width: 500px; height: 200px; object-fit: cover;">
             </div>
             <!-- Kolom 3 -->
@@ -346,6 +358,9 @@
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 <!-- end link fon -->
+<style>
+
+</style>
 @endsection
 
 @section('script')
