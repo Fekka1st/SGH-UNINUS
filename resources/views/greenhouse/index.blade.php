@@ -235,6 +235,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
@@ -250,6 +251,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="row">
@@ -307,7 +309,9 @@
                     </div>
                     <div class="result" id="result"></div>
                 </div>
+
                 <!-- <div class="row">
+
                     <div class="container text-center mb-4"><br>
                         <div class="row justify-content-center">
                             <div class="col-6 col-md-2 mb-2">
@@ -340,7 +344,9 @@
                             </div>
                         </div>
                     </div>
+
                 </div> -->
+
                 <!-- Grafik Suhu dan Kelembapan -->
                 <div class="row">
                     <div class="col-xl-6 col-lg-7">
