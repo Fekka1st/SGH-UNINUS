@@ -49,7 +49,7 @@
                         Light Intensity
                     </div>
                         <div>
-                            1000 LX
+                            1000 lx
                         </div>
                 </div>
                 <div class="col-auto">
@@ -68,7 +68,7 @@
                         Water Volume
                     </div>
                         <div>
-                            30M³
+                            30 m³
                         </div>
                 </div>
                 <div class="col-auto">
@@ -192,7 +192,7 @@
 <div class="col-xl-4">
     <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Room Panel Temp</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Panel Room Temp</h6>
             </div>
             <div class="card-body">
                 <div class="chart-area">
@@ -534,7 +534,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v M/3', //default
+          text: '%v m³', //default
           fontSize: 24,
           
           
@@ -601,7 +601,7 @@
         size: '100%',
         valueBox: {
           placement: 'center',
-          text: '%v LX', //default
+          text: '%v lx', //default
           fontSize: 24,
           
           
