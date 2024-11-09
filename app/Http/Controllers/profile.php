@@ -53,9 +53,7 @@ class profile extends Controller
             $user->save();
             return redirect()->route('profile.index')->withToastSuccess('Data Berhasil dirubah');
         } catch (\Throwable $th) {
-
-            dd($th);
-            // return redirect()->route('profile.index')->withToastError('Data Gagal dirubah');
+            return redirect()->route('profile.index')->withToastError('Data Gagal dirubah');
         }
     }
 }

@@ -28,12 +28,14 @@
     
     <link rel="shortcut icon" type="image/x-icon"
         href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
+        
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     @yield('css')
 </head>
 
 <body>
-    <header class="header navbar-area" style="background-color: #1C532A">
+    <header class="header navbar-area" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -112,12 +114,12 @@
             <div class="row">
                 <div class="col-sm-3 col-md-4" style="text-align: justify">
                     <img src="{{asset('asset/img/logo.png')}}" alt="Logo" class="img img-fluid"
-                        style="margin-bottom: 9px">
-                    <p class="text-justify">Smart Green House Adalah Sebuah aplikasi yang membantu meningkatkan
+                        style="margin-bottom: 9px; color:aliceblue;">
+                    <p class="text-justify" style="color:aliceblue;">Smart Green House Adalah Sebuah aplikasi yang membantu meningkatkan
                         kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan
                         sistem yang ramah lingkungan dan berkelanjutan </p>
                 </div>
-                <div class="col-sm-3 col-md-4 mt-5" style="text-align: justify">
+                <div class="col-sm-3 col-md-4 mt-5" style="text-align: justify; color:aliceblue;">
                     <h6>Kontak</h6>
                     <p class="text-justify mt-5 mb-2">Jl.Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung,
                         Jawa Barat. </p>
@@ -125,7 +127,7 @@
                         <i class="fa-solid fa-phone"></i> (022) 21000229
                     </p>
                     <p>
-                        <i class="fa-solid fa-link"></i> <a href="https://uninus.ac.id/">UNIVERSITAS ISLAM
+                        <i class="fa-solid fa-link"></i> <a href="https://uninus.ac.id/" style="color:aliceblue;">UNIVERSITAS ISLAM
                             NUSANTARA</a>
                     </p>
                 </div>
@@ -135,7 +137,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by <a href="#">Smart Green
+                    <p class="copyright-text" style="color:aliceblue;">Copyright &copy; 2024 All Rights Reserved by <a href="#" style="color:aliceblue;">Smart Green
                             House</a>. </p>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
