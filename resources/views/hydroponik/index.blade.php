@@ -149,9 +149,9 @@
                     @if ($device->mode == 1)
 
                     <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
-                        <button class="btn btn-primary" type="submit" style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                        <button class="btn btn-primary" disabled style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                             <img src="{{asset('asset/img/animasi/Animation - Setiing2.gif')}}" alt="Gambar 2" style="width: 100px; height: 100px">
-                            <h5 style="color: rgb(255, 255, 255); text-align: center; width: 96%">Auto Mode: On</h5>
+                            <h5 style="color: rgb(255, 255, 255); text-align: center; width: 96%">Auto Mode</h5>
                         </button>
                     </div>
 
