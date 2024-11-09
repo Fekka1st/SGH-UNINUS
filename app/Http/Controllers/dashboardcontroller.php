@@ -17,12 +17,10 @@ class dashboardcontroller extends Controller
 
 
         $startDate = Carbon::now()->startOfWeek();
-        $endDate = Carbon::now()->endOfWeek();
-
-        $hydroWeeklyCount = SensorDataSmartHydroponik::whereBetween('created_at', [$startDate, $endDate])->count();
-        $greenWeeklyCount = SensorDataSmartGreenhouse::whereBetween('created_at', [$startDate, $endDate])->count();
-        $aeroWeeklyCount = SensorDataSmartAeroponik::whereBetween('created_at', [$startDate, $endDate])->count();
-
+        $today = Carbon::now()->toDateString();
+        $hydroDayCount = SensorDataSmartHydroponik::whereDate('created_at', $today)->count();
+        $greenDayCount = SensorDataSmartGreenhouse::whereDate('created_at', $today)->count();
+        $aeroDayCount = SensorDataSmartAeroponik::whereDate('created_at', $today)->count();
         $hydroDailyCounts = [];
         $greenDailyCounts = [];
         $aeroDailyCounts = [];
@@ -33,6 +31,6 @@ class dashboardcontroller extends Controller
             $greenDailyCounts[$day->format('l')] = SensorDataSmartGreenhouse::whereDate('created_at', $day)->count();
             $aeroDailyCounts[$day->format('l')] = SensorDataSmartAeroponik::whereDate('created_at', $day)->count();
         }
-        return view('dashboard', compact('user', 'hydroWeeklyCount', 'greenWeeklyCount', 'aeroWeeklyCount', 'hydroDailyCounts', 'greenDailyCounts', 'aeroDailyCounts'));
+        return view('dashboard', compact('user', 'hydroDayCount', 'greenDayCount', 'aeroDayCount', 'hydroDailyCounts', 'greenDailyCounts', 'aeroDailyCounts'));
     }
 }

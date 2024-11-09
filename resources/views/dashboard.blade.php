@@ -25,6 +25,9 @@
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Smart Greenhouse
                             </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{$greenDayCount}} Data Hari ini
+                                </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><a
                                     class="small text-white stretched-link"
                                     href="/smartgreenhouse"></a>Lihat Detail</div>
@@ -46,9 +49,12 @@
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Smart Hydroponik
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"><a
-                                    class="small text-white stretched-link"
-                                    href="/smarthydroponik"></a>Lihat Detail</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{$hydroDayCount}} Data Hari ini
+                                </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                <a class="small stretched-link" href="/smarthydroponik"></a>Lihat Detail
+                                </div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-laptop-house"></i>
@@ -64,12 +70,18 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
+
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                 Smart Aeroponik
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><a
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        {{$aeroDayCount}} Data Hari ini
+                                        </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        <a href=""></a>
+                                        <a
                                             class="small text-white stretched-link"
                                             href="/smartaerophonik"></a>Lihat Detail</div>
                                 </div>
