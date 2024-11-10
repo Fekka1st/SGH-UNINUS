@@ -162,7 +162,6 @@
                             <div class="m-3">
 
                                 <button class="btn btn-primary" type="submit"
-
                                     style="border: 1px solid #4e73df; padding: 5px; width: 150px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h5 style="color: white;">Water pH Up</h5>
                                     <div class="col-auto">
@@ -233,7 +232,7 @@
                         </div>
 
                         <!-- Modal -->
-                            <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
+                            <div wire:ignore class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -286,13 +285,14 @@
                                     </div>
                                 </div>
                             </div>
+
                         <div class="result" id="result"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-xl-12 col-lg-8">
                 <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
@@ -389,7 +389,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 

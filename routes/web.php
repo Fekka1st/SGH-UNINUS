@@ -7,6 +7,7 @@ use App\Http\Controllers\hydroponikcontroller;
 use App\Http\Controllers\manajemenuser;
 use App\Http\Controllers\profile;
 use App\Http\Controllers\reportcontroller;
+use App\Livewire\Hydroponik;
 // use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,8 +40,10 @@ Route::middleware('auth')->group(function () {
 
 
     Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
-    Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
+    
+    Route::get('/smarthydroponik', Hydroponik::class);
     Route::post('/smarthydroponik/change-mode/{id}',[hydroponikcontroller::class, 'changeMode'])->name('changeMode');
+
     Route::post('/smarthydroponik/setting', [hydroponikcontroller::class, 'update'])->name('Hydro.settings.update');
     Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
 

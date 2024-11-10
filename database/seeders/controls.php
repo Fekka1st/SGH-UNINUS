@@ -16,14 +16,7 @@ class controls extends Seeder
         DB::table('controls')->insert([
             // Data Control Hydroponik : 1
             [
-                'control_type' => 'Pompa_A',
-                'status' => 0,
-                'device_id' => 1,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'control_type' => 'Pompa_B',
+                'control_type' => 'Pompa_Nutrisi',
                 'status' => 0,
                 'device_id' => 1,
                 'created_at' => now(),
