@@ -144,6 +144,7 @@
                                 <button class="btn btn-primary" type="submit"
                                     style="border: 1px solid #4e73df; padding: 20px; width: 150px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h5 style="color: white;">Water pH Up</h5>
+
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
                                         <h6 class="text-danger"><b>OFF</b></h6>
@@ -157,6 +158,7 @@
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
                                         <h6 class="text-danger"><b>OFF</b></h6>
+
                                     </div>
                                 </button>
                             </div>
@@ -166,7 +168,9 @@
                                     style="border: 1px solid #4e73df; padding: 18px; width: 150px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h5 style="color: white; margin: 12%">AB Mix</h5>
                                     <div class="col-auto">
+
                                         <i class="fab fa-nutritionix"></i>
+
                                         <h6 class="text-danger" style="margin: 10%"><b>OFF</b></h6>
                                     </div>
                                 </button>
@@ -234,7 +238,9 @@
                                             <div>
                                                 <label for="minTemp" style="width: 125px;">Nutrition Up: </label>
                                                 <input type="number" id="minTemp" value="0"
+
                                                     style="width: 90px; border: none; padding: 5px;" />
+
                                                 <label for="maxTemp">PPM </label>
                                             </div>
                                             <div>
@@ -249,7 +255,9 @@
                                                     style="width: 95px; border: none; padding: 5px;" />
                                                 <label for="maxTemp">Min </label>
                                             </div>
+
                                             <div>
+
                                                 <label for="maxTemp" style="width: 123px;">Spraying End: </label>
                                                 <input type="number" id="maxTemp" value="100"
                                                     style="width: 97px; border: none; padding: 5px;" />
@@ -284,12 +292,16 @@
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                         <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">Chart Monitoring</h6>
                     </div><br>
+
+
                     <div class="row">
                         <div class="col-xl-6 col-lg-6">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary" style="text-align: center; margin: 2%; width: 100%">(Water Temperature and Relative Humidity)</h6>
                                 </div>
+
+
                                 <div class="card-body">
                                     <div class="chart-area">
                                         <div class="col-xl-13">
