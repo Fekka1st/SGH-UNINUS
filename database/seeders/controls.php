@@ -45,14 +45,7 @@ class controls extends Seeder
             ],
             // Data control aeroponik : 2
             [
-                'control_type' => 'Pompa_A',
-                'status' => 0,
-                'device_id' => 2,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'control_type' => 'Pompa_B',
+                'control_type' => 'Pompa_Nutrisi',
                 'status' => 0,
                 'device_id' => 2,
                 'created_at' => now(),

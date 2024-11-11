@@ -1,6 +1,5 @@
 <div>
     <div class="container-fluid" wire:poll="refreshData">
-
         <div class="row">
             @if ($status == 1)
             <h1 class="h2 mb-2 text-gray-800"><b>Hydroponic </b></h1>
@@ -128,7 +127,8 @@
                         <h6 class="m-0 font-weight-bold text-primary"
                             style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
                     </div>
-                    @if ($device->mode == 1) <div class="margin-top: 4"
+                    @if ($device->mode == 1)
+                    <div class="margin-top: 4"
                         style="text-align: center; margin: 2%; width: 96%">
                         <button class="btn btn-primary" type="submit"
                             style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
@@ -604,4 +604,8 @@
 
 </script>
 
+@endpush
+
+@push('title')
+<title>SGH | Hydroponik</title>
 @endpush

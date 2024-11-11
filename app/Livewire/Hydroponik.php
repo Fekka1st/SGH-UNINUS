@@ -9,6 +9,7 @@ use App\Models\device_settings;
 use Carbon\Carbon;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use Livewire\Attributes\Layout;
 
 class Hydroponik extends Component
 {
@@ -50,15 +51,7 @@ class Hydroponik extends Component
             $this->lastSeen = null;
         } else {
             $this->status = 0;
-            $diffInMinutes = Carbon::now()->diffInMinutes($device->updated_at);
-
-            if ($diffInMinutes < 1) {
-                // Jika perbedaan kurang dari 1 menit
-                $this->lastSeen = 'now';
-            } else {
-                // Jika lebih dari 1 menit, tampilkan perbedaan waktu
-                $this->lastSeen = Carbon::parse($device->updated_at)->diffForHumans();
-            }
+            $this->lastSeen = Carbon::parse($device->updated_at)->diffForHumans();
         }
     }
 
