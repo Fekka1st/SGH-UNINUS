@@ -25,6 +25,9 @@
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Smart Greenhouse
                             </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{$greenDayCount}} Data Hari ini
+                                </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><a
                                     class="small text-white stretched-link"
                                     href="/smartgreenhouse"></a>Lihat Detail</div>
@@ -46,9 +49,12 @@
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Smart Hydroponik
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"><a
-                                    class="small text-white stretched-link"
-                                    href="/smarthydroponik"></a>Lihat Detail</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{$hydroDayCount}} Data Hari ini
+                                </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                <a class="small stretched-link" href="/smarthydroponik"></a>Lihat Detail
+                                </div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-laptop-house"></i>
@@ -64,12 +70,18 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
+
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                 Smart Aeroponik
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><a
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        {{$aeroDayCount}} Data Hari ini
+                                        </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        <a href=""></a>
+                                        <a
                                             class="small text-white stretched-link"
                                             href="/smartaerophonik"></a>Lihat Detail</div>
                                 </div>
@@ -100,19 +112,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Row for Last Logged Section -->
     <div class="row">
-
-
     </div>
-
-
-    <!-- Content Row -->
-
-
-
-    <!-- Approach -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
@@ -134,37 +135,70 @@
 
 @section('script')
 <script>
-    const xValues = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
-        new Chart("Jadwal", {
-            type: "line",
-            data: {
-                labels: xValues,
-                datasets: [{
-                    label: 'SmartHydroponik',
-                    data: [30, 32, 33, 31, 34, 30, 32, 30],
-                    borderColor: "blue",
-                    fill: true
-                }, {
-                    label: 'Smart Aerophonic',
-                    data: [50, 40, 40, 45, 55, 50, 45, 40],
-                    borderColor: "red",
-                    fill: true
+    const labels = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+    const hydroData = @json(array_values($hydroDailyCounts));
+    const greenData = @json(array_values($greenDailyCounts));
+    const aeroData = @json(array_values($aeroDailyCounts));
+    const ctx = document.getElementById('Jadwal').getContext('2d');
+    const weeklyChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Hydroponik',
+                    data: hydroData,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: true,
+                    tension: 0.3
                 },
                 {
-                    label: 'Smart GreenHouse',
-                    data: [20, 30, 30,75, 55, 20, 45, 50],
-                    borderColor: "Green",
-                    fill: true
-                }]
-            },
-            options: {
+                    label: 'Greenhouse',
+                    data: greenData,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0.3
+                },
+                {
+                    label: 'Aeroponik',
+                    data: aeroData,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    fill: true,
+                    tension: 0.3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
                 legend: {
-                    display: true
-
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Jumlah Data Harian (Senin - Minggu)'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Jumlah Data'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Hari'
+                    }
                 }
             }
-        });
-
+        }
+    });
 </script>
 @endsection
 

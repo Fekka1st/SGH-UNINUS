@@ -171,9 +171,9 @@
 
 
                     <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
-                        <button class="btn btn-primary" type="submit" style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
+                        <button class="btn btn-primary" disabled style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                             <img src="{{asset('asset/img/animasi/Animation - Setiing2.gif')}}" alt="Gambar 2" style="width: 100px; height: 100px">
-                            <h5 style="color: rgb(255, 255, 255); text-align: center; width: 96%">Auto Mode: On</h5>
+                            <h5 style="color: rgb(255, 255, 255); text-align: center; width: 96%">Auto Mode</h5>
                         </button>
                     </div>
 
@@ -185,7 +185,6 @@
                             <div class="m-3">
 
                                 <button class="btn btn-primary" type="submit"
-
                                     style="border: 1px solid #4e73df; padding: 5px; width: 150px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                                     <h5 style="color: white;">Water pH Up</h5>
                                     <div class="col-auto">
@@ -257,7 +256,7 @@
                         </div>
 
                         <!-- Modal -->
-                            <div class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
+                            <div wire:ignore class="modal fade" id="greenhouseadjusttable" tabindex="-1" role="dialog" aria-labelledby="greenhouseadjusttableLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -310,13 +309,14 @@
                                     </div>
                                 </div>
                             </div>
+
                         <div class="result" id="result"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-xl-12 col-lg-8">
                 <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
@@ -413,7 +413,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 
