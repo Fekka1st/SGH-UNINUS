@@ -2,14 +2,14 @@
     <div class="container-fluid" wire:poll="refreshData">
 
         <div class="row">
-            @if ($device->status == 1)
+            @if ($status == 1)
             <h1 class="h2 mb-2 text-gray-800"><b>Hydroponic </b></h1>
             <h2 class="h4 mt-2 ml-3">Status Device : </h2>
             <h2 class="h4 mt-2 ml-1" style="color:#57F000"><b>ONLINE</b></h2>
             @else
             <h1 class="h2 mb-2 text-gray-800"><b>Hydroponic </b></h1>
             <h2 class="h4 mt-2 ml-3">Status Device : </h2>
-            <h2 class="h4 mt-2 ml-1" style="color:#FE3839"><b>OFFLINE</b></h2>
+            <h2 class="h4 mt-2 ml-1" style="color:#FE3839"><b>OFFLINE - Last seen: {{ $lastSeen }}</b></h2>
             @endif
         </div>
         <div class="row">
@@ -109,8 +109,8 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Room
-                                    Panel Temp. </div>
-                                <div> 30 °C </div>
+                                    Panel Temp </div>
+                                <div> {{$data->room_temp}} °C </div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-laptop-house"></i>
@@ -142,7 +142,8 @@
                     <div class="container" wire:poll="pump()">
                         <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                             <div class="m-3">
-                                <button wire:click="togglePump('Pompa_PHUP')" class="btn btn-primary" style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                <button wire:click="togglePump('Pompa_PHUP')" class="btn btn-primary"
+                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
                                     <h5 style="color: white;">Water pH Up</h5>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
@@ -154,7 +155,8 @@
                             </div>
 
                             <div class="m-3">
-                                <button wire:click="togglePump('Pompa_PHDOWN')" class="btn btn-primary" style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                <button wire:click="togglePump('Pompa_PHDOWN')" class="btn btn-primary"
+                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
                                     <h5 style="color: white;">Water pH Down</h5>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
@@ -166,7 +168,8 @@
                             </div>
 
                             <div class="m-3">
-                                <button wire:click="togglePump('Pompa_Nutrisi')" class="btn btn-primary" style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                <button wire:click="togglePump('Pompa_Nutrisi')" class="btn btn-primary"
+                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
                                     <h5 style="color: white;">AB Mix</h5>
                                     <div class="col-auto">
                                         <i class="fab fa-nutritionix"></i>
@@ -178,7 +181,8 @@
                             </div>
 
                             <div class="m-3">
-                                <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary" style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary"
+                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
                                     <h5 style="color: white;">Water Level Up</h5>
                                     <div class="col-auto">
                                         <i class="fas fa-water"></i>
@@ -273,7 +277,7 @@
                                             <div class="result" id="result"></div>
                                             <div class="modal-footer">
                                                 <button class="btn btn-secondary mb-2" type="button"
-                                                    class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    class="btn btn-secondary" wire:click="closeModal()">Close</button>
                                                 <button class="btn btn-primary mb-2" type="submit">Set</button>
                                             </div>
                                         </form>
@@ -323,7 +327,7 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area" wire:ignore>
-                                        <canvas id="laju" ></canvas>
+                                        <canvas id="laju"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +343,7 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area" wire:ignore>
-                                        <canvas id="Co²" ></canvas>
+                                        <canvas id="ph"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -355,7 +359,7 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area" wire:ignore>
-                                        <canvas id="ppm" ></canvas>
+                                        <canvas id="ppm"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -369,8 +373,8 @@
                                         style="text-align: center; margin: 2%; width: 100%">Water Level</h6>
                                 </div>
                                 <!-- Card Body -->
-                                <div class="card-body" >
-                                    <div class="chart-area" >
+                                <div class="card-body">
+                                    <div class="chart-area">
                                         <canvas id="tangki" wire:ignore></canvas>
                                     </div>
                                 </div>
@@ -396,117 +400,208 @@
             $('#exampleModal').modal('hide');
         });
     });
-</script>
 
+</script>
 <script>
-  document.addEventListener('livewire:init', () => {
-    Livewire.on('updateSensorData', (sensorData) => {
-        console.log(sensorData); // Cek kembali struktur di konsol
+    document.addEventListener('livewire:init', () => {
+        // Data untuk setiap chart
+        var suhuData = [],
+            lajuData = [],
+            phData = [],
+            tdsData = [],
+            volumeData = [];
+        Livewire.on('updateSensorData', (sensorData) => {
+            console.log(sensorData); // Cek kembali struktur di konsol
 
-        // Ambil elemen pertama dari array sensorData untuk mengakses suhu_air
-        if (Array.isArray(sensorData) && sensorData.length > 0) {
-            const suhuAir = sensorData[0].suhu_air; // Akses suhu_air dari elemen pertama
-            suhuData.push(suhuAir);
-            if (suhuData.length > 10) suhuData.shift(); // Batasi jumlah data untuk performa
+            if (Array.isArray(sensorData) && sensorData.length > 0) {
+                const data = sensorData[0]; // Akses elemen pertama dari array
+                // Update suhu data dan chart
+                suhuData.push(data.suhu_air);
+                if (suhuData.length > 10) suhuData.shift();
+                suhuChart.data.labels.push(new Date().toLocaleTimeString());
+                if (suhuChart.data.labels.length > 10) suhuChart.data.labels.shift();
+                suhuChart.update();
 
-            // Update chart dengan data terbaru
-            myChart.data.labels.push(new Date().toLocaleTimeString()); // Tambah label waktu saat data diterima
-            if (myChart.data.labels.length > 10) myChart.data.labels.shift(); // Batasi jumlah label
-            myChart.update();
-        } else {
-            console.warn("Data sensor tidak sesuai atau kosong.");
-        }
-    });
+                // Update laju data dan chart
+                lajuData.push(data.laju_air);
+                if (lajuData.length > 10) lajuData.shift();
+                lajuChart.data.labels.push(new Date().toLocaleTimeString());
+                if (lajuChart.data.labels.length > 10) lajuChart.data.labels.shift();
+                lajuChart.update();
 
-    // Inisialisasi chart suhu
-    var ctx = document.getElementById('suhu').getContext('2d');
-    var suhuData = [];
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: [], 
-            datasets: [{
-                label: 'Water Temperature',
-                data: suhuData,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+                // Update pH data dan chart
+                phData.push(data.ph_air);
+                if (phData.length > 10) phData.shift();
+                phChart.data.labels.push(new Date().toLocaleTimeString());
+                if (phChart.data.labels.length > 10) phChart.data.labels.shift();
+                phChart.update();
+
+                // Update TDS data dan chart
+                tdsData.push(data.tds);
+                if (tdsData.length > 10) tdsData.shift();
+                tdsChart.data.labels.push(new Date().toLocaleTimeString());
+                if (tdsChart.data.labels.length > 10) tdsChart.data.labels.shift();
+                tdsChart.update();
+
+                // Update volume data dan chart
+                volumeData.push(data.volume_air);
+                if (volumeData.length > 10) volumeData.shift();
+                volumeChart.data.labels.push(new Date().toLocaleTimeString());
+                if (volumeChart.data.labels.length > 10) volumeChart.data.labels.shift();
+                volumeChart.update();
+            } else {
+                console.warn("Data sensor tidak sesuai atau kosong.");
             }
-        }
-    });
-});
-</script>
-{{-- <script>
-    document.addEventListener('livewire:load', () => {
-        let suhuData = [], lajuData = [], co2Data = [], ppmData = [], tangkiData = [];
-        let suhuChart, lajuChart, co2Chart, ppmChart, tangkiChart;
+        });
 
-        // Fungsi untuk menginisialisasi chart
-        function initializeChart(ctx, label, color) {
-            return new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: [],
-                    datasets: [{
-                        label: label,
-                        data: [],
-                        backgroundColor: color,
-                        borderColor: color,
-                        fill: false,
-                        tension: 0.1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        x: {
-                            type: 'realtime',
-                            realtime: {
-                                delay: 2000,
-                                onRefresh: function(chart) {
-                                    chart.data.labels.push(new Date().toLocaleTimeString());
-                                }
-                            }
-                        },
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-        }
 
-        // Fungsi untuk memperbarui chart
-        function updateChart(chart, data, value) {
-            data.push(value);
-            if (data.length > 10) data.shift(); // Batasi jumlah data untuk performa
-            chart.data.datasets[0].data = data;
-            chart.update();
-        }
 
         // Inisialisasi semua chart
-        suhuChart = initializeChart(document.getElementById('suhu').getContext('2d'), 'Water Temperature', 'rgba(75, 192, 192, 1)');
-        lajuChart = initializeChart(document.getElementById('laju').getContext('2d'), 'Water Flow', 'rgba(54, 162, 235, 1)');
-        co2Chart = initializeChart(document.getElementById('Co2').getContext('2d'), 'Water pH', 'rgba(255, 99, 132, 1)');
-        ppmChart = initializeChart(document.getElementById('ppm').getContext('2d'), 'Nutrition', 'rgba(153, 102, 255, 1)');
-        tangkiChart = initializeChart(document.getElementById('tangki').getContext('2d'), 'Water Level', 'rgba(255, 159, 64, 1)');
+        var ctxSuhu = document.getElementById('suhu').getContext('2d');
+        var ctxLaju = document.getElementById('laju').getContext('2d');
+        var ctxPh = document.getElementById('ph').getContext('2d');
+        var ctxTds = document.getElementById('ppm').getContext('2d');
+        var ctxVolume = document.getElementById('tangki').getContext('2d');
 
-        // Event listener untuk menerima data dari Livewire dan memperbarui chart
-        Livewire.on('updateSensorData', (sensorData) => {
-            updateChart(suhuChart, suhuData, sensorData.suhu_air);
-            updateChart(lajuChart, lajuData, sensorData.laju_air);
-            updateChart(co2Chart, co2Data, sensorData.ph_air);
-            updateChart(ppmChart, ppmData, sensorData.tds);
-            updateChart(tangkiChart, tangkiData, sensorData.volume_air);
+        var suhuChart = new Chart(ctxSuhu, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Water Temperature',
+                    data: suhuData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
+                    fill: {
+                        target: 'origin',
+                        above: 'rgba(75, 192, 192, 0.2)' // Warna bayangan
+                    },
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
         });
+
+        var lajuChart = new Chart(ctxLaju, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Water Flow',
+                    data: lajuData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    fill: {
+                        target: 'origin',
+                        above: 'rgb(215,236,251,0.2)' // Warna bayangan
+                    },
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var phChart = new Chart(ctxPh, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Water pH',
+                    data: phData,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    fill: {
+                        target: 'origin',
+                        above: 'rgb(255,224,230,0.2)' // Warna bayangan
+                    },
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var tdsChart = new Chart(ctxTds, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Nutrition (TDS)',
+                    data: tdsData,
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1,
+                    fill: {
+                        target: 'origin',
+                        above: 'rgb(235,224,255,0.2)' // Warna bayangan
+                    },
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var volumeChart = new Chart(ctxVolume, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Water Level',
+                    data: volumeData,
+                    backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    borderWidth: 1,
+                    fill: {
+                        target: 'origin',
+                        above: 'rgb(255,236,217,0.2)' // Warna bayangan
+                    },
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+
+
     });
-</script> --}}
+
+</script>
+
 @endpush

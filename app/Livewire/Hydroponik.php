@@ -6,6 +6,7 @@ use App\Models\Control;
 use App\Models\device;
 use App\Models\SensorDataSmartHydroponik;
 use App\Models\device_settings;
+use Carbon\Carbon;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 
@@ -15,6 +16,8 @@ class Hydroponik extends Component
     public $control;
     public $setting;
     public $device;
+    public $status;
+    public $lastSeen;
 
     public $pump_ph_up_status;
     public $pump_ph_down_status;
@@ -27,6 +30,7 @@ class Hydroponik extends Component
         $this->refreshData();
         $this->pump();
         $this->loadSetting();
+        $this->lastseen();
     }
 
     public function loadSetting()
@@ -38,6 +42,26 @@ class Hydroponik extends Component
         $this->Limit_nutrisi_max = $this->setting['Limit_nutrisi_max'] ?? null;
         $this->tangki_air = $this->setting['tangki_air'] ?? null;
     }
+
+    public function lastseen(){
+        $device = device::find(1);
+        if ($device->status === 1) {
+            $this->status = 1;
+            $this->lastSeen = null;
+        } else {
+            $this->status = 0;
+            $diffInMinutes = Carbon::now()->diffInMinutes($device->updated_at);
+
+            if ($diffInMinutes < 1) {
+                // Jika perbedaan kurang dari 1 menit
+                $this->lastSeen = 'now';
+            } else {
+                // Jika lebih dari 1 menit, tampilkan perbedaan waktu
+                $this->lastSeen = Carbon::parse($device->updated_at)->diffForHumans();
+            }
+        }
+    }
+
     public function openModal()
 {
     $this->dispatch('openModal');
@@ -51,6 +75,7 @@ public function closeModal()
 
     public function refreshData()
     {
+        $this->lastseen();
         $this->device = device::find(1);
         $this->data = SensorDataSmartHydroponik::latest('created_at')->first();
         $this->control = Control::where('device_id', 1)->get();
@@ -61,13 +86,15 @@ public function closeModal()
         }
 
         // Dispatch event to JavaScript for real-time updates
-        $this->dispatch('updateSensorData', [
-            'suhu_air' => $this->data->suhu_air,
-            'laju_air' => $this->data->laju_air,
-            'ph_air' => $this->data->ph_air,
-            'tds' => $this->data->tds,
-            'volume_air' => $this->data->volume_air
-        ]);
+        if ($this->device->status === 1) {
+            $this->dispatch('updateSensorData', [
+                'suhu_air' => $this->data->suhu_air,
+                'laju_air' => $this->data->laju_air,
+                'ph_air' => $this->data->ph_air,
+                'tds' => $this->data->tds,
+                'volume_air' => $this->data->volume_air
+            ]);
+        }
     }
 
     public function pump()
