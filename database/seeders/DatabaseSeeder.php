@@ -23,5 +23,12 @@ class DatabaseSeeder extends Seeder
             'foto_profile' => '/asset/img/kucing.jpg',
         ]);
 
+        $this->call([
+            controls::class,
+            device_settings::class,
+            devices::class,
+            DummyDataSeeder::class
+        ]);
+
     }
 }
