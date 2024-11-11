@@ -18,6 +18,7 @@ return new class extends Migration
             $table->float('laju_air');
             $table->integer('volume_air');
             $table->float('suhu_air');
+            $table->float('room_temp');
             $table->integer('device_id');
             $table->timestamps();
         });

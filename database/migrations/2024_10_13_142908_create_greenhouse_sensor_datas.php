@@ -18,6 +18,7 @@ return new class extends Migration
             $table->float('co2');
             $table->integer('intensitas');
             $table->integer('konsumsi_air');
+            $table->float('room_temp');
             $table->integer('device_id');
             $table->timestamps();
         });

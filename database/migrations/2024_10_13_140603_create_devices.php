@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('devices', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
-            // $table->string('type', 50);
             $table->string('location', 255);
             $table->integer('mode');
             $table->integer('status');
