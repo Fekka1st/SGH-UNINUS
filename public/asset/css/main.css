@@ -961,6 +961,17 @@ ol {
         margin-top: 8px;
     }
 }
+/* area gambar di atas */
+.HERO-AREA::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filter hitam */
+    z-index: 1; /* Menempatkan filter di bawah teks */
+  }
 
 .breadcrumbs .breadcrumb-nav li {
     display: inline-block;
@@ -1603,10 +1614,15 @@ ol {
 }
 
 .header .button .btn {
-    background-color: #1C532A;;
-    border: 2px solid #16ce44;
-    color: #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 5px solid #16ce44;
+    color: #1C532A;
     padding: 12px 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .header .button .btn:hover {
@@ -1979,7 +1995,7 @@ ol {
 ========================================*/
 .hero-area {
     position: relative;
-    padding: 200px 0 150px 0;
+    padding: 50px 0 50px 0;
     background: #00712D;
 }
 

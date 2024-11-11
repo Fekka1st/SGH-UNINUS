@@ -7,10 +7,8 @@
 
 @section('content')
     <div class="container-fluid">
-        <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Hydroponic</h1>
         <div class="row">
-            <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
@@ -31,6 +29,7 @@
                     </div>
                 </div>
             </div>
+
 
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
@@ -75,8 +74,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-xl-6 col-md-6 mb-4">
+            <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -91,14 +89,13 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-water"></i>
+                                <i class="fas fa-thermometer-full"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-xl-6 col-md-6 mb-4">
+            <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -110,10 +107,32 @@
 
                                     {{$data->laju_air}} m/s
 
+
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-tachometer-alt"></i>
+                                <i class="fas fa-thermometer-full"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Room Panel Temp.
+                                </div>
+                                <div>
+                                    30 °C
+
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-laptop-house"></i>
                             </div>
                         </div>
                     </div>
@@ -150,13 +169,14 @@
 
                     @if ($device->mode == 1)
 
-                    <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%"> 
+
+                    <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
                         <button class="btn btn-primary" type="submit" style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
-                            <img src="{{asset('asset/img/animasi/Animation - Setiing2.gif')}}" alt="Gambar 2" style="width: 100px; height: 100px"> 
+                            <img src="{{asset('asset/img/animasi/Animation - Setiing2.gif')}}" alt="Gambar 2" style="width: 100px; height: 100px">
                             <h5 style="color: rgb(255, 255, 255); text-align: center; width: 96%">Auto Mode: On</h5>
                         </button>
                     </div>
-                    
+
 
                     @else
                     <div class="container">
@@ -213,7 +233,6 @@
                             </div>
                         </div>
                     </div>
-
                     @endif
 
                     <div class="row">
@@ -221,8 +240,16 @@
                         <div class="container text-center mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-6 col-md-2 mb-2">
-                                    <button class="btn btn-primary btn-sm w-100" style="width: 100px;" onclick="updateCharts(1)">Mode: Manual</button>
+                                    <form action="{{ route('changeMode', $device->id) }}" method="POST" class="w-100" style="text-align: center; margin: 1%;">
+                                        @csrf
+                                        @if ($device->mode == 1)
+                                            <button class="btn btn-primary btn-sm w-100" type="submit">Mode: Auto</button>
+                                        @else
+                                            <button class="btn btn-primary btn-sm w-100" type="submit">Mode: Manual</button>
+                                        @endif
+                                    </form>
                                 </div>
+
                                 <div class="col-6 col-md-2 mb-2">
                                     <button type="button" class="btn btn-primary btn-sm w-100" data-toggle="modal" data-target="#greenhouseadjusttable">Setting</button>
                                 </div>
