@@ -3,19 +3,12 @@
 @section('content')
 
 <!-- Start Hero Area -->
- <section class="HERO-AREA d-flex align-items-center justify-content-center position-relative" style="background-image: url('asset/img/tambakdepanununis.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 90vh;">
+<section class="HERO-AREA d-flex align-items-center justify-content-center position-relative" style="background-image: url('asset/img/tambakdepanununis.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 90vh;">
   <div class="container position-relative" style="z-index: 2;">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2 class="text-white animate-slide-up" data-aos="fade-down" style="z-index: 3; color: white; font-family: 'Poppins', sans-serif;">
-          <b>TIM KINERJA</b>
-            <!-- <ul id="nav" class="navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="/">Kembali > Beranda</a>
-                  <a class="nav-link" href="tentangkami">Kembali Ke > Tentang Kami</a>
-               </li>
-            </ul> -->
-          </div>
+        <h2 class="text-white animate-slide-up" data-aos="fade-down" style="z-index: 3; color: white; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">
+        <b>TIM KINERJA</b>
         </h2>
       </div>
     </div>
@@ -28,53 +21,71 @@
     <div class="container">
         <div class="info-one">
             <div class="row align-items-center">
-                  <!-- Kolom gambar -->
-                  <div class="col-md-6 p-0" data-aos="zoom-in">
-                     <div class="image-container position-relative">
-                        <img src="https://i.pinimg.com/474x/c8/a6/6b/c8a66bb1bf09eac97d51292ebc89c448.jpg" alt="Gambar Smart Green House" class="img-fluid hover-zoom" style="width: 100%; height: auto; object-fit: cover; min-height: 300px;">
+               <div class="col-lg-6 col-md-12 col-12 mb-4" data-aos="fade-left">
+               <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                  <div class="carousel-inner" style="border-radius: 15px;">
+                     <div class="carousel-item active">
+                           <img src="{{asset('asset/img/rapat/rapat1.jpg')}}"
+                              class="d-block w-100" alt="Gambar 1">
+                     </div>
+                     <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/rapat2.jpg')}}"
+                              class="d-block w-100" alt="Gambar 2">
+                     </div>
+                     <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/rapat3.jpg')}}"
+                              class="d-block w-100" alt="Gambar 3">
+                     </div>
+                     <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/kerja.jpg')}}"
+                              class="d-block w-100" alt="Gambar 4">
+                     </div>
+                     <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/kerja1.jpg')}}"
+                              class="d-block w-100" alt="Gambar 5">
                      </div>
                   </div>
+               </div>
+               </div>
                   <!-- END Kolom gambar -->
-
-                      <!-- Kolom PENJELASAN -->
-                  <div class="col-md-6 d-flex" data-aos="fade-left">
-                     <!-- <div class="card flex-grow-1 border-0 p-4 bg-white"> -->
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #006400, #003200, #001E00,#001400); border-radius: 15px;">
-                              <div>
-                                 <h5 class="card-title mb-4" style="color:aliceblue;  font-family: 'Poppins', sans-serif;"><i class="fas fa-leaf me-2"></i> TEAM SUPPORT</h5>
-                                 <div class="mt-2">
-                                    <span class="ml-2" style="text-align: justify; color:aliceblue;  font-family: 'Poppins', sans-serif;">
-                                       <b><i>Smart Green House</i></b> dalah proyek kolaboratif lintas disiplin di Universitas Islam Nusantara (Uninus) yang menggabungkan teknologi modern dengan praktik pertanian berkelanjutan. Proyek ini melibatkan keahlian dari berbagai disiplin untuk menciptakan sistem pertanian yang efisien melalui teknologi canggih, seperti sensor dan irigasi pintar, guna meningkatkan produktivitas tanaman serta penghematan sumber daya.
-                                          <span id="toggleText" style="text-align: justify; color:yellow;  font-family: 'Poppins', sans-serif;" onclick="toggleParagraph()"><b>selengkapnya....</b></span>
-                                    </span>
-                                 </div>
-                                 <div id="extraParagraph" class="mt-2" style="display: none;">
-                                    <p class="card-text mb-3" style="text-align: justify; color:aliceblue;  font-family: 'Poppins', sans-serif;">
-                                    <b>Dukungan Yayasan dan Rektor Uninus</b><br>
-                                       Proyek ini juga didukung oleh Yayasan Uninus dan Rektor Uninus sebagai bagian dari komitmen universitas untuk mendorong inovasi dan keberlanjutan. Rektor dan Yayasan memberikan dukungan penuh dalam penyediaan sumber daya dan fasilitasi kegiatan lintas fakultas ini.
-                                       <br>
-                                       <b>Tim Pelaksana Proyek</b>
-                                       <br>
-                                       Proyek Smart Greenhouse ini merupakan hasil kerja keras tim lintas disiplin dari Fakultas Pertanian dan Fakultas Teknik Uninus. Para dosen yang berperan penting dalam pengembangan proyek ini, antara lain:
-                                       <br>
-                                       •	<b>Ir. Lilis Irmawatie, M.M.Pd</b> (Dekan Fakultas Pertanian)
-                                             Sebagai penanggung jawab utama dari proyek smart greenhouse berbasis dan mengawasi keseluruhan perencanaan dan pembuatan <i>smart greenhouse</i>.
-                                       <br>
-                                       •	<b>Dr. Debby Ustari, S.P., M.P dan Dr. Syayidah Nuriyah,  S.Pd., M.Si</b> (Dosen dan Peneliti) 
-                                             Mengawasi keseluruhan perencanaan agronomis dan teknis di dalam <i>smart greenhouse</i>, serta bertanggung jawab dalam pengembangan penelitian yang diterapkan.	
-                                       <br>
-                                       •	<b>GALIH, S.T., M.KOM. dan Ganis Sanhaji, S.Si., M.Sc.</b> berperan dalam penerapan sistem <i>IoT</i>, khususnya dalam desain arsitektur sistem pemantauan otomatis. 
-                                       <br>
-                                       •	<b>Tim Mahasiswa</b>
-                                             Mahasiswa dari Fakultas Pertanian dan Fakultas Teknik turut ambil bagian dalam proyek, baik sebagai perancang sistem maupun tenaga operasional. Mahasiwa tidak hanya mempelajari konsep teoritis tentang pertanian dan teknologi, tetapi juga mendapatkan pengalaman langsung dalam mengelola dan memantau sistem berbasis <i>IoT</i>
-                                    </p>
-                                    <span id="closeText" class="cursor-pointer text-blue-500" style="display: none; color:yellow;  font-family: 'Poppins', sans-serif;" onclick="toggleParagraph()"><b>tutup..</b></span>
-                                 </div>
+                  <!-- Kolom PENJELASAN -->
+               <div class="col-lg-6 col-md-12 d-flex" data-aos="fade-left">
+                     <div class="card-body d-flex flex-column justify-content-between" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #006400, #003200, #001E00,#001400); border-radius: 15px;">
+                           <div>
+                              <h5 class="card-title mb-4" style="color:aliceblue;  font-family: 'Poppins', sans-serif;"><i class="fas fa-leaf me-2"></i> TEAM SUPPORT</h5>
+                              <div class="mt-2">
+                                 <span class="ml-2" style="text-align: justify; color:aliceblue;  font-family: 'Poppins', sans-serif;">
+                                    <b><i>Smart Green House</i></b> dalah proyek kolaboratif lintas disiplin di Universitas Islam Nusantara (Uninus) yang menggabungkan teknologi modern dengan praktik pertanian berkelanjutan. Proyek ini melibatkan keahlian dari berbagai disiplin untuk menciptakan sistem pertanian yang efisien melalui teknologi canggih, seperti sensor dan irigasi pintar, guna meningkatkan produktivitas tanaman serta penghematan sumber daya.
+                                       <span id="toggleText" style="text-align: justify; color:yellow;  font-family: 'Poppins', sans-serif;" onclick="toggleParagraph()"><b>selengkapnya....</b></span>
+                                 </span>
                               </div>
-                              <p class="mt-4 mb-0 text-end" style="font-size: 17px; color:aliceblue;  font-family: 'Poppins', sans-serif;"><i class="fas fa-users me-1"></i> Tim Ahli Pertanian & Teknologi</p>
-                        </div>
-                     <!-- </div> -->
-                  </div>
+                              <div id="extraParagraph" class="mt-2" style="display: none;">
+                                 <p class="card-text mb-3" style="text-align: justify; color:aliceblue;  font-family: 'Poppins', sans-serif;">
+                                 <b>Dukungan Yayasan dan Rektor Uninus</b><br>
+                                    Proyek ini juga didukung oleh Yayasan Uninus dan Rektor Uninus sebagai bagian dari komitmen universitas untuk mendorong inovasi dan keberlanjutan. Rektor dan Yayasan memberikan dukungan penuh dalam penyediaan sumber daya dan fasilitasi kegiatan lintas fakultas ini.
+                                    <br>
+                                    <b>Tim Pelaksana Proyek</b>
+                                    <br>
+                                    Proyek Smart Greenhouse ini merupakan hasil kerja keras tim lintas disiplin dari Fakultas Pertanian dan Fakultas Teknik Uninus. Para dosen yang berperan penting dalam pengembangan proyek ini, antara lain:
+                                    <br>
+                                    •	<b>Ir. Lilis Irmawatie, M.M.Pd</b> (Dekan Fakultas Pertanian)
+                                          Sebagai penanggung jawab utama dari proyek smart greenhouse berbasis dan mengawasi keseluruhan perencanaan dan pembuatan <i>smart greenhouse</i>.
+                                    <br>
+                                    •	<b>Dr. Debby Ustari, S.P., M.P dan Dr. Syayidah Nuriyah,  S.Pd., M.Si</b> (Dosen dan Peneliti) 
+                                          Mengawasi keseluruhan perencanaan agronomis dan teknis di dalam <i>smart greenhouse</i>, serta bertanggung jawab dalam pengembangan penelitian yang diterapkan.	
+                                    <br>
+                                    •	<b>GALIH, S.T., M.KOM. dan Ganis Sanhaji, S.Si., M.Sc.</b> berperan dalam penerapan sistem <i>IoT</i>, khususnya dalam desain arsitektur sistem pemantauan otomatis. 
+                                    <br>
+                                    •	<b>Tim Mahasiswa</b>
+                                          Mahasiswa dari Fakultas Pertanian dan Fakultas Teknik turut ambil bagian dalam proyek, baik sebagai perancang sistem maupun tenaga operasional. Mahasiwa tidak hanya mempelajari konsep teoritis tentang pertanian dan teknologi, tetapi juga mendapatkan pengalaman langsung dalam mengelola dan memantau sistem berbasis <i>IoT</i>
+                                 </p>
+                                 <span id="closeText" class="cursor-pointer text-blue-500" style="display: none; color:yellow;  font-family: 'Poppins', sans-serif;" onclick="toggleParagraph()"><b>tutup..</b></span>
+                              </div>
+                           </div>
+                           <p class="mt-4 mb-0 text-end" style="font-size: 17px; color:aliceblue;  font-family: 'Poppins', sans-serif;"><i class="fas fa-users me-1"></i> Tim Ahli Pertanian & Teknologi</p>
+                     </div>
+                  <!-- </div> -->
+               </div>
                   <!-- END Kolom PENJELASAN -->
             </div>
         </div>
@@ -83,7 +94,7 @@
 <!-- End PENJELASAN -->
 
 <!-- Start yayasan-->
-<section style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
+<section id="swiper-section-1" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
@@ -194,7 +205,7 @@
 <!-- End DOSEN -->
 
 <!-- Start PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
-<section style="background: linear-gradient(to left, #fff, #A8D5E3);">
+<section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
@@ -286,11 +297,11 @@
 <!-- End DOSEN -->
 
  <!-- Start DOSEN YANG IKUT DALAM PENELITIAN-->
- <section style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
+ <section id="swiper-section-3" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
    <div class="card__container swiper">
       <div class="card__content">
          <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: 0; margin-bottom: 50px;">
-            <h5 class="card-title" style="color: aliceblue; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #fff; padding-bottom: 10px; font-family: 'Poppins', sans-serif;">
+            <h5 class="card-title" style="color: aliceblue; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #fff; padding-bottom: 10px; font-family: 'Poppins', sans-serif;text-align: center;">
                DOSEN  YANG TERLIBAT DALAM RISET
             </h5>
          </div>
@@ -390,7 +401,7 @@
 <!-- End DOSEN -->
 
 <!-- Start MAHASISWA -->
-<section style="background: linear-gradient(to left, #fff, #A8D5E3);">
+<section id="swiper-section-4" style="background: linear-gradient(to left, #fff, #A8D5E3);">
       <div class="card__container swiper">
             <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px;">
@@ -711,7 +722,8 @@
                                        <h3 class="card__name" style="color:aliceblue;">Boyke Adam</h3>
                                        <p class="card__description" style="color:aliceblue;">Frontend</p> 
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
-                                          Team Support : Zen Ahlil Baeri Dan Adam Panji
+                                          Team Support : Zen Ahlil Baeri Dan
+                                          <br> Adam Panji
                                           </p>
                                     
                                        <div class="card__box">
@@ -888,7 +900,7 @@
 <!-- End MAHASISWA -->
 
 <!-- Start VENDOR -->
-<section style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
+<section id="swiper-section-5" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
    <div class="card__container swiper">
       <div class="card__content">
          <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: 0; margin-bottom: 50px;">
@@ -923,7 +935,6 @@
                   </div>
                </div>
             </article>
-
             <!-- 2 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">

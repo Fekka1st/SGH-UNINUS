@@ -1,36 +1,47 @@
 /*=============== SWIPER JS halaman TIM KINERJA===============*/
 // DOSEN MAHASISWA VENDOR 
-let swiperCards = new Swiper(".card__content", {
-  loop: true,
-  spaceBetween: 32,
-  grabCursor: true,
+const sections = [
+  { id: '#swiper-section-1', delay: 3000 },
+  { id: '#swiper-section-2', delay: 3000 },
+  { id: '#swiper-section-3', delay: 3000 },
+  { id: '#swiper-section-4', delay: 3000 },
+  { id: '#swiper-section-5', delay: 3000 },
+];
 
-  autoplay: {
-    delay: 3000, // Durasi delay antara slide, diatur ke 3 detik (3000 ms)
-    disableOnInteraction: false, // Tetap autoplay meskipun pengguna berinteraksi
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
+sections.forEach((section) => {
+  new Swiper(`${section.id} .card__content`, {
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+    
+    autoplay: {
+      delay: section.delay,
+      disableOnInteraction: false,
     },
-    968: {
-      slidesPerView: 3,
+    
+    pagination: {
+      el: `${section.id} .swiper-pagination`,
+      clickable: true,
+      dynamicBullets: true,
     },
-  },
+    
+    navigation: {
+      nextEl: `${section.id} .swiper-button-next`,
+      prevEl: `${section.id} .swiper-button-prev`,
+    },
+    
+    slidesPerGroup: 1,
+    
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      968: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
-
 // END DOSEN MAHASISWA VENDOR 
 
 // halaman TEAM SUPPORT

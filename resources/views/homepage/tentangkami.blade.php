@@ -9,65 +9,31 @@
   <div class="container position-relative" style="z-index: 2;">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2 class="text-white animate-slide-up" data-aos="fade-down" style="z-index: 3; color: white; font-family: 'Poppins', sans-serif;">
+        <h2 class="text-white animate-slide-up" data-aos="fade-down" style="z-index: 3; color: white; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">
           <b>TENTANG KAMI</b>
-            <!-- <ul id="nav" class="navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="/">Kembali > Beranda</a>
-                  <a class="nav-link" href="timkinerja">Lanjut Ke > Tim Kinerja</a>
-               </li>
-            </ul> -->
         </h2>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <div class="container my-5">
-    <div class="row justify-content-center"data-aos="fade-down">
-        <div class="col-lg-10">
-            <div class="card shadow-sm rounded-lg overflow-hidden">
-                <div class="row no-gutters">
-                    <div class="col-md-6">
-                        <img src="https://img.freepik.com/free-photo/medium-shot-smiley-people-greenhouse_23-2149098324.jpg?t=st=1728985054~exp=1728988654~hmac=fa5ad69cec329563af5412fcd288616024efd630000dbf62a88cd2418cf2ab78&w=826" 
-                            alt="Smart Green House" class="img-fluid h-100" style="object-fit: cover;">
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div class="card-body">
-                            <h5 class="card-title" style=" font-family: 'Poppins', sans-serif; font-size: 30px">Sejarah Smart Greenhouse</h5>
-                            <p class="text-justify" style="color: #000000;  font-family: 'Poppins', sans-serif; text-align: justify; font-size: 20px">
-                                Smart Greenhouse berbasis IoT Fakultas Pertanian Uninus dimulai dari visi untuk memodernisasi praktik pertanian di Indonesia melalui teknologi canggih. Proyek ini didirikan pada tahun 2024 sebagai tanggapan terhadap tantangan global di bidang pertanian, seperti perubahan iklim, ketidakstabilan cuaca, dan kebutuhan akan efisiensi sumber daya.
-                                <br>
-                                Kolaborasi antara agronomi dan teknik menghasilkan sistem yang memungkinkan pemantauan dan pengendalian lingkungan greenhouse secara otomatis dan real-time. Teknologi ini membantu memastikan pertumbuhan optimal tanaman sepanjang musim.
-                            </p>
-                            <p class="text-justify" style="color: #000000; font-family: 'Poppins', sans-serif; text-align: justify; font-size: 20px;">
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <!-- Start Table Fungsi-->
-<section id="overview" class="pricing-table section" style="padding-top:70px;padding-bottom:70px; font-family: 'Book Antiqua', serif; background: linear-gradient(to left, #fff, #A8D5E3);">
+<section id="overview" class="app-info section" style="padding-top:70px;padding-bottom:70px; font-family: 'Book Antiqua', serif; background: linear-gradient(to left, #fff, #A8D5E3);margin-bottom: -100px;">
     <div class="container">
         <div class="info-one">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                        <img src="https://img.freepik.com/free-photo/medium-shot-smiley-people-greenhouse_23-2149098324.jpg?t=st=1728985054~exp=1728988654~hmac=fa5ad69cec329563af5412fcd288616024efd630000dbf62a88cd2418cf2ab78&w=826" 
-                            alt="Smart Green House" class="img-fluid h-100" style="object-fit: cover;">
+                <div class="col-lg-6 col-md-12 col-12 mb-4">
+                        <img src="{{asset('asset/img/usp.png')}}" 
+                            alt="Smart Green House" class="img-fluid h-100" style="object-fit: cover;  width: 100%; height: 100%; border-radius: 5px">
                 </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="card-body">
-                        <h5 class="card-title" style=" font-family: 'Poppins', sans-serif; font-size: 30px">Sejarah Smart Greenhouse</h5>
-                        <p class="text-justify" style="color: #000000;  font-family: 'Poppins', sans-serif; text-align: justify; font-size: 20px">
+                <div class="col-lg-6 col-md-12 d-flex" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); border-radius: 10px;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title" style=" font-family: 'Poppins', sans-serif; font-size: 30px; color:#fff">Sejarah Smart Greenhouse</h5>
+                        <p class="text-justify" style="color: #fff;  font-family: 'Poppins', sans-serif; text-align: justify; font-size: 20px">
                             Smart Greenhouse berbasis IoT Fakultas Pertanian Uninus dimulai dari visi untuk memodernisasi praktik pertanian di Indonesia melalui teknologi canggih. Proyek ini didirikan pada tahun 2024 sebagai tanggapan terhadap tantangan global di bidang pertanian, seperti perubahan iklim, ketidakstabilan cuaca, dan kebutuhan akan efisiensi sumber daya.
                         </p>
                         <p><br></p>
-                        <p class="text-justify" style="color: #000000; font-family: 'Poppins', sans-serif; text-align: justify; font-size: 20px;">
+                        <p class="text-justify" style="color: #fff; font-family: 'Poppins', sans-serif; text-align: justify; font-size: 20px;">
                         Kolaborasi antara agronomi dan teknik menghasilkan sistem yang memungkinkan pemantauan dan pengendalian lingkungan greenhouse secara otomatis dan real-time. Teknologi ini membantu memastikan pertumbuhan optimal tanaman sepanjang musim.
                         </p>
                     </div>
@@ -77,9 +43,8 @@
     </div>
 </section>
 <!-- end Table Fungsi-->
-
-        <!-- Start Table Fungsi Tujuan dan Manfaat -->
-<section id="pricing" class="pricing-table section" style="background: linear-gradient(to left, #A8D5E3, #fff);">
+<!-- Start Table Fungsi Tujuan dan Manfaat -->
+<section id="pricing" class="pricing-table section" style="background: linear-gradient(to left, #fff, #A8D5E3);">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -90,9 +55,7 @@
             </div>
         </div>
         <div class="row justify-content-center" data-aos="zoom-in-down">
-            <!-- Membuat grid lebih responsif -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <!-- Menambah jarak bawah untuk mobile -->
+            <div class="col-lg-4 col-md-12 col-12 mb-4">
                 <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif; " data-wow-delay=".2s">
                     <div class="text-center">
                         <h3 class="title" style=" margin-top: 50px; color: white; font-family: 'Poppins', sans-serif;">Fungsi</h3>
@@ -101,7 +64,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="zoom-in-down">
+            <div class="col-lg-4 col-md-12 col-12 mb-4" data-aos="zoom-in-down">
                 <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".4s">
                     <div class="text-center">
                         <h3 class="title" style=" margin-top: 50px; color: white; font-family: 'Poppins', sans-serif;">Tujuan</h3>
@@ -110,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="zoom-in-down">
+            <div class="col-lg-4 col-md-12 col-12 mb-4" data-aos="zoom-in-down">
                 <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".6s">
                     <div class="text-center">
                         <h3 class="title" style=" margin-top: 50px; color: white; font-family: 'Times New Roman', Times, serif;">Manfaat</h3>
