@@ -3,7 +3,7 @@
 
 @section('content')
     <section class="hero-area">
-        <div class="container">
+        <div class="container" style="padding-top: 100px">
             <div class="row align-items-center">
                 <div class="brand_color">
                     <h2 style="color: white;">
@@ -657,7 +657,7 @@
             id: 'relativehumidity',
             data: myrelativehumidity,
             height: 450,
-            width: '100%'   
+            width: '100%'
           });
 
         ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
