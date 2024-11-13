@@ -1,11 +1,11 @@
 /*=============== SWIPER JS halaman TIM KINERJA===============*/
 // DOSEN MAHASISWA VENDOR 
 const sections = [
-  { id: '#swiper-section-1', delay: 3000 },
-  { id: '#swiper-section-2', delay: 3000 },
-  { id: '#swiper-section-3', delay: 3000 },
-  { id: '#swiper-section-4', delay: 3000 },
-  { id: '#swiper-section-5', delay: 3000 },
+  { id: '#swiper-section-1', delay: 3000, slidesPerView: { laptop: 3, tablet: 2, mobile: 1 } },
+  { id: '#swiper-section-2', delay: 3000, slidesPerView: { laptop: 3, tablet: 2, mobile: 1 } },
+  { id: '#swiper-section-3', delay: 3000, slidesPerView: { laptop: 3, tablet: 2, mobile: 1 } },
+  { id: '#swiper-section-4', delay: 3000, slidesPerView: { laptop: 3, tablet: 2, mobile: 1 } },
+  { id: '#swiper-section-5', delay: 3000, slidesPerView: { laptop: 2, tablet: 2, mobile: 1 } },
 ];
 
 sections.forEach((section) => {
@@ -34,14 +34,15 @@ sections.forEach((section) => {
     
     breakpoints: {
       600: {
-        slidesPerView: 2,
+        slidesPerView: section.slidesPerView.tablet,
       },
       968: {
-        slidesPerView: 3,
+        slidesPerView: section.slidesPerView.laptop,
       },
     },
   });
 });
+
 // END DOSEN MAHASISWA VENDOR 
 
 // halaman TEAM SUPPORT

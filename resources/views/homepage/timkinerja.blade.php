@@ -24,12 +24,13 @@
                <div class="col-lg-6 col-md-12 col-12 mb-4" data-aos="fade-left">
                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                   <div class="carousel-inner" style="border-radius: 15px;">
-                     <div class="carousel-item active">
-                           <img src="{{asset('asset/img/rapat/rapat1.jpg')}}"
+                     
+                     <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/r1.jpeg')}}"
                               class="d-block w-100" alt="Gambar 1">
                      </div>
-                     <div class="carousel-item">
-                           <img src="{{asset('asset/img/rapat/rapat2.jpg')}}"
+                     <div class="carousel-item active">
+                           <img src="{{asset('asset/img/rapat/rapat1.jpg')}}"
                               class="d-block w-100" alt="Gambar 2">
                      </div>
                      <div class="carousel-item">
@@ -100,7 +101,7 @@
                 <div class="col-md-12 col-12 mb-4">
                      <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px; font-family: 'Poppins', sans-serif;">
-                              <h5 class="card-title" style="color: aliceblue; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #fff; padding-bottom: 10px;  text-align: center;">
+                              <h5 class="card-title" style="color: aliceblue; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #fff; padding-bottom: 10px;  text-align: center;padding-top: 22px;">
                                  YAYASAN UNIVERSITAS ISLAM NUSANTARA
                               </h5>
                            </div>
@@ -202,7 +203,7 @@
          </div>
    </div>
 </section>
-<!-- End DOSEN -->
+<!-- End yayasa -->
 
 <!-- Start PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 <section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
@@ -211,7 +212,7 @@
                 <div class="col-md-12 col-12 mb-4">
                      <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px; font-family: 'Poppins', sans-serif;">
-                              <h5 class="card-title" style="color: #1C532A; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #1C532A; padding-bottom: 10px;  text-align: center;">
+                              <h5 class="card-title" style="color: #1C532A; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #1C532A; padding-bottom: 10px; padding-top: 22px;  text-align: center;">
                               PIMPINAN UNIVERSITAS ISLAM NUSANTARA
                               </h5>
                            </div>
@@ -294,7 +295,7 @@
          </div>
    </div>
 </section>
-<!-- End DOSEN -->
+<!-- End PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 
  <!-- Start DOSEN YANG IKUT DALAM PENELITIAN-->
  <section id="swiper-section-3" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
@@ -398,7 +399,7 @@
       </div>
    </div>
 </section>
-<!-- End DOSEN -->
+<!-- End DOSEN YANG IKUT DALAM PENELITIAN -->
 
 <!-- Start MAHASISWA -->
 <section id="swiper-section-4" style="background: linear-gradient(to left, #fff, #A8D5E3);">
@@ -915,13 +916,11 @@
                   <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
-
                <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                   <h3 class="card__name">Hamdi S., S.T</h3>
                   <p class="card__description">
                      IoT Engineer |<br> Embedded System IoT <br>| Elektrical Engineer
                   </p>
-
                   <div class="card__box">
                      <a href="https://www.linkedin.com/in/hamdi-sholahudin/" target="_blank">
                         <i class="fa-brands fa-linkedin fa-2xl" style="color: #000;"></i>
@@ -941,13 +940,11 @@
                   <img src="{{asset('asset/img/vendor/ferry.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
-
-               <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
+                <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                   <h3 class="card__name">Ferry Aditya H., S.T</h3>
                   <p class="card__description">
                   Web Developer | <br>IoT Engineer <br>| IT Support
                   </p>
-
                   <div class="card__box">
                      <a href="https://www.linkedin.com/in/ferry-aditya-herman/" target="_blank">
                         <i class="fa-brands fa-linkedin fa-2xl" style="color: #000;"></i>
@@ -985,7 +982,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 <link rel="stylesheet" href="{{asset('asset/css/swiper-bundle.min.css')}}">
 <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
-
 @endsection
 
 @section('script')
