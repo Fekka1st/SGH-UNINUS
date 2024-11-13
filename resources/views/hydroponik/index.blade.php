@@ -316,7 +316,7 @@
             </div>
         </div>
 
-        {{-- <div class="row">
+        <div class="row">
             <div class="col-xl-12 col-lg-8">
                 <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
@@ -413,7 +413,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
     </div>
 @endsection
 
