@@ -157,8 +157,8 @@
                         <div class="container" wire:poll="pump()">
                             <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_PHUP')" class="btn btn-primary"
-                                        style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    <button wire:click="togglePump('Pompa_PHUP')" class="btn btn-primary btn-sm w-100"
+                                        style="border: 1px solid #4e73df; padding: 21px; width: 160px;">
                                         <h5 style="color: white;">Water pH Up</h5>
                                         <div class="col-auto">
                                             <i class="fas fa-tint"></i>
@@ -170,8 +170,8 @@
                                 </div>
 
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_PHDOWN')" class="btn btn-primary"
-                                        style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    <button wire:click="togglePump('Pompa_PHDOWN')" class="btn btn-primary btn-sm w-80"
+                                        style="border: 1px solid #4e73df; padding: 9px; width: 160px;">
                                         <h5 style="color: white;">Water pH Down</h5>
                                         <div class="col-auto">
                                             <i class="fas fa-tint"></i>
@@ -183,8 +183,8 @@
                                 </div>
 
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_Nutrisi')" class="btn btn-primary"
-                                        style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    <button wire:click="togglePump('Pompa_Nutrisi')" class="btn btn-primary btn-sm w-120"
+                                        style="border: 1px solid #4e73df; padding: 21px; width: 160px;">
                                         <h5 style="color: white;">AB Mix</h5>
                                         <div class="col-auto">
                                             <i class="fab fa-nutritionix"></i>
@@ -196,8 +196,8 @@
                                 </div>
 
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary"
-                                        style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary btn-sm w-80"
+                                        style="border: 1px solid #4e73df; padding: 9px; width: 160px;">
                                         <h5 style="color: white;">Water Level Up</h5>
                                         <div class="col-auto">
                                             <i class="fas fa-water"></i>
@@ -208,8 +208,8 @@
                                     </button>
                                 </div>
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary"
-                                        style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary btn-sm w-120"
+                                        style="border: 1px solid #4e73df; padding: 21px; width: 160px;">
                                         <h5 style="color: white;">Spraying</h5>
                                         <div class="col-auto">
                                             <i class="fas fa-water"></i>
@@ -227,15 +227,17 @@
                     <div class="row">
                         <div class="container text-center mb-4">
                             <div class="row justify-content-center">
-                                <form action="{{ route('changeMode', $device->id) }}" method="POST" class="w-100"
-                                    style="text-align: center; margin: 1%;">
-                                    @csrf
-                                    @if($device->mode == 1)
-                                    <button class="btn btn-primary btn-sm w-100" type="submit">Mode: Auto</button>
-                                    @else
-                                    <button class="btn btn-primary btn-sm w-100" type="submit">Mode:Manual</button>
-                                    @endif
-                                </form>
+                                <div class="col-6 col-md-2 mb-2">
+                                    <form action="{{ route('changeMode', $device->id) }}" method="POST" class="w-100"
+                                        style="text-align: center;">
+                                        @csrf
+                                        @if($device->mode == 1)
+                                        <button class="btn btn-primary btn-sm w-100" type="submit">Auto</button>
+                                        @else
+                                        <button class="btn btn-primary btn-sm w-100" type="submit">Manual</button>
+                                        @endif
+                                    </form>
+                                </div>
                                 <div class="col-6 col-md-2 mb-2">
                                     <button type="button" class="btn btn-primary btn-sm w-100"
                                         wire:click="openModal">Setting</button>
@@ -258,15 +260,14 @@
                                             @csrf <div
                                                 style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                                 <div>
-                                                    <label for="minTemp" style="width: 123px;">Water PH Up:
-                                                    </label>
+                                                    <label for="minTemp" style="width: 153px;">Water PH Up:</label>
                                                     <input type="number" name="Limit_ph_min" step="0.01"
                                                         value="{{ $setting['Limit_ph_min'] }}"
                                                         style="width: 80px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PH </label>
                                                 </div>
                                                 <div>
-                                                    <label for="maxTemp">Water PH Down: </label>
+                                                    <label for="maxTemp" style="width: 153px;">Water PH Down:</label>
                                                     <input type="number" name="Limit_ph_max" step="0.01"
                                                         value="{{ $setting['Limit_ph_max'] }}"
                                                         style="width: 80px; border: none; padding: 5px;" />
@@ -274,16 +275,14 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="minTemp" style="width: 125px;">Nutrition Up:
-                                                    </label>
+                                                    <label for="minTemp" style="width: 155px;">Nutrition Up:</label>
                                                     <input type="number" name="Limit_nutrisi_min"
                                                         value="{{ $setting['Limit_nutrisi_min'] }}"
-                                                        style="width: 70px; border: none; padding: 5px;" />
+                                                        style="width: 65px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PPM </label>
                                                 </div>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 125px;">Nutrition
-                                                        Down: </label>
+                                                    <label for="maxTemp" style="width: 150px;">Nutrition Down:</label>
                                                     <input type="number" name="Limit_nutrisi_max"
                                                         value="{{ $setting['Limit_nutrisi_max'] }}"
                                                         style="width: 70px; border: none; padding: 5px;" />
@@ -291,30 +290,29 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 126px;">Water Level:
-                                                    </label>
+                                                    <label for="maxTemp" style="width: 152px;">Water Level:</label>
                                                     <input type="number" name="tangki_air"
                                                         value="{{ $setting['tangki_air'] }}"
                                                         style="width: 79px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Cm </label>
                                                 </div>
+                                                <br>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 126px;">Spraying Start
-                                                    </label>
+                                                    <label for="maxTemp" style="width: 155px;">Spraying Start:</label>
                                                     <input type="number" name="spray_start"
                                                         value="{{ $setting['waktu_spary_start'] }}"
-                                                        style="width: 79px; border: none; padding: 5px;" />
+                                                        style="width: 52px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Minute </label>
                                                 </div>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 126px;">Spraying End:
-                                                    </label>
+                                                    <label for="maxTemp" style="width: 155px;">Spraying End:</label>
                                                     <input type="number" name="spray_end"
                                                         value="{{ $setting['waktu_spary_end'] }}"
-                                                        style="width: 79px; border: none; padding: 5px;" />
+                                                        style="width: 50px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Minute</label>
                                                 </div>
                                             </div>
+                                            <br>
                                             <div class="result" id="result"></div>
                                             <div class="modal-footer">
                                                 <button class="btn btn-secondary mb-2" type="button"
