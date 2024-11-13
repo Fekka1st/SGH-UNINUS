@@ -1,8 +1,5 @@
 @extends('welcome')
 
-<!-- link fon -->
-<!-- end link fon -->
-
 @section('content')
 
 <section class="HERO-AREA d-flex align-items-center justify-content-center position-relative" style="background-image: url('asset/img/tambakdepanununis.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 90vh;">
@@ -63,7 +60,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="col-lg-4 col-md-12 col-12 mb-4" data-aos="zoom-in-down">
                 <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".4s">
                     <div class="text-center">

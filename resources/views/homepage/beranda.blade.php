@@ -230,14 +230,17 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center" style="font-family: 'Poppins', sans-serif;">
+
                     <h2 data-wow-delay=".4s"><b>Program dan Kegiatan</b></h2>
                     <p data-wow-delay=".6s" style="font-size: 17px; color: black;">
                         Berikut adalah beberapa Program dan Kegiatan yang kami gunakan untuk metode penanaman
                     </p>
+
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
+
             <div class="col-lg-4 col-md-12 col-12 mb-4">
                 <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".2s">
                     <div class="text-center">
@@ -265,6 +268,7 @@
                         <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white; font-size: 17px;">
                             Bekerja sama dengan perusahaan teknologi dan lembaga penelitian untuk mengembangkan solusi inovatif dalam pertanian.
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -274,7 +278,9 @@
 <!-- End Program dan Kegiatan -->
 
 <!-- Start Jenis - Jenis Tanaman -->
+
 <section class="our-achievement section" style="background: linear-gradient(to left, #1C532A, #147814,#2E8B57, #000000); font-family: 'Poppins', sans-serif;">
+
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
@@ -321,7 +327,9 @@
 <!-- End Jenis - Jenis Tanaman -->
  
 <!-- Galeri -->
+
 <section class="our-achievement section" style="background-color:white; padding: 20px; font-family: 'Poppins', sans-serif; background: linear-gradient(to left,#A8D5E3, #fff,);">
+
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col-lg-12" data-aos="fade-down">
@@ -331,6 +339,7 @@
         <div class="row gallery-content">
             <!-- Kolom 1 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
+
                 <img src="{{asset('asset/img/fotoberanda/ubi.JPG')}}" class="img-fluid shadow-1-strong rounded clickable-image" 
                      alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
                      data-description="Ubi adalah salah satu jenis umbi-umbian yang kaya akan nutrisi dan memiliki berbagai macam varietas, seperti ubi jalar, ubi kayu (singkong), dan ubi ungu." 
@@ -349,6 +358,7 @@
                      alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
                      data-description="ubi memiliki bentuk yang beragam tergantung jenis ubi, namun umumnya berbentuk menjari atau menyirip dengan permukaan yang halus. Warna daunnya bervariasi dari hijau muda hingga hijau tua, dan daun muda sering kali memiliki warna kemerahan pada beberapa jenis ubi, seperti ubi jalar." 
                      onclick="openModal(this)">
+
             </div>
             <!-- 4 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">

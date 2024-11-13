@@ -206,13 +206,17 @@
 <!-- End yayasa -->
 
 <!-- Start PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
+
 <section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
+
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
                      <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px; font-family: 'Poppins', sans-serif;">
+
                               <h5 class="card-title" style="color: #1C532A; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #1C532A; padding-bottom: 10px; padding-top: 22px;  text-align: center;">
+
                               PIMPINAN UNIVERSITAS ISLAM NUSANTARA
                               </h5>
                            </div>
@@ -295,6 +299,7 @@
          </div>
    </div>
 </section>
+
 <!-- End PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 
  <!-- Start DOSEN YANG IKUT DALAM PENELITIAN-->
@@ -303,6 +308,7 @@
       <div class="card__content">
          <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: 0; margin-bottom: 50px;">
             <h5 class="card-title" style="color: aliceblue; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #fff; padding-bottom: 10px; font-family: 'Poppins', sans-serif;text-align: center;">
+
                DOSEN  YANG TERLIBAT DALAM RISET
             </h5>
          </div>
@@ -385,6 +391,7 @@
             </article>
          </div> <!-- Penutup yang diperbaiki -->
 
+
          <!-- Navigation buttons -->
          <div class="swiper-button-next">
             <i class="ri-arrow-right-s-line"></i>
@@ -394,15 +401,18 @@
             <i class="ri-arrow-left-s-line"></i>
          </div>
 
+
          <!-- Pagination -->
          <div class="swiper-pagination"></div>
       </div>
    </div>
 </section>
+
 <!-- End DOSEN YANG IKUT DALAM PENELITIAN -->
 
 <!-- Start MAHASISWA -->
 <section id="swiper-section-4" style="background: linear-gradient(to left, #fff, #A8D5E3);">
+
       <div class="card__container swiper">
             <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px;">
@@ -916,6 +926,8 @@
                   <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
+
+
                <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                   <h3 class="card__name">Hamdi S., S.T</h3>
                   <p class="card__description">
@@ -934,17 +946,22 @@
                   </div>
                </div>
             </article>
+
+
             <!-- 2 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
                   <img src="{{asset('asset/img/vendor/ferry.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
+
                 <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
+
                   <h3 class="card__name">Ferry Aditya H., S.T</h3>
                   <p class="card__description">
                   Web Developer | <br>IoT Engineer <br>| IT Support
                   </p>
+
                   <div class="card__box">
                      <a href="https://www.linkedin.com/in/ferry-aditya-herman/" target="_blank">
                         <i class="fa-brands fa-linkedin fa-2xl" style="color: #000;"></i>

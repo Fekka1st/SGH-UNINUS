@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('greenhouse_sensor_datas', function (Blueprint $table) {
             $table->id();
-            $table->integer('suhu');
+            $table->float('suhu');
             $table->integer('kelembaban');
-            $table->integer('co2');
+            $table->float('co2');
             $table->integer('intensitas');
             $table->integer('konsumsi_air');
+            $table->float('room_temp');
             $table->integer('device_id');
             $table->timestamps();
         });

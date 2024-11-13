@@ -11,13 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('device_settings', function (Blueprint $table) {
-            $table->id();
-            $table->string('setting_name', 100);
-            $table->float('setting_value');
-            $table->integer('device_id');
-            $table->timestamps();
-        });
+        //
     }
 
     /**
@@ -25,6 +19,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('device_settings');
+        //
+        
     }
 };
