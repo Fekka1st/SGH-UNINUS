@@ -3,7 +3,7 @@
 
 @section('content')
 <section class="hero-area background-section d-flex align-items-center justify-content-center text-white" style="background-image: url('https://img.freepik.com/free-photo/top-view-green-plants-growing-background_1353-281.jpg?t=st=1731055801~exp=1731059401~hmac=31c1e105e416a03dd1bd1f58006b846706d04af6b41383db4a68b7222dc9d17f&w=826')">
-    <div class="container">
+    <div class="container" style="padding-top: 100px">
         <div class="row align-items-center">
             <div class="brand_color">
                 <div>
@@ -90,7 +90,7 @@
                         </div>
                 </div>
                 <div class="col-auto">
-                
+
                 </div>
             </div>
         </div>
@@ -265,7 +265,7 @@
                         </div>
                             <div>
                                 <h5>Humidity 1 : 50%</h5>
-                            </div>    
+                            </div>
                             <div>
                                 <h5>Humidity 2 : 50%</h5>
                             </div>
@@ -334,8 +334,8 @@
           placement: 'center',
           text: '%v °C', //default
           fontSize: 24,
-          
-          
+
+
         }
       },
       tooltip: {
@@ -401,8 +401,8 @@
           placement: 'center',
           text: '%v %', //default
           fontSize: 24,
-          
-          
+
+
         }
       },
       tooltip: {
@@ -468,8 +468,8 @@
           placement: 'center',
           text: '%v PPM', //default
           fontSize: 24,
-          
-          
+
+
         }
       },
       tooltip: {
@@ -535,8 +535,8 @@
           placement: 'center',
           text: '%v M/3', //default
           fontSize: 24,
-          
-          
+
+
         }
       },
       tooltip: {
@@ -602,8 +602,8 @@
           placement: 'center',
           text: '%v LX', //default
           fontSize: 24,
-          
-          
+
+
         }
       },
       tooltip: {
@@ -669,8 +669,8 @@
           placement: 'center',
           text: '%v °C', //default
           fontSize: 24,
-          
-          
+
+
         }
       },
       tooltip: {
@@ -722,7 +722,7 @@
         },
       }]
     };
- 
+
     zingchart.render({
       id: 'myChart',
       data: myConfig,

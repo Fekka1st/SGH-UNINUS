@@ -143,7 +143,7 @@
                         <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                             <div class="m-3">
                                 <button wire:click="togglePump('Pompa_PHUP')" class="btn btn-primary"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    style="border: 1px solid #4e73df; padding: 17px; width: 180px;">
                                     <h5 style="color: white;">Water pH Up</h5>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
@@ -156,7 +156,7 @@
 
                             <div class="m-3">
                                 <button wire:click="togglePump('Pompa_PHDOWN')" class="btn btn-primary"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    style="border: 1px solid #4e73df; padding: 17px; width: 185px;">
                                     <h5 style="color: white;">Water pH Down</h5>
                                     <div class="col-auto">
                                         <i class="fas fa-tint"></i>
@@ -169,7 +169,7 @@
 
                             <div class="m-3">
                                 <button wire:click="togglePump('Pompa_Nutrisi')" class="btn btn-primary"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    style="border: 1px solid #4e73df; padding: 17px; width: 185px;">
                                     <h5 style="color: white;">AB Mix</h5>
                                     <div class="col-auto">
                                         <i class="fab fa-nutritionix"></i>
@@ -182,7 +182,7 @@
 
                             <div class="m-3">
                                 <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary"
-                                    style="border: 1px solid #4e73df; padding: 5px; width: 150px;">
+                                    style="border: 1px solid #4e73df; padding: 17px; width: 180px;">
                                     <h5 style="color: white;">Water Level Up</h5>
                                     <div class="col-auto">
                                         <i class="fas fa-water"></i>
@@ -200,19 +200,17 @@
                             <div class="row justify-content-center">
                                 <div class="col-6 col-md-2 mb-2">
                                     <form action="{{ route('changeMode', $device->id) }}" method="POST" class="w-100"
-                                        style="text-align: center; margin: 1%;">
+                                        style="text-align: center;">
                                         @csrf
                                         @if($device->mode == 1)
-                                        <button class="btn btn-primary btn-sm w-100" type="submit">Mode: Auto</button>
+                                        <button class="btn btn-primary btn-sm w-100" type="submit">Auto</button>
                                         @else
-                                        <button class="btn btn-primary btn-sm w-100" type="submit">Mode:Manual</button>
+                                        <button class="btn btn-primary btn-sm w-100" type="submit">Manual</button>
                                         @endif
                                     </form>
                                 </div>
                                 <div class="col-6 col-md-2 mb-2">
-                                    <button type="button" class="btn btn-primary" wire:click="openModal">
-                                        Open Setting
-                                    </button>
+                                    <button type="button" class="btn btn-primary btn-sm w-100" wire:click="openModal">Setting</button>
                                 </div>
                             </div>
                         </div>
@@ -292,9 +290,9 @@
         </div>
         {{-- canva --}}
         <div class="row">
-            <div class="col-xl-12 col-lg-8">
+            <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary"
                             style="text-align: center; margin: 2%; width: 100%">Chart Monitoring</h6>
                     </div>
@@ -368,7 +366,7 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary"
                                         style="text-align: center; margin: 2%; width: 100%">Water Level</h6>
                                 </div>
@@ -590,6 +588,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false, //membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
