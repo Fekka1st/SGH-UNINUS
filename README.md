@@ -1,5 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
+<p align="center">
+    <a href="sgh-uninus/public/image/logo.png" target="_blank">
+        <img src="sgh-uninus/public/image/logo.png" width="400" alt="Custom Logo">
+    </a>
+</p>
 <h1 align="center">Smart Green House</h1>
 
 ## About Smart Green House
