@@ -1,7 +1,5 @@
 <p align="center">
-    <a href="sgh-uninus/public/image/logo.png" target="_blank">
-        <img src="sgh-uninus/public/image/logo.png" width="400" alt="Custom Logo">
-    </a>
+       <a href="" target="_blank"><img src="public/asset/img/Logo-uninus-sgh.png" width="400" alt="Laravel Logo">
 </p>
 <h1 align="center">Smart Green House</h1>
 
@@ -37,7 +35,7 @@ Features :
 - Ease of Management:
   Automation minimizes the need for constant manual monitoring, making it ideal for farmers who manage multiple plants or large areas.
 
-## Requirements aplikasi
+## Requirements Apps
 
 - PHP >= 8.2 (or higher)
 - Composer
@@ -48,7 +46,12 @@ Features :
 ## Gambar Tampilan
 
 ## Contributors List
-
+- 
+-
+-
+-
+-
+-
 
 ## Lisensi
 
