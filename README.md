@@ -43,7 +43,7 @@ Features :
 - MySQL
 - MQTT broker
 
-## Gambar Tampilan
+## UI Web
 
-## Lisensi
+## license
 
