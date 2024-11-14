@@ -45,13 +45,5 @@ Features :
 
 ## Gambar Tampilan
 
-## Contributors List
-- 
--
--
--
--
--
-
 ## Lisensi
 
