@@ -180,6 +180,7 @@
             time.innerHTML = d.toLocaleTimeString();
         }, 1000)
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @stack('script')
     @livewireScripts
 </body>

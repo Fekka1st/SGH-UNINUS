@@ -25,10 +25,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('asset/css/main.css')}}" />
     <title>Smart Green House</title>
-    
+
     <link rel="shortcut icon" type="image/x-icon"
         href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
-        
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     @yield('css')
@@ -104,11 +104,7 @@
         </div>
         <!-- /.container -->
     </header>
-    <!-- Start Hero Area -->
-
-    {{-- content --}}
     @yield('content')
-
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -165,6 +161,9 @@
     <a href="#" class="scroll-top">
         <i class="lni lni-chevron-up"></i>
     </a>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
         integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -180,6 +179,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
         integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript">
         var cu = new counterUp({
             start: 0,
@@ -189,13 +189,11 @@
             append: " ",
         });
         cu.start();
-
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-
     </script>
     @yield('script')
 </body>

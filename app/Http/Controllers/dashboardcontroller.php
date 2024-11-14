@@ -15,7 +15,6 @@ class dashboardcontroller extends Controller
     public function index(){
         $user = Auth::user();
 
-
         $startDate = Carbon::now()->startOfWeek();
         $today = Carbon::now()->toDateString();
         $hydroDayCount = SensorDataSmartHydroponik::whereDate('created_at', $today)->count();
