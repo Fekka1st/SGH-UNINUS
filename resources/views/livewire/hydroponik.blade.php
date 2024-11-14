@@ -56,7 +56,7 @@
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Water Temperature </div>
                                 <div>
-                                    {{$data->suhu_air}} %
+                                    {{$data->suhu_air}} °C
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -252,7 +252,7 @@
                     </div>
                     <div class="modal-body">
                         <form wire:submit.prevent="update">
-                            @csrf <div
+                         <div
                                 style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                 <div>
                                     <label for="minTemp" style="width: 123px;">Water PH Up:
@@ -440,7 +440,6 @@
             $('#exampleModal').modal('hide');
         });
     });
-
 </script>
 <script>
     document.addEventListener('livewire:init', () => {

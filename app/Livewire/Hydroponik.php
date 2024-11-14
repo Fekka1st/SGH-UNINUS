@@ -139,6 +139,7 @@ class Hydroponik extends Component
                         "type" => "success",
                         "message" => $message,
                     ]);
+                    $this->lastseen();
                 } else {
                     $control->status = $initialStatus;
                     $control->save();
@@ -148,6 +149,7 @@ class Hydroponik extends Component
                         "type" => "error",
                         "message" => $message,
                     ]);
+                    $this->lastseen();
                 }
             } else {
                 $this->dispatch("show-sweetalert", [
@@ -191,6 +193,7 @@ class Hydroponik extends Component
                         "type" => "success",
                         "message" => $message,
                     ]);
+                    $this->refreshData();
                 } else {
                     $device->mode = $initialStatus;
                     $device->save();
@@ -290,5 +293,5 @@ class Hydroponik extends Component
     {
         return view("livewire.hydroponik");
     }
-    
+
 }
