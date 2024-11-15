@@ -33,10 +33,10 @@
                            <img src="{{asset('asset/img/rapat/rapat1.jpg')}}"
                               class="d-block w-100" alt="Gambar 2">
                      </div>
-                     <div class="carousel-item">
-                           <img src="{{asset('asset/img/rapat/rapat3.jpg')}}"
+                     <!-- <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/rapat2.jpg')}}"
                               class="d-block w-100" alt="Gambar 3">
-                     </div>
+                     </div> -->
                      <div class="carousel-item">
                            <img src="{{asset('asset/img/rapat/kerja.jpg')}}"
                               class="d-block w-100" alt="Gambar 4">
@@ -208,7 +208,6 @@
 <!-- Start PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 
 <section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
-
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
@@ -412,8 +411,7 @@
 
 <!-- Start MAHASISWA -->
 <section id="swiper-section-4" style="background: linear-gradient(to left, #fff, #A8D5E3);">
-
-      <div class="card__container swiper">
+   <div class="card__container swiper">
             <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px;">
                               <h4 class="card-title" style="color: #1C532A; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #1C532A; padding-bottom: 10px;  font-family: 'Poppins', sans-serif;">
