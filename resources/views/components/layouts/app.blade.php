@@ -21,7 +21,7 @@
 
 <body id="page-top">
     <div>
-        @include('sweetalert::alert')
+        {{-- @include('sweetalert::alert') --}}
         <div id="wrapper">
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -180,6 +180,7 @@
             time.innerHTML = d.toLocaleTimeString();
         }, 1000)
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @stack('script')
     @livewireScripts
 </body>

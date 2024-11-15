@@ -56,7 +56,7 @@
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Water Temperature </div>
                                 <div>
-                                    {{$data->suhu_air}} %
+                                    {{$data->suhu_air}} °C
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -109,7 +109,7 @@
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Room
                                     Panel Temp </div>
-                                <div> {{$data->room_temp}} °C </div>
+                                <div> {{$data->panel_temp}} °C </div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-laptop-house"></i>
@@ -119,6 +119,8 @@
                 </div>
             </div>
         </div>
+
+        @if ($status == 1)
         <div class="row">
             <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
@@ -128,8 +130,7 @@
                             style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
                     </div>
                     @if ($device->mode == 1)
-                    <div class="margin-top: 4"
-                        style="text-align: center; margin: 2%; width: 96%">
+                    <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
                         <button class="btn btn-primary" type="submit"
                             style="border: 0px solid #4e73df; padding: 0px; width: 200px; text-align: center; background-color: #4e73df; color: #ffffff; cursor: pointer;">
                             <img src="{{asset('asset/img/animasi/Animation - Setiing2.gif')}}" alt="Gambar 2"
@@ -139,7 +140,7 @@
                         </button>
                     </div>
                     @else
-                    <div class="container" wire:poll="pump()">
+                    <div class="container" wire:poll="pump">
                         <div class="d-flex flex-wrap justify-content-center align-items-center;" style="margin: 2%">
                             <div class="m-3">
                                 <button wire:click="togglePump('Pompa_PHUP')" class="btn btn-primary"
@@ -195,91 +196,22 @@
                         </div>
                     </div>
                     @endif
+
                     <div class="row">
                         <div class="container text-center mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-6 col-md-2 mb-2">
-                                    <form action="{{ route('changeMode', $device->id) }}" method="POST" class="w-100"
-                                        style="text-align: center;">
-                                        @csrf
-                                        @if($device->mode == 1)
-                                        <button class="btn btn-primary btn-sm w-100" type="submit">Auto</button>
-                                        @else
-                                        <button class="btn btn-primary btn-sm w-100" type="submit">Manual</button>
-                                        @endif
-                                    </form>
+                                    @if($device->mode == 1)
+                                    <button wire:click="changemode('{{$device->id}}')"
+                                        class="btn btn-primary btn-sm w-100" type="submit">Auto</button>
+                                    @else
+                                    <button wire:click="changemode('{{$device->id}}')"
+                                        class="btn btn-primary btn-sm w-100" type="submit">Manual</button>
+                                    @endif
                                 </div>
                                 <div class="col-6 col-md-2 mb-2">
-                                    <button type="button" class="btn btn-primary btn-sm w-100" wire:click="openModal">Setting</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModal" aria-hidden="true" wire:ignore.self>
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings
-                                        </h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="{{ route('Hydro.settings.update') }}" method="POST">
-                                            @csrf <div
-                                                style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                                <div>
-                                                    <label for="minTemp" style="width: 123px;">Water PH Up:
-                                                    </label>
-                                                    <input type="number" name="Limit_ph_min" step="0.01"
-                                                        value="{{ $setting['Limit_ph_min'] }}"
-                                                        style="width: 80px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PH </label>
-                                                </div>
-                                                <div>
-                                                    <label for="maxTemp">Water PH Down: </label>
-                                                    <input type="number" name="Limit_ph_max" step="0.01"
-                                                        value="{{ $setting['Limit_ph_max'] }}"
-                                                        style="width: 80px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PH </label>
-                                                </div>
-                                                <br>
-                                                <div>
-                                                    <label for="minTemp" style="width: 125px;">Nutrition Up:
-                                                    </label>
-                                                    <input type="number" name="Limit_nutrisi_min"
-                                                        value="{{ $setting['Limit_nutrisi_min'] }}"
-                                                        style="width: 70px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PPM </label>
-                                                </div>
-                                                <div>
-                                                    <label for="maxTemp" style="width: 125px;">Nutrition
-                                                        Down: </label>
-                                                    <input type="number" name="Limit_nutrisi_max"
-                                                        value="{{ $setting['Limit_nutrisi_max'] }}"
-                                                        style="width: 70px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">PPM </label>
-                                                </div>
-                                                <br>
-                                                <div>
-                                                    <label for="maxTemp" style="width: 126px;">Water Level:
-                                                    </label>
-                                                    <input type="number" name="tangki_air"
-                                                        value="{{ $setting['tangki_air'] }}"
-                                                        style="width: 79px; border: none; padding: 5px;" />
-                                                    <label for="maxTemp">Cm </label>
-                                                </div>
-                                            </div>
-                                            <div class="result" id="result"></div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-secondary mb-2" type="button"
-                                                    class="btn btn-secondary" wire:click="closeModal()">Close</button>
-                                                <button class="btn btn-primary mb-2" type="submit">Set</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                    <button type="button" class="btn btn-primary btn-sm w-100"
+                                        wire:click="openModal">Setting</button>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +220,95 @@
                 </div>
             </div>
         </div>
-        {{-- canva --}}
+        @else
+        <div class="row">
+            <div class="col-xl-12 col-lg-7">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary"
+                            style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
+                    </div>
+                    <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
+                        <h2 class="text-danger"><b>Kontrol Tidak Dapat digunakan, Karena Device Sedang Offline</b></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
+
+
+        {{-- modal --}}
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal"
+            aria-hidden="true" wire:ignore.self>
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="greenhouseadjusttableLabel">Settings
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form wire:submit.prevent="update">
+                         <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div>
+                                    <label for="minTemp" style="width: 123px;">Water PH Up:
+                                    </label>
+                                    <input type="number" name="Limit_ph_min" step="0.1"  wire:model="Limit_ph_min"
+                                        value="{{ $setting['Limit_ph_min'] }}"
+                                        style="width: 80px; border: none; padding: 5px;" />
+                                    <label for="maxTemp">PH </label>
+                                </div>
+                                <div>
+                                    <label for="maxTemp">Water PH Down: </label>
+                                    <input type="number" name="Limit_ph_max" step="0.1" wire:model="Limit_ph_max"
+                                        value="{{ $setting['Limit_ph_max'] }}"
+                                        style="width: 80px; border: none; padding: 5px;" />
+                                    <label for="maxTemp">PH </label>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="minTemp" style="width: 125px;">Nutrition Up:
+                                    </label>
+                                    <input type="number" name="Limit_nutrisi_min"  wire:model="Limit_nutrisi_min"
+                                        value="{{ $setting['Limit_nutrisi_min'] }}"
+                                        style="width: 70px; border: none; padding: 5px;" />
+                                    <label for="maxTemp">PPM </label>
+                                </div>
+                                <div>
+                                    <label for="maxTemp" style="width: 125px;">Nutrition
+                                        Down: </label>
+                                    <input type="number" name="Limit_nutrisi_max"  wire:model="Limit_nutrisi_max"
+                                        value="{{ $setting['Limit_nutrisi_max'] }}"
+                                        style="width: 70px; border: none; padding: 5px;" />
+                                    <label for="maxTemp">PPM </label>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="maxTemp" style="width: 126px;">Water Level:
+                                    </label>
+                                    <input type="number" name="tangki_air"  wire:model="tangki_air"  value="{{ $setting['tangki_air'] }}"
+                                        style="width: 79px; border: none; padding: 5px;" />
+                                    <label for="maxTemp">Cm </label>
+                                </div>
+                            </div>
+                            <div class="result" id="result"></div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary mb-2" type="button" class="btn btn-secondary"
+                                    wire:click="closeModal()">Close</button>
+                                <button class="btn btn-primary mb-2" type="submit">Set</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="row">
             <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
@@ -365,8 +385,7 @@
                         <div class="col-xl-12 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3">
+                                <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary"
                                         style="text-align: center; margin: 2%; width: 100%">Water Level</h6>
                                 </div>
@@ -388,21 +407,42 @@
 @push('script')
 <script>
     document.addEventListener('livewire:init', function () {
-        // Event untuk membuka modal
-        Livewire.on('openModal', () => {
-            $('#exampleModal').modal('show');
-        });
-
-        // Event untuk menutup modal
-        Livewire.on('closeModal', () => {
-            $('#exampleModal').modal('hide');
+        Livewire.on('show-sweetalert', (notifikasi) => {
+            const event = notifikasi[0];
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+            Toast.fire({
+                icon: event.type,
+                title: event.type === 'success' ? 'Berhasil!' : 'Peringatan!',
+                text: event.message,
+                showConfirmButton: false,
+                timer: 3000
+            });
         });
     });
 
 </script>
 <script>
+    document.addEventListener('livewire:init', function () {
+        Livewire.on('openModal', () => {
+            $('#exampleModal').modal('show');
+        });
+        Livewire.on('closeModal', () => {
+            $('#exampleModal').modal('hide');
+        });
+    });
+</script>
+<script>
     document.addEventListener('livewire:init', () => {
-        // Data untuk setiap chart
         var suhuData = [],
             lajuData = [],
             phData = [],

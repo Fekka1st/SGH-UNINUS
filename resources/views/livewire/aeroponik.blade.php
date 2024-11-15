@@ -23,7 +23,7 @@
                                     Water PH
                                 </div>
                                 <div>
-                                    {{$data->ph_air}}
+                                    {{$data->ph_air}} pH
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -42,7 +42,7 @@
                                     Nutrition
                                 </div>
                                 <div>
-                                    {{$data->tds}}
+                                    {{$data->tds}} PPM
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -61,7 +61,7 @@
                                     Water Temperature
                                 </div>
                                 <div>
-                                    {{$data->suhu_air}}
+                                    {{$data->suhu_air}} °C
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -81,7 +81,7 @@
                                     Water Level
                                 </div>
                                 <div>
-                                    {{$data->volume_air}}
+                                    {{$data->volume_air}} Cm
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -102,7 +102,7 @@
                                     Relative Humidity
                                 </div>
                                 <div>
-                                    {{$data->kelembaban_udara}}
+                                    {{$data->kelembaban_udara}} %
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -118,10 +118,10 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    Room Panel Temp.
+                                    Panel Temp.
                                 </div>
                                 <div>
-                                    {{$data->room_temp}}
+                                    {{$data->panel_temp}} °C
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -133,6 +133,7 @@
             </div>
         </div>
         {{-- button card control --}}
+        @if($status == 1)
         <div class="row">
             <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
@@ -168,7 +169,6 @@
                                         </div>
                                     </button>
                                 </div>
-
                                 <div class="m-3">
                                     <button wire:click="togglePump('Pompa_PHDOWN')" class="btn btn-primary btn-sm w-80"
                                         style="border: 1px solid #4e73df; padding: 9px; width: 160px;">
@@ -181,9 +181,9 @@
                                         </div>
                                     </button>
                                 </div>
-
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_Nutrisi')" class="btn btn-primary btn-sm w-120"
+                                    <button wire:click="togglePump('Pompa_Nutrisi')"
+                                        class="btn btn-primary btn-sm w-120"
                                         style="border: 1px solid #4e73df; padding: 21px; width: 160px;">
                                         <h5 style="color: white;">AB Mix</h5>
                                         <div class="col-auto">
@@ -194,9 +194,9 @@
                                         </div>
                                     </button>
                                 </div>
-
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary btn-sm w-80"
+                                    <button wire:click="togglePump('Pompa_TankiAir')"
+                                        class="btn btn-primary btn-sm w-80"
                                         style="border: 1px solid #4e73df; padding: 9px; width: 160px;">
                                         <h5 style="color: white;">Water Level Up</h5>
                                         <div class="col-auto">
@@ -208,7 +208,8 @@
                                     </button>
                                 </div>
                                 <div class="m-3">
-                                    <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary btn-sm w-120"
+                                    <button wire:click="togglePump('Pompa_Spraying')"
+                                        class="btn btn-primary btn-sm w-120"
                                         style="border: 1px solid #4e73df; padding: 21px; width: 160px;">
                                         <h5 style="color: white;">Spraying</h5>
                                         <div class="col-auto">
@@ -228,15 +229,11 @@
                         <div class="container text-center mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-6 col-md-2 mb-2">
-                                    <form action="{{ route('changeMode', $device->id) }}" method="POST" class="w-100"
-                                        style="text-align: center;">
-                                        @csrf
                                         @if($device->mode == 1)
-                                        <button class="btn btn-primary btn-sm w-100" type="submit">Auto</button>
+                                        <button class="btn btn-primary btn-sm w-100" wire:click="changemode('{{$device->id}}')"type="submit">Auto</button>
                                         @else
-                                        <button class="btn btn-primary btn-sm w-100" type="submit">Manual</button>
+                                        <button class="btn btn-primary btn-sm w-100" wire:click="changemode('{{$device->id}}')" type="submit">Manual</button>
                                         @endif
-                                    </form>
                                 </div>
                                 <div class="col-6 col-md-2 mb-2">
                                     <button type="button" class="btn btn-primary btn-sm w-100"
@@ -256,19 +253,20 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="{{ route('Aero.settings.update') }}" method="POST">
-                                            @csrf <div
+                                        <form wire:submit.prevent="update">
+
+                                            <div
                                                 style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                                 <div>
                                                     <label for="minTemp" style="width: 153px;">Water PH Up:</label>
-                                                    <input type="number" name="Limit_ph_min" step="0.01"
+                                                    <input type="number" name="Limit_ph_min" step="0.1" wire:model="Limit_ph_min"
                                                         value="{{ $setting['Limit_ph_min'] }}"
                                                         style="width: 80px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PH </label>
                                                 </div>
                                                 <div>
                                                     <label for="maxTemp" style="width: 153px;">Water PH Down:</label>
-                                                    <input type="number" name="Limit_ph_max" step="0.01"
+                                                    <input type="number" name="Limit_ph_max" step="0.1" wire:model="Limit_ph_max"
                                                         value="{{ $setting['Limit_ph_max'] }}"
                                                         style="width: 80px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PH </label>
@@ -276,14 +274,14 @@
                                                 <br>
                                                 <div>
                                                     <label for="minTemp" style="width: 155px;">Nutrition Up:</label>
-                                                    <input type="number" name="Limit_nutrisi_min"
+                                                    <input type="number" name="Limit_nutrisi_min" wire:model="Limit_nutrisi_min"
                                                         value="{{ $setting['Limit_nutrisi_min'] }}"
                                                         style="width: 65px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PPM </label>
                                                 </div>
                                                 <div>
                                                     <label for="maxTemp" style="width: 150px;">Nutrition Down:</label>
-                                                    <input type="number" name="Limit_nutrisi_max"
+                                                    <input type="number" name="Limit_nutrisi_max" wire:model="Limit_nutrisi_max"
                                                         value="{{ $setting['Limit_nutrisi_max'] }}"
                                                         style="width: 70px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PPM </label>
@@ -291,7 +289,7 @@
                                                 <br>
                                                 <div>
                                                     <label for="maxTemp" style="width: 152px;">Water Level:</label>
-                                                    <input type="number" name="tangki_air"
+                                                    <input type="number" name="tangki_air" wire:model="tangki_air"
                                                         value="{{ $setting['tangki_air'] }}"
                                                         style="width: 79px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Cm </label>
@@ -300,14 +298,14 @@
                                                 <div>
                                                     <label for="maxTemp" style="width: 155px;">Spraying Start:</label>
                                                     <input type="number" name="spray_start"
-                                                        value="{{ $setting['waktu_spary_start'] }}"
+                                                        value="{{ $setting['waktu_spary_start'] }}" wire:model="spray_start"
                                                         style="width: 52px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Minute </label>
                                                 </div>
                                                 <div>
                                                     <label for="maxTemp" style="width: 155px;">Spraying End:</label>
                                                     <input type="number" name="spray_end"
-                                                        value="{{ $setting['waktu_spary_end'] }}"
+                                                        value="{{ $setting['waktu_spary_end'] }}" wire:model="spray_end"
                                                         style="width: 50px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Minute</label>
                                                 </div>
@@ -329,6 +327,23 @@
                 </div>
             </div>
         </div>
+        @else
+        <div class="row">
+            <div class="col-xl-12 col-lg-7">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary"
+                            style="text-align: center; margin: 2%; width: 100%">Controlling Aerophonic</h6>
+                    </div>
+                    <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
+                        <h2 class="text-danger"><b>Kontrol Tidak Dapat digunakan, Karena Device Sedang Offline</b></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
+
 
 
         <div class="row">
@@ -349,8 +364,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-area">
-                                        <div class="col-xl-13"wire:ignore>
-                                            <canvas id="myChart" ></canvas>
+                                        <div class="col-xl-13" wire:ignore>
+                                            <canvas id="myChart"></canvas>
                                         </div>
                                     </div>
                                 </div>
@@ -368,8 +383,8 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-area"wire:ignore>
-                                        <canvas id="waterlevel" ></canvas>
+                                    <div class="chart-area" wire:ignore>
+                                        <canvas id="waterlevel"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -384,8 +399,8 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-area"wire:ignore>
-                                        <canvas id="ph" ></canvas>
+                                    <div class="chart-area" wire:ignore>
+                                        <canvas id="ph"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -401,8 +416,8 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-area"wire:ignore>
-                                        <canvas id="tds" ></canvas>
+                                    <div class="chart-area" wire:ignore>
+                                        <canvas id="tds"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -415,6 +430,32 @@
 </div>
 
 @push('script')
+<script>
+    document.addEventListener('livewire:init', function () {
+        Livewire.on('show-sweetalert', (notifikasi) => {
+            const event = notifikasi[0];
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+            Toast.fire({
+                icon: event.type,
+                title: event.type === 'success' ? 'Berhasil!' : 'Peringatan!',
+                text: event.message,
+                showConfirmButton: false,
+                timer: 3000
+            });
+        });
+    });
+
+</script>
 <script>
     document.addEventListener('livewire:init', () => {
         var suhuData = [],
@@ -475,31 +516,31 @@
             data: {
                 labels: [],
                 datasets: [{
-                    label: 'Water Temperature',
-                    data: suhuData,
-                    backgroundColor: 'rgba(255, 159, 64, 0.2)',
-                    borderColor: 'rgba(255, 159, 64, 1)',
-                    borderWidth: 1,
-                    fill: {
-                        target: 'origin',
-                        above: 'rgb(255,236,217,0.2)' // Warna bayangan
+                        label: 'Water Temperature',
+                        data: suhuData,
+                        backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                        borderColor: 'rgba(255, 159, 64, 1)',
+                        borderWidth: 1,
+                        fill: {
+                            target: 'origin',
+                            above: 'rgb(255,236,217,0.2)' // Warna bayangan
+                        },
+                        tension: 0.4
                     },
-                    tension: 0.4
-                },
-                {
-                    label: 'Humadity',
-                    data: kelemababanData,
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1,
-                    fill: {
-                        target: 'origin',
-                        above: 'rgba(75, 192, 192, 0.2)' // Warna bayangan
+                    {
+                        label: 'Humadity',
+                        data: kelemababanData,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        fill: {
+                            target: 'origin',
+                            above: 'rgba(75, 192, 192, 0.2)' // Warna bayangan
+                        },
+                        tension: 0.4
                     },
-                    tension: 0.4
-                },
 
-            ]
+                ]
             },
             options: {
                 responsive: true,   
@@ -595,6 +636,7 @@
             }
         });
     });
+
 </script>
 <script>
     document.addEventListener('livewire:init', function () {
@@ -608,6 +650,7 @@
             $('#exampleModal').modal('hide');
         });
     });
+
 </script>
 
 
