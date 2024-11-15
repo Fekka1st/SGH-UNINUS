@@ -270,7 +270,7 @@
         var mywaterph = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 17
             },
             plotarea: {
                 marginTop: 120
@@ -284,7 +284,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -336,7 +336,7 @@
         zingchart.render({
             id: 'waterph',
             data: mywaterph,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -350,7 +350,7 @@
         var mynutrition = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 17
             },
             plotarea: {
                 marginTop: 120
@@ -364,7 +364,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -378,7 +378,7 @@
                     visible: false
                 },
                 item: {
-                    offsetR: 9,
+                    offsetR: 23, // Ubah offsetR ke nilai lebih tinggi untuk menjauhkan label dari ring
                     rules: [{
                         rule: '%i == 9',
                         offsetX: 15
@@ -416,7 +416,7 @@
         zingchart.render({
             id: 'nutrition',
             data: mynutrition,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -444,7 +444,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -496,7 +496,7 @@
         zingchart.render({
             id: 'watertemperature',
             data: mywatertemperature,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -510,7 +510,7 @@
         var mywaterlevel = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 20
             },
             plotarea: {
                 marginTop: 120
@@ -524,7 +524,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -538,7 +538,7 @@
                     visible: false
                 },
                 item: {
-                    offsetR: 9,
+                    offsetR: 20,
                     rules: [{
                         rule: '%i == 9',
                         offsetX: 15
@@ -576,7 +576,7 @@
         zingchart.render({
             id: 'waterlevel',
             data: mywaterlevel,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -604,7 +604,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -656,7 +656,7 @@
         zingchart.render({
             id: 'relativehumidity',
             data: myrelativehumidity,
-            height: 450,
+            height: 400,
             width: '100%'
           });
 
@@ -684,7 +684,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -736,7 +736,7 @@
         zingchart.render({
             id: 'roompanel',
             data: myroompanel,
-            height: 450,
+            height: 400,
             width: '100%'
         });
     </script>
