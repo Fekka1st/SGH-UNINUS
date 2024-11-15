@@ -502,7 +502,7 @@
             ]
             },
             options: {
-                responsive: true,
+                responsive: true,   
                 scales: {
                     y: {
                         beginAtZero: true
@@ -530,6 +530,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -557,6 +558,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -584,6 +586,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
