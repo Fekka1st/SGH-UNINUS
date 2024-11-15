@@ -543,7 +543,7 @@
                 ]
             },
             options: {
-                responsive: true,   
+                responsive: true,
                 scales: {
                     y: {
                         beginAtZero: true
@@ -651,7 +651,7 @@
         });
     });
 
-</script>
+    </script>
 
 
 @endpush
