@@ -42,7 +42,6 @@ class reportcontroller extends Controller
         $tableName = '';
         $selectColumns = '';
 
-        // Menentukan tabel dan kolom yang dipilih berdasarkan tipe perangkat
         if ($deviceType == 'hydroponik') {
             $tableName = 'hydroponik_sensor_datas';
             $selectColumns = '
@@ -70,10 +69,10 @@ class reportcontroller extends Controller
         }
 
         if (empty($tableName) || empty($selectColumns)) {
-            return response()->json(['message' => 'Device type tidak valid atau tabel tidak ditemukan'], 400);
+            toast('Data '.$deviceType.' Tidak Ditemukan', 'error');
+            return redirect()->back();
         }
 
-        // Query data dari tabel yang dipilih dengan agregasi dan pemformatan waktu
         $data = DB::table($tableName)
             ->select(DB::raw("$selectColumns, DATE_FORMAT(created_at, '%Y-%m-%d %H:00:00') as hour_block"))
             ->whereRaw("created_at >= NOW() - INTERVAL $interval")
@@ -82,7 +81,8 @@ class reportcontroller extends Controller
             ->get();
 
         if ($data->isEmpty()) {
-            return response()->json(['message' => 'Data tidak ditemukan'], 404);
+            toast('Data '.$deviceType.' Tidak Ditemukan', 'error');
+            return redirect()->back();
         }
 
         // Mengirimkan data ke view jika diperlukan

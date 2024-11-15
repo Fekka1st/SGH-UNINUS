@@ -13,12 +13,26 @@ return new class extends Migration
     {
         Schema::create('greenhouse_sensor_datas', function (Blueprint $table) {
             $table->id();
-            $table->float('suhu');
-            $table->integer('kelembaban');
-            $table->float('co2');
+            $table->float('suhu_avg', 10, 2);
+            $table->float('suhu_1', 10, 2);
+            $table->float('suhu_2', 10, 2);
+            $table->float('suhu_3', 10, 2);
+            $table->float('suhu_4', 10, 2);
+            $table->float('suhu_5', 10, 2);
+            $table->float('suhu_6', 10, 2);
+            $table->float('suhu_7', 10, 2);
+            $table->integer('kelembaban_avg');
+            $table->integer('kelembaban_1');
+            $table->integer('kelembaban_2');
+            $table->integer('kelembaban_3');
+            $table->integer('kelembaban_4');
+            $table->integer('kelembaban_5');
+            $table->integer('kelembaban_6');
+            $table->integer('kelembaban_7');
+            $table->integer('co2');
             $table->integer('intensitas');
             $table->integer('konsumsi_air');
-            $table->float('room_temp');
+            $table->float('panel_temp',10,2);
             $table->integer('device_id');
             $table->timestamps();
         });
