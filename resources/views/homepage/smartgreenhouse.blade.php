@@ -342,8 +342,8 @@
       scaleR: {
         aperture: 180,
         minValue: 0,
-        maxValue: 100,
-        step: 50,
+        maxValue: 200,
+
         center: {
           visible: false
         },
@@ -357,7 +357,7 @@
             offsetX: 15
           }]
         },
-        labels: ['0', '25', '50'],
+        labels: ['0'],
         ring: {
           size: 50,
           rules: [{
@@ -366,15 +366,9 @@
         }]
         }
       },
-      refresh: {
-        type: "feed",
-        transport: "js",
-        url: "feed()",
-        interval: 1500,
-        resetTimeout: 1000
-      },
+
       series: [{
-        values: [50], // starting value
+        values: [50], // set data
         backgroundColor: 'black',
         indicator: [10, 10, 10, 10, 0.65],
         animation: {

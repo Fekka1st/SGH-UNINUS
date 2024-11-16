@@ -107,7 +107,7 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Room
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Panel Temp </div>
                                 <div> {{$data->panel_temp}} °C </div>
                             </div>
@@ -230,7 +230,7 @@
                             style="text-align: center; margin: 2%; width: 100%">Controlling Hydroponic</h6>
                     </div>
                     <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
-                        <h2 class="text-danger"><b>Kontrol Tidak Dapat digunakan, Karena Device Sedang Offline</b></h2>
+                        <h2 class="text-danger"><b>Control Cannot be used, Because the Device is Offline</b></h2>
                     </div>
                 </div>
             </div>
@@ -356,7 +356,7 @@
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary"
-                                        style="text-align: center; margin: 2%; width: 100%">Water pH</h6>
+                                        style="text-align: center; margin: 2%; width: 100%">Water PH</h6>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
@@ -640,11 +640,7 @@
                 }
             }
         });
-
-
-
     });
-
 </script>
 
 @endpush

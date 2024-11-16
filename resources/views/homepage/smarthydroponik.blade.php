@@ -284,7 +284,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -378,7 +378,7 @@
                     visible: false
                 },
                 item: {
-                    offsetR: 9,
+                    offsetR: 23, // Ubah offsetR ke nilai lebih tinggi untuk menjauhkan label dari ring
                     rules: [{
                         rule: '%i == 9',
                         offsetX: 15
@@ -538,7 +538,7 @@
                     visible: false
                 },
                 item: {
-                    offsetR: 9,
+                    offsetR: 20,
                     rules: [{
                         rule: '%i == 9',
                         offsetX: 15

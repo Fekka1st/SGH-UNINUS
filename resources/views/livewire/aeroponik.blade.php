@@ -273,10 +273,10 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="minTemp" style="width: 155px;">Nutrition Up:</label>
+                                                    <label for="minTemp" style="width: 150px;">Nutrition Up:</label>
                                                     <input type="number" name="Limit_nutrisi_min" wire:model="Limit_nutrisi_min"
                                                         value="{{ $setting['Limit_nutrisi_min'] }}"
-                                                        style="width: 65px; border: none; padding: 5px;" />
+                                                        style="width: 71px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PPM </label>
                                                 </div>
                                                 <div>
@@ -288,10 +288,10 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 152px;">Water Level:</label>
+                                                    <label for="maxTemp" style="width: 155px;">Water Level:</label>
                                                     <input type="number" name="tangki_air" wire:model="tangki_air"
                                                         value="{{ $setting['tangki_air'] }}"
-                                                        style="width: 79px; border: none; padding: 5px;" />
+                                                        style="width: 77px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Cm </label>
                                                 </div>
                                                 <br>
@@ -345,26 +345,28 @@
         @endif
 
 
-{{-- camva --}}
+        {{-- camva --}}
         <div class="row">
             <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary"
                             style="text-align: center; margin: 2%; width: 100%">Chart Monitoring</h6>
-                    </div><br>
+                    </div>
+                    <br>
                     <div class="row">
                         <div class="col-xl-6 col-lg-7">
                             <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary"
-                                        style="text-align: center; margin: 2%; width: 100%">(Water Temperature and
-                                        Relative Humidity)</h6>
+                                        style="text-align: center; margin: 2%; width: 100%">Temp and Humidity</h6>
                                 </div>
+                                <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area" wire:ignore>
-                                            <canvas id="myChart"></canvas>
+                                        <canvas id="myChart"></canvas>
                                     </div>
                                 </div>
                             </div>
