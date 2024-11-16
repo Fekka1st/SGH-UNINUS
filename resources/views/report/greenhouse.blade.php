@@ -16,6 +16,7 @@
                             <th>Co2</th>
                             <th>Intensitas cahaya</th>
                             <th>Konsumsi Air</th>
+                            <th>Panel Temp</th>
                             <th>Waktu</th>
                         </tr>
                     </thead>
@@ -28,6 +29,7 @@
                             <td>{{$nilai->avg_co2}}</td>
                             <td>{{$nilai->avg_light_intensity}}</td>
                             <td>{{$nilai->avg_water_consumption}}</td>
+                            <td>{{$nilai->avg_panel}}</td>
                             <td>{{$nilai->hour_block}}</td>
                         </tr>
                         @endforeach
