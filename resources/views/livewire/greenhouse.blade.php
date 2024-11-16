@@ -77,9 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <i class="fas fa-thermometer-full"></i>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -162,9 +160,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <i class="fas fa-wind"></i>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
