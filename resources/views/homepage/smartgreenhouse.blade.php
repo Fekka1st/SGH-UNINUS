@@ -6,11 +6,9 @@
     <div class="container" style="padding-top: 100px">
         <div class="row align-items-center">
             <div class="brand_color">
-                <div>
-                    <h2 style="color: white;">
-                        <b>Smart Room GreenHouse</b>
-                    </h2>
-                </div>
+                <h2 style="color: white;">
+                    <b>Smart Room GreenHouse</b>
+                </h2>
             </div>
         </div>
     </div>
