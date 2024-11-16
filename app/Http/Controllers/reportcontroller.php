@@ -49,7 +49,8 @@ class reportcontroller extends Controller
                 AVG(tds) as avg_tds,
                 AVG(laju_air) as avg_laju,
                 AVG(volume_air) as avg_volume_air,
-                AVG(suhu_air) as avg_suhu_air';
+                AVG(suhu_air) as avg_suhu_air,
+                AVG(panel_temp) as avg_panel';
         } elseif ($deviceType == 'aeroponik') {
             $tableName = 'aeroponik_sensor_datas';
             $selectColumns = '
@@ -57,15 +58,17 @@ class reportcontroller extends Controller
                 AVG(ph_air) as avg_ph,
                 AVG(tds) as avg_tds,
                 AVG(kelembaban_udara) as avg_kelembaban,
-                AVG(volume_air) as avg_volume_air';
+                AVG(volume_air) as avg_volume_air,
+                AVG(panel_temp) as avg_panel';
         } elseif ($deviceType == 'greenhouse') {
             $tableName = 'greenhouse_sensor_datas';
             $selectColumns = '
-                AVG(suhu) as avg_temperature,
-                AVG(kelembaban) as avg_humidity,
+                AVG(suhu_avg) as avg_temperature,
+                AVG(kelembaban_avg) as avg_humidity,
                 AVG(co2) as avg_co2,
                 AVG(intensitas) as avg_light_intensity,
-                AVG(konsumsi_air) as avg_water_consumption';
+                AVG(konsumsi_air) as avg_water_consumption,
+                AVG(panel_temp) as avg_panel';
         }
 
         if (empty($tableName) || empty($selectColumns)) {
@@ -81,7 +84,7 @@ class reportcontroller extends Controller
             ->get();
 
         if ($data->isEmpty()) {
-            toast('Data '.$deviceType.' Tidak Ditemukan', 'error');
+            toast('Data '.$deviceType.' Waktu '.$timeRange.' Tidak Ditemukan', 'error');
             return redirect()->back();
         }
 

@@ -28,6 +28,7 @@
                             <td>{{$nilai->avg_laju}}</td>
                             <td>{{$nilai->avg_volume_air}}</td>
                             <td>{{$nilai->avg_suhu_air}}</td>
+                            <td>{{$nilai->avg_panel}}</td>
                             <td>{{$nilai->hour_block}}</td>
                         </tr>
                         @endforeach

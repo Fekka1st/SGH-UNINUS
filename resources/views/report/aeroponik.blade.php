@@ -16,6 +16,7 @@
                             <th>Nutrisi</th>
                             <th>Kelembaban</th>
                             <th>Volume Air</th>
+                            <th>Panel Temp</th>
                             <th>Waktu</th>
                         </tr>
                     </thead>
@@ -28,6 +29,7 @@
                             <td>{{$nilai->avg_tds}}</td>
                             <td>{{$nilai->avg_kelembaban}}</td>
                             <td>{{$nilai->avg_volume_air}}</td>
+                            <td>{{$nilai->avg_panel}}</td>
                             <td>{{$nilai->hour_block}}</td>
                         </tr>
                         @endforeach
