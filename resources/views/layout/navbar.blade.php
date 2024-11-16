@@ -1,11 +1,12 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-spa"></i>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+        <div class="sidebar-brand-icon">
+            <img class="img-fluid" width="50px" height="50px" src="{{asset('asset/img/icondas.png')}}" alt="">
         </div>
-        <div class="sidebar-brand-text mx-3">SGH-UNINUS<sup></sup></div>
+        <div class="sidebar-brand-text mx-3"><sup>SGH - UNINUS </sup>
+        </div>
     </a>
 
     <!-- Divider -->

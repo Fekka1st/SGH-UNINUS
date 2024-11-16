@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\aerophonicontroller;
 use App\Http\Controllers\dashboardcontroller;
-use App\Http\Controllers\greenhousecontroller;
-use App\Http\Controllers\hydroponikcontroller;
 use App\Http\Controllers\manajemenuser;
 use App\Http\Controllers\profile;
-// use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\reportcontroller;
+use App\Livewire\Aeroponik;
+use App\Livewire\Greenhouse;
+use App\Livewire\Hydroponik;
 use Illuminate\Support\Facades\Route;
 
 // Homepage route
@@ -19,6 +19,7 @@ Route::get('/tentangkami', function () {
 Route::get('/timkinerja', function () {
     return view('homepage.timkinerja');
 });
+
 Route::get('/Monitoring_greenhouse', function () {
     return view('homepage.smartgreenhouse');
 });
@@ -34,18 +35,18 @@ Route::get('/Monitoring_aeroponik', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [dashboardcontroller::class, 'index'])->name('dashboard');
-    Route::get('/smartgreenhouse', [greenhousecontroller::class, 'index']);
-    Route::get('/smarthydroponik', [hydroponikcontroller::class, 'index']);
-    Route::get('/smartaerophonik', [aerophonicontroller::class, 'index']);
-    Route::get('/profile_akun', [profile::class, 'index']);
+    Route::get('/smarthydroponik', Hydroponik::class);
+    Route::get('/smartaerophonik', Aeroponik::class);
+    Route::get('/smartgreenhouse', Greenhouse::class);
 
-    //manajement user
+    Route::get('/report', [reportcontroller::class, 'index']);
+    Route::post('/generate-report', [reportcontroller::class, 'generateReport'])->name('generateReport');
+
+    Route::get('/profile_akun', [profile::class, 'index'])->name('profile.index');
+    Route::post('/profile_akun/update',[profile::class,'update'])->name('profile.update');
+
     Route::resource('/manajemen_user', manajemenuser::class);
 
-    //hydroponik
-    //aerophonik
-    //greenhouse
-    //report
 });
 
 require __DIR__.'/auth.php';

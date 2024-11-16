@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('hydroponik_sensor_datas', function (Blueprint $table) {
             $table->id();
-            $table->integer('ph_air');
+            $table->float('ph_air', 10, 2);
             $table->integer('tds');
-            $table->integer('laju_air');
+            $table->float('laju_air', 10, 2);
             $table->integer('volume_air');
-            $table->integer('suhu_air');
+            $table->float('suhu_air', 10, 2);
+            $table->float('panel_temp', 10, 2);
             $table->integer('device_id');
             $table->timestamps();
         });

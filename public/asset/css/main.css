@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -961,6 +962,17 @@ ol {
         margin-top: 8px;
     }
 }
+/* area gambar di atas */
+.HERO-AREA::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filter hitam */
+    z-index: 1; /* Menempatkan filter di bawah teks */
+  }
 
 .breadcrumbs .breadcrumb-nav li {
     display: inline-block;
@@ -1006,7 +1018,7 @@ ol {
 .section {
     padding-top: 100px;
     padding-bottom: 100px;
-    position: relative;
+    /* position: relative; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1603,15 +1615,20 @@ ol {
 }
 
 .header .button .btn {
-    background-color: #3865f2;
-    border: 2px solid #fff;
-    color: #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 5px solid #16ce44;
+    color: #1C532A;
     padding: 12px 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .header .button .btn:hover {
-    background-color: #fff;
-    color: #3865f2;
+    background-color:#16ce44;
+    color: #fff;
 }
 
 .header .navbar-brand img {
@@ -1960,12 +1977,15 @@ ol {
 .add-list-button {
     display: inline-block;
     margin-left: 10px;
+    
 }
 
 .add-list-button .btn i {
     font-size: 14px;
     display: inline-block;
     margin-right: 5px;
+    background-color: green;
+    color: white;
 }
 
 /*======================================
@@ -1976,7 +1996,7 @@ ol {
 ========================================*/
 .hero-area {
     position: relative;
-    padding: 200px 0 150px 0;
+    padding: 50px 0 50px 0;
     background: #00712D;
 }
 

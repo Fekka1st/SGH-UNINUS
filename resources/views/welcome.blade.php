@@ -25,15 +25,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('asset/css/main.css')}}" />
     <title>Smart Green House</title>
-    
+
     <link rel="shortcut icon" type="image/x-icon"
         href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     @yield('css')
 </head>
 
 <body>
-    <header class="header navbar-area" style="background-color: #1C532A">
+    <header class="header navbar-area" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -102,22 +104,18 @@
         </div>
         <!-- /.container -->
     </header>
-    <!-- Start Hero Area -->
-
-    {{-- content --}}
     @yield('content')
-
     <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-md-4" style="text-align: justify">
                     <img src="{{asset('asset/img/logo.png')}}" alt="Logo" class="img img-fluid"
-                        style="margin-bottom: 9px">
-                    <p class="text-justify">Smart Green House Adalah Sebuah aplikasi yang membantu meningkatkan
+                        style="margin-bottom: 9px; color:aliceblue;">
+                    <p class="text-justify" style="color:aliceblue;">Smart Green House Adalah Sebuah aplikasi yang membantu meningkatkan
                         kualitas hidup dengan mengintegrasikan teknologi dan alam. Kami berfokus pada pengembangan
                         sistem yang ramah lingkungan dan berkelanjutan </p>
                 </div>
-                <div class="col-sm-3 col-md-4 mt-5" style="text-align: justify">
+                <div class="col-sm-3 col-md-4 mt-5" style="text-align: justify; color:aliceblue;">
                     <h6>Kontak</h6>
                     <p class="text-justify mt-5 mb-2">Jl.Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung,
                         Jawa Barat. </p>
@@ -125,7 +123,7 @@
                         <i class="fa-solid fa-phone"></i> (022) 21000229
                     </p>
                     <p>
-                        <i class="fa-solid fa-link"></i> <a href="https://uninus.ac.id/">UNIVERSITAS ISLAM
+                        <i class="fa-solid fa-link"></i> <a href="https://uninus.ac.id/" style="color:aliceblue;">UNIVERSITAS ISLAM
                             NUSANTARA</a>
                     </p>
                 </div>
@@ -135,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by <a href="#">Smart Green
+                    <p class="copyright-text" style="color:aliceblue;">Copyright &copy; 2024 All Rights Reserved by <a href="#" style="color:aliceblue;">Smart Green
                             House</a>. </p>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -163,6 +161,9 @@
     <a href="#" class="scroll-top">
         <i class="lni lni-chevron-up"></i>
     </a>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
         integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -178,6 +179,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
         integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript">
         var cu = new counterUp({
             start: 0,
@@ -187,13 +189,11 @@
             append: " ",
         });
         cu.start();
-
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-
     </script>
     @yield('script')
 </body>
