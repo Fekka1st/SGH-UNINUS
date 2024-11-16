@@ -277,9 +277,6 @@
                         <div class="container text-center mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-6 col-md-2 mb-2">
-
-                                </div>
-                                <div class="col-6 col-md-2 mb-2">
                                     <button type="button" class="btn btn-primary btn-sm w-100"
                                         wire:click="openModal">Setting</button>
                                 </div>
@@ -304,13 +301,11 @@
                             <div
                                 class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary"
-                                    style="text-align: center; margin: 2%; width: 100%">Suhu & Kelembaban</h6>
+                                    style="text-align: center; margin: 2%; width: 100%">(Temperature and Humidity)</h6>
                             </div>
                             <div class="card-body">
-                                <div class="chart-area">
-                                    <div class="col-xl-13" wire:ignore>
-                                        <canvas id="myChart"></canvas>
-                                    </div>
+                                <div class="chart-area"wire:ignore>
+                                    <canvas id="myChart"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -547,6 +542,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -574,6 +570,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -601,6 +598,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -628,6 +626,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
