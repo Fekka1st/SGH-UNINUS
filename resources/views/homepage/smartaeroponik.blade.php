@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <section class="hero-area">
+<section class="hero-area background-section d-flex align-items-center justify-content-center text-white" style="background-image: url('https://img.freepik.com/free-photo/top-view-green-plants-growing-background_1353-281.jpg?t=st=1731055801~exp=1731059401~hmac=31c1e105e416a03dd1bd1f58006b846706d04af6b41383db4a68b7222dc9d17f&w=826')">
         <div class="container" style="padding-top: 100px">
             <div class="row align-items-center">
                 <div class="brand_color">
@@ -125,7 +125,7 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Room Panel Temp.
+                                        Panel Room Temp.
                                     </div>
                                     <div>
                                         30 °C
@@ -223,7 +223,7 @@
                     <div class="card shadow mb-4">
                         <!-- Card Header - Dropdown -->
                         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Room Panel Temp.</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Panel Room Temp.</h6>
                         </div>
                         <!-- Card Body -->
                         <div class="card-body">
@@ -270,21 +270,21 @@
         var mywaterph = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 20
             },
             plotarea: {
-                marginTop: 120
+                marginTop: 130
             },
             plot: {
                 size: '100%',
                 valueBox: {
                     placement: 'center',
                     text: '%v', //default
-                    fontSize: 25,
+                    fontSize: 24,
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -306,7 +306,7 @@
                 },
                 labels: ['0 PH', '5 PH', '10 PH'],
                 ring: {
-                    size: 45,
+                    size: 50,
                     rules: [{
                         rule: '%v <= 100',
                         backgroundColor: '#FF9D3D'
@@ -336,7 +336,7 @@
         zingchart.render({
             id: 'waterph',
             data: mywaterph,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -350,21 +350,21 @@
         var mynutrition = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 15,
             },
             plotarea: {
-                marginTop: 120
+                marginTop: 130
             },
             plot: {
                 size: '100%',
                 valueBox: {
                     placement: 'center',
                     text: '%v', //default
-                    fontSize: 25,
+                    fontSize: 24,
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -378,7 +378,7 @@
                     visible: false
                 },
                 item: {
-                    offsetR: 9,
+                    offsetR: 20,
                     rules: [{
                         rule: '%i == 9',
                         offsetX: 15
@@ -386,11 +386,12 @@
                 },
                 labels: ['0 PPM', '500 PPM', '1000 PPM'],
                 ring: {
-                    size: 45,
+                    size: 50,
                     rules: [{
                         rule: '%v <= 100',
                         backgroundColor: '#FF9D3D'
                     }]
+
                 }
             },
             refresh: {
@@ -416,7 +417,7 @@
         zingchart.render({
             id: 'nutrition',
             data: mynutrition,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -430,21 +431,21 @@
         var mywatertemperature = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 20
             },
             plotarea: {
-                marginTop: 120
+                marginTop: 130
             },
             plot: {
                 size: '100%',
                 valueBox: {
                     placement: 'center',
                     text: '%v', //default
-                    fontSize: 25,
+                    fontSize: 24,
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -466,7 +467,7 @@
                 },
                 labels: ['0 %', '15 %', '30 %'],
                 ring: {
-                    size: 45,
+                    size: 50,
                     rules: [{
                         rule: '%v <= 100',
                         backgroundColor: '#FF9D3D'
@@ -496,7 +497,7 @@
         zingchart.render({
             id: 'watertemperature',
             data: mywatertemperature,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -510,21 +511,21 @@
         var mywaterlevel = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 20
             },
             plotarea: {
-                marginTop: 120
+                marginTop: 130
             },
             plot: {
                 size: '100%',
                 valueBox: {
                     placement: 'center',
                     text: '%v', //default
-                    fontSize: 25,
+                    fontSize: 24,
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -538,7 +539,7 @@
                     visible: false
                 },
                 item: {
-                    offsetR: 9,
+                    offsetR: 15,
                     rules: [{
                         rule: '%i == 9',
                         offsetX: 15
@@ -546,7 +547,7 @@
                 },
                 labels: ['0 Cm', '50 Cm', '100 Cm'],
                 ring: {
-                    size: 45,
+                    size: 50,
                     rules: [{
                         rule: '%v <= 100',
                         backgroundColor: '#FF9D3D'
@@ -576,7 +577,7 @@
         zingchart.render({
             id: 'waterlevel',
             data: mywaterlevel,
-            height: 450,
+            height: 400,
             width: '100%'
         });
 
@@ -590,10 +591,10 @@
         var myrelativehumidity = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 20
             },
             plotarea: {
-                marginTop: 120
+                marginTop: 130
             },
             plot: {
                 size: '100%',
@@ -604,7 +605,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -626,7 +627,7 @@
                 },
                 labels: ['0 %', '25 %', '50 %'],
                 ring: {
-                    size: 45,
+                    size: 50,
                     rules: [{
                         rule: '%v <= 100',
                         backgroundColor: '#FF9D3D'
@@ -656,7 +657,7 @@
         zingchart.render({
             id: 'relativehumidity',
             data: myrelativehumidity,
-            height: 450,
+            height: 400,
             width: '100%'
           });
 
@@ -670,10 +671,10 @@
         var myroompanel = {
             type: "gauge",
             globals: {
-                fontSize: 21
+                fontSize: 20
             },
             plotarea: {
-                marginTop: 120
+                marginTop: 130
             },
             plot: {
                 size: '100%',
@@ -684,7 +685,7 @@
                 }
             },
             tooltip: {
-                borderRadius: 3,
+                borderRadius: 5,
             },
             scaleR: {
                 aperture: 180,
@@ -706,7 +707,7 @@
                 },
                 labels: ['0°C', '15°C', '30°C'],
                 ring: {
-                    size: 45,
+                    size: 50,
                     rules: [{
                         rule: '%v <= 100',
                         backgroundColor: '#FF9D3D'
@@ -736,7 +737,7 @@
         zingchart.render({
             id: 'roompanel',
             data: myroompanel,
-            height: 450,
+            height: 400,
             width: '100%'
         });
     </script>
