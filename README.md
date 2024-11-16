@@ -1,5 +1,5 @@
 <p align="center">
-       <a href="" target="_blank"><img src="public/asset/img/Logo-uninus-sgh.png" width="400" alt="Laravel Logo">
+       <a href="" target="_blank"><img src="Asset/Logo-uninus-sgh.png" width="400" alt="Laravel Logo">
 </p>
 <h1 align="center">Smart Green House</h1>
 
@@ -10,7 +10,9 @@ Our Smart Greenhouse is designed to address the needs of modern agriculture with
 Additionally, this project serves as a research and development hub for students and researchers interested in modern agriculture. Data collected from IoT sensors supports ongoing research to refine cultivation methods and gain deeper insights into the factors that influence plant growth.
 
 ## Key Features:
+
 Features :
+
 - Automatic/Manual Environmental Control:
   Offers options to control temperature, humidity, and lighting either automatically or manually, ensuring optimal conditions for plant growth.
 
@@ -42,5 +44,3 @@ Features :
 - Node.js
 - MySQL
 - MQTT broker
-
-
