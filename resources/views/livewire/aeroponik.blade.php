@@ -273,10 +273,10 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="minTemp" style="width: 155px;">Nutrition Up:</label>
+                                                    <label for="minTemp" style="width: 150px;">Nutrition Up:</label>
                                                     <input type="number" name="Limit_nutrisi_min" wire:model="Limit_nutrisi_min"
                                                         value="{{ $setting['Limit_nutrisi_min'] }}"
-                                                        style="width: 65px; border: none; padding: 5px;" />
+                                                        style="width: 71px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PPM </label>
                                                 </div>
                                                 <div>
@@ -288,10 +288,10 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 152px;">Water Level:</label>
+                                                    <label for="maxTemp" style="width: 155px;">Water Level:</label>
                                                     <input type="number" name="tangki_air" wire:model="tangki_air"
                                                         value="{{ $setting['tangki_air'] }}"
-                                                        style="width: 79px; border: none; padding: 5px;" />
+                                                        style="width: 77px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Cm </label>
                                                 </div>
                                                 <br>
