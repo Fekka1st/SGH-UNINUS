@@ -194,7 +194,7 @@
                                         </div>
                                     </button>
                                 </div>
-                                <div class="m-3">
+                                {{-- <div class="m-3">
                                     <button wire:click="togglePump('Pompa_TankiAir')"
                                         class="btn btn-primary btn-sm w-80"
                                         style="border: 1px solid #4e73df; padding: 9px; width: 160px;">
@@ -206,7 +206,7 @@
                                             </h6>
                                         </div>
                                     </button>
-                                </div>
+                                </div> --}}
                                 <div class="m-3">
                                     <button wire:click="togglePump('Pompa_Spraying')"
                                         class="btn btn-primary btn-sm w-120"
@@ -273,10 +273,10 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="minTemp" style="width: 155px;">Nutrition Up:</label>
+                                                    <label for="minTemp" style="width: 150px;">Nutrition Up:</label>
                                                     <input type="number" name="Limit_nutrisi_min" wire:model="Limit_nutrisi_min"
                                                         value="{{ $setting['Limit_nutrisi_min'] }}"
-                                                        style="width: 65px; border: none; padding: 5px;" />
+                                                        style="width: 71px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">PPM </label>
                                                 </div>
                                                 <div>
@@ -288,10 +288,10 @@
                                                 </div>
                                                 <br>
                                                 <div>
-                                                    <label for="maxTemp" style="width: 152px;">Water Level:</label>
+                                                    <label for="maxTemp" style="width: 155px;">Water Level:</label>
                                                     <input type="number" name="tangki_air" wire:model="tangki_air"
                                                         value="{{ $setting['tangki_air'] }}"
-                                                        style="width: 79px; border: none; padding: 5px;" />
+                                                        style="width: 77px; border: none; padding: 5px;" />
                                                     <label for="maxTemp">Cm </label>
                                                 </div>
                                                 <br>
@@ -337,7 +337,7 @@
                             style="text-align: center; margin: 2%; width: 100%">Controlling Aerophonic</h6>
                     </div>
                     <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
-                        <h2 class="text-danger"><b>Kontrol Tidak Dapat digunakan, Karena Device Sedang Offline</b></h2>
+                        <h2 class="text-danger"><b>Control Cannot be used, Because the Device is Offline</b></h2>
                     </div>
                 </div>
             </div>

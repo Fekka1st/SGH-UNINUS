@@ -31,7 +31,7 @@ return new class extends Migration
             $table->integer('kelembaban_7');
             $table->integer('co2');
             $table->integer('intensitas');
-            $table->integer('konsumsi_air');
+            $table->integer('water_level');
             $table->float('panel_temp',10,2);
             $table->integer('device_id');
             $table->timestamps();

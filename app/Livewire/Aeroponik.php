@@ -93,7 +93,7 @@ class Aeroponik extends Component
         $this->pump_ph_down_status = Control::where('device_id', $device)->where('control_type', 'Pompa_PHDOWN')->value('status') ?? 0;
         $this->ab_mix_status = Control::where('device_id', $device)->where('control_type', 'Pompa_Nutrisi')->value('status') ?? 0;
         $this->water_level_status = Control::where('device_id', $device)->where('control_type', 'Pompa_TankiAir')->value('status') ?? 0;
-        $this->spraying_status = Control::where('device_id', $device)->where('control_type', 'Spraying')->value('status') ?? 0;
+        $this->spraying_status = Control::where('device_id', $device)->where('control_type', 'Pompa_Spraying')->value('status') ?? 0;
     }
 
     public function togglePump($pump)

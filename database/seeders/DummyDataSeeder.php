@@ -35,7 +35,7 @@ class DummyDataSeeder extends Seeder
                 'kelembaban_7' => $faker->numberBetween(30, 80),
                 'co2' => $faker->numberBetween(300, 800),
                 'intensitas' => $faker->numberBetween(100, 1000),
-                'konsumsi_air' => $faker->numberBetween(50, 200),
+                'water_level' => $faker->numberBetween(50, 200),
                 'panel_temp' => $faker->numberBetween(10, 50),
                 'device_id' => 3,
                 'created_at' => $currentTimestamp->copy()->subHours($i),  // Substract hours
@@ -64,7 +64,7 @@ class DummyDataSeeder extends Seeder
                 'kelembaban_7' => $faker->numberBetween(30, 80),
                 'co2' => $faker->numberBetween(300, 800),
                 'intensitas' => $faker->numberBetween(100, 1000),
-                'konsumsi_air' => $faker->numberBetween(50, 200),
+                'water_level' => $faker->numberBetween(50, 200),
                 'panel_temp' => $faker->numberBetween(10, 50),
                 'device_id' => 3,
                 'created_at' => $currentTimestamp->copy()->subDays($i),  // Substract days
@@ -93,7 +93,7 @@ class DummyDataSeeder extends Seeder
                 'kelembaban_7' => $faker->numberBetween(30, 80),
                 'co2' => $faker->numberBetween(300, 800),
                 'intensitas' => $faker->numberBetween(100, 1000),
-                'konsumsi_air' => $faker->numberBetween(50, 200),
+                'water_level' => $faker->numberBetween(50, 200),
                 'panel_temp' => $faker->numberBetween(10, 50),
                 'device_id' => 3,
                 'created_at' => $currentTimestamp->copy()->subWeeks($i),  // Substract weeks
@@ -122,7 +122,7 @@ class DummyDataSeeder extends Seeder
                 'kelembaban_7' => $faker->numberBetween(30, 80),
                 'co2' => $faker->numberBetween(300, 800),
                 'intensitas' => $faker->numberBetween(100, 1000),
-                'konsumsi_air' => $faker->numberBetween(50, 200),
+                'water_level' => $faker->numberBetween(50, 200),
                 'panel_temp' => $faker->numberBetween(10, 50),
                 'device_id' => 3,
                 'created_at' => $currentTimestamp->copy()->subMonths($i),  // Substract months
@@ -151,7 +151,7 @@ class DummyDataSeeder extends Seeder
                 'kelembaban_7' => $faker->numberBetween(30, 80),
                 'co2' => $faker->numberBetween(300, 800),
                 'intensitas' => $faker->numberBetween(100, 1000),
-                'konsumsi_air' => $faker->numberBetween(50, 200),
+                'water_level' => $faker->numberBetween(50, 200),
                 'panel_temp' => $faker->numberBetween(10, 50),
                 'device_id' => 3,
                 'created_at' => $currentTimestamp->copy()->subMonths($i * 6),  // Substract every 6 months

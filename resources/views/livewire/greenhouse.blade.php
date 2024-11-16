@@ -77,9 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <i class="fas fa-thermometer-full"></i>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -162,9 +160,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <i class="fas fa-wind"></i>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -277,9 +273,6 @@
                         <div class="container text-center mb-4">
                             <div class="row justify-content-center">
                                 <div class="col-6 col-md-2 mb-2">
-
-                                </div>
-                                <div class="col-6 col-md-2 mb-2">
                                     <button type="button" class="btn btn-primary btn-sm w-100"
                                         wire:click="openModal">Setting</button>
                                 </div>
@@ -304,13 +297,11 @@
                             <div
                                 class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary"
-                                    style="text-align: center; margin: 2%; width: 100%">Suhu & Kelembaban</h6>
+                                    style="text-align: center; margin: 2%; width: 100%">(Temperature and Humidity)</h6>
                             </div>
                             <div class="card-body">
-                                <div class="chart-area">
-                                    <div class="col-xl-13" wire:ignore>
-                                        <canvas id="myChart"></canvas>
-                                    </div>
+                                <div class="chart-area"wire:ignore>
+                                    <canvas id="myChart"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +313,7 @@
                                 class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
 
                                 <h6 class="m-0 font-weight-bold text-primary"
-                                    style="text-align: center; margin: 2%; width: 100%">Intesitas Cahaya</h6>
+                                    style="text-align: center; margin: 2%; width: 100%">Light Intensity</h6>
 
                             </div>
                             <!-- Card Body -->
@@ -388,19 +379,19 @@
                         <div
                             style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                             <div>
-                                <label for="minTemp" style="width: 123px;">Cooling Active:
+                                <label for="minTemp" style="width: 120px;">Cooling Active:
                                 </label>
                                 <input type="number" name="Cooling_Sistem_Active" step="1"
                                     wire:model="Cooling_Sistem_Active" value="{{ $setting['Cooling_Sistem_Active'] }}"
-                                    style="width: 80px; border: none; padding: 5px;" />
+                                    style="width: 60px; border: none; padding: 5px;" />
                                 <label for="">Minute</label>
                             </div>
                             <div>
-                                <label for="maxTemp">Cooling Inactive: </label>
+                                <label for="maxTemp" style="width: 121px;">Cooling Inactive: </label>
                                 <input type="number" name="Cooling_Sistem_Inactive" step="1"
                                     wire:model="Cooling_Sistem_Inactive"
                                     value="{{ $setting['Cooling_Sistem_Inactive'] }}"
-                                    style="width: 80px; border: none; padding: 5px;" />
+                                    style="width: 60px; border: none; padding: 5px;" />
                                 <label for="">Minute</label>
                             </div>
                             <br>
@@ -531,7 +522,7 @@
                         tension: 0.4
                     },
                     {
-                        label: 'Humadity',
+                        label: 'Humidity',
                         data: kelemababanData,
                         backgroundColor: 'rgba(75, 192, 192, 0.2)',
                         borderColor: 'rgba(75, 192, 192, 1)',
@@ -547,6 +538,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -574,6 +566,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -601,6 +594,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
@@ -628,6 +622,7 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,//membuat chart menjadi flexible
                 scales: {
                     y: {
                         beginAtZero: true
