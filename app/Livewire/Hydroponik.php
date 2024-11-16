@@ -139,7 +139,7 @@ class Hydroponik extends Component
                         "type" => "success",
                         "message" => $message,
                     ]);
-                    $this->lastseen();
+                    $this->pump();
                 } else {
                     $control->status = $initialStatus;
                     $control->save();
@@ -149,7 +149,7 @@ class Hydroponik extends Component
                         "type" => "error",
                         "message" => $message,
                     ]);
-                    $this->lastseen();
+                    $this->pump();
                 }
             } else {
                 $this->dispatch("show-sweetalert", [
