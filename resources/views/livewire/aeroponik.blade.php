@@ -337,7 +337,7 @@
                             style="text-align: center; margin: 2%; width: 100%">Controlling Aerophonic</h6>
                     </div>
                     <div class="margin-top: 4" style="text-align: center; margin: 2%; width: 96%">
-                        <h2 class="text-danger"><b>Kontrol Tidak Dapat digunakan, Karena Device Sedang Offline</b></h2>
+                        <h2 class="text-danger"><b>Control Cannot be used, Because the Device is Offline</b></h2>
                     </div>
                 </div>
             </div>
