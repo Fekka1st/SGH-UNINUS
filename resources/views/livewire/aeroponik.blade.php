@@ -194,7 +194,7 @@
                                         </div>
                                     </button>
                                 </div>
-                                <div class="m-3">
+                                {{-- <div class="m-3">
                                     <button wire:click="togglePump('Pompa_TankiAir')"
                                         class="btn btn-primary btn-sm w-80"
                                         style="border: 1px solid #4e73df; padding: 9px; width: 160px;">
@@ -206,7 +206,7 @@
                                             </h6>
                                         </div>
                                     </button>
-                                </div>
+                                </div> --}}
                                 <div class="m-3">
                                     <button wire:click="togglePump('Pompa_Spraying')"
                                         class="btn btn-primary btn-sm w-120"
