@@ -41,9 +41,7 @@ class Greenhouse extends Component
             $this->lastSeen = null;
         } else {
             $this->status = 0;
-            $this->lastSeen = Carbon::parse(
-                $device->updated_at
-            )->diffForHumans();
+            $this->lastSeen = Carbon::parse($device->updated_at)->diffForHumans();
         }
     }
 

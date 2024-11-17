@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Models\Control;
+use App\Models\control;
 use App\Models\device;
 use App\Models\device_settings;
 use App\Models\SensorDataSmartAeroponik;
@@ -67,7 +67,7 @@ class Aeroponik extends Component
         $this->lastseen();
         $this->device = device::find(2);
         $this->data = SensorDataSmartAeroponik::latest('created_at')->first();
-        $this->control = Control::where('device_id', 1)->get();
+        $this->control = control::where('device_id', 1)->get();
         if (!$this->data) {
             $this->dispatch("show-sweetalert", [
                 "type" => "error",

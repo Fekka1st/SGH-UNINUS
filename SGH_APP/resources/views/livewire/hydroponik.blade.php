@@ -180,19 +180,6 @@
                                     </div>
                                 </button>
                             </div>
-
-                            {{-- <div class="m-3">
-                                <button wire:click="togglePump('Pompa_TankiAir')" class="btn btn-primary"
-                                    style="border: 1px solid #4e73df; padding: 17px; width: 180px;">
-                                    <h5 style="color: white;">Water Level Up</h5>
-                                    <div class="col-auto">
-                                        <i class="fas fa-water"></i>
-                                        <h6 class="{{ $water_level_status ? 'text-success' : 'text-danger' }}">
-                                            <b>{{ $water_level_status ? 'ON' : 'OFF' }}</b>
-                                        </h6>
-                                    </div>
-                                </button>
-                            </div> --}}
                         </div>
                     </div>
                     @endif

@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\Control;
+use App\Models\control;
 use App\Models\device;
 use App\Models\SensorDataSmartHydroponik;
 use App\Models\device_settings;
