@@ -24,7 +24,7 @@
                <div class="col-lg-6 col-md-12 col-12 mb-4" data-aos="fade-left">
                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                   <div class="carousel-inner" style="border-radius: 15px;">
-                     
+
                      <div class="carousel-item">
                            <img src="{{asset('asset/img/rapat/r1.jpeg')}}"
                               class="d-block w-100" alt="Gambar 1">
@@ -62,9 +62,10 @@
                               </div>
                               <div id="extraParagraph" class="mt-2" style="display: none;">
                                  <p class="card-text mb-3" style="text-align: justify; color:aliceblue;  font-family: 'Poppins', sans-serif;">
-                                 <b>Dukungan Yayasan dan Rektor Uninus</b><br>
-                                    Proyek ini juga didukung oleh Yayasan Uninus dan Rektor Uninus sebagai bagian dari komitmen universitas untuk mendorong inovasi dan keberlanjutan. Rektor dan Yayasan memberikan dukungan penuh dalam penyediaan sumber daya dan fasilitasi kegiatan lintas fakultas ini.
-                                    <br>
+                                 <b>Dukungan Luar Biasa dari Yayasan dan Rektor Uninus</b>
+                                 <br>
+                                 Proyek Smart Green House ini mendapatkan dukungan penuh dari Yayasan Uninus dan Rektor Uninus, yang dengan visi jauh ke depan, selalu mendukung inisiatif yang mendorong kemajuan teknologi dan keberlanjutan. Kepemimpinan yang luar biasa dari Rektor Uninus dan Yayasan Uninus tidak hanya memberikan dukungan moral, tetapi juga sumber daya yang sangat dibutuhkan untuk memastikan kelancaran dan keberhasilan proyek ini. Komitmen mereka dalam memfasilitasi kolaborasi lintas fakultas menegaskan tekad universitas untuk menjadi pelopor dalam inovasi pertanian berbasis teknologi.
+                                 <br>
                                     <b>Tim Pelaksana Proyek</b>
                                     <br>
                                     Proyek Smart Greenhouse ini merupakan hasil kerja keras tim lintas disiplin dari Fakultas Pertanian dan Fakultas Teknik Uninus. Para dosen yang berperan penting dalam pengembangan proyek ini, antara lain:
@@ -72,10 +73,10 @@
                                     •	<b>Ir. Lilis Irmawatie, M.M.Pd</b> (Dekan Fakultas Pertanian)
                                           Sebagai penanggung jawab utama dari proyek smart greenhouse berbasis dan mengawasi keseluruhan perencanaan dan pembuatan <i>smart greenhouse</i>.
                                     <br>
-                                    •	<b>Dr. Debby Ustari, S.P., M.P dan Dr. Syayidah Nuriyah,  S.Pd., M.Si</b> (Dosen dan Peneliti) 
-                                          Mengawasi keseluruhan perencanaan agronomis dan teknis di dalam <i>smart greenhouse</i>, serta bertanggung jawab dalam pengembangan penelitian yang diterapkan.	
+                                    •	<b>Dr. Debby Ustari, S.P., M.P dan Dr. Syayidah Nuriyah,  S.Pd., M.Si</b> (Dosen dan Peneliti)
+                                          Mengawasi keseluruhan perencanaan agronomis dan teknis di dalam <i>smart greenhouse</i>, serta bertanggung jawab dalam pengembangan penelitian yang diterapkan.
                                     <br>
-                                    •	<b>GALIH, S.T., M.KOM. dan Ganis Sanhaji, S.Si., M.Sc.</b> berperan dalam penerapan sistem <i>IoT</i>, khususnya dalam desain arsitektur sistem pemantauan otomatis. 
+                                    •	<b>GALIH, S.T., M.KOM. dan Ganis Sanhaji, S.Si., M.Sc.</b> berperan dalam penerapan sistem <i>IoT</i>, khususnya dalam desain arsitektur sistem pemantauan otomatis.
                                     <br>
                                     •	<b>Tim Mahasiswa</b>
                                           Mahasiswa dari Fakultas Pertanian dan Fakultas Teknik turut ambil bagian dalam proyek, baik sebagai perancang sistem maupun tenaga operasional. Mahasiwa tidak hanya mempelajari konsep teoritis tentang pertanian dan teknologi, tetapi juga mendapatkan pengalaman langsung dalam mengelola dan memantau sistem berbasis <i>IoT</i>
@@ -95,7 +96,7 @@
 <!-- End PENJELASAN -->
 
 <!-- Start yayasan-->
-<section id="swiper-section-1" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
+{{-- <section id="swiper-section-1" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
@@ -112,7 +113,7 @@
                                     <img src="{{asset('asset/img/yayasan/Dr._KH._M.Mujib_Qulyubi__M.H1.png')}}" alt="image" class="card__img">
                                     <div class="card__shadow"></div>
                                  </div>
-                  
+
                                  <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                                     <h3 class="card__name">Ketua Pembina Yayasan</h3>
                                        <p class="card__description">
@@ -127,7 +128,7 @@
                                  <img src="{{asset('asset/img/yayasan/Aizzudin_Abdurrahman5.png')}}" alt="image" class="card__img">
                                     <div class="card__shadow"></div>
                                  </div>
-                  
+
                                  <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                                     <h3 class="card__name">Wakil Ketua Pembina Yayasan</h3>
                                        <p class="card__description">
@@ -140,7 +141,7 @@
                                     <img src="{{asset('asset/img/yayasan/H._Muhammad_Hasyim1.png')}}" alt="image" class="card__img">
                                     <div class="card__shadow"></div>
                                  </div>
-                  
+
                                  <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                                     <h3 class="card__name">Anggota Pembina Yayasan</h3>
                                        <p class="card__description">
@@ -152,7 +153,7 @@
                                  <img src="{{asset('asset/img/yayasan/KH._Hasan_Nuri_Hidayatullah1.png')}}" alt="image" class="card__img">
                                     <div class="card__shadow"></div>
                                  </div>
-                  
+
                                  <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                                     <h3 class="card__name">Ketua Pengurus Yayasan</h3>
                                        <p class="card__description">
@@ -165,7 +166,7 @@
                                  <img src="{{asset('asset/img/yayasan/Masagus_Royhan_Ariep__S.IP3.png')}}" alt="image" class="card__img">
                                     <div class="card__shadow"></div>
                                  </div>
-                  
+
                                  <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                                     <h3 class="card__name">Sekretaris Pengurus Yayasan</h3>
                                        <p class="card__description">
@@ -178,7 +179,7 @@
                                  <img src="{{asset('asset/img/yayasan/H._Mohammad_Machrus_Alie__M.T1.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
-               
+
                               <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3); font-family: 'Poppins', sans-serif;">
                                  <h3 class="card__name">Bendahara Pengurus Yayasan</h3>
                                        <p class="card__description">
@@ -192,7 +193,7 @@
                      <div class="swiper-button-next">
                         <i class="ri-arrow-right-s-line"></i>
                      </div>
-                     
+
                      <div class="swiper-button-prev">
                         <i class="ri-arrow-left-s-line"></i>
                      </div>
@@ -202,12 +203,12 @@
                 </div>
          </div>
    </div>
-</section>
+</section> --}}
 <!-- End yayasa -->
 
 <!-- Start PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 
-<section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
+{{-- <section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
 
    <div class="card__container swiper" >
             <div class="row align-items-center">
@@ -227,7 +228,7 @@
                                  <img src="{{asset('asset/img/rektor/endang.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
-               
+
                               <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif; color:#fff;">
                                  <h3 class="card__name" style="color:#fff;">Prof. Dr. H. Endang Komara, M.Si</h3>
                                  <p class="card__description">
@@ -243,7 +244,7 @@
                                  <img src="{{asset('asset/img/rektor/hanaviah.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
-               
+
                               <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif; color:#fff;">
                                  <h3 class="card__name" style="color:#fff;">Prof. Dr. Hanafiah, <br> M.M.Pd.</h3>
                                  <p class="card__description">
@@ -258,7 +259,7 @@
                                  <img src="{{asset('asset/img/rektor/aslan.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
-               
+
                               <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif; color:#fff;">
                                  <h3 class="card__name" style="color:#fff;">Prof. Dr. Aslan Noor, <br>M.H</h3>
                                  <p class="card__description">
@@ -273,7 +274,7 @@
                                  <img src="{{asset('asset/img/rektor/ridwan.png')}}" alt="image" class="card__img">
                                  <div class="card__shadow"></div>
                               </div>
-               
+
                               <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif; color:#fff;">
                                  <h3 class="card__name" style="color:#fff;">A. M. Ridwan Saeful Hikmat, S.Si., M.H</h3>
                                  <p class="card__description">
@@ -288,7 +289,7 @@
                      <div class="swiper-button-next">
                         <i class="ri-arrow-right-s-line"></i>
                      </div>
-                     
+
                      <div class="swiper-button-prev">
                         <i class="ri-arrow-left-s-line"></i>
                      </div>
@@ -298,7 +299,7 @@
                 </div>
          </div>
    </div>
-</section>
+</section> --}}
 
 <!-- End PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 
@@ -396,7 +397,7 @@
          <div class="swiper-button-next">
             <i class="ri-arrow-right-s-line"></i>
          </div>
-         
+
          <div class="swiper-button-prev">
             <i class="ri-arrow-left-s-line"></i>
          </div>
@@ -464,7 +465,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Decky Putra Kurnia</h3>
-                                          <p class="card__description" style="color:aliceblue;">Firmware Division</p> 
+                                          <p class="card__description" style="color:aliceblue;">Firmware Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support : Silmi Nur Azmi <br>Silmi
                                           </p>
@@ -489,7 +490,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Marvin</h3>
-                                       <p class="card__description" style="color:aliceblue;">Network Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Network Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              <p style="margin-top:71px"><br></p>
                                           </p>
@@ -514,7 +515,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Julian</h3>
-                                       <p class="card__description" style="color:aliceblue;">Design 3D Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Design 3D Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support : Anisa Febrianti dan Anita Ayudya Riski
                                           </p>
@@ -542,7 +543,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Muhammad Iqbal R</h3>
-                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support : Muhamad Ihsan dan Raihan Wahyu Pratama
                                           </p>
@@ -567,7 +568,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Aziz Maulana</h3>
-                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support : Deri Bahtiar dan
                                              <br>Kusnayadi
@@ -593,7 +594,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Indra Saputra</h3>
-                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Hardware Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support : Muhamad Gias Muharom dan Vito Dwi Nur H
                                           </p>
@@ -617,7 +618,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Defany Kuswandi</h3>
-                                       <p class="card__description" style="color:aliceblue;">Electrical Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Electrical Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support : Ahmad Kurnia dan Wildan Permana
                                           </p>
@@ -642,7 +643,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Herlan Syah</h3>
-                                       <p class="card__description" style="color:aliceblue;">Electrical Division</p> 
+                                       <p class="card__description" style="color:aliceblue;">Electrical Division</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              Team Support :Hidayat
                                              <p style="margin-top:-10px"><br></p>
@@ -659,7 +660,7 @@
                                     </div>
                                  </article>
                                  <!-- END Elektro mahasiswa -->
-                                  
+
                                  <!--  tim informatika mahasiswa -->
                                  <!-- star UI/UX -->
                                  <!-- Rizki Hendriawan -->
@@ -671,7 +672,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Rizki Hendriawan</h3>
-                                       <p class="card__description" style="color:aliceblue;">UI/UX</p> 
+                                       <p class="card__description" style="color:aliceblue;">UI/UX</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              <i>User Interface</i> (UI),<br>
                                              <i>User Experience</i> (UX)
@@ -700,7 +701,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">M Alviansyah</h3>
-                                       <p class="card__description" style="color:aliceblue;">UI/UX</p> 
+                                       <p class="card__description" style="color:aliceblue;">UI/UX</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                              <i>User Interface</i> (UI),<br>
                                              <i>User Experience</i> (UX)
@@ -731,12 +732,12 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Boyke Adam</h3>
-                                       <p class="card__description" style="color:aliceblue;">Frontend</p> 
+                                       <p class="card__description" style="color:aliceblue;">Frontend</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                           Team Support : Zen Ahlil Baeri Dan
                                           <br> Adam Panji
                                           </p>
-                                    
+
                                        <div class="card__box">
                                              <a href="https://www.linkedin.com/in/boyke-adam-9a589a336/</a>" target="_blank">
                                              <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
@@ -760,7 +761,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Ipin Ahmad S</h3>
-                                       <p class="card__description" style="color:aliceblue;">Frontend</p> 
+                                       <p class="card__description" style="color:aliceblue;">Frontend</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                                 Desain antarmuka pengguna untuk pengalaman yang optimal
                                           </p>
@@ -788,7 +789,7 @@
 
                                     <div class="card__data" style="background-color: #1C532A;  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Adam Panji</h3>
-                                       <p class="card__description" style="color:aliceblue;">Frontend</p> 
+                                       <p class="card__description" style="color:aliceblue;">Frontend</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                                 Desain antarmuka pengguna untuk pengalaman yang optimal
                                           </p>
@@ -818,7 +819,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400);  font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Aby Herdiansyah</h3>
-                                       <p class="card__description" style="color:aliceblue;">Backend</p> 
+                                       <p class="card__description" style="color:aliceblue;">Backend</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                                 Pemrograman server untuk pengolahan data aplikasi
                                           </p>
@@ -845,7 +846,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Anif Alfianto</h3>
-                                       <p class="card__description" style="color:aliceblue;">Backend</p> 
+                                       <p class="card__description" style="color:aliceblue;">Backend</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                                 Pemrograman server untuk pengolahan data aplikasi
                                           </p>
@@ -872,7 +873,7 @@
 
                                     <div class="card__data" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;">
                                        <h3 class="card__name" style="color:aliceblue;">Muhamad Sya'dan</h3>
-                                       <p class="card__description" style="color:aliceblue;">Backend</p> 
+                                       <p class="card__description" style="color:aliceblue;">Backend</p>
                                           <p class="card__description" style="color:aliceblue; margin-top:-26px;">
                                                 Pemrograman server untuk pengolahan data aplikasi
                                           </p>
@@ -899,7 +900,7 @@
                <div class="swiper-button-next">
                   <i class="ri-arrow-right-s-line"></i>
                </div>
-               
+
                <div class="swiper-button-prev">
                   <i class="ri-arrow-left-s-line"></i>
                </div>
@@ -981,7 +982,7 @@
          <div class="swiper-button-next">
             <i class="ri-arrow-right-s-line"></i>
          </div>
-         
+
          <div class="swiper-button-prev">
             <i class="ri-arrow-left-s-line"></i>
          </div>

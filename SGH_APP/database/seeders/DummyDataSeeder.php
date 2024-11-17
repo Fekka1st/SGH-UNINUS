@@ -307,5 +307,19 @@ class DummyDataSeeder extends Seeder
                 'updated_at' => $currentTimestamp->copy()->subMonths($i * 6),
             ]);
         }
+        $data = [];
+        for ($i = 0; $i < 20; $i++) {
+            $data[] = [
+                'name_device' => 'water_level',
+                'value' => mt_rand(100, 1000) / 10, // Random float between 10.0 and 100.0
+                'status' => 1,
+                'device_id' => 3,
+                'created_at' => now()->subDays(rand(0, 30)), // Random timestamp in the last 30 days
+                'updated_at' => now(),
+            ];
+        }
+
+        // Insert data into the table
+        DB::table('extend_devices')->insert($data);
     }
 }

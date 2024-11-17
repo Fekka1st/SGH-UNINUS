@@ -16,6 +16,7 @@
                             <th>Laju Air</th>
                             <th>Volume Air</th>
                             <th>Suhu Air</th>
+                            <th>Panel Temp</th>
                             <th>Waktu</th>
                         </tr>
                     </thead>

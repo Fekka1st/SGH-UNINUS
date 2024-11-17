@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     @stack('title')
-
+    <link rel="shortcut icon" type="image/x-icon"
+    href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
     <link href="{{asset('utama/asset/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -78,7 +79,7 @@
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <div class="jam"> Waktu Hari Ini <h2 id="current-time">Waktu</h2>
+                        <div class="jam"> Time Today <h2 id="current-time" style="font-size: 18px">Time</h2>
                         </div>
 
                         <ul class="navbar-nav ml-auto">

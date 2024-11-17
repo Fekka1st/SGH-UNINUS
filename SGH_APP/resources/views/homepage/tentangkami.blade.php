@@ -20,7 +20,7 @@
         <div class="info-one">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12 mb-4">
-                        <img src="{{asset('asset/img/usp.png')}}" 
+                        <img src="{{asset('asset/img/usp.png')}}"
                             alt="Smart Green House" class="img-fluid h-100" style="object-fit: cover;  width: 100%; height: 100%; border-radius: 5px">
                 </div>
                 <div class="col-lg-6 col-md-12 d-flex" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); border-radius: 10px;">
@@ -47,7 +47,7 @@
             <div class="col-12">
                 <div  style="font-family: 'Book Antiqua', serif;">
                 <h1 class="text-center mb-4"data-aos="flip-left" style="font-family: 'Poppins', sans-serif;">Fungsi, Tujuan dan Manfaat</h1>
-                    
+
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <div class="col-lg-4 col-md-12 col-12 mb-4" data-aos="zoom-in-down">
                 <div class="single-table" style="height:100%; background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); font-family: 'Poppins', sans-serif;" data-wow-delay=".6s">
                     <div class="text-center">
-                        <h3 class="title" style=" margin-top: 50px; color: white; font-family: 'Times New Roman', Times, serif;">Manfaat</h3>
+                        <h3 class="title" style=" margin-top: 50px; color: white; font-family: 'Poppins', Times, serif;">Manfaat</h3>
                         <p style="text-align: justify; margin-right: 35px; margin-bottom: 35px; margin-left: 35px; color: white; font-size: 17px;">Penerapan Smart Greenhouse memberikan manfaat berupa penghematan air dan energi hingga 50%, serta pengurangan penggunaan pestisida berkat teknologi otomatisasi yang cerdas. Hal ini tidak hanya meningkatkan efisiensi produksi, tetapi juga memastikan pertanian yang lebih ramah lingkungan dan berkelanjutan.</p>
                     </div>
                 </div>

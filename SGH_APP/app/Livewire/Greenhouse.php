@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\control;
 use App\Models\device;
 use App\Models\device_settings;
+use App\Models\extend_device;
 use App\Models\SensorDataSmartGreenhouse;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -19,6 +20,9 @@ class Greenhouse extends Component
     public $device;
     public $status;
     public $lastSeen;
+    public $extend;
+    public $extend_status;
+    public $extend_lastSeen;
 
     public $fan_status;
 
@@ -114,6 +118,10 @@ class Greenhouse extends Component
         $this->device = device::find(3);
         $this->data = SensorDataSmartGreenhouse::latest("created_at")->first();
         $this->control = control::where("device_id", 3)->get();
+        $this->extend = extend_device::where('device_id', 3)
+        ->where('name_device', 'water_level')
+        ->orderBy('created_at', 'desc')
+        ->first();
 
         if (!$this->data) {
             $this->dispatch("show-sweetalert", [
@@ -125,8 +133,8 @@ class Greenhouse extends Component
 
         if ($this->device->status === 1) {
             $this->dispatch("updateSensorData", [
-                "suhu_air" => $this->data->suhu_avg,
-                "kelembaban" => $this->data->kelembaban_avg,
+                "suhu_avg" => $this->data->suhu_avg,
+                "kelembaban_avg" => $this->data->kelembaban_avg,
                 "intensitas_cahaya" => $this->data->intensitas,
                 "co2" => $this->data->co2,
                 "water_level" => $this->data->water_level,

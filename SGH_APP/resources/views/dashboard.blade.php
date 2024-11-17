@@ -23,14 +23,14 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Smart Greenhouse
+                                Smart Room Greenhouse
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                {{$greenDayCount}} Data Hari ini
+                                {{$greenDayCount}} Data Today
                                 </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800"><a
                                     class="small text-white stretched-link"
-                                    href="/smartgreenhouse"></a>Lihat Detail</div>
+                                    href="/smartgreenhouse"></a>See Detail</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-laptop-house"></i>
@@ -50,10 +50,10 @@
                                 Smart Hydroponik
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                {{$hydroDayCount}} Data Hari ini
+                                {{$hydroDayCount}} Data Today
                                 </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <a class="small stretched-link" href="/smarthydroponik"></a>Lihat Detail
+                                <a class="small stretched-link" href="/smarthydroponik"></a>See Detail
                                 </div>
                         </div>
                         <div class="col-auto">
@@ -77,13 +77,13 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                        {{$aeroDayCount}} Data Hari ini
+                                        {{$aeroDayCount}} Data Today
                                         </div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                         <a href=""></a>
                                         <a
                                             class="small text-white stretched-link"
-                                            href="/smartaerophonik"></a>Lihat Detail</div>
+                                            href="/smartaerophonik"></a>See Detail</div>
                                 </div>
                                 <div class="col">
                                 </div>
@@ -104,7 +104,7 @@
         <div class="col-xl-12 col-lg-7">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Data Per Minggu</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Weekly Data</h6>
                 </div>
                 <div class="card-body">
                     <canvas id="Jadwal"></canvas>
@@ -135,7 +135,7 @@
 
 @section('script')
 <script>
-    const labels = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+    const labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const hydroData = @json(array_values($hydroDailyCounts));
     const greenData = @json(array_values($greenDailyCounts));
     const aeroData = @json(array_values($aeroDailyCounts));

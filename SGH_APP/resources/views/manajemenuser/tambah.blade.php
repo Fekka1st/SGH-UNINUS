@@ -4,7 +4,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -14,7 +14,7 @@
                 <form action="{{ route('manajemen_user.store') }}"  method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="">Nama </label>
+                        <label for="">Name </label>
                         <input type="text" class="form-control" id="name" name="name"
                             aria-describedby="name" required>
                     </div>
@@ -27,7 +27,7 @@
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     <div class="form-group mb-3">
-                        <label class="font-weight-bold">Foto</label>
+                        <label class="font-weight-bold">Photo</label>
                         <input type="file" class="form-control" name="foto">
                     </div>
             </div>

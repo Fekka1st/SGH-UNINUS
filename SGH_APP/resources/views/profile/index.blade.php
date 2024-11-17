@@ -63,22 +63,23 @@
                                         accept="image/*" onchange="previewImage(event)">
                                 </div>
                                 <div class="form-group">
-                                    <label for="name">Nama</label>
-                                    <input type="text" name="name" class="form-control"
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" value="{{Auth()->user()->name}}" class="form-control"
                                         value="" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" class="form-control"
+                                    <input type="email" name="email" value="{{Auth()->user()->email}}" class="form-control"
                                         value="" required>
                                 </div>
 
                                 <!-- Input Password dengan Toggle Visibility -->
                                 <div class="form-group">
                                     <label for="password">Password</label>
+                                    <p class="text-danger">*its opsional</p>
                                     <div class="input-group">
                                         <input type="password" name="password" class="form-control"
-                                            placeholder="Masukkan Password Baru" id="passwordInput" required>
+                                            placeholder="Create New Password" id="passwordInput" >
                                         <div class="input-group-append">
                                             <button type="button" class="btn btn-secondary"
                                                 id="togglePassword" tabindex="-1">

@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>SGH | @yield('title')</title>
-
+    <link rel="shortcut icon" type="image/x-icon"
+    href="https://storage.nu.or.id/storage/post/16_9/mid/logo-baru-uninus-news18112023_1700288683.webp" />
     <link href="{{asset('utama/asset/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -40,17 +41,17 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel"><b>Yakin ingin Keluar?</b></h3>
+                    <h3 class="modal-title" id="exampleModalLabel"><b>Sure you want to logout?</b></h3>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Tekan Ya untuk mengakhiri Session</div>
+                <div class="modal-body">Click yes to end session</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Kembali</button>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Back</button>
                     <a class="btn btn-danger" href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        Ya, Keluar
+                        Yes
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

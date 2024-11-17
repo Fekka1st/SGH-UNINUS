@@ -67,7 +67,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="timkinerja">Tim Kinerja</a>
                                     </li>
-                                    <!-- Monitoring -->
+                                    {{-- <!-- Monitoring -->
                                     <li class="nav-item">
                                         <a class="dd-menu" data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
                                             aria-controls="navbarSupportedContent" aria-expanded="true"
@@ -83,7 +83,7 @@
                                                 <a href="Monitoring_aeroponik">Smart Aeroponic</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                                 <!-- Authenticated User - Dashboard Link --> @auth <div class="button add-list-button">
                                     <a href="{{ url('/dashboard') }}" class="btn">Dashboard</a>

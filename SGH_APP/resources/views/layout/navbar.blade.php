@@ -65,8 +65,8 @@
                 <i class="fa fa-bars"></i>
             </button>
             <div class="jam">
-                Waktu Hari Ini
-                <h2 id="current-time">Waktu</h2>
+                Time Today
+                <h2 id="current-time" style="font-size: 18px">Time</h2>
             </div>
 
             <script>

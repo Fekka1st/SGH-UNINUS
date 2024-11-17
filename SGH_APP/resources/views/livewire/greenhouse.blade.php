@@ -1,7 +1,16 @@
 <div>
     <div class="container-fluid" wire:poll="refreshData">
-        <h1 class="h3 mb-2 text-gray-800">Smart Room Greenhouse</h1>
-
+        <div class="row">
+            @if ($status == 1)
+            <h1 class="h2 mb-2 text-gray-800"><b>Smart Room Greenhouse</b></h1>
+            <h2 class="h4 mt-2 ml-3">Status Device : </h2>
+            <h2 class="h4 mt-2 ml-1" style="color:#57F000"><b>ONLINE</b></h2>
+            @else
+            <h1 class="h2 mb-2 text-gray-800"><b>Smart Room Greenhouse</b></h1>
+            <h2 class="h4 mt-2 ml-3">Status Device : </h2>
+            <h2 class="h4 mt-2 ml-1" style="color:#FE3839"><b>OFFLINE - Last seen: {{ $lastSeen }}</b></h2>
+            @endif
+        </div>
         <div class="row">
             <!-- Suhu Card -->
             <div class="col-xl-6 col-md-6 mb-4">
@@ -160,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -206,25 +215,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- Pemakaian Air Card -->
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Water Level</div>
-                                <div>{{$data->water_level}}</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-water"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
@@ -236,6 +226,32 @@
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-laptop-house"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Pemakaian Air Card -->
+             <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Water Level
+                                    @if ($extend->status === 1)
+                                    <h7 style="color:rgb(126, 126, 126); margin-left: 10px;">
+                                        <i class="fas fa-circle" style="color: #00d604;"></i>
+                                        Online</h7>
+                                    @else
+                                    <h7 style="color:rgb(126, 126, 126); margin-left: 10px;">
+                                        <i class="fas fa-circle" style="color: #c70000;"></i>
+                                        Offline</h7>
+                                    @endif
+                                </div>
+                                <div>{{{$extend->value}}} Cm</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-water"></i>
                             </div>
                         </div>
                     </div>
@@ -297,7 +313,7 @@
                             <div
                                 class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary"
-                                    style="text-align: center; margin: 2%; width: 100%">(Temperature and Humidity)</h6>
+                                    style="text-align: center; margin: 2%; width: 100%">Temperature and Humidity</h6>
                             </div>
                             <div class="card-body">
                                 <div class="chart-area"wire:ignore>
@@ -467,8 +483,8 @@
 
             if (Array.isArray(sensorData) && sensorData.length > 0) {
                 const data = sensorData[0];
-                suhuData.push(data.suhu_air);
-                kelemababanData.push(data.kelembaban);
+                suhuData.push(data.suhu_avg);
+                kelemababanData.push(data.kelembaban_avg);
                 if (kelemababanData.length > 10) kelemababanData.shift();
                 if (suhuData.length > 10) suhuData.shift();
                 suhuChart.data.labels.push(new Date().toLocaleTimeString());
@@ -510,7 +526,7 @@
             data: {
                 labels: [],
                 datasets: [{
-                        label: 'Water Temperature',
+                        label: 'Temperature',
                         data: suhuData,
                         backgroundColor: 'rgba(255, 159, 64, 0.2)',
                         borderColor: 'rgba(255, 159, 64, 1)',
@@ -552,7 +568,7 @@
             data: {
                 labels: [],
                 datasets: [{
-                    label: 'Water pH',
+                    label: 'Light Intensity',
                     data: intensitasData,
                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
                     borderColor: 'rgba(255, 99, 132, 1)',
@@ -580,7 +596,7 @@
             data: {
                 labels: [],
                 datasets: [{
-                    label: 'Nutrition (TDS)',
+                    label: 'carbon dioxide',
                     data: co2Data,
                     backgroundColor: 'rgba(153, 102, 255, 0.2)',
                     borderColor: 'rgba(153, 102, 255, 1)',

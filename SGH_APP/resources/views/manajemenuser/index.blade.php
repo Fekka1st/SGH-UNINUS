@@ -10,7 +10,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Manajemen User</h1>
+    <h1 class="h3 mb-2 text-gray-800">Management User</h1>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -19,17 +19,17 @@
         </div>
         <div class="card-body" id="body">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Tambah Data
+                Add Data
             </button>
             <div class="col-12" style="overflow-x:auto;">
                 <table id="myTable" class="display">
                     <thead>
                         <tr>
                             <th width=3%>No</th>
-                            <th width=15%>Foto</th>
-                            <th>Nama</th>
+                            <th width=15%>Photo</th>
+                            <th>Name</th>
                             <th>Email</th>
-                            <th>Aksi</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,7 +41,7 @@
                             <td>{{$users->email}}</td>
                             <td class="text-center">
                                 <a href="javascript:void(0)" id="btn-edit-post" data-id="{{ $users->id }}"
-                                    class="btn btn-primary ">EDIT</a>
+                                    class="btn btn-primary ">Edit</a>
                                 @method('DELETE')
                                 <a href="{{ route('manajemen_user.destroy', $users->id) }}" class="btn btn-danger"
                                     data-confirm-delete="true">Delete</a>
