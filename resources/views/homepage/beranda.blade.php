@@ -47,15 +47,15 @@
                                 class="d-block w-100" alt="Gambar 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('asset/img/sgf11.jpeg')}}"
+                            <img src="{{asset('asset/img/tanaman/t4.jpg')}}"
                                 class="d-block w-100" alt="Gambar 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('asset/img/sgf9.jpeg')}}"
+                            <img src="{{asset('asset/img/tanaman/t1.jpg')}}"
                                 class="d-block w-100" alt="Gambar 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('asset/img/sgf14.jpeg')}}"
+                            <img src="{{asset('asset/img/tanaman/t2.jpg')}}"
                                 class="d-block w-100" alt="Gambar 4">
                         </div>
                     </div>
@@ -94,15 +94,15 @@
                         </div>
                         <div class="carousel-inner" style="border-radius: 5px">
                             <div class="carousel-item active">
-                                <img src="{{asset('asset/img/sgf3.jpg')}}"
+                                <img src="{{asset('asset/img/tanaman/t3.jpg')}}"
                                     class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{asset('asset/img/sgf2.jpg')}}"
+                                <img src="{{asset('asset/img/tanaman/t2.jpg')}}"
                                     class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{asset('asset/img/sgf4.jpg')}}"
+                                <img src="{{asset('asset/img/tanaman/t1.jpg')}}"
                                     class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -280,7 +280,6 @@
 <!-- Start Jenis - Jenis Tanaman -->
 
 <section class="our-achievement section" style="background: linear-gradient(to left, #1C532A, #147814,#2E8B57, #000000); font-family: 'Poppins', sans-serif;">
-
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
@@ -329,7 +328,6 @@
 <!-- Galeri -->
 
 <section class="our-achievement section" style="background-color:white; padding: 20px; font-family: 'Poppins', sans-serif; background: linear-gradient(to left,#A8D5E3, #fff,);">
-
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col-lg-12" data-aos="fade-down">
@@ -338,47 +336,46 @@
         </div>
         <div class="row gallery-content">
             <!-- Kolom 1 -->
+            
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-
-                <img src="{{asset('asset/img/fotoberanda/ubi.JPG')}}" class="img-fluid shadow-1-strong rounded clickable-image" 
+                <img src="{{asset('asset/img/sgf9.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
                      alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
-                     data-description="Ubi adalah salah satu jenis umbi-umbian yang kaya akan nutrisi dan memiliki berbagai macam varietas, seperti ubi jalar, ubi kayu (singkong), dan ubi ungu." 
+                     data-description="Pemilihan pupuk yang tepat sangat penting untuk menjaga keseimbangan nutrisi dalam tanah." 
                      onclick="openModal(this)">
             </div>
             <!-- 2 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/fotoberanda/daunubi.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
+                <img src="{{asset('asset/img/fotoberanda/budeby1.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
                      alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
                      data-description="ubi memiliki bentuk yang beragam tergantung jenis ubi, namun umumnya berbentuk menjari atau menyirip dengan permukaan yang halus. Warna daunnya bervariasi dari hijau muda hingga hijau tua, dan daun muda sering kali memiliki warna kemerahan pada beberapa jenis ubi, seperti ubi jalar." 
                      onclick="openModal(this)">
             </div>
             <!-- 3 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/fotoberanda/budeby1.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
-                     alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
-                     data-description="ubi memiliki bentuk yang beragam tergantung jenis ubi, namun umumnya berbentuk menjari atau menyirip dengan permukaan yang halus. Warna daunnya bervariasi dari hijau muda hingga hijau tua, dan daun muda sering kali memiliki warna kemerahan pada beberapa jenis ubi, seperti ubi jalar." 
-                     onclick="openModal(this)">
-
+            <img src="{{asset('asset/img/fotoberanda/ubi.JPG')}}" class="img-fluid shadow-1-strong rounded clickable-image" 
+                alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
+                data-description="Ubi adalah salah satu jenis umbi-umbian yang kaya akan nutrisi dan memiliki berbagai macam varietas, seperti ubi jalar, ubi kayu (singkong), dan ubi ungu." 
+                onclick="openModal(this)">
             </div>
             <!-- 4 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf4.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
-                     alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
-                     data-description="Bungan Tulup adalah jenis bunga yang tumbuh di daerah tropis. Ini memiliki kelopak yang sangat indah." 
-                     onclick="openModal(this)">
+            <img src="{{asset('asset/img/tanaman/t4.jpg')}}" class="img-fluid shadow-1-strong rounded clickable-image" 
+                alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
+                data-description="Anggur adalah tanaman buah yang tumbuh dalam bentuk gugusan kecil dengan warna bervariasi seperti hijau, merah, dan ungu. Rasanya manis dan segar, menjadikannya favorit untuk dimakan langsung, dijadikan jus, atau bahan pembuatan produk olahan seperti selai dan wine. Anggur juga kaya akan antioksidan yang baik untuk kesehatan." 
+                onclick="openModal(this)">
             </div>
             <!-- 5 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf9.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
-                     alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
-                     data-description="Bungan Tulup adalah jenis bunga yang tumbuh di daerah tropis. Ini memiliki kelopak yang sangat indah." 
-                     onclick="openModal(this)">
+            <img src="{{asset('asset/img/tanaman/t1.jpg')}}" class="img-fluid shadow-1-strong rounded clickable-image" 
+                alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
+                data-description="Stroberi adalah tanaman buah kecil berwarna merah cerah yang dikenal karena rasanya yang manis dan segar. Selain enak dimakan langsung, stroberi kaya akan vitamin C dan antioksidan, menjadikannya pilihan sehat untuk camilan atau bahan makanan." 
+                onclick="openModal(this)">
             </div>
             <!-- 6 -->
             <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
-                <img src="{{asset('asset/img/sgf14.jpeg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
+                <img src="{{asset('asset/img/tanaman/t6.jpg')}}" class="img-fluid shadow-1-strong rounded mb-4 clickable-image" 
                      alt="Image 1" style="width: 500px; height: 200px; object-fit: cover;" 
-                     data-description="Bungan Tulup adalah jenis bunga yang tumbuh di daerah tropis. Ini memiliki kelopak yang sangat indah." 
+                     data-description="Tomat adalah tanaman serbaguna dengan buah berwarna merah yang kaya akan nutrisi, seperti vitamin A, C, dan likopen. Selain digunakan dalam berbagai masakan, tomat juga mudah ditanam dan memberikan hasil yang melimpah dengan perawatan yang tepat." 
                      onclick="openModal(this)">
             </div>
         </div>

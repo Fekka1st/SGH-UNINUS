@@ -20,7 +20,7 @@
         <div class="info-one">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12 mb-4">
-                        <img src="{{asset('asset/img/usp.png')}}" 
+                        <img src="{{asset('asset/img/batu.jpeg')}}" 
                             alt="Smart Green House" class="img-fluid h-100" style="object-fit: cover;  width: 100%; height: 100%; border-radius: 5px">
                 </div>
                 <div class="col-lg-6 col-md-12 d-flex" style="background: linear-gradient(to bottom right, #3FA34D, #006400, #001400); border-radius: 10px;">
