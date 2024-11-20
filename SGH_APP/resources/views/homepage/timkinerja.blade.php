@@ -33,10 +33,10 @@
                            <img src="{{asset('asset/img/rapat/rapat1.jpg')}}"
                               class="d-block w-100" alt="Gambar 2">
                      </div>
-                     <div class="carousel-item">
-                           <img src="{{asset('asset/img/rapat/rapat3.jpg')}}"
+                     <!-- <div class="carousel-item">
+                           <img src="{{asset('asset/img/rapat/rapat2.jpg')}}"
                               class="d-block w-100" alt="Gambar 3">
-                     </div>
+                     </div> -->
                      <div class="carousel-item">
                            <img src="{{asset('asset/img/rapat/kerja.jpg')}}"
                               class="d-block w-100" alt="Gambar 4">
@@ -62,10 +62,9 @@
                               </div>
                               <div id="extraParagraph" class="mt-2" style="display: none;">
                                  <p class="card-text mb-3" style="text-align: justify; color:aliceblue;  font-family: 'Poppins', sans-serif;">
-                                 <b>Dukungan Luar Biasa dari Yayasan dan Rektor Uninus</b>
-                                 <br>
-                                 Proyek Smart Green House ini mendapatkan dukungan penuh dari Yayasan Uninus dan Rektor Uninus, yang dengan visi jauh ke depan, selalu mendukung inisiatif yang mendorong kemajuan teknologi dan keberlanjutan. Kepemimpinan yang luar biasa dari Rektor Uninus dan Yayasan Uninus tidak hanya memberikan dukungan moral, tetapi juga sumber daya yang sangat dibutuhkan untuk memastikan kelancaran dan keberhasilan proyek ini. Komitmen mereka dalam memfasilitasi kolaborasi lintas fakultas menegaskan tekad universitas untuk menjadi pelopor dalam inovasi pertanian berbasis teknologi.
-                                 <br>
+                                 <b>Dukungan Yayasan dan Rektor Uninus</b><br>
+                                    Proyek ini juga didukung oleh Yayasan Uninus dan Rektor Uninus sebagai bagian dari komitmen universitas untuk mendorong inovasi dan keberlanjutan. Rektor dan Yayasan memberikan dukungan penuh dalam penyediaan sumber daya dan fasilitasi kegiatan lintas fakultas ini.
+                                    <br>
                                     <b>Tim Pelaksana Proyek</b>
                                     <br>
                                     Proyek Smart Greenhouse ini merupakan hasil kerja keras tim lintas disiplin dari Fakultas Pertanian dan Fakultas Teknik Uninus. Para dosen yang berperan penting dalam pengembangan proyek ini, antara lain:
@@ -95,8 +94,8 @@
 </section>
 <!-- End PENJELASAN -->
 
-<!-- Start yayasan-->
-{{-- <section id="swiper-section-1" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
+{{-- <!-- Start yayasan-->
+<section id="swiper-section-1" style="background: linear-gradient(to bottom right, #46AA46, #3FA34D, #003200, #001E00, #001400);">
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
@@ -203,13 +202,12 @@
                 </div>
          </div>
    </div>
-</section> --}}
-<!-- End yayasa -->
+</section>
+<!-- End yayasa --> --}}
 
 <!-- Start PIMPINAN UNIVERSITAS ISLAM NUSANTARA -->
 
 {{-- <section id="swiper-section-2" style="background: linear-gradient(to left, #fff, #A8D5E3);">
-
    <div class="card__container swiper" >
             <div class="row align-items-center">
                 <div class="col-md-12 col-12 mb-4">
@@ -317,18 +315,17 @@
             <!-- 1 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                  <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
+                  <img src="{{asset('asset/img/dosen/debby.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
 
                <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
                   <h3 class="card__name">Debby Ustari</h3>
                   <p class="card__description" style="margin-bottom:25px;">
-                  Universitas Islam Nusantara
-                  Email: uninus.ac.id Pertanian
+                  Perakitan varietas baru ubi
                   </p>
                   <div class="card__box">
-                     <a href="https://www.linkedin.com" target="_blank">
+                     <a href="https://www.scopus.com/home.uri" target="_blank">
                         <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
                      </a>
                      <a href="https://scholar.google.com/citations?user=8C8Z-agAAAAJ&hl=id" target="_blank">
@@ -340,56 +337,137 @@
                            <!-- 3 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                  <img src="{{asset('asset/img/vendor/hamditrb.png')}}" alt="image" class="card__img">
+                  <img src="{{asset('asset/img/dosen/lilis.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
 
                <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
-                  <h3 class="card__name">Hamdi S., S.T</h3>
-                  <p class="card__description">
-                     IoT Engineer |<br> Embedded System IoT <br>| Elektrical Engineer
+                  <h3 class="card__name">lilis</h3>
+                  <p class="card__description" style="margin-bottom:25px;">
+                     penyakit tanaman (Fitopatologi)
                   </p>
-
                   <div class="card__box">
-                     <a href="https://www.linkedin.com/in/hamdi-sholahudin/" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #000;"></i>
+                     <a href="https://www.scopus.com/home.uri" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
                      </a>
-                     <a href="https://github.com/HamdiSholahudin" target="_blank" style="margin-left: 20px; margin-right:20px">
-                        <i class="fa-brands fa-square-github fa-2xl" style="color: #000;"></i>
-                     </a>
-                     <a href="https://www.instagram.com" target="_blank">
-                        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #000;"></i>
+                     <a href="https://scholar.google.com" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo.scholar-removebg-preview.png')}}" alt="GitHub" class="social-ico">
                      </a>
                   </div>
                </div>
             </article>
 
-            <!-- 2 -->
             <article class="card__article swiper-slide">
                <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                  <img src="{{asset('asset/img/vendor/ferry.png')}}" alt="image" class="card__img">
+                  <img src="{{asset('asset/img/dosen/Adviany.png')}}" alt="image" class="card__img">
                   <div class="card__shadow"></div>
                </div>
 
                <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
-                  <h3 class="card__name">Ferry Aditya H., S.T</h3>
-                  <p class="card__description">
-                  Web Developer | <br>IoT Engineer <br>| IT Support
+                  <h3 class="card__name">Dra Ida Adviany</h3>
+                  <p class="card__description" style="margin-bottom:25px;">
+                     Biologi tanaman
                   </p>
-
                   <div class="card__box">
-                     <a href="https://www.linkedin.com/in/ferry-aditya-herman/" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #000;"></i>
+                     <a href="https://www.scopus.com/home.uri" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
                      </a>
-                     <a href="https://github.com/Fekka1st" target="_blank"style="margin-left: 20px; margin-right:20px">
-                        <i class="fa-brands fa-square-github fa-2xl" style="color: #000;"></i>
-                     </a>
-                     <a href="https://www.instagram.com/fekka_1st/" target="_blank">
-                        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #000;"></i>
+                     <a href="https://scholar.google.com" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo.scholar-removebg-preview.png')}}" alt="GitHub" class="social-ico">
                      </a>
                   </div>
                </div>
             </article>
+
+            <article class="card__article swiper-slide">
+               <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                  <img src="{{asset('asset/img/dosen/Syayidah.png')}}" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+               </div>
+
+               <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
+                  <h3 class="card__name">Syayidah</h3>
+                  <p class="card__description" style="margin-bottom:25px;">
+                     lingkungan spesialis lebah
+                     <br> Trigona
+                  </p>
+                  <div class="card__box">
+                     <a href="https://www.scopus.com/home.uri" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
+                     </a>
+                     <a href="https://scholar.google.com" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo.scholar-removebg-preview.png')}}" alt="GitHub" class="social-ico">
+                     </a>
+                  </div>
+               </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+               <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                  <img src="{{asset('asset/img/dosen/Yenny.png')}}" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+               </div>
+
+               <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
+                  <h3 class="card__name">Dr Ir Yenny Muliani</h3>
+                  <p class="card__description" style="margin-bottom:25px;">
+                    entomologi
+                  </p>
+                  <div class="card__box">
+                     <a href="https://www.scopus.com/home.uri" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
+                     </a>
+                     <a href="https://scholar.google.com" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo.scholar-removebg-preview.png')}}" alt="GitHub" class="social-ico">
+                     </a>
+                  </div>
+               </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+               <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                  <img src="{{asset('asset/img/dosen/suli.png')}}" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+               </div>
+
+               <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
+                  <h3 class="card__name">Suli</h3>
+                  <p class="card__description" style="margin-bottom:25px;">
+                   Soil Saintis
+                  </p>
+                  <div class="card__box">
+                     <a href="https://www.scopus.com/home.uri" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
+                     </a>
+                     <a href="https://scholar.google.com" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo.scholar-removebg-preview.png')}}" alt="GitHub" class="social-ico">
+                     </a>
+                  </div>
+               </div>
+            </article>
+
+            <!-- <article class="card__article swiper-slide">
+               <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                  <img src="{{asset('asset/img/dosen/Dick.png')}}" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+               </div>
+
+               <div class="card__data" style="background: linear-gradient(to left, #fff, #A8D5E3);  font-family: 'Poppins', sans-serif;">
+                  <h3 class="card__name">Dick Dick Maulana S.P., M.Si</h3>
+                  <p class="card__description" style="margin-bottom:25px;">
+                  lingkungan
+                  </p>
+                  <div class="card__box">
+                     <a href="https://www.linkedin.com" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo_scopus-removebg-preview.png')}}" alt="LinkedIn" class="social-ico">
+                     </a>
+                     <a href="https://scholar.google.com/citations?user=8C8Z-agAAAAJ&hl=id" target="_blank">
+                        <img src="{{asset('asset/img/logo/logo.scholar-removebg-preview.png')}}" alt="GitHub" class="social-ico">
+                     </a>
+                  </div>
+               </div>
+            </article> -->
+
          </div> <!-- Penutup yang diperbaiki -->
 
 
@@ -408,13 +486,11 @@
       </div>
    </div>
 </section>
-
 <!-- End DOSEN YANG IKUT DALAM PENELITIAN -->
 
 <!-- Start MAHASISWA -->
 <section id="swiper-section-4" style="background: linear-gradient(to left, #fff, #A8D5E3);">
-
-      <div class="card__container swiper">
+   <div class="card__container swiper">
             <div class="card__content">
                            <div class="judul" style="display: flex; justify-content: center; align-items: center; height: 105px; margin-top: -0px; margin-bottom: 50px;">
                               <h4 class="card-title" style="color: #1C532A; font-size: 1.8em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #1C532A; padding-bottom: 10px;  font-family: 'Poppins', sans-serif;">
@@ -867,7 +943,7 @@
                                  <!-- Muhamad Sya'dan M -->
                                  <article class="card__article swiper-slide">
                                     <div class="card__image" style="display: flex; justify-content: center; align-items: center; position: relative;">
-                                       <img src="{{asset('asset/img/mahasiswa/Syahdan2.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
+                                       <img src="{{asset('asset/img/mahasiswa/syahdan2.png')}}" alt="image" class="card__img" style="width: 180px; height: 200px;">
                                        <div class="card__shadow"></div>
                                     </div>
 

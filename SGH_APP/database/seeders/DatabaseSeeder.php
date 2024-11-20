@@ -27,7 +27,8 @@ class DatabaseSeeder extends Seeder
             controls::class,
             device_settings::class,
             devices::class,
-            DummyDataSeeder::class
+            extend_devices::class,
+            greenhouse::class,
         ]);
 
     }

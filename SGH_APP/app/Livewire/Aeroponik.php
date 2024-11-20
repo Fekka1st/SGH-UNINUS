@@ -23,8 +23,9 @@ class Aeroponik extends Component
     public $pump_ph_up_status,$spraying_status,$pump_ph_down_status,$ab_mix_status,$water_level_status;
     public $spray_start,$spray_end,$Limit_ph_min, $Limit_ph_max, $Limit_nutrisi_min, $Limit_nutrisi_max, $tangki_air;
 
-    private $url = "http://127.0.0.1:1880";
+    private $url;
     public function mount(){
+        $this->url = env('NODE_URL');
         $this->loadSetting();
         $this->refreshData();
         $this->lastseen();

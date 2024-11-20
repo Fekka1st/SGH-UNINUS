@@ -12,6 +12,7 @@ use Carbon\Carbon;
 class dashboardcontroller extends Controller
 {
     //
+
     public function index(){
         $user = Auth::user();
 

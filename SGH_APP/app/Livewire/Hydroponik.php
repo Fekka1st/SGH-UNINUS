@@ -31,10 +31,11 @@ class Hydroponik extends Component
         $Limit_nutrisi_max,
         $tangki_air;
 
-    private $url = "http://127.0.0.1:1880";
+    private $url;
 
     public function mount()
     {
+        $this->url = env('NODE_URL');
         $this->refreshData();
         $this->pump();
         $this->loadSetting();
@@ -62,9 +63,7 @@ class Hydroponik extends Component
             $this->lastSeen = null;
         } else {
             $this->status = 0;
-            $this->lastSeen = Carbon::parse(
-                $device->updated_at
-            )->diffForHumans();
+            $this->lastSeen = Carbon::parse($device->updated_at)->diffForHumans();
         }
     }
 

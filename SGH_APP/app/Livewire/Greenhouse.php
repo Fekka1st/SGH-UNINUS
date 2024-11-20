@@ -11,6 +11,8 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Livewire\Component;
+use Illuminate\Support\Env;
+
 
 class Greenhouse extends Component
 {
@@ -28,9 +30,12 @@ class Greenhouse extends Component
 
     public $Cooling_Sistem_Active, $Cooling_Sistem_Inactive;
 
-    private $url = "http://127.0.0.1:1880";
+    public $url;
+
+
     public function mount()
     {
+        $this->url = env('NODE_URL');
         $this->loadsetting();
         $this->refreshData();
         $this->lastSeen();
