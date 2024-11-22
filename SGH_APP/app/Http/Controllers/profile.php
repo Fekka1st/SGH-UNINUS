@@ -1,19 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
 class profile extends Controller
 {
     public function index()
     {
         return view("profile.index");
     }
-
     public function update(Request $request)
     {
         $request->validate([
@@ -21,11 +18,8 @@ class profile extends Controller
             "email" => "required|email",
             "password" => "nullable|min:5",
         ]);
-
-
-
         try {
-            $id=Auth::id();
+            $id = Auth::id();
             $user = User::find($id);
             $user->name = $request->name;
             $user->email = $request->email;
@@ -51,9 +45,13 @@ class profile extends Controller
                 $user->foto_profile = "/img/profile/" . $filename;
             }
             $user->save();
-            return redirect()->route('profile.index')->withToastSuccess('Data Berhasil dirubah');
+            return redirect()
+                ->route("profile.index")
+                ->withToastSuccess("Data Berhasil dirubah");
         } catch (\Throwable $th) {
-            return redirect()->route('profile.index')->withToastError('Data Gagal dirubah');
+            return redirect()
+                ->route("profile.index")
+                ->withToastError("Data Gagal dirubah");
         }
     }
 }

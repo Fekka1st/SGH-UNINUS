@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         DB::table('users')->insert([
-            'name' => 'admin',
-            'email' => 'admin@gmail.com',
-            'password' => Hash::make('12345'),
+            'name' => 'UNINUS UNGGUL',
+            'email' => 'UNINUS@gmail.com',
+            'password' => Hash::make('3tcXBRfUIkJvwut'),
             'foto_profile' => '/asset/img/kucing.jpg',
         ]);
 
@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             devices::class,
             extend_devices::class,
             greenhouse::class,
+            first_setup::class
         ]);
 
     }
